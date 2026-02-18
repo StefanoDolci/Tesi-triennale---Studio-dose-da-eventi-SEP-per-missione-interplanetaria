@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+SEPEM_RDS_v3/SEPEM_RDS_v3-2/RDS3.2_FPDO_FPIO.csv
+SEPEM_RDS_v3/SEPEM_RDS_v3-2/RDS3.2_FADO_FAIO.csv
+File_scaricati_eventiSEP/Evento SEP 2017/MAVEN 2017/MVN_SEP_L2_S1-CAL-SVY-FULL_2194726.txt1
+File_scaricati_eventiSEP/Evento SEP 2017/MAVEN 2017/MVN_SEP_L2_S2-CAL-SVY-FULL_2194726.txt1
+SEPEM_RDS_v3/SEPEM_RDS_v3-2/
+File_scaricati_eventiSEP/Evento SEP 2017/MAVEN 2017/*.txt1
+File_scaricati_eventiSEP/Evento SEP 2017/MAVEN 2017/*.cdf
