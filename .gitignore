@@ -9,3 +9,29 @@ File_scaricati_eventiSEP/Evento SEP 2017/MAVEN 2017/MVN_SEP_L2_S2-CAL-SVY-FULL_2
 SEPEM_RDS_v3/SEPEM_RDS_v3-2/
 File_scaricati_eventiSEP/Evento SEP 2017/MAVEN 2017/*.txt1
 File_scaricati_eventiSEP/Evento SEP 2017/MAVEN 2017/*.cdf
+
+# LaTeX
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.idx
+*.ind
+*.lof
+*.lot
+latex_output/
+
+# VS Code
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,227 @@
+% Template Tesi in Fisica (versione completa in un unico file)
+%==============================================================
+\documentclass[12pt]{report}
+
+% Margini
+\usepackage[top=2.5cm, bottom=2.5cm, left=4cm, right=2.5cm, centering, head=21.75 pt]{geometry}
+
+% Interlinea
+\linespread{1.5}
+
+% Librerie utili
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{scrlayer-scrpage}
+\ifoot[]{}
+\cfoot[]{}
+\ofoot[\pagemark]{\pagemark}
+\pagestyle{scrplain}
+\usepackage{mathptmx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage[backend=biber, sorting=nty]{biblatex}
+\appto{\bibsetup}{\raggedright}
+\addbibresource{bibliography.bib}
+
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Stile del codice
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{navy}{HTML}{000080}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Formato intestazioni capitoli
+\titleformat{\chapter}[block]{\normalfont\LARGE\bfseries}{\thechapter.}{0.5em}{\LARGE}
+\titlespacing*{\chapter}{0pt}{-20pt}{25pt}
+
+\begin{document}
+
+%---------------------------------------------------------------
+% FRONTESPIZIO
+%---------------------------------------------------------------
+\begin{titlepage}
+\begin{center}
+    {\LARGE{Università degli Studi di Milano-Bicocca \\}}
+    {\small{Dipartimento di Fisica "Giuseppe Occhialini"}}\\
+    {\small{Corso di Laurea Triennale}}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth]{logo.png}
+\end{figure}
+
+\begin{center}
+    {\Large {Analisi spettrale di eventi SEP e stime della dose per missioni interplanetarie}}
+\end{center}
+
+\vspace{2cm}
+
+\begin{minipage}[t]{0.47\textwidth}
+{\large{\bf Relatore: \\ Stefano Della Torre}}\\[0.5cm]
+{\large{\bf Correlatore: \\ Massimo Gervasi}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}
+\raggedleft
+{\large{\bf Candidato: \\ Stefano Dolci}}
+\end{minipage}
+
+\vspace{25mm}
+\centering{\large{\bf ANNO ACCADEMICO 2024/2025}}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\clearpage
+\setcounter{page}{1}
+
+%---------------------------------------------------------------
+% CAPITOLO 1 — INTRODUZIONE
+%---------------------------------------------------------------
+\chapter{Introduzione}
+Qui va il testo dell'introduzione. Una panoramica generale sulla fisica delle SEP, contesto delle missioni interplanetarie, motivazioni e obiettivo della tesi.
+
+
+
+
+\section{Particelle Energetiche Solari (SEP)}
+
+
+
+\section{Danno da radiazione sull'elettronica}
+
+
+\section{Missione interplanetaria verso Marte}
+
+\section{Obiettivi della tesi}
+
+%---------------------------------------------------------------
+% CAPITOLO 2 — CATALOGO 6 EVENTI SEP
+%---------------------------------------------------------------
+\chapter{Dati e analisi spettrale}
+Descrizione dei 6 eventi SEP scelti per analisi dettagliata
+
+
+\section{Dati e strumentazione}
+
+
+\section{Selezione 8 eventi SEP}
+
+\begin{itemize}
+    \item[-] AUG 1972
+    \item[-] OCT 1989 
+    \item[-] OCT 2003
+    \item[-] JAN 2005
+    \item[-] JUL 2012
+    \item[-] SEP 2017
+    \item[-] OCT 2021
+    \item[-] MAY 2024
+\end{itemize}
+
+
+\section{Fit spettrale}
+
+Satelliti, strumentazione e detector utilizzati
+Range energetico dei dati 
+Metodi di pulizia e filtraggio dati 
+Durata evento
+Incertezze
+Calcolo fluenza e FIT con modelli 
+Eventuali check e confronti letteratura
+
+%---------------------------------------------------------------
+% CAPITOLO 3 — CALCOLO DOSE SRNIEL
+%---------------------------------------------------------------
+\chapter{Calcolo della dose SRNIEL}
+
+\section{Modello simulazione SRNIEL}
+
+\section{Geometrie e modello della sonda}
+
+
+\section{Propagazione delle incertezze}
+
+\section{Risultati dosi stimate}
+Calcoli dose e propagazione incertezze 
+Modello shielding planare e sferico utilizzati per sonda
+
+
+%---------------------------------------------------------------
+% CAPITOLO 4 — ANALISI PROBABILISTICA}
+%---------------------------------------------------------------
+\chapter{Funzione di trasferimento}
+
+
+
+
+\section{Funzione dose-fluenza D(F)}
+
+
+\section{Influenza della metrica}
+
+
+
+
+ 
+
+%---------------------------------------------------------------
+% CAPITOLO 5 — CONFRONTO RISULTATI CON MISSIONI REALI
+%---------------------------------------------------------------
+\chapter{Stime della dose per la missione}
+
+\section{Modelli probabilistici SEP}
+
+
+\section{Parametri missionistici}
+
+
+\section{Simulazioni SAPPHIRE}
+
+
+
+\section{Validazione con missioni reali}
+
+
+\cite{zeitlin2013}
+
+%---------------------------------------------------------------
+% CAPITOLO 6 — CONCLUSIONI
+%---------------------------------------------------------------
+\chapter{Conclusioni e miglioramenti}
+
+Sintesi dei risultati ottenuti
+confronto SEP vs GCR
+Punti critici di queste stime 
+Possibili miglioramenti generali per il lavoro di Tesi 
+
+%---------------------------------------------------------------
+% BIBLIOGRAFIA
+%---------------------------------------------------------------
+\printbibliography[heading=bibintoc, title={Bibliografia}]
+
+%---------------------------------------------------------------
+% APPENDICE
+%---------------------------------------------------------------
+\appendix
+\chapter{Appendice}
+Materiale aggiuntivo, formule, grafici supplementari.
+
+\end{document}
