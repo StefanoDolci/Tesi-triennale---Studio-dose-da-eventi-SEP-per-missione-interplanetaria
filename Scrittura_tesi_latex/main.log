@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  19 FEB 2026 18:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  19 FEB 2026 20:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -843,7 +843,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 56.
 Package biblatex Info: Reference segment=0 on input line 56.
 \c@lstlisting=\count473
-<logo.png, id=108, 609.27625pt x 602.25pt>
+<logo.png, id=112, 609.27625pt x 602.25pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 70.
@@ -881,7 +881,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...ne {chapter}{Bibliografia}{11}{chapter*.4}
+l.27 ...onclusioni e miglioramenti}{11}{chapter.6}
                                                   % [1
 
 ])
@@ -904,7 +904,7 @@ l.123 \end{itemize}
 
 
 ]
-<figures/Tipologia_SEP.png, id=158, 562.20038pt x 227.34938pt>
+<figures/Tipologia_SEP.png, id=163, 562.20038pt x 227.34938pt>
 File: figures/Tipologia_SEP.png Graphic file (type png)
 <use figures/Tipologia_SEP.png>
 Package pdftex.def Info: figures/Tipologia_SEP.png  used on input line 128.
@@ -923,38 +923,40 @@ l.133
 [4]
 
 [5]
+
+[6]
 Capitolo 2.
-
-
-[6
-
-]
-Capitolo 3.
 
 
 [7
 
 ]
-Capitolo 4.
+Capitolo 3.
 
 
 [8
 
 ]
-Capitolo 5.
+Capitolo 4.
 
 
 [9
 
 ]
-Capitolo 6.
+Capitolo 5.
 
 
 [10
 
 ]
+Capitolo 6.
+
 
 [11
+
+]
+
+[12
 
 ]
 Appendice A.
@@ -964,7 +966,7 @@ See the caption package documentation for explanation.
 
 
 
-[12
+[13
 
 ] (./main.aux)
  ***********
@@ -972,24 +974,24 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5FE90C16237E9A74B0D9C4615AFE8663;4577.
+(rerunfilecheck)             Checksum: 6B74219AF95523354F167616DA2397E8;4750.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28755 strings out of 475247
- 564447 string characters out of 5768378
+ 28758 strings out of 475247
+ 564488 string characters out of 5768378
  1411082 words of memory out of 5000000
- 51274 multiletter control sequences out of 15000+600000
+ 51275 multiletter control sequences out of 15000+600000
  594657 words of font info for 107 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 123i,19n,121p,1873b,2749s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,20n,121p,1873b,2749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 275254 bytes).
+Output written on main.pdf (16 pages, 279369 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
 

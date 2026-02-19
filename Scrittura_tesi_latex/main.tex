@@ -190,22 +190,28 @@ Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il "
 
 \subsection{Fase 2: Dati e preprocessing}
 
-Per ciascuno di questi 8 eventi SEP sono stati scaricati i dati di flussi differenziali protonici dalle più note missioni satellitari come GOES, ACE, STEREO e IMP-8, tramite principalmente 2 portali, il primo è il sito della Nasa "OMNIWeb" che raccoglie dati controllati e in formato standardizzato da molteplici missioni, principalmente GOES e ACE; il secondo è stato il catalogo SEPEM RDS v3.0, un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
-I satelliti utilizzati hanno detector che misurano i protoni in vari canali energetici, il range energetico varia da pochi KeV fino al GeV. Per i satelliti GOES ad esempio, quando possibile sono stati combinati i dati dai canali EPS (basse energie P2-P7) e HEPAD (alte energie P8-P11). Si tratta di flussi differenziali time-averaged in risoluzione temporale da 1-15 minuti.
-
+Per ciascuno di questi 8 eventi SEP sono stati scaricati i dati di flussi differenziali protonici da satelliti come GOES, ACE, STEREO e IMP-8, tramite principalmente 2 portali, il primo è il sito della Nasa "OMNIWeb" che raccoglie dati in formato standardizzato da molteplici missioni; il secondo è stato il catalogo SEPEM RDS v3.0, un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
+I satelliti utilizzati hanno detector che misurano i protoni in vari canali energetici, il range energetico varia da pochi KeV fino al GeV. 
 I dati scaricati sono stati puliti secondo la seguente procedura: 
 \begin{itemize}
-    \item[-] Resampling standard per tutti e 8 con media temporale di 30 minuti per ridurre spike e fluttuazioni statistiche 
 
-    \item[-] Selezione di un intervallo temporale tipicamente di circa 15gg nel periodo precedente all'evento, per stimare il fondo di rumore strumentale e GCR
+    \item[-] Resampling standard per tutti e 8 con media temporale di $\Delta t$=30 min per ridurre fluttuazioni statistiche.
 
-    \item[-] Metodo pulizia Whitman: sul periodo di background si calcola la media $\mu$ e la deviazione standarda
+    \item[-] Selezione di un intervallo temporale tipicamente da 5-10 giorni nel periodo precedente all'evento, per stimare il fondo di rumore strumentale e GCR.
+
+    \item[-] Definizione evento: sul periodo di background si calcola la media $\mu$ e la deviazione standard $\sigma$ per definire una soglia minima di attivazione $\mu + 3\sigma$, metodo Whitman: per ogni canale si sottrae dal flusso la media $\mu$, tutti i punti con flusso inferiore a $\mu + 3\sigma$ si assegna NaN.
+    
+
 \end{itemize}
 
 
+\subsection{Calcolo della fluenza}
 
+Si calcola la fluenza per ciascun canale energetico integrando:
 
+$$ F = \int_{t_1}^{t_2} J(E) dt $$
 
+dove $J(E)$ è il flusso differenziale in un certo canale energetico, $F$ è la fluenza totale nel periodo considerato, $\Delta t$ è l'intervallo di tempo tra due misure consecutive, $t_1$ e $t_2$ sono i tempi di inizio e fine dell'evento. A ciascun canale energetico si associa l'energia efficace $E_{eff}$, quando possibile sono stati presi i valori derivati da calibrazioni sui detector, altrimenti è stata calcola la media geometrica $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$
 
 
 %---------------------------------------------------------------

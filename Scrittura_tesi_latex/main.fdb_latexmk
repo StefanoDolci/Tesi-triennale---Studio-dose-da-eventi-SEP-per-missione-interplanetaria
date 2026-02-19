@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1771521280.21026 "main.bcf" "main.bbl" "main" 1771522529.92342 0
+["biber main"] 1771521280.21026 "main.bcf" "main.bbl" "main" 1771530707.51048 0
   "bibliography.bib" 1771520152 1538 0becc1740484ad7b633ce96722b8c4bf ""
-  "main.bcf" 1771522529 108927 27ee55bec01197c6072a38f027af43d0 "pdflatex"
+  "main.bcf" 1771530707 108927 27ee55bec01197c6072a38f027af43d0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771522528.44755 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1771522529.92405 0
+["pdflatex"] 1771530705.70476 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1771530707.51119 0
   "Figures/Tipologia_SEP.png" 1771512839 177798 a93b19330033d3af433b5233bba30848 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1771522528 15787 3fb71f7ef3eda804f6132f0bd2085ea1 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1771530704 16978 b0d8a079b964898f899597d9c0872009 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -159,12 +159,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1771522529 5677 6635a24d756d3abd1a648b00b5bca319 "pdflatex"
+  "main.aux" 1771530707 5814 725150c44b576ab1a662c586e5c0fe7f "pdflatex"
   "main.bbl" 1771521289 10072 daff0db7f0b48aee63102383d1f4693c "biber main"
-  "main.out" 1771522529 4577 5fe90c16237e9a74b0d9c4615afe8663 "pdflatex"
-  "main.run.xml" 1771522529 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1771522528 15787 3fb71f7ef3eda804f6132f0bd2085ea1 ""
-  "main.toc" 1771522529 2209 d87dd1166b5f211e470e74884549191d "pdflatex"
+  "main.out" 1771530707 4750 6b74219af95523354f167616da2397e8 "pdflatex"
+  "main.run.xml" 1771530707 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1771530704 16978 b0d8a079b964898f899597d9c0872009 ""
+  "main.toc" 1771530707 2305 f8aa753a575af79592991c1387fba84d "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
