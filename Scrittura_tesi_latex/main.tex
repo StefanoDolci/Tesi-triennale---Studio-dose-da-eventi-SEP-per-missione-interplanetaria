@@ -173,14 +173,40 @@ Il secondo modello introdotto da Band et al.(1993) \cite{Band1993} era stato ori
    \end{cases}
 \end{equation}
 
-è una doppia legge di potenza con due indici spettrali, $\gamma_a$ per le basse energie e $\gamma_b$ per le alte energie e un cut-off esponenziale $E_0$, questa forma permette di descrivere un raccordo "morbido" in ampi range energetici.
-Chiaramente esistono molti altri modelli e persino una versione "combined" che unisce E-R con Band, ma per il contesto di questo elaborato questi due modelli sono sufficienti per descrivere la maggior parte dei SEP 
-
-
-
-\section{Missione interplanetaria verso Marte}
+è una doppia legge di potenza con due indici spettrali, $\gamma_a$ per le basse energie e $\gamma_b$ per le alte energie e un cut-off esponenziale $E_0$, questa forma permette di descrivere un raccordo "morbido" da pochi MeV fino a GeV.
+Chiaramente esistono molti altri modelli e persino una versione "combined" che unisce E-R con Band, ma per il contesto di questo elaborato questi due modelli sono sufficienti per descrivere la maggior parte dei SEP.
 
 \section{Obiettivi della tesi}
+Nella seguente sezione elenco i principali obiettivi di questa tesi e la procedura di lavoro che è stata seguita per raggiungerli.
+
+\subsection{Fase 1: 8 eventi SEP}
+Come punto di partenza sono stati scelti 8 eventi SEP: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. 
+questi rappresentano alcuni tra i più studiati dei rispettivi cicli solari. Il sole è noto per attraversare periodi di massima attività alternati a periodi di quiete su un ciclo di circa 11 anni, ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. 
+
+
+
+Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il "Worst-case scenario", ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
+
+
+\subsection{Fase 2: Dati e preprocessing}
+
+Per ciascuno di questi 8 eventi SEP sono stati scaricati i dati di flussi differenziali protonici dalle più note missioni satellitari come GOES, ACE, STEREO e IMP-8, tramite principalmente 2 portali, il primo è il sito della Nasa "OMNIWeb" che raccoglie dati controllati e in formato standardizzato da molteplici missioni, principalmente GOES e ACE; il secondo è stato il catalogo SEPEM RDS v3.0, un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
+I satelliti utilizzati hanno detector che misurano i protoni in vari canali energetici, il range energetico varia da pochi KeV fino al GeV. Per i satelliti GOES ad esempio, quando possibile sono stati combinati i dati dai canali EPS (basse energie P2-P7) e HEPAD (alte energie P8-P11). Si tratta di flussi differenziali time-averaged in risoluzione temporale da 1-15 minuti.
+
+I dati scaricati sono stati puliti secondo la seguente procedura: 
+\begin{itemize}
+    \item[-] Resampling standard per tutti e 8 con media temporale di 30 minuti per ridurre spike e fluttuazioni statistiche 
+
+    \item[-] Selezione di un intervallo temporale tipicamente di circa 15gg nel periodo precedente all'evento, per stimare il fondo di rumore strumentale e GCR
+
+    \item[-] Metodo pulizia Whitman: sul periodo di background si calcola la media $\mu$ e la deviazione standarda
+\end{itemize}
+
+
+
+
+
+
 
 %---------------------------------------------------------------
 % CAPITOLO 2 — CATALOGO 6 EVENTI SEP
