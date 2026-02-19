@@ -12,6 +12,9 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{subcaption}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{siunitx}
 \usepackage{caption}
@@ -97,12 +100,36 @@
 % CAPITOLO 1 — INTRODUZIONE
 %---------------------------------------------------------------
 \chapter{Introduzione}
-Qui va il testo dell'introduzione. Una panoramica generale sulla fisica delle SEP, contesto delle missioni interplanetarie, motivazioni e obiettivo della tesi.
+Nello spazio interplanetario sono principalmente due le sorgenti di radiazione ionizzante per le sonde spaziali: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). Quest'ultime sono particelle ad alta energia (da KeV fino a GeV), emesse durante eventi di attività solare, principalmente protoni (90\% del flusso) ma anche ioni pesanti ed elettroni.
+Le SEP sono note per avere energie inferiori rispetto ai GCR, ma la natura imprevedibile delle attività solari a loro legate le rende un rischio significativo per le missioni spaziali, sopratutto quelle interplanetarie dove la magnetosfera terrestre non può offrire protezione. Lo scopo di questo elaborato è proprio quello di analizzare in dettaglio alcuni eventi SEP noti nella storia recente e di stimare la dose (TID) che una sonda interplanetaria riceverebbe durante una tipica missione verso Marte.
+
+
+
+
 
 
 
 
 \section{Particelle Energetiche Solari (SEP)}
+
+La fisica delle SEP è uno dei campi dell'eliofisica, un nuovo termine definito dalla Nasa all'inizio di questo millenio \cite{nasa_ref} per indicare la scienza del Sole congiunta con i suoi effetti sul'ambiente interplanetario. È una disciplina relativamente giovane, agli inizi degli anni 50' Scott Forbush riportò per la prima volta un evento SEP come un improvviso aumento del flusso di particelle energetiche che raggiungevano le camere a nebbia a terra. In quegli anni si conoscevano come candidati solamente i brillamenti solari, noti come "Flare", ovvero impulsive esplosioni visibili di energia in prossimità della corona solare.
+Con l'avvento dei satelliti per osservazioni solari, ad oggi sappiamo che esistono due categorie di SEP:  
+\begin{itemize}
+
+    \item[-] SEP impulsivi: brevi e intensi aumenti del flusso di particelle, il plasma intrappolato nelle linee di campo chiuse ad arco del Sole viene accellerato verso la superfice e espulso, questi eventi sono legati prorio ai flare.
+    
+
+    \item[-] SEP graduali: si tratta di eventi più lunghi che si possono estendere per più giorni, sono legati alle espulsioni di massa coronale (CME), quando le linee di campo vengono stirate dal vento solare possono rompersi e il plasma intrappolato viene espluso, le particelle presenti nel tragitto vengono accellerate dall'onda d'urto e guidate verso lo spazio interplanetario. 
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/Tipologia_SEP.png}
+\caption{Tipologia di eventi SEP, a sinistra evento impulsivo (Flare) a destra evento graduale (CME). Immagine adattata da "Solar Energetic Particles - Reames" \cite{Solar_Energetic_Particles_Reames}.}
+\label{fig:tipologia_sep}
+\end{figure}
+
 
 
 
