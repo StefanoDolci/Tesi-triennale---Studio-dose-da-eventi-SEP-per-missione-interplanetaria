@@ -46,6 +46,34 @@
       \verb https://science.nasa.gov/
       \endverb
     \endentry
+    \entry{Solar_Energetic_Particles_Reames}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=0c06344ed5f8739063a74ec46cd68c9b}{%
+           family={Reames},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{fullhash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{fullhashraw}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{bibnamehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authorbibnamehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authornamehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authorfullhash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authorfullhashraw}{0c06344ed5f8739063a74ec46cd68c9b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Solar Energetic Particles: A Modern Primer on Understanding Sources, Acceleration and Propagation}
+      \field{year}{2020}
+      \field{pages}{7}
+      \range{pages}{1}
+    \endentry
     \entry{zeitlin2013}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}

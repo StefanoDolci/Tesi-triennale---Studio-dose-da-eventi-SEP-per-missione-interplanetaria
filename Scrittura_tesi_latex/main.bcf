@@ -2375,7 +2375,9 @@
     <bcf:citekey order="1" intorder="1">nasa_ref</bcf:citekey>
     <bcf:citekey order="2" intorder="1">Solar_Energetic_Particles_Reames</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Solar_Energetic_Particles_Reames</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Ellison-Ramaty</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Band1993</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">zeitlin2013</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
