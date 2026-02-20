@@ -77,8 +77,8 @@
 \vspace{2cm}
 
 \begin{minipage}[t]{0.47\textwidth}
-{\large{\bf Relatore: \\ Stefano Della Torre}}\\[0.5cm]
-{\large{\bf Correlatore: \\ Massimo Gervasi}}
+{\large{\bf Relatore: \\ Massimo Gervasi}}\\[0.5cm]
+{\large{\bf Correlatore: \\ Stefano Della Torre}}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.47\textwidth}
@@ -177,7 +177,11 @@ Il secondo modello introdotto da Band et al.(1993) \cite{Band1993} era stato ori
 Chiaramente esistono molti altri modelli e persino una versione "combined" che unisce E-R con Band, ma per il contesto di questo elaborato questi due modelli sono sufficienti per descrivere la maggior parte dei SEP.
 
 \section{Obiettivi della tesi}
-Nella seguente sezione elenco i principali obiettivi di questa tesi e la procedura di lavoro che è stata seguita per raggiungerli.
+
+L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettrale di 8 eventi SEP riuscire a stimare la dose totale (TID) che l'elettronica di una sonda modello riceverebbe durante una tipica missione di 6 mesi verso Marte. L'idea è quella di utilizzare 8 spettri da SEP reali per stimare, tramite simulazione con software SRNIEL, la dose risultante dietro una schermatura in varie geometrie; costruire una funzione di trasferimento dose-fluenza D(F) calibrata su questi 8 eventi e infine utilizzare questa funzione di trasferimento per stimare con il modello probabilistico SAPPHIRE, la dose totale attesa da eventi SEP per una missione verso Marte, in relazione alla schermatura della sonda, alla durata del transito e alla fase del ciclo solare. 
+La procedura elencata di seguito è stata applicata sistematicamente a ciascuno degli 8 eventi SEP scelti:
+
+
 
 \subsection{Fase 1: 8 eventi SEP}
 Come punto di partenza sono stati scelti 8 eventi SEP: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. 
@@ -185,7 +189,7 @@ questi rappresentano alcuni tra i più studiati dei rispettivi cicli solari. Il 
 
 
 
-Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il "Worst-case scenario", ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
+Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il "Worst-case scenario", ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
 
 
 \subsection{Fase 2: Dati e preprocessing}
@@ -197,11 +201,9 @@ I dati scaricati sono stati puliti secondo la seguente procedura:
 
     \item[-] Resampling standard per tutti e 8 con media temporale di $\Delta t$=30 min per ridurre fluttuazioni statistiche.
 
-    \item[-] Selezione di un intervallo temporale tipicamente da 5-10 giorni nel periodo precedente all'evento, per stimare il fondo di rumore strumentale e GCR.
+    \item[-] Selezione di un intervallo temporale tipicamente da 5-15 giorni nel periodo precedente all'evento, per stimare il fondo di rumore strumentale e GCR.
 
-    \item[-] Definizione evento: sul periodo di background si calcola la media $\mu$ e la deviazione standard $\sigma$ per definire una soglia minima di attivazione $\mu + 3\sigma$, metodo Whitman: per ogni canale si sottrae dal flusso la media $\mu$, tutti i punti con flusso inferiore a $\mu + 3\sigma$ si assegna NaN.
-    
-
+    \item[-] Definizione evento: sul periodo di background si calcola la media $\mu$ e la deviazione standard $\sigma$ per definire una soglia minima di attivazione $\mu + 3\sigma$ secondo un metodo proposto da Whitman et al. \cite{WhitmanSEP}, per ogni canale si sottrae dal flusso la media $\mu$, a tutti i punti con flusso inferiore a $\mu + 3\sigma$ si assegna NaN.
 \end{itemize}
 
 

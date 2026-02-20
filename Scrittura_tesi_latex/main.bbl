@@ -206,6 +206,105 @@
       \field{pages}{7}
       \range{pages}{1}
     \endentry
+    \entry{WhitmanSEP}{article}{}{}
+      \name{author}{15}{}{%
+        {{hash=74aabf55c37bf199bc7f9fdc9c1c3308}{%
+           family={Whitman},
+           familyi={W\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c0f2e406bf9740e9dd42b59b6cbb8139}{%
+           family={Hu1},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=011955ea2f03da5d9b87dc92457ecc57}{%
+           family={Allen2},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e2ce75f679cae21dd0240d754a1364c}{%
+           family={Fry1},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b50bcaa942913e5ea23177d6cbca49ba}{%
+           family={Heynderickx3},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=de8f3323bf37fdf8b7337ea4422756e1}{%
+           family={Hock4},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4da38d10a5c9aae38f9bb2f07cc5624f}{%
+           family={Jiggens5},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f393414d2afa4956a9bb7b412f3aca33}{%
+           family={Jun6},
+           familyi={J\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=3b2c63fb16faec555a89ae51e3f7a8e0}{%
+           family={Mertens7},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=318b44941e99e47723e8c5039bb20653}{%
+           family={Minow8},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ec9fbd2c8a9b04a7384ac1fe81b66dfc}{%
+           family={Onsager9},
+           familyi={O\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=83e257e1f7fa84fc32a9aac19b2b2cee}{%
+           family={Parker10},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d95f7eab0f5a11e2fd8b86fb7905c63b}{%
+           family={Pulkkinen11},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ff2954dff848813cd7f771007803409b}{%
+           family={Semones1},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=820bf83277447552c618b3dfbbec0909}{%
+           family={St\bibnamedelima Cyr11},
+           familyi={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{fullhash}{7098ddd8150b4b9ce1513c2f4073464c}
+      \strng{fullhashraw}{7098ddd8150b4b9ce1513c2f4073464c}
+      \strng{bibnamehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{authorbibnamehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{authornamehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{authorfullhash}{7098ddd8150b4b9ce1513c2f4073464c}
+      \strng{authorfullhashraw}{7098ddd8150b4b9ce1513c2f4073464c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Statistical Study of Solar Particle Events in Flux and Dose}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://ntrs.nasa.gov/citations/20180006658
+      \endverb
+      \verb{url}
+      \verb https://ntrs.nasa.gov/citations/20180006658
+      \endverb
+    \endentry
     \entry{zeitlin2013}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}
