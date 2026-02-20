@@ -16,8 +16,8 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{booktabs}
-\usepackage{siunitx}
 \usepackage{caption}
+\usepackage{siunitx}
 \usepackage{amssymb}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
@@ -178,7 +178,7 @@ Chiaramente esistono molti altri modelli e persino una versione "combined" che u
 
 \section{Obiettivi della tesi}
 
-L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettrale di 8 eventi SEP riuscire a stimare la dose totale (TID) che l'elettronica di una sonda modello riceverebbe durante una tipica missione di 6 mesi verso Marte. L'idea è quella di utilizzare 8 spettri da SEP reali per stimare, tramite simulazione con software SRNIEL, la dose risultante dietro una schermatura in varie geometrie; costruire una funzione di trasferimento dose-fluenza D(F) calibrata su questi 8 eventi e infine utilizzare questa funzione di trasferimento per stimare con il modello probabilistico SAPPHIRE, la dose totale attesa da eventi SEP per una missione verso Marte, in relazione alla schermatura della sonda, alla durata del transito e alla fase del ciclo solare. 
+L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettrale di 8 eventi SEP riuscire a stimare la dose totale (TID) che l'elettronica di una sonda modello riceverebbe durante una tipica missione di 6 mesi verso Marte. L'idea è quella di utilizzare 8 spettri da SEP reali per stimare, tramite simulazione con software di trasporto SRNIEL, la dose risultante dietro una schermatura; costruire una funzione di trasferimento dose-fluenza D(F) calibrata su questi 8 eventi e infine utilizzare questa funzione di trasferimento per stimare, con il modello probabilistico SAPPHIRE, la dose totale attesa da eventi SEP per una missione verso Marte; il tutto in relazione alla schermatura della sonda, alla durata del transito e alla fase del ciclo solare. 
 La procedura elencata di seguito è stata applicata sistematicamente a ciascuno degli 8 eventi SEP scelti:
 
 
@@ -194,27 +194,70 @@ Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il "
 
 \subsection{Fase 2: Dati e preprocessing}
 
-Per ciascuno di questi 8 eventi SEP sono stati scaricati i dati di flussi differenziali protonici da satelliti come GOES, ACE, STEREO e IMP-8, tramite principalmente 2 portali, il primo è il sito della Nasa "OMNIWeb" che raccoglie dati in formato standardizzato da molteplici missioni; il secondo è stato il catalogo SEPEM RDS v3.0, un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
+Per ciascuno di questi 8 eventi sono stati scaricati i dati di flussi differenziali protonici da satelliti come GOES (EPS/HEPAD), ACE (EPAM), STEREO (LET/HET) e IMP-8, tramite principalmente 2 portali, il primo è il sito della Nasa "OMNIWeb" che raccoglie dati in formato standardizzato da molteplici missioni; il secondo è stato il catalogo SEPEM Reference Data Set v3.0 (RDS v3.0), un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
 I satelliti utilizzati hanno detector che misurano i protoni in vari canali energetici, il range energetico varia da pochi KeV fino al GeV. 
 I dati scaricati sono stati puliti secondo la seguente procedura: 
 \begin{itemize}
 
-    \item[-] Resampling standard per tutti e 8 con media temporale di $\Delta t$=30 min per ridurre fluttuazioni statistiche.
+    \item[-] Ricampionamento temporale standard per tutti calcolando media su intervallo $\Delta t$=30 min per ridurre rumore da fluttuazioni statistiche.
 
-    \item[-] Selezione di un intervallo temporale tipicamente da 5-15 giorni nel periodo precedente all'evento, per stimare il fondo di rumore strumentale e GCR.
+    \item[-] Selezione di un intervallo temporale di quiete, tipicamente da 5-15 giorni nel periodo precedente all'evento, per stimare il fondo di rumore strumentale e il contributo dei GCR sempre presenti.
 
-    \item[-] Definizione evento: sul periodo di background si calcola la media $\mu$ e la deviazione standard $\sigma$ per definire una soglia minima di attivazione $\mu + 3\sigma$ secondo un metodo proposto da Whitman et al. \cite{WhitmanSEP}, per ogni canale si sottrae dal flusso la media $\mu$, a tutti i punti con flusso inferiore a $\mu + 3\sigma$ si assegna NaN.
+    \item[-] Definizione evento: sul periodo di background si calcola la media $\mu$ e la deviazione standard $\sigma$, secondo un metodo proposto da Whitman et al. \cite{WhitmanSEP} si definisce soglia di attivazione:
+    $$ \Phi_{\text{thr}} = \mu + 3\sigma $$
+    Si sottrae il background e si applica una selezione per la soglia:
+
+    \[
+    \Phi_{\text{net}}(t) =
+    \begin{cases}
+    \Phi_{\text{raw}}(t) - \mu
+    & \text{se } \Phi_{\text{raw}}(t) \geq \Phi_{\text{thr}} \\[6pt]
+    0 \; (\text{NaN}) 
+    & \text{altrimenti}
+    \end{cases}
+    \]
+    questo permette di mitigare artefatti strumentali e flussi non statisticamente significativi nel calcolo della fluenza.
+    
+
 \end{itemize}
 
 
 \subsection{Calcolo della fluenza}
 
-Si calcola la fluenza per ciascun canale energetico integrando:
+Si calcola la fluenza per ciascun canale energetico integrando nel tempo:$$ F = \int_{t_1}^{t_2} \Phi(E) dt $$ dove $\Phi(E)$ è il flusso differenziale in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{s}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$], $dt$ è l'intervallo di campionamento in secondi tra due misure consecutive, $t_1$ e $t_2$ sono i tempi di inizio e fine dell'evento.
+Per ogni canale k, si sommano i flussi netti per l'intera durata dell'evento: $$ F_k = \sum_{i} \Phi_{\text{net},k}(t_i) \cdot \Delta t $$ Il risultato è appunto la fluenza differenziale totale $F_k$ in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$]. A ciascun canale energetico si associa l'energia efficace $E_{eff}$, questo valore può essere o la media geometrica dei due estremi del canale  $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$, oppure quando disponibile si usa il valore riportato nelle tabelle di calibrazione dei sensori. 
+Per quanto riguarda le incertezze sulla fluenza sono due i principali contributi: 
+\begin{itemize}
+    \item[-] Errore sistematico: costante su tutto il canale e proviene dalle calibrazoni dei sensori e si applica al valore di $F_k$ misurato: $\sigma_{sys} = 10-30\%$ tiene conto delle efficienze geometriche e delle cross-calibrazioni tra sensori diversi. 
+    \item[-] Errore statistico: conteggi discreti del numero di particelle contate aggiungono l'errore poissoniano $\sigma_{stat} = \sqrt{F_k}$, tipicamente trascurabile per fluenze elevate. 
+    \item[] 
+\end{itemize}
+L'errore totale è dato dalla somma in quadratura dei due: 
+$$\sigma_{tot} = \sqrt{\sigma_{sys}^2 + \sigma_{stat}^2}$$ Per ogni punto spettrale ci sono poi le barre d'errore orizzontale sui canali energetici, definite in questo modo: 
 
-$$ F = \int_{t_1}^{t_2} J(E) dt $$
+$$ \sigma_{low} = |E_{eff} - E_{min}| \quad \sigma_{high} = |E_{max} - E_{eff}| $$
 
-dove $J(E)$ è il flusso differenziale in un certo canale energetico, $F$ è la fluenza totale nel periodo considerato, $\Delta t$ è l'intervallo di tempo tra due misure consecutive, $t_1$ e $t_2$ sono i tempi di inizio e fine dell'evento. A ciascun canale energetico si associa l'energia efficace $E_{eff}$, quando possibile sono stati presi i valori derivati da calibrazioni sui detector, altrimenti è stata calcola la media geometrica $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$
+\subsection{FIT spettro}
+Dopo aver calcolato la fluenza integrata, sullo spettro viene eseguito un fit con i due modelli E-R e la Band function. Il fit viene eseguito in spazio logaritmico per gestire meglio il salto di circa 8 ordini di grandezza; si usa l'algoritmo di Levenberg-Marquardt per minimizzare il chi-quadro pesato:$$ \chi^2 = \sum_{k=1}^{N} \left(\frac{\log_{10}F_k - \log_{10}\Phi(E_k; \mathbf{p})}{\sigma_{\log,k}}\right)^2 $$
 
+Una volta ottenuti i parametri e la matrice di covarianza per propagare le incertezze su uno spettro continuo si utilizza un campionamento Monte Carlo Bootstrap parametrico:
+
+\begin{itemize}
+    \item[-] Si generaro 1000 set di parametri da una ditribuzione multivariata normale $$ \mathbf{p}^{(j)} \sim \mathcal{N}(\hat{\mathbf{p}}, C_{\text{stab}}), \qquad j = 1, \ldots, 1000 $$ dove $\hat{\mathbf{p}}$ sono i parametri migliori ottenuti dal fit e $C_{\text{stab}}$ è la matrice di covarianza stabilizzata.
+    \item[-] Per ogni set generato di parametri si ricalcola lo spettro su una griglia discreta di punti equispaziati in spazio logaritmico, per standardizzare la procedura per tutti 8 i SEP è stato scelto un range energetico da 0.005 a 1000 MeV: $$ \Phi^{(j)}(E_i) = SpectralModel(E_i; \mathbf{p}^{(j)}) \qquad  i = 1,...,500$$
+    \item[-] per ogni punto si calcola l'intervallo di confidenza al 68\%, ovvero ±1$\sigma$ per una distribuzione gaussiana:
+    $$\Phi_{med}(E_i) = \text{mediano}\left\{\Phi^{(j)}(E_i)\right\}_{j=1}^{1000}$$
+    $$ \Phi_{16}(E_i) = \text{percentile}_{16}\left\{{\Phi^{(j)}(E_i)}\right\}, \qquad \Phi_{84}(E_i) = \text{percentile}_{84}\left\{{\Phi^{(j)}(E_i)}\right\} $$
+    
+\end{itemize}
+
+\subsection{Calcolo dose SR-NIEL}
+Si ottengono dunque tre spettri, uno per la mediana e due per i limiti di confidenza, questi vengono esportati in SR-NIEL per il calcolo della fluenza residua dietro la schermatura di alluminio, prima 
+
+
+Per il calcolo della dose, dai parametri ottenuti per ogni fit si genera una tabella 
+con la fluenza $\Phi$ [p·cm$^{-2}$·sr$^{-1}$·MeV$^{-1}$] e energia $E$ [MeV], per standardizzare i risultati e poterli confrontare è stato scelto un range 
+energetico tra 1-1000 MeV. Come modello della sonda spaziale si considera una schermatura, planare e sferica, di Al per uno spessore equivalente di 10g/cm$^2$, posta davanti ad uno strato di silicio che rappresenta l'elettronica dove verrà poi calcolata la dose. 
 
 %---------------------------------------------------------------
 % CAPITOLO 2 — CATALOGO 6 EVENTI SEP

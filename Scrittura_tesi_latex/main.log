@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  20 FEB 2026 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  20 FEB 2026 19:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -843,7 +843,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 56.
 Package biblatex Info: Reference segment=0 on input line 56.
 \c@lstlisting=\count473
-<logo.png, id=112, 609.27625pt x 602.25pt>
+<logo.png, id=120, 609.27625pt x 602.25pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 70.
@@ -881,7 +881,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...onclusioni e miglioramenti}{11}{chapter.6}
+l.28 ...zione con missioni reali}{12}{section.5.4}
                                                   % [1
 
 ])
@@ -904,7 +904,7 @@ l.123 \end{itemize}
 
 
 ]
-<figures/Tipologia_SEP.png, id=163, 562.20038pt x 227.34938pt>
+<figures/Tipologia_SEP.png, id=174, 562.20038pt x 227.34938pt>
 File: figures/Tipologia_SEP.png Graphic file (type png)
 <use figures/Tipologia_SEP.png>
 Package pdftex.def Info: figures/Tipologia_SEP.png  used on input line 128.
@@ -925,38 +925,46 @@ l.133
 [5]
 
 [6]
+
+[7]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 248.
+ (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+
+[8]
 Capitolo 2.
-
-
-[7
-
-]
-Capitolo 3.
-
-
-[8
-
-]
-Capitolo 4.
 
 
 [9
 
 ]
-Capitolo 5.
+Capitolo 3.
 
 
 [10
 
 ]
-Capitolo 6.
+Capitolo 4.
 
 
 [11
 
 ]
+Capitolo 5.
+
 
 [12
+
+]
+Capitolo 6.
+
+
+[13
+
+]
+
+[14
 
 ]
 Appendice A.
@@ -966,7 +974,7 @@ See the caption package documentation for explanation.
 
 
 
-[13
+[15
 
 ] (./main.aux)
  ***********
@@ -974,24 +982,24 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6B74219AF95523354F167616DA2397E8;4750.
+(rerunfilecheck)             Checksum: 32C2C79C1008F1C5275A3D1A68496541;5038.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28762 strings out of 475247
- 564639 string characters out of 5768378
- 1411138 words of memory out of 5000000
- 51278 multiletter control sequences out of 15000+600000
- 594657 words of font info for 107 fonts, out of 8000000 for 9000
+ 28799 strings out of 475247
+ 565211 string characters out of 5768378
+ 1412138 words of memory out of 5000000
+ 51307 multiletter control sequences out of 15000+600000
+ 595985 words of font info for 110 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 123i,19n,121p,1873b,2749s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 280690 bytes).
+ 123i,20n,121p,1873b,2724s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (18 pages, 292237 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 227 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
