@@ -185,11 +185,14 @@ La procedura elencata di seguito è stata applicata sistematicamente a ciascuno 
 
 \subsection{Fase 1: 8 eventi SEP}
 Come punto di partenza sono stati scelti 8 eventi SEP: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. 
-questi rappresentano alcuni tra i più studiati dei rispettivi cicli solari. Il sole è noto per attraversare periodi di massima attività alternati a periodi di quiete su un ciclo di circa 11 anni, ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. 
-
-
-
-Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il "Worst-case scenario", ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
+questi rappresentano alcuni tra i più studiati dei rispettivi cicli solari. Il sole è noto per attraversare periodi di massima attività alternati a periodi di quiete su un ciclo di circa 11 anni.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/Solar_cycle.png}
+\caption{Ciclo solare misurato con progressione del numero di macchie solare, Immagine adattata da \href{https://www.swpc.noaa.gov/products/solar-cycle-progression}{NOAA-Space Weather Prediction Center}.}
+\label{fig:ciclo_solare}
+\end{figure}
+Ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il \textit{Worst-case scenario}, ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
 
 
 \subsection{Fase 2: Dati e preprocessing}
@@ -225,7 +228,7 @@ I dati scaricati sono stati puliti secondo la seguente procedura:
 \subsection{Calcolo della fluenza}
 
 Si calcola la fluenza per ciascun canale energetico integrando nel tempo:$$ F = \int_{t_1}^{t_2} \Phi(E) dt $$ dove $\Phi(E)$ è il flusso differenziale in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{s}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$], $dt$ è l'intervallo di campionamento in secondi tra due misure consecutive, $t_1$ e $t_2$ sono i tempi di inizio e fine dell'evento.
-Per ogni canale k, si sommano i flussi netti per l'intera durata dell'evento: $$ F_k = \sum_{i} \Phi_{\text{net},k}(t_i) \cdot \Delta t $$ Il risultato è appunto la fluenza differenziale totale $F_k$ in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$]. A ciascun canale energetico si associa l'energia efficace $E_{eff}$, questo valore può essere o la media geometrica dei due estremi del canale  $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$, oppure quando disponibile si usa il valore riportato nelle tabelle di calibrazione dei sensori. 
+Per ogni canale k, si sommano i flussi netti per l'intera durata dell'evento: $$ F_k = \sum_{i} \Phi_{\text{net},k}(t_i) \cdot \Delta t $$ Il risultato è appunto la fluenza differenziale totale $F_k$ in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$]. A ciascun canale energetico si associa l'energia efficace $E_{eff}[\mathrm{MeV}]$, questo valore può essere o la media geometrica dei due estremi del canale  $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$, oppure quando disponibile si usa il valore riportato nelle tabelle di calibrazione dei sensori. 
 Per quanto riguarda le incertezze sulla fluenza sono due i principali contributi: 
 \begin{itemize}
     \item[-] Errore sistematico: costante su tutto il canale e proviene dalle calibrazoni dei sensori e si applica al valore di $F_k$ misurato: $\sigma_{sys} = 10-30\%$ tiene conto delle efficienze geometriche e delle cross-calibrazioni tra sensori diversi. 
@@ -239,12 +242,11 @@ $$ \sigma_{low} = |E_{eff} - E_{min}| \quad \sigma_{high} = |E_{max} - E_{eff}| 
 
 \subsection{FIT spettro}
 Dopo aver calcolato la fluenza integrata, sullo spettro viene eseguito un fit con i due modelli E-R e la Band function. Il fit viene eseguito in spazio logaritmico per gestire meglio il salto di circa 8 ordini di grandezza; si usa l'algoritmo di Levenberg-Marquardt per minimizzare il chi-quadro pesato:$$ \chi^2 = \sum_{k=1}^{N} \left(\frac{\log_{10}F_k - \log_{10}\Phi(E_k; \mathbf{p})}{\sigma_{\log,k}}\right)^2 $$
-
 Una volta ottenuti i parametri e la matrice di covarianza per propagare le incertezze su uno spettro continuo si utilizza un campionamento Monte Carlo Bootstrap parametrico:
 
 \begin{itemize}
     \item[-] Si generaro 1000 set di parametri da una ditribuzione multivariata normale $$ \mathbf{p}^{(j)} \sim \mathcal{N}(\hat{\mathbf{p}}, C_{\text{stab}}), \qquad j = 1, \ldots, 1000 $$ dove $\hat{\mathbf{p}}$ sono i parametri migliori ottenuti dal fit e $C_{\text{stab}}$ è la matrice di covarianza stabilizzata.
-    \item[-] Per ogni set generato di parametri si ricalcola lo spettro su una griglia discreta di punti equispaziati in spazio logaritmico, per standardizzare la procedura per tutti 8 i SEP è stato scelto un range energetico da 0.005 a 1000 MeV: $$ \Phi^{(j)}(E_i) = SpectralModel(E_i; \mathbf{p}^{(j)}) \qquad  i = 1,...,500$$
+    \item[-] Per ogni set generato di parametri si ricalcola lo spettro su una griglia discreta di punti equispaziati in spazio logaritmico, per standardizzare la procedura per tutti 8 i SEP è stato scelto un range energetico da 0.05 a 1000 MeV: $$ \Phi^{(j)}(E_i) = SpectralModel(E_i; \mathbf{p}^{(j)}) \qquad  i = 1,...,500$$
     \item[-] per ogni punto si calcola l'intervallo di confidenza al 68\%, ovvero ±1$\sigma$ per una distribuzione gaussiana:
     $$\Phi_{med}(E_i) = \text{mediano}\left\{\Phi^{(j)}(E_i)\right\}_{j=1}^{1000}$$
     $$ \Phi_{16}(E_i) = \text{percentile}_{16}\left\{{\Phi^{(j)}(E_i)}\right\}, \qquad \Phi_{84}(E_i) = \text{percentile}_{84}\left\{{\Phi^{(j)}(E_i)}\right\} $$
@@ -252,12 +254,11 @@ Una volta ottenuti i parametri e la matrice di covarianza per propagare le incer
 \end{itemize}
 
 \subsection{Calcolo dose SR-NIEL}
-Si ottengono dunque tre spettri, uno per la mediana e due per i limiti di confidenza, questi vengono esportati in SR-NIEL per il calcolo della fluenza residua dietro la schermatura di alluminio, prima 
+Si ottengono dunque tre spettri, uno per la mediana e due per i limiti di confidenza, si costruisce una tabella con la fluenza $\Phi$ [p·cm$^{-2}$·sr$^{-1}$·MeV$^{-1}$] e l'energia $E$ [MeV], questi vengono esportati in SR-NIEL per il calcolo della fluenza residua dietro la schermatura di alluminio.
 
+\subsection{Modello sonda spaziale}
+Il modello rappresentativo della sonda spaziale e della sua elettronica è costruito con schermatura (Al) + strato di silicio (Si) nel quale si calcola la dose. Per lo strato di schermatura si studiano due geometrie: una planare e una sferica. In entrambi i casi si assume una schermatura di alluminio con spessore $X= 3.7cm$ che fornisce uno spessore equivalente di 10g/cm$^2$, il quale rappresenta un valore medio utilizzato per le sonde interplanetarie. Lo spettro di fluenza incidente viene propagato attraverso la schermatura e il codice SR-NIEL resistuisce la fluenza residua $\Phi_{res}(E)$
 
-Per il calcolo della dose, dai parametri ottenuti per ogni fit si genera una tabella 
-con la fluenza $\Phi$ [p·cm$^{-2}$·sr$^{-1}$·MeV$^{-1}$] e energia $E$ [MeV], per standardizzare i risultati e poterli confrontare è stato scelto un range 
-energetico tra 1-1000 MeV. Come modello della sonda spaziale si considera una schermatura, planare e sferica, di Al per uno spessore equivalente di 10g/cm$^2$, posta davanti ad uno strato di silicio che rappresenta l'elettronica dove verrà poi calcolata la dose. 
 
 %---------------------------------------------------------------
 % CAPITOLO 2 — CATALOGO 6 EVENTI SEP
