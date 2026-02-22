@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  22 FEB 2026 12:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  22 FEB 2026 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -843,7 +843,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 56.
 Package biblatex Info: Reference segment=0 on input line 56.
 \c@lstlisting=\count473
-<logo.png, id=128, 609.27625pt x 602.25pt>
+<logo.png, id=144, 609.27625pt x 602.25pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 70.
@@ -881,7 +881,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 ...}Parametri missionistici}{13}{section.5.2}
+l.29 ...}Influenza della metrica}{12}{section.4.2}
                                                   % [1
 
 ])
@@ -904,7 +904,7 @@ l.123 \end{itemize}
 
 
 ]
-<figures/Tipologia_SEP.png, id=185, 562.20038pt x 227.34938pt>
+<figures/Tipologia_SEP.png, id=205, 562.20038pt x 227.34938pt>
 File: figures/Tipologia_SEP.png Graphic file (type png)
 <use figures/Tipologia_SEP.png>
 Package pdftex.def Info: figures/Tipologia_SEP.png  used on input line 126.
@@ -922,7 +922,7 @@ l.130
 
 [4]
 Capitolo 2.
-<figures/Solar_cycle.png, id=217, 779.01038pt x 302.63063pt>
+<figures/Solar_cycle.png, id=237, 779.01038pt x 302.63063pt>
 File: figures/Solar_cycle.png Graphic file (type png)
 <use figures/Solar_cycle.png>
 Package pdftex.def Info: figures/Solar_cycle.png  used on input line 185.
@@ -936,12 +936,12 @@ Package pdftex.def Info: figures/Solar_cycle.png  used on input line 185.
 [6 <./Figures/Solar_cycle.png>]
 
 [7]
-
-[8]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 243.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 235.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+
+[8]
 
 [9]
 
@@ -989,24 +989,24 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C75F3483203EDC977822BF662944CD5A;5534.
+(rerunfilecheck)             Checksum: 53AEB66E2D3F5A19972B1918F3822981;6010.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28813 strings out of 475247
- 565519 string characters out of 5768378
- 1411359 words of memory out of 5000000
- 51317 multiletter control sequences out of 15000+600000
+ 28821 strings out of 475247
+ 565665 string characters out of 5768378
+ 1412362 words of memory out of 5000000
+ 51321 multiletter control sequences out of 15000+600000
  595985 words of font info for 110 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  123i,20n,121p,1900b,2724s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (19 pages, 631975 bytes).
+Output written on main.pdf (19 pages, 634391 bytes).
 PDF statistics:
- 347 PDF objects out of 1000 (max. 8388607)
- 293 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 313 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 
