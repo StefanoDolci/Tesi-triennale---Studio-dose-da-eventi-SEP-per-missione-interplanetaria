@@ -19,6 +19,138 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{Band1993}{article}{}{}
+      \name{author}{15}{}{%
+        {{hash=2cbd0fd9de38122220d0bff5b81ecf29}{%
+           family={Band},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2ccb505080278cb3fe9889128684ff16}{%
+           family={Matteson},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=185b5c7b65c7176452a60903ac5b1d3b}{%
+           family={Ford},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=596d5ab7cb5406df3d93c3e1d3a3218a}{%
+           family={Schaefer},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=48e246af492d3df01de07b4b25bf615e}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9c00f1923d2f9010e9d8c4ae1eb0ee8f}{%
+           family={Teegarden},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ac21389067fb69142b4a8ce4cfa357ae}{%
+           family={Cline},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e9ece7fc2af744151a214065592824bf}{%
+           family={Briggs},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b0bcb6a40d34d3acc7a442d553d0174}{%
+           family={Paciesas},
+           familyi={P\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=346b3b9c874dfde8c673e00ba276064a}{%
+           family={Pendleton},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8fd4193dabe05be1e7eb872bee720db5}{%
+           family={Fishman},
+           familyi={F\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6fb87024952034adfde1c7881423127e}{%
+           family={Kouveliotou},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4e4864073b277fb48e08387ab4513354}{%
+           family={Meegan},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1731ef8fa96b411a7c1ab32d20f8d1c8}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b3ce4822a6c164efd9a7eb16988c7563}{%
+           family={Lestrade},
+           familyi={L\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{fullhash}{6ea2e5d8806247c3844ebb15555ba15e}
+      \strng{fullhashraw}{6ea2e5d8806247c3844ebb15555ba15e}
+      \strng{bibnamehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{authorbibnamehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{authornamehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{authorfullhash}{6ea2e5d8806247c3844ebb15555ba15e}
+      \strng{authorfullhashraw}{6ea2e5d8806247c3844ebb15555ba15e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{title}{BATSE Observations of Gamma-Ray Burst Spectra. I. Spectral Diversity}
+      \field{volume}{413}
+      \field{year}{1993}
+      \field{pages}{281\bibrangedash 292}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1086/172995
+      \endverb
+    \endentry
+    \entry{Ellison-Ramaty}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1ec765c19f86773f807060406f3b03e0}{%
+           family={Ellison},
+           familyi={E\bibinitperiod},
+           given={Donald\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1699d38e1a62c1156453da9a465b588b}{%
+           family={Ramaty},
+           familyi={R\bibinitperiod},
+           given={Reuven},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{fullhash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{fullhashraw}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{bibnamehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authorbibnamehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authornamehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authorfullhash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authorfullhashraw}{d03c95f5170ed3bac3dce324931fd843}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{title}{Shock Acceleration of Electrons and Ions in Solar Flares}
+      \field{volume}{298}
+      \field{year}{1985}
+      \field{pages}{400\bibrangedash 408}
+      \range{pages}{9}
+    \endentry
     \entry{nasa_ref}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=1f99771bc3e23e6097509a331544ab65}{%
@@ -73,6 +205,105 @@
       \field{year}{2020}
       \field{pages}{7}
       \range{pages}{1}
+    \endentry
+    \entry{WhitmanSEP}{article}{}{}
+      \name{author}{15}{}{%
+        {{hash=74aabf55c37bf199bc7f9fdc9c1c3308}{%
+           family={Whitman},
+           familyi={W\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c0f2e406bf9740e9dd42b59b6cbb8139}{%
+           family={Hu1},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=011955ea2f03da5d9b87dc92457ecc57}{%
+           family={Allen2},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e2ce75f679cae21dd0240d754a1364c}{%
+           family={Fry1},
+           familyi={F\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b50bcaa942913e5ea23177d6cbca49ba}{%
+           family={Heynderickx3},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=de8f3323bf37fdf8b7337ea4422756e1}{%
+           family={Hock4},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4da38d10a5c9aae38f9bb2f07cc5624f}{%
+           family={Jiggens5},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f393414d2afa4956a9bb7b412f3aca33}{%
+           family={Jun6},
+           familyi={J\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=3b2c63fb16faec555a89ae51e3f7a8e0}{%
+           family={Mertens7},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=318b44941e99e47723e8c5039bb20653}{%
+           family={Minow8},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ec9fbd2c8a9b04a7384ac1fe81b66dfc}{%
+           family={Onsager9},
+           familyi={O\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=83e257e1f7fa84fc32a9aac19b2b2cee}{%
+           family={Parker10},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d95f7eab0f5a11e2fd8b86fb7905c63b}{%
+           family={Pulkkinen11},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ff2954dff848813cd7f771007803409b}{%
+           family={Semones1},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=820bf83277447552c618b3dfbbec0909}{%
+           family={St\bibnamedelima Cyr11},
+           familyi={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{fullhash}{7098ddd8150b4b9ce1513c2f4073464c}
+      \strng{fullhashraw}{7098ddd8150b4b9ce1513c2f4073464c}
+      \strng{bibnamehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{authorbibnamehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{authornamehash}{1a89c11aae8cda8464ca30f6fc801c40}
+      \strng{authorfullhash}{7098ddd8150b4b9ce1513c2f4073464c}
+      \strng{authorfullhashraw}{7098ddd8150b4b9ce1513c2f4073464c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Statistical Study of Solar Particle Events in Flux and Dose}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://ntrs.nasa.gov/citations/20180006658
+      \endverb
+      \verb{url}
+      \verb https://ntrs.nasa.gov/citations/20180006658
+      \endverb
     \endentry
     \entry{zeitlin2013}{article}{}{}
       \true{moreauthor}

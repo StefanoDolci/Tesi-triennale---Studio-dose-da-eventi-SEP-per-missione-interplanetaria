@@ -101,7 +101,7 @@
 %---------------------------------------------------------------
 \chapter{Introduzione}
 Nello spazio interplanetario sono principalmente due le sorgenti di radiazione ionizzante per le sonde spaziali: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). Quest'ultime sono particelle ad alta energia (da KeV fino a GeV), emesse durante eventi di attività solare, principalmente protoni (90\% del flusso) ma anche ioni pesanti ed elettroni.
-Le SEP sono note per avere energie inferiori rispetto ai GCR, ma la natura imprevedibile delle attività solari a loro legate le rende un rischio significativo per le missioni spaziali, sopratutto quelle interplanetarie dove la magnetosfera terrestre non può offrire protezione. Lo scopo di questo elaborato è proprio quello di analizzare in dettaglio alcuni eventi SEP noti nella storia recente e di stimare la dose (TID) che una sonda interplanetaria riceverebbe durante una tipica missione verso Marte.
+Le SEP sono note per avere energie inferiori rispetto ai GCR, ma la natura imprevedibile delle attività solari a loro legate le rende un rischio significativo per le missioni spaziali, sopratutto quelle interplanetarie dove la magnetosfera terrestre non può offrire protezione. Lo scopo di questo elaborato è proprio quello di analizzare in dettaglio alcuni eventi SEP noti della storia recente e di stimare la dose (TID) che una sonda interplanetaria riceverebbe durante una tipica missione verso Marte.
 
 
 
@@ -112,24 +112,21 @@ Le SEP sono note per avere energie inferiori rispetto ai GCR, ma la natura impre
 
 \section{Particelle Energetiche Solari (SEP)}
 
-La fisica delle SEP è uno dei campi dell'eliofisica, un nuovo termine definito dalla Nasa all'inizio di questo millenio \cite{nasa_ref} per indicare la scienza del Sole congiunta con i suoi effetti sul'ambiente interplanetario. È una disciplina relativamente giovane, agli inizi degli anni 50' Scott Forbush riportò per la prima volta un evento SEP come un improvviso aumento del flusso di particelle energetiche che raggiungevano le camere a nebbia a terra. In quegli anni si conoscevano come candidati solamente i brillamenti solari, noti come "Flare", ovvero impulsive esplosioni visibili di energia in prossimità della corona solare.
+La fisica delle SEP è uno dei campi dell'eliofisica, un nuovo termine definito dalla Nasa\cite{nasa_ref} all'inizio di questo millenio per indicare la scienza del Sole congiunta con i suoi effetti sul'ambiente interplanetario. È una disciplina relativamente giovane, agli inizi degli anni 50' Scott Forbush riportò per la prima volta un evento SEP come un improvviso aumento del flusso di particelle energetiche che raggiungevano le camere a nebbia a terra. In quegli anni si conoscevano come candidati solamente i \textit{solar flare}, brillamenti solari, impulsive esplosioni visibili di energia in prossimità della corona solare.
 Con l'avvento dei satelliti per osservazioni solari, ad oggi sappiamo che esistono due categorie di SEP:  
 \begin{itemize}
 
-    \item[-] SEP impulsivi: brevi e intensi aumenti del flusso di particelle, il plasma intrappolato nelle linee di campo chiuse ad arco del Sole viene accellerato verso la superfice e espulso, questi eventi sono legati prorio ai flare.
+    \item[-] SEP impulsivi: brevi e intensi aumenti del flusso di particelle, il plasma intrappolato nelle linee di campo chiuse ad arco del Sole viene accellerato verso la superfice e in fine espulso, questi eventi sono legati prorio ai flare.
     
 
-    \item[-] SEP graduali: si tratta di eventi più lunghi che si possono estendere per più giorni, sono legati alle espulsioni di massa coronale (CME), quando le linee di campo vengono stirate dal vento solare possono rompersi e il plasma intrappolato viene espluso, le particelle presenti nel tragitto vengono accellerate dall'onda d'urto e guidate verso lo spazio interplanetario. 
+    \item[-] SEP graduali: si tratta di eventi più lunghi che si possono estendere per più giorni, sono legati alle espulsioni di massa coronale (CME), quando le linee di campo vengono stirate dal vento solare possono rompersi e il plasma intrappolato viene espluso, le particelle presenti nel tragitto vengono costantemente accellerate dall'onda d'urto e guidate verso lo spazio interplanetario. 
 \end{itemize}
-
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/Tipologia_SEP.png}
 \caption{Tipologia di eventi SEP, a sinistra evento impulsivo (Flare) a destra evento graduale (CME). Immagine adattata da "Solar Energetic Particles - Reames" \cite{Solar_Energetic_Particles_Reames}.}
 \label{fig:tipologia_sep}
-\end{figure}
-Le differenze tra questi due tipi di eventi sono quindi: la loro origine e durata come spiegato poco fa, questa domina i possibili danni alla strumentazione spaziale, come vedremo il tempo di esposizione è un fattore fondamentale per la dose accumulata; abbiamo poi differenze nell'abbondanza isotopica, per i SEP graduali è stata trovata una diretta corrispondenza con l'abbondanza misurabile nella corona solare, negli strati immediatamente sotto troviamo la cromosfera, una regione dove le temperature raggiungono i 10.000 K, qui elementi con diversi potenziali di prima ionizzazione (FIP) si differenziano, i campi magnetici spingono prima gli elementi con un basso FIP come magnesio, silicio e ferro, e questa impronta si ritrova negli spettri dei SEP graduali. Altre differenze riguardano: la distribuzione angolare, dato che le linee di campo magnetico giocano un ruolo fondamentale nel guidare le particelle espulse, l'intensità dei SEP dipende da quanto "bene" è magneticamente connesso il satellite che fa le misure rispetto alla sorgente; emissioni di segnali radio sono un'altra impronta utile per distinguere i due tipi di eventi. I fasci di elettroni che si propagano rapidamente lungo le linee di campo aperte stimolano le onde di Langmuir nel plasma locale, la frequenza di oscillazione di queste onde $\omega_{p}=\sqrt{n_e}$ diminuisce rapidamente con l'aumentare della distanza dal Sole dove la densità del plasma $n_e$ è più bassa, questa variazione è misurabile a terra come un breve segnale radio di tipo III a questi si associano i SEP impulsivi, l'emissione prodotta invece dalle onde d'urto che si propagano con le CME si dice essere di tipo II, sono più lunghe e la frequenza diminuisce lentamente, in accordo con i meccanismi fisici dei SEP graduali.
+\end{figure} Le differenze tra questi due tipi di eventi sono quindi: la loro origine e durata come spiegato poco fa, questa domina i possibili danni alla strumentazione spaziale, come vedremo il tempo di esposizione è un fattore fondamentale per la dose accumulata; abbiamo poi differenze nell'abbondanza isotopica, per i SEP graduali è stata trovata una diretta corrispondenza con l'abbondanza misurabile nella corona solare, negli strati immediatamente sotto troviamo la cromosfera, una regione dove le temperature raggiungono i 10.000 K, qui elementi con diversi potenziali di prima ionizzazione (FIP) si differenziano, i campi magnetici spingono prima gli elementi con un basso FIP come magnesio, silicio e ferro, e questa impronta si ritrova negli spettri dei SEP graduali. Altre differenze riguardano: la distribuzione angolare, dato che le linee di campo magnetico giocano un ruolo fondamentale nel guidare le particelle espulse, l'intensità dei SEP dipende da quanto "bene" è magneticamente connesso il satellite che fa le misure rispetto alla sorgente; emissioni di segnali radio sono un'altra impronta utile per distinguere i due tipi di eventi. I fasci di elettroni che si propagano rapidamente lungo le linee di campo aperte stimolano le onde di Langmuir nel plasma locale, la frequenza di oscillazione di queste onde $\omega_{p}=\sqrt{n_e}$ diminuisce rapidamente con l'aumentare della distanza dal Sole dove la densità del plasma $n_e$ è più bassa, questa variazione è misurabile a terra come un breve segnale radio di tipo III a questi si associano i SEP impulsivi, l'emissione prodotta invece dalle onde d'urto che si propagano con le CME si dice essere di tipo II, sono più lunghe e la frequenza diminuisce lentamente, in accordo con i meccanismi fisici dei SEP graduali.
 
 
 
@@ -149,20 +146,13 @@ In prima approssimazione lo spettro ci dice quante particelle ci sono a una dete
     J(E) \propto E^{-\gamma} e^{-E/E_c}
 \end{equation}
 dove $\gamma$ è detto l'indice spettrale per descrivere la pendenza dello spettro, $E_c$ è l'energia di cut-off che indica dove lo spettro inizia a decadere esponenzialmente.
-I SEP impulsivi come abbiamo accennato dipendono da flare, riconnessioni magnetiche localizzate, tempi di accellerazione rapidi, forte selezione magnetica e quindi spettri più duri, tipicamente $\gamma$ è compreso tra 1.5-3 con cut-off a energie basse. Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e cut-off a energie più alte ($>100$MeV). Questo spettro riflette l'accelerazione continua sulle grandi scale dello spazio interplanetario, dove le particelle vengono accelerate più lentamente e possono raggiungere energie più elevate prima di essere espulse nello spazio. 
-
-Come accennato un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza pure $J(E)=E^{-\gamma}$ con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
+I SEP impulsivi come abbiamo accennato dipendono da flare, riconnessioni magnetiche localizzate, tempi di accellerazione rapidi, forte selezione magnetica e quindi spettri più duri, tipicamente $\gamma$ è compreso tra 1.5-3 con cut-off a energie basse. Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e cut-off a energie più alte ($>100$MeV). Questo spettro riflette l'accelerazione continua sulle grandi scale dello spazio interplanetario, dove le particelle vengono accelerate più lentamente e possono raggiungere energie più elevate prima di essere espulse nello spazio. Come accennato un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza pure $J(E)=E^{-\gamma}$ con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
 Esistono principalmente due modelli accettati dalla comunità scientifica per la descrizione della maggior parte dei SEP, e sono anche i due modelli utilizzati per l'analisi di questa tesi. 
-
-
 Il primo è il modello Ellison-Ramaty (1985) \cite{Ellison-Ramaty},  il quale deriva dalla teoria dell'accelerazione diffusiva da shock, un meccanismo di fermi al primo-ordine che descrive molto bene la fisica dei SEP associati a CME:
-
 \begin{equation}
     J(E) = J_0 E^{-\gamma} e^{-E/E_c}
 \end{equation}
- 
 Questo modello viene tipicamente utilizzato per descrivere SEP quando si hanno dati su range energetici particolarmente alti.
-
 Il secondo modello introdotto da Band et al.(1993) \cite{Band1993} era stato originariamente sviluppato per descrivere spettri di gamma-ray burst, ma negli anni è stato adottato come modello che meglio descrive la maggiorparte degli spettri SEP su ampi range energetici: 
 
 
@@ -172,16 +162,20 @@ Il secondo modello introdotto da Band et al.(1993) \cite{Band1993} era stato ori
       J_0 E^{-\gamma_b} [(\gamma_b - \gamma_a) E_0]^{(\gamma_b - \gamma_a)} e^{(\gamma_a - \gamma_b)} & E \geq (\gamma_b - \gamma_a) E_0
    \end{cases}
 \end{equation}
-
 è una doppia legge di potenza con due indici spettrali, $\gamma_a$ per le basse energie e $\gamma_b$ per le alte energie e un cut-off esponenziale $E_0$, questa forma permette di descrivere un raccordo "morbido" da pochi MeV fino a GeV.
 Chiaramente esistono molti altri modelli e persino una versione "combined" che unisce E-R con Band, ma per il contesto di questo elaborato questi due modelli sono sufficienti per descrivere la maggior parte dei SEP.
 
-\section{Obiettivi della tesi}
-
-L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettrale di 8 eventi SEP riuscire a stimare la dose totale (TID) che l'elettronica di una sonda modello riceverebbe durante una tipica missione di 6 mesi verso Marte. L'idea è quella di utilizzare 8 spettri da SEP reali per stimare, tramite simulazione con software di trasporto SRNIEL, la dose risultante dietro una schermatura; costruire una funzione di trasferimento dose-fluenza D(F) calibrata su questi 8 eventi e infine utilizzare questa funzione di trasferimento per stimare, con il modello probabilistico SAPPHIRE, la dose totale attesa da eventi SEP per una missione verso Marte; il tutto in relazione alla schermatura della sonda, alla durata del transito e alla fase del ciclo solare. 
-La procedura elencata di seguito è stata applicata sistematicamente a ciascuno degli 8 eventi SEP scelti:
+\section{Dose e danni da radiazione per missioni spaziali}
 
 
+
+\chapter{Dati e analisi spettrale}
+L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettrale di 8 eventi SEP riuscire a stimare la \textit{Total Ionizing Dose (TID)}, ovvero la quantità di energia depositata in un materiale da radiazione ionizzante che l'elettronica di una sonda modello riceverebbe durante una tipica missione di 6 mesi verso Marte.:
+$$ \text{TID} = \frac{E_{dep}}{m} \qquad [Gray (Gy) = 1 J/Kg]$$
+L'idea è quella di utilizzare spettri da SEP reali per stimare, tramite simulazione con software di trasporto SR-NIEL, la dose risultante dietro una schermatura; costruire una funzione di trasferimento dose-fluenza D(F) calibrata sugli eventi scelti e infine utilizzare questa funzione di trasferimento per stimare, con il modello probabilistico SAPPHIRE, il contributo dei soli eventi SEP alla dose cumulativa totale per la missione; il tutto in relazione alla schermatura della sonda, alla durata del transito e alla fase del ciclo solare. 
+
+\section{Procedura complessiva}
+Nel seguente capitolo viene descritta la procedura sistematica applicata a tutti gli eventi.
 
 \subsection{Fase 1: 8 eventi SEP}
 Come punto di partenza sono stati scelti 8 eventi SEP: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. 
@@ -191,8 +185,7 @@ questi rappresentano alcuni tra i più studiati dei rispettivi cicli solari. Il 
 \includegraphics[width=1.0\textwidth]{figures/Solar_cycle.png}
 \caption{Ciclo solare misurato con progressione del numero di macchie solare, Immagine adattata da \href{https://www.swpc.noaa.gov/products/solar-cycle-progression}{NOAA-Space Weather Prediction Center}.}
 \label{fig:ciclo_solare}
-\end{figure}
-Ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il \textit{Worst-case scenario}, ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
+\end{figure} Ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il \textit{Worst-case scenario}, ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
 
 
 \subsection{Fase 2: Dati e preprocessing}
@@ -258,14 +251,6 @@ Si ottengono dunque tre spettri, uno per la mediana e due per i limiti di confid
 
 \subsection{Modello sonda spaziale}
 Il modello rappresentativo della sonda spaziale e della sua elettronica è costruito con schermatura (Al) + strato di silicio (Si) nel quale si calcola la dose. Per lo strato di schermatura si studiano due geometrie: una planare e una sferica. In entrambi i casi si assume una schermatura di alluminio con spessore $X= 3.7cm$ che fornisce uno spessore equivalente di 10g/cm$^2$, il quale rappresenta un valore medio utilizzato per le sonde interplanetarie. Lo spettro di fluenza incidente viene propagato attraverso la schermatura e il codice SR-NIEL resistuisce la fluenza residua $\Phi_{res}(E)$
-
-
-%---------------------------------------------------------------
-% CAPITOLO 2 — CATALOGO 6 EVENTI SEP
-%---------------------------------------------------------------
-\chapter{Dati e analisi spettrale}
-Descrizione dei 6 eventi SEP scelti per analisi dettagliata
-
 
 \section{Dati e strumentazione}
 
