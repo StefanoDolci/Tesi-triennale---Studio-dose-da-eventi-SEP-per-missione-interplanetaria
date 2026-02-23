@@ -2377,8 +2377,11 @@
     <bcf:citekey order="3" intorder="1">Solar_Energetic_Particles_Reames</bcf:citekey>
     <bcf:citekey order="4" intorder="1">Ellison-Ramaty</bcf:citekey>
     <bcf:citekey order="5" intorder="1">Band1993</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">WhitmanSEP</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">MOS_transistor</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">MOS_transistor</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Optimal_shielding</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">WhitmanSEP</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">zeitlin2013</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

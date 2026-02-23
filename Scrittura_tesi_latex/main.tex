@@ -175,14 +175,16 @@ Le particelle energetiche in ambiente interplanetario possono avere un profondo 
 \end{itemize}
 
 \subsection{Total Ionizing Dose}
-Alla base della maggior parte dei componenti elettronici troviamo il transistor MOS (metal-on-silicon), sono dispositivi che sfruttano la fisica dei semiconduttori, applicando piccole tensioni si possono controllare i flussi di corrente tra il \textit{source} e il \textit{drain} come mostrato in figura: 
-
-
-Quando della radiazione ionizzante passa per il dispositivo la sua energia può strappare elettroni dagli atomi di silicio, creando cosi delle lacune di carica positiva che si accumulano e rimangono intrappolate nello strato di ossido del gate. Questo accumulo di cariche positive intrappolate prende il nome di \textit{Total Ionizing Dose (TID)}, quando le cariche sono abbastanza il transistor può danneggiarsi permanentemente e rimanere bloccato nello stato ON.
+Alla base della maggior parte dei componenti elettronici troviamo il transistor MOS (metal-on-silicon), sono dispositivi che sfruttano la fisica dei semiconduttori, applicando piccole tensioni si possono controllare i flussi di corrente tra il \textit{source} e il \textit{drain} come mostrato in figura:
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/MOS_transistor.png}
+\caption{Schema di un transistor MOS con aumento di carica sull'ossido di gate indotta da radiazione esterna: a) operazione normale b) post irradiazione. Immagine adattata da "Basic Mechanisms of TID and DDD Response in MOS and Bipolar Microelectronics - Timothy R. Oldham" \cite{MOS_transistor}.}
+\label{fig:MOS_transistor}
+\end{figure} Quando della radiazione ionizzante passa per il dispositivo la sua energia può strappare elettroni dagli atomi di silicio, creando cosi delle lacune di carica positiva che si accumulano e rimangono intrappolate nello strato di ossido del gate. Questo accumulo di cariche positive intrappolate prende il nome di \textit{Total Ionizing Dose (TID)}, quando le cariche sono abbastanza il transistor può danneggiarsi permanentemente e rimanere bloccato nello stato ON.
 La \textit{TID} è definita come la quantità di energia depositata in un materiale da radiazione ionizzante, ha come unità di misura il Gray (Gy):
 $$ \text{TID} = \frac{E_{dep}}{m} \qquad [(Gy) = 1 J/Kg]$$
-
-Per mitigare i danni di questa radiazione tipicamente si costruiscono le componenti dei circuiti con \textit{Radiation hardness-by-design techniques (RHBD)}, ad esempio l'utilizzo di materiali con ampio band-gap come il carburo di silicio (SiC) o l'arsenico di gallio (GaAs). Un altro approccio è quello di schermare accuratamente le componenti più sensibili con materiali che riducono drasticamente la fluenza di particelle incidenti. L'alluminio è storicamente il materiale più utilizzato per le schermature di sonde spaziali dove peso e costi dettano le scelte progettuali. Lo spessore della schermatura viene espresso in unità di g/cm$^2$, ad esempio 1 cm di alluminio ha una densità di 2.7 g/cm$^3$ e quindi uno spessore equivalente di 2.7 g/cm$^2$.
+Per mitigare i danni di questa radiazione tipicamente si costruiscono le componenti dei circuiti con \textit{Radiation hardness-by-design techniques (RHBD)}, ad esempio l'utilizzo di materiali con ampio band-gap come il carburo di silicio (SiC) o l'arsenico di gallio (GaAs). Un altro approccio è quello di schermare accuratamente le componenti più sensibili con materiali che riducono drasticamente la fluenza di particelle incidenti. L'alluminio è storicamente il materiale più utilizzato per le schermature di sonde spaziali dove peso e costi dettano le scelte progettuali. Lo spessore della schermatura viene espresso in unità di g/cm$^2$, ad esempio 1 cm di alluminio ha una densità di 2.7 g/cm$^3$ e quindi uno spessore equivalente di 2.7 g/cm$^2$. Per missioni interplanetarie spessori di alluminio da 5 a 10 g/cm$^2$ sono sufficienti a schermare la maggior parte dei protoni da eventi SEP. In uno studio del 2021 Dobynde et al.\cite{Optimal_shielding} hanno dimostrato che esiste un minimo locale nella dose efficace per schermature di alluminio, superare 30 g/cm$^2$ porta a un aumento della dose accumulata a causa della produzione di particelle secondarie; quando particelle ad alta energia interagiscono con materiali ad alto numero atomico Z possono produrre particelle come neutroni che sono altamente penetranti, aumenta cosi il rischio di danni alle componenti.
 
 \chapter{Dati e analisi spettrale}
 [Paragrafo introduttivo al capitolo]
@@ -199,12 +201,12 @@ Come punto di partenza sono stati scelti 8 eventi SEP: AUG 1972, OCT 1989, OCT 2
 \includegraphics[width=1.0\textwidth]{figures/Solar_cycle.png}
 \caption{Ciclo solare misurato con progressione del numero di macchie solare, Immagine adattata da \href{https://www.swpc.noaa.gov/products/solar-cycle-progression}{NOAA-Space Weather Prediction Center}.}
 \label{fig:ciclo_solare}
-\end{figure} Ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. Alcuni tra questi sono stati scelti in quanto rappresentano lo standard per il \textit{Worst-case scenario}, ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
+\end{figure} Ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. Alcuni tra questi sono stati scelti in quanto rappresentativi del \textit{Worst-case scenario}, ovvero l'evento più intenso del rispettivo ciclo solare, questi vengono spesso utilizzati come riferimento per le stime di dose in fase di mission design, AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
 
 
 \subsection{Fase 2: Calcolo fluenza}
 
-Per ciascuno di questi 8 eventi sono stati scaricati i dati di flussi differenziali protonici da satelliti come GOES (EPS/HEPAD), ACE (EPAM), STEREO (LET/HET) e IMP-8, tramite principalmente 2 portali, il primo è il sito della Nasa "OMNIWeb" che raccoglie dati in formato standardizzato da molteplici missioni; il secondo è stato il catalogo SEPEM Reference Data Set v3.0 (RDS v3.0), un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
+Per ciascuno di questi 8 eventi sono stati scaricati i dati di flussi differenziali protonici da satelliti come GOES (EPS/HEPAD), ACE (EPAM), STEREO (LET/HET) e IMP-8, tramite principalmente 2 portali, il primo è il sito della Nasa "OMNIWeb" che raccoglie dati in formato standardizzato da molteplici missioni; il secondo è il catalogo SEPEM Reference Data Set v3.0 (RDS v3.0), un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
 I satelliti utilizzati hanno detector che misurano i protoni in vari canali energetici, il range energetico varia da pochi KeV fino al GeV. 
 I dati scaricati sono stati puliti secondo la seguente procedura: 
 \begin{itemize}
@@ -234,7 +236,7 @@ Si calcola la fluenza per ciascun canale energetico integrando nel tempo:$$ F = 
 Per ogni canale k, si sommano i flussi netti per l'intera durata dell'evento: $$ F_k = \sum_{i} \Phi_{\text{net},k}(t_i) \cdot \Delta t $$ Il risultato è appunto la fluenza differenziale totale $F_k$ in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$]. A ciascun canale energetico si associa l'energia efficace $E_{eff}[\mathrm{MeV}]$, questo valore può essere o la media geometrica dei due estremi del canale  $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$, oppure quando disponibile si usa il valore riportato nelle tabelle di calibrazione dei sensori. 
 Per quanto riguarda le incertezze sulla fluenza sono due i principali contributi: 
 \begin{itemize}
-    \item[-] Errore sistematico: costante su tutto il canale e proviene dalle calibrazioni dei sensori e si applica al valore di $F_k$ misurato: $\sigma_{sys} = 10-30\%$ tiene conto delle efficienze geometriche e delle cross-calibrazioni tra sensori diversi. 
+    \item[-] Errore sistematico: costante su tutto il canale e proviene dalle calibrazioni dei sensori e si applica al valore di $F_k$ misurato, tipicamente $\sigma_{sys} = 10-30\%$ tiene conto delle efficienze geometriche e delle cross-calibrazioni tra sensori diversi. 
     \item[-] Errore statistico: conteggi discreti del numero di particelle contate aggiungono l'errore poissoniano $\sigma_{stat} = \sqrt{F_k}$, tipicamente trascurabile per fluenze elevate. 
     \item[] 
 \end{itemize}
@@ -243,25 +245,29 @@ $$\sigma_{tot} = \sqrt{\sigma_{sys}^2 + \sigma_{stat}^2}$$ Per ogni punto spettr
 
 $$ \sigma_{low} = |E_{eff} - E_{min}| \quad \sigma_{high} = |E_{max} - E_{eff}| $$
 \subsection{Fase 3: FIT spettrale}
-Dopo aver calcolato la fluenza integrata sui dataset dei vari strumenti disponibili per un dato evento, si esegue un fit con i due modelli E-R e la Band function. Il fit viene eseguito in spazio logaritmico per gestire meglio il salto di circa 8 ordini di grandezza; si usa l'algoritmo di Levenberg-Marquardt, per minimizzare il chi-quadro pesato:$$ \chi^2 = \sum_{k=1}^{N} \left(\frac{\log_{10}F_k - \log_{10}\Phi(E_k; \mathbf{p})}{\sigma_{\log,k}}\right)^2 $$
-Gli errori in spazio logaritmico sono propagati:
+Dopo aver calcolato la fluenza integrata si combinano i risultati da strumenti diversi, nella maggior parte dei casi: ACE/EPAM per le basse energie e GOES/EPS/HEPAD per le alte energie, se nel raccordo tra i due strumenti ci sono delle discrepanze si applicano dei fattori di correzione per allineare i due spettri, questo verrà descritto meglio nel capitolo successivo. Una volta costruito lo spettro combinato 
+per un dato evento, si esegue un fit con i due modelli E-R e la Band function. Il fit viene eseguito in spazio logaritmico per gestire meglio il salto di circa 8 ordini di grandezza; si usa l'algoritmo di Levenberg-Marquardt per funzioni non lineari, l'algoritmo minimizza il chi-quadro pesato:$$ \chi^2 = \sum_{k=1}^{N} \left(\frac{\log_{10}F_k - \log_{10}\Phi(E_k; \mathbf{p})}{\sigma_{\log,k}}\right)^2 $$ e per i parametri si utilizzano dei vincoli fisici per la convergenza del fit.
+Gli errori in spazio logaritmico sono:
 $$\sigma_{\log,k} = \frac{\sigma_{F_k}}{F_k \cdot \ln(10)} $$
-Una volta ottenuti i parametri e la matrice di covarianza per propagare le incertezze su uno spettro continuo, dato che ci sono correlazioni tra i parametri, si utilizza un campionamento Monte Carlo parametrico per stimare l'intervallo di confidenza al 68\% (±1$\sigma$) dello spettro. La procedura è la seguente:
+La correlazione tra parametri della Band function non consente la semplice propagazione lineare degli errori. Si salva dunque la matrice di covarianza ottenuta dal fit e per propagare gli errori si sfrutta un campionamento Monte Carlo parametrico.
+La matrice di covarianza viene prima stabilizzata, dopo averla simmetrizzata si impone che tutti gli autovalori siano positivi in modo che la matrice sia definita positiva, questo è necessario per poter campionare da una distribuzione normale multivariata. La procedura per ottenere gli intervalli di confidenza è la seguente:
 
 \begin{itemize}
-    \item[-] Si generano 1000 set di parametri da una distribuzione multivariata normale $$ \mathbf{p}^{(j)} \sim \mathcal{N}(\hat{\mathbf{p}}, C_{\text{stab}}), \qquad j = 1, \ldots, 1000 $$ dove $\hat{\mathbf{p}}$ sono i parametri migliori ottenuti dal fit e $C_{\text{stab}}$ è la matrice di covarianza stabilizzata.
+    \item[-] Si generano 1000 set di parametri da una distribuzione multivariata normale $$ \mathbf{p}^{(j)} \sim \mathcal{N}(\hat{\mathbf{p}}, C_{\text{stab}}), \qquad j = 1, \ldots, 1000 $$ dove $\hat{\mathbf{p}}$ sono i parametri migliori ottenuti dal fit e $\mathbf{C_{stab}}$ è la matrice di covarianza stabilizzata.
     \item[-] Per ogni set generato di parametri si ricalcola lo spettro su una griglia discreta di 500 punti equispaziati in spazio logaritmico, per standardizzare la procedura per tutti 8 i SEP è stato scelto un range energetico da 0.05 a 1000 MeV: $$ \Phi^{(j)}(E_i) = SpectralModel(E_i; \mathbf{p}^{(j)}) \qquad  i = 1,...,500$$
     \item[-] per ogni punto della griglia si calcola l'intervallo di confidenza e la statistica:
     $$\Phi_{med}(E_i) = \text{mediano}\left\{\Phi^{(j)}(E_i)\right\}_{j=1}^{1000}$$
     $$ \Phi_{16}(E_i) = \text{percentile}_{16}\left\{{\Phi^{(j)}(E_i)}\right\}, \qquad \Phi_{84}(E_i) = \text{percentile}_{84}\left\{{\Phi^{(j)}(E_i)}\right\} $$
     
 \end{itemize}
-Si ottengono dunque tre spettri, uno per la mediana $\Phi_{med}$ e due per i limiti di confidenza $[\Phi_{16}, \Phi_{84}] $, si costruisce una tabella con la fluenza $\Phi$ [p·cm$^{-2}$·sr$^{-1}$·MeV$^{-1}$] e l'energia $E$ [MeV]. Questi risultati vengono esportati in SR-NIEL per il calcolo della fluenza residua dietro la schermatura di alluminio.
-Infine usando lo spettro differenziale dal miglior fit si calcolano le fluenze integrali omnidirezionali, ovvero la fluenza totale di particelle con energia maggiore di una certa soglia $E_{0}$:$$ J(>E_{0}) = 4\pi \int_{E_{0}}^{\infty} \Phi(E) dE $$ 
-Le soglie tipicamente utilizzate nella fisica dei SEP sono $E_0 = {10,30,60,100,500}$MeV, questi valori di fluenza integrale vengono poi utilizzati per costruire la funzione di trasferimento dose-fluenza D(F) nel capitolo 4.
+Si ottengono dunque tre spettri, uno per la mediana $\Phi_{med}$, più robusta della media rispetto ai possibili outlier generati, e due per i limiti di confidenza $[\Phi_{16}, \Phi_{84}] $, si costruisce una tabella energia e fluenza (E,$\Phi$) con $\Phi$ [p·cm$^{-2}$·sr$^{-1}$·MeV$^{-1}$] ed energia $E$ in [MeV]. Questi risultati vengono esportati in SR-NIEL per il calcolo della fluenza residua dietro la schermatura di alluminio.
+Infine usando lo spettro differenziale dal miglior fit si calcolano le fluenze integrali omnidirezionali, ovvero la fluenza totale di particelle con energia maggiore di una certa soglia $E_{0}$, integrando numericamente con il metodo dei trapezi su una griglia discreta (5000 punti equispaziati in spazio logaritmico da 0.05 a 1000 MeV):
+
+$$ J(>E_{0}) = 4\pi \int_{E_{0}}^{\infty} \Phi(E) dE $$ 
+Le soglie tipicamente utilizzate nella fisica dei SEP sono $E_0 = {10,30,60,100,500}$ MeV, questi valori di fluenza integrale vengono poi utilizzati per costruire la funzione di trasferimento dose-fluenza D(F) nel Capitolo 4.
 
 \section{Analisi 8 SEP}
-[piccola intro]
+[piccola intro] Nel seguente capitolo vengono presentati i risultati dell'analisi spettrale appena descritta per ciascuno dei 8 eventi selezionati, alla fine viene presentata una tabella riassuntiva dei risultati ottenuti.
 
 \subsection{Agosto 1972}
 
