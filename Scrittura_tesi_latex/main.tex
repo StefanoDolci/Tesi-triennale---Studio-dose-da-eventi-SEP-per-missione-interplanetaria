@@ -146,33 +146,47 @@ In prima approssimazione lo spettro ci dice quante particelle ci sono a una dete
     J(E) \propto E^{-\gamma} e^{-E/E_c}
 \end{equation}
 dove $\gamma$ è detto l'indice spettrale per descrivere la pendenza dello spettro, $E_c$ è l'energia di cut-off che indica dove lo spettro inizia a decadere esponenzialmente.
-I SEP impulsivi come abbiamo accennato dipendono da flare, riconnessioni magnetiche localizzate, tempi di accellerazione rapidi, forte selezione magnetica e quindi spettri più duri, tipicamente $\gamma$ è compreso tra 1.5-3 con cut-off a energie basse. Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e cut-off a energie più alte ($>100$MeV). Questo spettro riflette l'accelerazione continua sulle grandi scale dello spazio interplanetario, dove le particelle vengono accelerate più lentamente e possono raggiungere energie più elevate prima di essere espulse nello spazio. Come accennato un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza pure $J(E)=E^{-\gamma}$ con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
-Esistono principalmente due modelli accettati dalla comunità scientifica per la descrizione della maggior parte dei SEP, e sono anche i due modelli utilizzati per l'analisi di questa tesi. 
-Il primo è il modello Ellison-Ramaty (1985) \cite{Ellison-Ramaty},  il quale deriva dalla teoria dell'accelerazione diffusiva da shock, un meccanismo di fermi al primo-ordine che descrive molto bene la fisica dei SEP associati a CME:
+I SEP impulsivi come abbiamo accennato dipendono da flare, riconnessioni magnetiche localizzate, tempi di accellerazione rapidi, forte selezione magnetica e quindi spettri più duri, tipicamente $\gamma$ è compreso tra 1.5-3 con cut-off a energie basse. Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e cut-off a energie più alte ($>100$MeV). Questo spettro riflette l'accelerazione continua sulle grandi scale dello spazio interplanetario, dove le particelle vengono accelerate più lentamente e possono raggiungere energie più elevate prima di essere espulse nello spazio. Come accennato un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza pure con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
+Esistono principalmente due modelli scelti dalla comunità scientifica per descrivere la maggior parte dei SEP, e sono anche i due modelli utilizzati per l'analisi di questa tesi. 
+La prima forma funzionale è basata modello Ellison-Ramaty (1985) \cite{Ellison-Ramaty},  il quale deriva dalla teoria dell'accelerazione diffusiva da shock, un meccanismo di fermi al primo-ordine che descrive molto bene la fisica dei SEP associati a CME:
 \begin{equation}
-    J(E) = J_0 E^{-\gamma} e^{-E/E_c}
+    \Phi_{E-R}(E) = A E^{-\gamma} e^{-E/E_r}
 \end{equation}
-Questo modello viene tipicamente utilizzato per descrivere SEP quando si hanno dati su range energetici particolarmente alti.
-Il secondo modello introdotto da Band et al.(1993) \cite{Band1993} era stato originariamente sviluppato per descrivere spettri di gamma-ray burst, ma negli anni è stato adottato come modello che meglio descrive la maggiorparte degli spettri SEP su ampi range energetici: 
+È una legge di potenza modulata da un esponenziale, $A$ è il fattore di normalizzazione, $\gamma$ è l'indice spettrale e $E_r$ è l'energia di \textit{rollover}.
+Questo modello viene tipicamente utilizzato per descrivere eventi SEP alle alte energie ($>80MeV$).
+Il secondo modello introdotto da Band et al.(1993) \cite{Band1993} era stato originariamente sviluppato per descrivere spettri di gamma-ray burst, ma negli anni è stato adottato come modello empirico che meglio descrive la maggior parte degli spettri SEP su ampi range energetici: 
 
 
 \begin{equation}
-    J(E) = \begin{cases} 
-      J_0 E^{-\gamma_a} e^{-E/E_0} & E < (\gamma_b - \gamma_a) E_0 \\
-      J_0 E^{-\gamma_b} [(\gamma_b - \gamma_a) E_0]^{(\gamma_b - \gamma_a)} e^{(\gamma_a - \gamma_b)} & E \geq (\gamma_b - \gamma_a) E_0
+    \Phi_{Band}(E) = \begin{cases} 
+      A E^{-\gamma_a} e^{-E/E_0} & E < (\gamma_b - \gamma_a) E_0 \\
+      A E^{-\gamma_b} [(\gamma_b - \gamma_a) E_0]^{(\gamma_b - \gamma_a)} e^{(\gamma_a - \gamma_b)} & E \geq (\gamma_b - \gamma_a) E_0
    \end{cases}
 \end{equation}
-è una doppia legge di potenza con due indici spettrali, $\gamma_a$ per le basse energie e $\gamma_b$ per le alte energie e un cut-off esponenziale $E_0$, questa forma permette di descrivere un raccordo "morbido" da pochi MeV fino a GeV.
-Chiaramente esistono molti altri modelli e persino una versione "combined" che unisce E-R con Band, ma per il contesto di questo elaborato questi due modelli sono sufficienti per descrivere la maggior parte dei SEP.
+è una doppia legge di potenza con quattro parametri liberi, la normalizzazione A, due indici spettrali, $\gamma_a$ per le basse energie e $\gamma_b$ per le alte energie e un termine di transizione $(\gamma_b - \gamma_a) E_0$, questa forma permette di descrivere un transizione "smooth", tipicamente a decine o centinaia di MeV, tra le due regioni di energie.
+Chiaramente esistono molti altri modelli e persino una versione "combined" che unisce E-R con Band, gli eventi SEP reali sono spesso sovrapposti tra loro e sono il risultato di molteplici processi di accelerazione, inoltre il meccanismo di trasporto interplanetario introduce ulteriori cambiamenti. Tutto questo si traduce in correlazioni tra i parametri durante il fit e grandi incertezze. Per lo scopo di questo elaborato, questi due modelli sono sufficienti per descrivere la maggior parte dei SEP.
 
 \section{Dose e danni da radiazione per missioni spaziali}
+Le particelle energetiche in ambiente interplanetario possono avere un profondo impatto sulle performance e sulla longevità dell'elettronica a bordo delle sonde spaziali. Gli effetti della radiazione sono classificati in due macro categorie:
+
+\begin{itemize}
+    \item [-] Effetti cumulativi: riguardano il danno provocato dal passaggio di molteplici particelle. Includono la \textit{Total ionizing dose (TID)} e \textit{Displacement damage dose (DDD)}.
+    \item [-] Effetti singoli: risultato del passaggio di una singola particella ad alta energia. Possono alterare temporaneamente o permanentemente il funzionamento di componenti elettriche ad esempio il memory upset, quando un bit di memoria cambia valore 0-1. Ricadono sotto la categoria di \textit{Single events effect (SEE)}.
+\end{itemize}
+
+\subsection{Total Ionizing Dose}
+Alla base della maggior parte dei componenti elettronici troviamo il transistor MOS (metal-on-silicon), sono dispositivi che sfruttano la fisica dei semiconduttori, applicando piccole tensioni si possono controllare i flussi di corrente tra il \textit{source} e il \textit{drain} come mostrato in figura: 
 
 
+Quando della radiazione ionizzante passa per il dispositivo la sua energia può strappare elettroni dagli atomi di silicio, creando cosi delle lacune di carica positiva che si accumulano e rimangono intrappolate nello strato di ossido del gate. Questo accumulo di cariche positive intrappolate prende il nome di \textit{Total Ionizing Dose (TID)}, quando le cariche sono abbastanza il transistor può danneggiarsi permanentemente e rimanere bloccato nello stato ON.
+La \textit{TID} è definita come la quantità di energia depositata in un materiale da radiazione ionizzante, ha come unità di misura il Gray (Gy):
+$$ \text{TID} = \frac{E_{dep}}{m} \qquad [(Gy) = 1 J/Kg]$$
+
+Per mitigare i danni di questa radiazione tipicamente si costruiscono le componenti dei circuiti con \textit{Radiation hardness-by-design techniques (RHBD)}, ad esempio l'utilizzo di materiali con ampio band-gap come il carburo di silicio (SiC) o l'arsenico di gallio (GaAs). Un altro approccio è quello di schermare accuratamente le componenti più sensibili con materiali che riducono drasticamente la fluenza di particelle incidenti. L'alluminio è storicamente il materiale più utilizzato per le schermature di sonde spaziali dove peso e costi dettano le scelte progettuali. Lo spessore della schermatura viene espresso in unità di g/cm$^2$, ad esempio 1 cm di alluminio ha una densità di 2.7 g/cm$^3$ e quindi uno spessore equivalente di 2.7 g/cm$^2$.
 
 \chapter{Dati e analisi spettrale}
 [Paragrafo introduttivo al capitolo]
-L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettrale di 8 eventi SEP riuscire a stimare la \textit{Total Ionizing Dose (TID)}, ovvero la quantità di energia depositata in un materiale da radiazione ionizzante, che l'elettronica di una sonda modello riceverebbe durante una tipica missione di 6 mesi verso Marte.:
-$$ \text{TID} = \frac{E_{dep}}{m} \qquad [Gray (Gy) = 1 J/Kg]$$
+L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettrale di 8 eventi SEP riuscire a stimare la \textit{Total Ionizing Dose (TID)} che l'elettronica di una sonda modello riceverebbe durante una tipica missione di 6 mesi verso Marte.
 L'idea è quella di utilizzare spettri da SEP reali per stimare, tramite simulazione con software di trasporto SR-NIEL, la dose risultante dietro una schermatura; costruire una funzione di trasferimento dose-fluenza D(F) calibrata sugli eventi scelti e infine utilizzare questa funzione di trasferimento per stimare, con il modello probabilistico SAPPHIRE, il contributo dei soli eventi SEP alla dose cumulativa totale per la missione; il tutto in relazione alla schermatura della sonda, alla durata del transito e alla fase del ciclo solare. 
 
 \section{Procedura sistematica}
