@@ -18,6 +18,7 @@
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{siunitx}
+\sisetup{separate-uncertainty=true}
 \usepackage{amssymb}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
@@ -270,6 +271,73 @@ Le soglie tipicamente utilizzate nella fisica dei SEP sono $E_0 = {10,30,60,100,
 [piccola intro] Nel seguente capitolo vengono presentati i risultati dell'analisi spettrale appena descritta per ciascuno dei 8 eventi selezionati, alla fine viene presentata una tabella riassuntiva dei risultati ottenuti.
 
 \subsection{Agosto 1972}
+L'evento SEP di Agosto 1972 è il prototipo del \textit{Worst-case scenario} per le missioni spaziali, nello studio di King et al. (1974) viene mostrato come questo evento sia estremamente anomalo rispetto agli altri eventi del ciclo solare 20, è probabilmente il più inteso mai registrato negli ultimi anni. Vari studi riportano la presenza di incompletezza nei dati probabilmente a causa di saturazione dei sensori, per questo motivo per questo evento a differenza degli altri, sono stati presi i parametri dello spettro riportati in un dataset da Raukunen et al.\cite{AUG_1972_Raukunen}:
+
+\begin{table}[h]
+\centering
+\caption{Parametri spettrali per GLE 24 di Agosto 1972}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{
+c
+S[scientific-notation=true]
+S[scientific-notation=true]
+S
+S
+S
+S
+S[scientific-notation=true]
+S[scientific-notation=true]
+}
+\toprule
+GLE & {$J_0(p/cm^2)$} & {$\Delta J_0(p/cm^2)$} & {$\gamma_1$} & {$\Delta \gamma_1$} 
+& {$\gamma_2$} & {$\Delta \gamma_2$} 
+& {$R_0(GV)$} & {$\Delta R_0(GV)$} \\
+\midrule
+24 & 6.47e10 & 7.50e9 & 0.87 & 0.01 & 7.95 & 0.42 & 7.13e-2 & 1.00e-3 \\
+\bottomrule
+\end{tabular}
+}%
+\end{table}la scelta di includere comunque questo evento senza rifare l'analisi dati da zero è giustificata dal fatto che questo evento è per l'appunto il riferimento standard per le stime di dose, e rappresenta il caso estremo peggiore da includere. Questi parametri sono stati ottenuti da un fit con la Band function e le incertezze sono stimate variando i parametri di interesse mantenendo gli altri fissi ai loro \textit{best-fit values}. In questo caso lo spettro è parametrizzato con la rigidità R anziché l'energia cinetica, questo è tipico di molti cataloghi SEP. La rigidità è definita come $R = \frac{p}{Ze}$ dove p è il momento della particella, Z il numero atomico e e la carica di un elettrone. Per protoni la conversione tra rigidità R in GV (giga-volt) e energia cinetica E in MeV è data dalla seguente formula:
+
+$$ R = \sqrt{(E^2 + 2Em)} \cdot 10^{-3} $$
+m rappresenta la massa del protone, 938.272 MeV. Per ricostruire lo spettro differenziale in energia si usa la regola della catena per le derivate: 
+$$\frac{dJ}{dE} = -\frac{dJ}{dR} \cdot \frac{dR}{dE} $$
+in questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale e $\frac{dR}{dE}$ è la derivata della formula di conversione tra rigidità ed energia. Questo da lo spettro omnidirezionale già integrato su angolo solido di $4\pi$ sr. Di seguito in Figura \ref{fig:aug_1972_spettro} viene riportato lo spettro differenziale ricostruito diviso per l'angolo solido $4\pi$ per coerenza con gli spettri.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/AUG_1972_spettro.png}
+\caption{Spettro differenziale per l'evento di Agosto 1972.}
+\label{fig:aug_1972_spettro}
+\end{figure}
+Successivamente sono state calcolate le fluenze integrali, i risultati sono riportati nella seguente tabella:
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{
+c
+S[scientific-notation=true]
+S[scientific-notation=true]
+S[scientific-notation=true]
+l
+l
+}
+\toprule
+{Soglia} & {Calcolata ($\text{cm}^{-2}$)} & {Jiggens (2018) ($\text{cm}^{-2}$)} & {King (1974) ($\text{cm}^{-2}$)} & {Note} \\
+\midrule
+$>10$ MeV  & 5.30e10 & 1.96e10 & 2.25e10 & {$\sim 2.4\times$ King} \\
+$>30$ MeV  & 7.85e9  & 8.42e9  & 8.10e9  & {buon accordo} \\
+$>60$ MeV  & 1.38e9  & 2.58e9  & 2.45e9  & {$\sim 0.6\times$ King} \\
+$>100$ MeV & 2.57e8  & {---}   & 5.50e8  & {$\sim 0.5\times$ King} \\
+$>500$ MeV & 2.17e5  & {---}   & {---}   & {---} \\
+\bottomrule
+\end{tabular}
+}%
+\caption{Fluenze integrali calcolate per l'evento di Agosto 1972 (GLE 24) dalla Band function (Raukunen et al. 2018), confrontate con i valori di King (1974) e Jiggens et al. (2014, dati IMP-5).}
+\end{table}
+
+
+
+
 
 
 

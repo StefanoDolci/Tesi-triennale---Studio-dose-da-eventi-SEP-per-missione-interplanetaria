@@ -1,16 +1,17 @@
 # Fdb version 4
-["biber main"] 1771855128.0966 "main.bcf" "main.bbl" "main" 1771857237.55854 0
-  "bibliography.bib" 1771855084 2635 35c8a8f04f89090e323d20961e17052b ""
-  "main.bcf" 1771857237 109203 d6968a3ce2bf1dd67b7eed3ea1bbd756 "pdflatex"
+["biber main"] 1771859684.24397 "main.bcf" "main.bbl" "main" 1771864189.20947 0
+  "bibliography.bib" 1771859330 3139 5f9de8299b9084367d35ef5428fb83a3 ""
+  "main.bcf" 1771864189 109276 3ef78b2b42b13ff6f000b4afbb578b4c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771857235.27351 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1771857237.55917 0
+["pdflatex"] 1771864186.90901 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1771864189.21008 0
+  "Figures/AUG_1972_spettro.png" 1771862839 133073 27048ae3e6a38afea364de9e33e1ddaf ""
   "Figures/MOS_transistor.png" 1771854759 233561 61ce332ea85b9bd2bb9a172e831a0ba1 ""
   "Figures/Solar_cycle.png" 1771669442 401107 d68e28e26324cba23a44776af5922711 ""
   "Figures/Tipologia_SEP.png" 1771512839 177798 a93b19330033d3af433b5233bba30848 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1771857234 28852 39dba3c82b97d190a229e271d9a7f647 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1771864186 32771 b1a1929a0e55ecd920ff1c16893a0b99 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -165,12 +166,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1771857237 8861 6994c60e7de0aff96c97434b349fccf4 "pdflatex"
-  "main.bbl" 1771855129 17341 7de06eec6561a1eb3aec3ad9eb01f295 "biber main"
-  "main.out" 1771857237 6173 bfb18409dd1f00b4264afe0c42c49e99 "pdflatex"
-  "main.run.xml" 1771857237 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1771857234 28852 39dba3c82b97d190a229e271d9a7f647 ""
-  "main.toc" 1771857237 3118 1c3b87c66fd8844a8a6ba49682834e0b "pdflatex"
+  "main.aux" 1771864189 9775 4e7217255d48a8ffe8cf1c70077222b6 "pdflatex"
+  "main.bbl" 1771859685 20385 99c9d9591d40b89f95c2e42686baddd2 "biber main"
+  "main.out" 1771864189 6173 15c3689d0232aa8f5915be6d73c988af "pdflatex"
+  "main.run.xml" 1771864189 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1771864186 32771 b1a1929a0e55ecd920ff1c16893a0b99 ""
+  "main.toc" 1771864189 3118 e4a1547bdb5e007f7f37c944c85ab521 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

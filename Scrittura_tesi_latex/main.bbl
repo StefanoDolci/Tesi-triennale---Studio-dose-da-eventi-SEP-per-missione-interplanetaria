@@ -256,6 +256,80 @@
       \field{pages}{3}
       \range{pages}{1}
     \endentry
+    \entry{AUG_1972_Raukunen}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=833f08e62c0a52294af7d34b9b50ee40}{%
+           family={Raukunen},
+           familyi={R\bibinitperiod},
+           given={Osku},
+           giveni={O\bibinitperiod}}}%
+        {{hash=1ad7e0c74b8dad84f97746a80319a293}{%
+           family={Vainio},
+           familyi={V\bibinitperiod},
+           given={Rami},
+           giveni={R\bibinitperiod}}}%
+        {{hash=07cba595fa9867ba6fbf28692101413d}{%
+           family={Tylka},
+           familyi={T\bibinitperiod},
+           given={Allan\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=90ec98b5da56419c2cf060dc198a4f8d}{%
+           family={Dietrich},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=ceea11cbfc16e2714fd6c483477cf400}{%
+           family={Jiggens},
+           familyi={J\bibinitperiod},
+           given={Piers},
+           giveni={P\bibinitperiod}}}%
+        {{hash=675096c369ed10805e83c4c5e59a87ea}{%
+           family={Heynderickx},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6feac2d10fff3fb56928932413a01118}{%
+           family={Dierckxsens},
+           familyi={D\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a3d225de7817d64316d27e310a345de}{%
+           family={Crosby},
+           familyi={C\bibinitperiod},
+           given={Norma},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ca00581ed90a5ddf13330b2b9d5f510e}{%
+           family={Ganse},
+           familyi={G\bibinitperiod},
+           given={Urs},
+           giveni={U\bibinitperiod}}}%
+        {{hash=b88975fa6e0cb96d47ff131e1883c23c}{%
+           family={Siipola},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{fullhash}{bef65533be3bd00e6582bcf68d63c294}
+      \strng{fullhashraw}{bef65533be3bd00e6582bcf68d63c294}
+      \strng{bibnamehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{authorbibnamehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{authornamehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{authorfullhash}{bef65533be3bd00e6582bcf68d63c294}
+      \strng{authorfullhashraw}{bef65533be3bd00e6582bcf68d63c294}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Space Weather Space Clim.}
+      \field{number}{A04}
+      \field{title}{Two solar proton fluence models based on ground level enhancement observations}
+      \field{volume}{8}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1051/swsc/2017031
+      \endverb
+    \endentry
     \entry{Solar_Energetic_Particles_Reames}{book}{}{}
       \name{author}{1}{}{%
         {{hash=0c06344ed5f8739063a74ec46cd68c9b}{%
