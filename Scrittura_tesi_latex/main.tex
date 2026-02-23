@@ -271,7 +271,7 @@ Le soglie tipicamente utilizzate nella fisica dei SEP sono $E_0 = {10,30,60,100,
 [piccola intro] Nel seguente capitolo vengono presentati i risultati dell'analisi spettrale appena descritta per ciascuno dei 8 eventi selezionati, alla fine viene presentata una tabella riassuntiva dei risultati ottenuti.
 
 \subsection{Agosto 1972}
-L'evento SEP di Agosto 1972 è il prototipo del \textit{Worst-case scenario} per le missioni spaziali, nello studio di King et al. (1974) viene mostrato come questo evento sia estremamente anomalo rispetto agli altri eventi del ciclo solare 20, è probabilmente il più inteso mai registrato negli ultimi anni. Vari studi riportano la presenza di incompletezza nei dati probabilmente a causa di saturazione dei sensori, per questo motivo per questo evento a differenza degli altri, sono stati presi i parametri dello spettro riportati in un dataset da Raukunen et al.\cite{AUG_1972_Raukunen}:
+L'evento SEP di Agosto 1972 è il prototipo del \textit{Worst-case scenario} per le missioni spaziali, nello studio di King et al. (1974) viene mostrato come questo evento sia estremamente anomalo rispetto agli altri eventi del ciclo solare 20, è probabilmente il più inteso mai registrato negli ultimi anni. Vari studi riportano la presenza di incompletezza nei dati probabilmente a causa di saturazione dei sensori, per questo motivo per questo evento a differenza degli altri, sono stati presi i parametri dello spettro riportati in un dataset da Raukunen et al.\cite{AUG_1972_Raukunen}, la Band function usata per questo fit comprende i dati dal satellite IMP-5 e da neutron monitor a terra, per avere un range energetico più ampio possibile:
 
 \begin{table}[h]
 \centering
@@ -309,7 +309,8 @@ in questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale 
 \caption{Spettro differenziale per l'evento di Agosto 1972.}
 \label{fig:aug_1972_spettro}
 \end{figure}
-Successivamente sono state calcolate le fluenze integrali, i risultati sono riportati nella seguente tabella:
+
+Lo spettro ha un indice spettrale particolarmente duro $\gamma_1 = 0.87$, alle basse energie è relativamente piatto, per eventi cosi estremi infatti l'accelerazione da shock è molto efficiente, più particelle vengono accelerate alle alte energie. Attorno a $E_{break} = 127$ MeV c'è una transizione molto netta, lo spettro decade rapidamente con indice $\gamma_2 = 7.95$ anch'esso in accordo per eventi \textit{hard} come questo di Agosto 1972. Successivamente sono state calcolate le fluenze integrali, i risultati sono riportati nella seguente tabella:
 \begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -334,6 +335,9 @@ $>500$ MeV & 2.17e5  & {---}   & {---}   & {---} \\
 }%
 \caption{Fluenze integrali calcolate per l'evento di Agosto 1972 (GLE 24) dalla Band function (Raukunen et al. 2018), confrontate con i valori di King (1974) e Jiggens et al. (2014, dati IMP-5).}
 \end{table}
+
+
+Le differenze tra i valori di fluenza integrale calcolata e i valori riportati da King(1974) sono attese, i parametri usati da Raukunen sono calibrati non solo sui dati di IMP-5, che come accennato in precedenza presenta problemi noti di saturazione dei sensori come notato da Jiggens et al. (2014).
 
 
 
