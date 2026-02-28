@@ -48,7 +48,20 @@ La \emph{Total Ionizing Dose} è una misura della quantità totale di energia de
 Nella prima fase sono stati selezionati i due eventi più intensi e studiati in letteratura del rispettivo ciclo solare: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. Per ciascuno di questi 8 eventi sono stati raccolti e processati i dati di flussi differenziali protonici da strumenti satellitari GOES, IMP-8, ACE, STEREO-A. I flussi sono stati corretti per il fondo cosmico e ripuliti per rimuovere eventuali anomalie strumentali secondo una tecnica proposta da Whitman et al.(2018); vengono poi integrati per la durata complessiva dell'evento per ottenere le fluenze integrate in energia, le quali vengono poi interpolate tramite un fit con una funzione di tipo Band (Band et al., 1993) e propagazione delle incertezze tramite un bootstrap Monte Carlo per ottenere lo spettro continuo su un range energetico da 0.05 MeV a 1000 MeV. 
 \subsection*{Fase 2. Calcolo dose con SR-NIEL}
 
-Gli spettri ottenuti con le relative bande di confidenza vengono utilizzati come input per il calcolatore SR-NIEL, un software che permette di calcola la \textit{Spectral Residual Fluence} dietro a schermature di alluminio. Sono stati calcolati gli spettri moderati dietro due geometrie con spessore equivalente di 10 g/cm$^2$: sferica (4$\pi$ sr) con raggio $R=50cm$ spessore $t=3.7cm$ con spettro misurato a $r= R-t$ e planare ($\pi$ sr).  
+Gli spettri ottenuti con le relative bande di confidenza vengono utilizzati come input per il calcolatore SR-NIEL, un codice di trasporto che permette di calcolare la \textit{Spectral Residual Fluence} dietro a schermature di alluminio. Sono stati calcolati gli spettri moderati in due geometrie: per la geometria planare il calcolatore restituisce la fluenza residua unidirezionale perpendicolare alla schermatura di alluminio con spessore equivalente di 10 g/cm$^2$, per la geometria sferica utilizza simulazioni GEANT4 per calcolare la distribuzione dei cammini attraverso una sfera di alluminio sempre di 10g/cm$^2$, per protoni isotropicamente distribuiti. La TID è stata calcolata integrando lo spettro residuo con lo stopping power elettronico nel silicio ricavato dal database SRIM:
+
+\begin{equation}
+\text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \cdot S_{\text{el}}(E) \, dE
+\end{equation}
+L'incertezza sulla TID è stata stimata eseguendo il calcolo tre volte: con $\Phi_{med}$ lo spettro mediano, e con $\Phi_{16}$ e $\Phi_{84}$ per le bande di confidenza al 68\%, aggiungendo in fine un'incertezza sistematica del 5\% per le tabelle di SRIM.
+
+\subsection*{Fase 3. Funzione di trasferimento e SAPPHIRE}
+A ciascuno degli 8 SEP si associa la coppia $(F_i,D_i)$ ovvero la fluenza integrale omnidirezionale sopra una certa soglia energetica $J(>E_0)$ e la TID calcolata con SR-NIEL. Questi punti vengono utilizzati per costruire la funzione di trasferimento $$D(F) = 10^a \cdot F^b$$ ovvero una relazione lineare in spazio logaritmico tra fluenza e dose. I parametri a e b sono stimati tramite un fit ai minimi quadrati con pesi proporzionali all'incertezza sulla dose. Il fit è stato eseguito per tre soglie energetiche $J(>30MeV)$, $J(>60MeV)$ e $J(>100MeV)$. Le soglie energetiche ottimali dipendono dalla geometria e sono state scelte quelle che minimizzano il chi-quadro $\chi^2$ e lo scatter spettrale $\sigma_{spec}$, ovvero la dispersione dei punti attorno alla retta. 
+Le funzioni di trasferimento validate vengono poi utilizzate per convertire le fluenze integrate fornite dal modello SAPPHIRE, un modello probabilistico implementato nella piattaforma SPENVIS. Basandosi su un database storico di eventi SEP dal 1956 ad oggi, SAPPHIRE stima su base statistica la fluenza integrale cumulativa attesa a 1AU in relazione alla durata della missione, alla fase del ciclo solare e entro un certo livello di confidenza. La dose si ottiene sostituendo la fluenza nella funzione di trasferimento: 
+$$ \log_{10}(D) = a + b \cdot \log_{10}(F_{SAPPHIRE}) $$
+Le stime sono state calcolate per missioni dalla durata di: 0.5, 1.0 e 1.5 anni, durante il massimo e minimo solare ai livelli di confidenza del 90\% e 95\%.
+
+
 
 \section*{Risultati}
 
