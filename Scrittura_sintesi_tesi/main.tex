@@ -11,11 +11,13 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{natbib}
+
 
 \begin{document}
 
 \begin{center}
-    {\Large \textbf{Sintesi della Prova Finale}}\\[1.5cm]
+    {\Large \textbf{Sintesi della Prova Finale}}\\[0.5cm]
 
     \begin{tabular}{ll}
         \textbf{Cognome e Nome:}   & Dolci Stefano \\[4pt]
@@ -30,21 +32,28 @@
     \end{tabular}
 \end{center}
 
-\vspace{0.5cm}
+
 
 \section*{Introduzione}
-Nello spazio interplanetario, la radiazione cosmica è uno dei principali limiti per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle ad alta energia originate al di fuori del sistema solare, il loro flusso è isotropico e relativamente costante, per questo motivo rimangono uno dei principali rischi per la progettazione di missioni a lungo termine. D'altro canto i SEP sono particelle energetiche, tipicamente protoni, elettroni e ioni pesanti, che vengono accelerate come risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi pone un rischio inferiore rispetto a quello dei GCR, durante i periodi di massima attività solare alcuni tra questi possono raggiungere flussi estremi in poche ore, diventando la componente dominante nel budget di radiazione per le missioni. La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l'obiettivo di stimare il rischio da tali eventi. Nel seguente elaborato si è cercato di fare proprio questo, considerando solo il contributo da SEP stimare la dose che un'ipotetica sonda interplanetaria riceverebbe durante una tipica missione verso Marte. Per farlo sono stati analizzati gli spettri in energia da 8 eventi SEP, i più intensi e noti degli ultimi 5 cicli solari (SC20-SC25). Dagli spettri, utilizzando il calcolatore SR-NIEL, è stata stimata la \textit{Total Ionizing Dose (TID)} in silicio dietro a schermature di alluminio in varie geometrie. Infine combinando questi dati sperimentali con il modello probabilistico SAPPHIRE sono state stimate le dosi entro un certo intervallo di confidenza per vari scenari di missione.
-
-\section*{Risultato finale}
-In questa sezione vengono riportati i risultati più significativi di questo elaborato. È stato stimato che durante un periodo del massimo solare, per un esposizione di 0.5 anni durante il transito verso Marte, la TID in silicio dietro a una schermatura sferica di 10 g/cm$^2$ è pari a $43.4\pm4.3$ mGy con un livello di confidenza al 90\%.
+Nello spazio interplanetario, la radiazione cosmica è uno dei principali limiti per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle ad alta energia con origini al di fuori del sistema solare, il loro flusso è isotropo e relativamente costante, per questo motivo rimangono uno dei principali rischi per la progettazione di missioni a lungo termine. D'altro canto i SEP sono particelle energetiche, tipicamente protoni, elettroni e ioni pesanti, che vengono accelerate come risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi ponga un rischio inferiore rispetto a quello dei GCR, durante i periodi di massima attività solare, alcuni di questi eventi possono raggiungere flussi estremi in poche ore, diventando la componente dominante nel budget di radiazione per le missioni. La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l'obiettivo di stimare il rischio da tali eventi. Nel seguente elaborato si è cercato di fare proprio questo: considerando il solo contributo da SEP, stimare la dose che un'ipotetica sonda interplanetaria riceverebbe durante una tipica missione verso Marte. Per farlo sono stati analizzati gli spettri in energia da 8 eventi SEP, i più intensi e noti degli ultimi 5 cicli solari. Dagli spettri, utilizzando il calcolatore SR-NIEL, è stata stimata la \textit{Total Ionizing Dose (TID)} in silicio dietro a schermature di alluminio in varie geometrie. Infine combinando questi dati sperimentali con il modello probabilistico SAPPHIRE sono state stimate le dosi entro un certo intervallo di confidenza.
+Per una missione dalla durata di 6 mesi durante il massimo solare si stima con un livello di confidenza del 90\% che la TID in silicio dai soli SEP sia pari a $43.4\pm4.3$ mGy dietro una schermatura sferica in alluminio da 10\,g/cm$^2$.
 
 
-\section*{Conseguenze}
 
 
 
 \section*{Metodologia}
+La \emph{Total Ionizing Dose} è una misura della quantità totale di energia depositata da radiazione ionizzante in un materiale, è un parametro tipicamente utilizzato per valutare i danni che la radiazione può causare a componenti elettronici. La severità di un evento SEP ha una forte dipendenza dalla durata, range energetico, composizione e direzionalità del flusso. Per questo motivo studiare lo spettro in energia semplifica notevolmente la classificazione di un SEP. In questa sezione vengono riassunte le tre fasi successive per stimare la dose partendo proprio dagli spettri energetici. 
+\subsection*{Fase 1. Analisi spettrale}
+Nella prima fase sono stati selezionati i due eventi più intensi e studiati in letteratura del rispettivo ciclo solare: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. Per ciascuno di questi 8 eventi sono stati raccolti e processati i dati di flussi differenziali protonici da strumenti satellitari GOES, IMP-8, ACE, STEREO-A. I flussi sono stati corretti per il fondo cosmico e ripuliti per rimuovere eventuali anomalie strumentali secondo una tecnica proposta da Whitman et al.(2018); vengono poi integrati per la durata complessiva dell'evento per ottenere le fluenze integrate in energia, le quali vengono poi interpolate tramite un fit con una funzione di tipo Band (Band et al., 1993) e propagazione delle incertezze tramite un bootstrap Monte Carlo per ottenere lo spettro continuo su un range energetico da 0.05 MeV a 1000 MeV. 
+\subsection*{Fase 2. Calcolo dose con SR-NIEL}
 
+Gli spettri ottenuti con le relative bande di confidenza vengono utilizzati come input per il calcolatore SR-NIEL, un software che permette di calcola la \textit{Spectral Residual Fluence} dietro a schermature di alluminio. Sono stati calcolati gli spettri moderati dietro due geometrie con spessore equivalente di 10 g/cm$^2$: sferica (4$\pi$ sr) con raggio $R=50cm$ spessore $t=3.7cm$ con spettro misurato a $r= R-t$ e planare ($\pi$ sr).  
+
+\section*{Risultati}
+
+
+\section*{Discussione e conclusioni}
 
 
 \end{document}
