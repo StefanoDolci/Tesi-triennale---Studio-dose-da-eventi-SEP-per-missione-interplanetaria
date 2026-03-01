@@ -3,8 +3,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[italian]{babel}
+\usepackage{subcaption}
 \usepackage{geometry}
-\geometry{margin=2.5cm}
+\geometry{margin=2.0cm}
 \usepackage{setspace}
 \onehalfspacing
 
@@ -13,27 +14,32 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{natbib}
-
+\usepackage{placeins}
 
 \begin{document}
 
 \begin{center}
-    {\Large \textbf{Sintesi della Prova Finale}}\\[0.5cm]
+    {\LARGE Università degli Studi di Milano-Bicocca}\\[0.2cm]
+    {\small Dipartimento di Fisica ``Giuseppe Occhialini''}\\[0.5cm]
+    
+    \includegraphics[width=0.35\textwidth]{logo.png}\\[0.8cm]
+    
+    {\Large \textbf{Sintesi della Prova Finale}}\\[2.0cm]
 
     \begin{tabular}{ll}
-        \textbf{Cognome e Nome:}   & Dolci Stefano \\[4pt]
-        \textbf{Matricola:}        & 900231 \\[4pt]
-        \textbf{Corso di Laurea:}  & Fisica \\[4pt]
-        \textbf{Titolo:}           & Analisi spettrale di eventi SEP e stime \\
-                                   & della dose per missioni interplanetarie \\[4pt]
-        \textbf{Relatore:}         & Prof. Gervasi Massimo \\[4pt]
-        \textbf{Correlatore:}      & Prof. Della Torre Stefano \\[4pt]
-        \textbf{Data della seduta:} & 25 Marzo 2026 \\[4pt]
+        \textbf{Cognome e Nome:}      & Dolci Stefano \\[4pt]
+        \textbf{Matricola:}           & 900231 \\[4pt]
+        \textbf{Corso di Laurea:}     & Fisica \\[4pt]
+        \textbf{Titolo:}              & Analisi spettrale di eventi SEP e stime \\
+                                      & della dose per missioni interplanetarie \\[4pt]
+        \textbf{Relatore:}            & Prof. Gervasi Massimo \\[4pt]
+        \textbf{Correlatore:}         & Prof. Della Torre Stefano \\[4pt]
+        \textbf{Data della seduta:}   & 25 Marzo 2026 \\[4pt]
         \textbf{Recapito telefonico:} & +39 3343715962 \\[4pt]
     \end{tabular}
 \end{center}
 
-
+\clearpage
 
 \section*{Introduzione}
 Nello spazio interplanetario, la radiazione cosmica è uno dei principali limiti per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle ad alta energia con origini  al di fuori del sistema solare, il loro flusso è isotropo e relativamente costante, per questo motivo rimangono uno dei principali rischi per la progettazione di missioni a lungo termine. D'altro canto i SEP sono particelle energetiche, tipicamente protoni, elettroni e ioni pesanti, che vengono accelerate come il risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi ponga un rischio inferiore rispetto a quello dei GCR, durante i periodi di massima attività solare, alcuni tra questi possono raggiungere flussi estremi in poche ore, diventando la componente dominante nel budget di radiazione per le missioni. La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l'obiettivo di stimare il rischio da tali eventi. Nel seguente elaborato si è cercato di fare proprio questo: considerando il solo contributo da SEP, stimare la dose che un'ipotetica sonda interplanetaria riceverebbe durante una tipica missione verso Marte. Per farlo sono stati analizzati gli spettri in energia da 8 eventi SEP, i più intensi e noti degli ultimi 5 cicli solari. Dagli spettri, utilizzando il calcolatore SR-NIEL, è stata stimata la \textit{Total Ionizing Dose (TID)} in silicio dietro a schermature di alluminio in varie geometrie. Infine combinando questi dati sperimentali con il modello probabilistico SAPPHIRE sono state stimate le dosi entro un certo intervallo di confidenza.
@@ -54,9 +60,9 @@ dagli spettri energetici.
 \noindent\textbf{Fase 1.} Sono stati selezionati i due eventi più intensi e rinomati per ciascun ciclo solare: 
 AUG~1972, OCT~1989, OCT~2003, JAN~2005, JUL~2012, SEP~2017, OCT~2021 e MAY~2024. Per ciascuno di 
 questi 8 eventi sono stati raccolti i flussi differenziali protonici da strumenti satellitari (GOES, 
-IMP-8, ACE, STEREO-A), integrati sulla durata dell'evento per ottenere le fluenze, e interpolati con 
+IMP-8, ACE, STEREO-A), integrati sulla durata dell'evento per ottenere le fluenze, e infine interpolati con 
 una funzione di tipo Band (Band et al., 1993) su un range energetico da \qty{0.05}{\mega\electronvolt} 
-a \qty{1000}{\mega\electronvolt}, con incertezze propagate tramite bootstrap Monte Carlo.
+a \qty{1000}{\mega\electronvolt} per ottenere lo spettro in energia, con incertezze sui parametri propagate tramite bootstrap Monte Carlo.
 
 \noindent\textbf{Fase 2.} Gli spettri con le relative bande di confidenza vengono passati come input al 
 calcolatore SR-NIEL, un codice di trasporto che calcola la fluenza residua dietro schermature di 
@@ -69,7 +75,7 @@ L'incertezza sulla TID è stimata valutando il calcolo con lo spettro mediano $\
 e con le bande di confidenza al 68\%, $\Phi_{16}$ e $\Phi_{84}$.
 
 \noindent\textbf{Fase 3.} A ciascun evento si associa la coppia $(F_i, D_i)$, ovvero la fluenza 
-integrale omnidirezionale sopra una soglia energetica $E_0$ e la TID calcolata. Il fit ai minimi 
+integrale omnidirezionale sopra una soglia energetica $J(>E_0)$ e la TID calcolata. Il fit ai minimi 
 quadrati di questi 8 punti definisce la funzione di trasferimento empirica:
 \begin{equation}
     D(F) = 10^{a} \cdot F^{b}
@@ -80,14 +86,8 @@ che minimizza lo scatter spettrale $\sigma_{\text{spec}}$ attorno alla retta del
 La funzione di trasferimento ottimizzata viene infine applicata alle fluenze cumulative fornite 
 dal modello probabilistico SAPPHIRE per stimare le dosi attese in funzione della durata della 
 missione, della fase del ciclo solare e del livello di confidenza.
-
-\clearpage
-
 \section*{Risultati}
-Nella seguente tabella \cite{tab:sep_events} vengono riportati i risultati per il campione degli 8 eventi SEP.
-
-
-
+Nella tabella \ref{tab:sep_events} vengono riportati i risultati per il campione degli 8 eventi SEP, calcolati in due geometrie di schermatura: planare (slab piano di alluminio spessore equivalente \qty{10}{\gram\per\cm\squared}con fluenza incidente normale $\pi\cdot\Phi_{inc}$) e sferica (guscio sferico di raggio $R=50 \mathrm{cm}$, spessore $t=3.7cm$ e fluenza incidente isotropa $4\pi\cdot\Phi_{inc}$ valutata a $r= R-t$).
 \begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -112,13 +112,38 @@ OCT 2021 & $1.93 \times 10^{7}$ & $7.41 \times 10^{6}$ & $3.26 \times 10^{6}$ & 
 \end{tabular}%
 }
 \caption{Fluenze integrali e TID in silicio, 
-ordinati per dose decrescente in geometria sferica e planare. 
-Le fluenze $J(>E_0)$ sono in unità di \unit{\per\cm\squared}, 
-le dosi in \unit{\milli\gray} dietro \qty{10}{\gram\per\cm\squared} di alluminio.}
+ordinati per dose decrescente. Le fluenze $J(>E_0)$ sono in unità di \unit{\per\cm\squared}, 
+le dosi in \unit{\milli\gray}.}
 \label{tab:sep_events}
 \end{table}
+ 
 
+\noindent Per la conversione fluenza-dose sono state scelte queste due funzioni di trasferimento per le due geometrie di schermatura:
+$$D(F)_{plan} = 10^{-6.475}\cdot F^{0.960}, \quad \sigma_{spec} = 7.7\% \qquad D(F)_{sfer} = 10^{-6.005}\cdot F^{0.998}, \quad \sigma_{spec} = 9.9\%$$
 
+\noindent Combinando queste due funzioni con le fluenze cumulative previste dal modello SAPPHIRE $J(>100)$MeV per la sferica e $J(>60)$MeV per la planare, si stima che per una missione di 0.5 anni durante il massimo solare, con un livello di confidenza del 90\%, la TID non superi i seguenti valori: planare $27.3\pm2.1$mGy e per la sferica $43.4\pm4.3$mGy. Queste stime salgono per una missione della durata di 1.5 anni sempre durante il massimo solare e con 90\% di confidenza: planare $68.4\pm5.3$mGy e sferica $122.4\pm12$
+Le figure \ref{fig:sapphire_sfer} e \ref{fig:sapphire_plan} mostrano le stime per TID attesa cambiando la durata della missione, da 0.5 a 1.5 anni, la fase del ciclo solare, e il livello di confidenza (90\% e 95\%) per le due geometrie di schermatura. 
+SAPPHIRE permette di estrarre la fluenza associata al \textit{single worst-case event}, ovvero l'evento più intenso atteso nel periodo di missione. Si stima che la dose qualora si verificasse questo singolo evento SEP eccezionale durante una missione di 0.5 anni al 95\% di CL sarebbe: planare $41.9\pm3.2$mGy e sferica $74.7\pm7.4$mGy un risultato paragonabile alla dose attesa da un evento SEP come quello di OCT 2003.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/plot_sapphire_sferica.png}
+    \caption{TID cumulativa in silicio in geometria sferica 
+    ($R=50\,\mathrm{cm}$, $t=3.7\,\mathrm{cm}$, dose valutata a $r=R-t$) 
+    dietro \qty{10}{\gram\per\cm\squared} di Al, stimata con SAPPHIRE (1AU) 
+    al CL 90\% e 95\% per solar maximum e solar minimum.}
+    \label{fig:sapphire_sfer}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/plot_sapphire_planar.png}
+    \caption{TID cumulativa in silicio in geometria planare (slab infinito, 
+    fluenza pesata con $\pi$\,sr) dietro \qty{10}{\gram\per\cm\squared} di Al, 
+    stimata con SAPPHIRE (1AU) al CL 90\% e 95\% per solar maximum e solar minimum.}
+    \label{fig:sapphire_plan}
+\end{figure}
+\FloatBarrier
 \section*{Discussione e conclusioni}
 
 
