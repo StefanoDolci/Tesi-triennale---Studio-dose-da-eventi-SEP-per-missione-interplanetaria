@@ -60,13 +60,12 @@ dagli spettri energetici.
 \noindent\textbf{Fase 1.} Sono stati selezionati i due eventi più intensi e rinomati per ciascun ciclo solare: 
 AUG~1972, OCT~1989, OCT~2003, JAN~2005, JUL~2012, SEP~2017, OCT~2021 e MAY~2024. Per ciascuno di 
 questi 8 eventi sono stati raccolti i flussi differenziali protonici da strumenti satellitari (GOES, 
-IMP-8, ACE, STEREO-A), integrati sulla durata dell'evento per ottenere le fluenze, e infine interpolati con 
-una funzione di tipo Band (Band et al., 1993) su un range energetico da \qty{0.05}{\mega\electronvolt} 
-a \qty{1000}{\mega\electronvolt} per ottenere lo spettro in energia, con incertezze sui parametri propagate tramite bootstrap Monte Carlo.
+IMP-8, ACE, STEREO-A), integrati sulla durata dell'evento per ottenere le fluenze integrate, le quali sono state infine interpolate con una funzione di tipo Band (Band et al., 1993) su un range energetico da \qty{0.05}{\mega\electronvolt} 
+a \qty{1000}{\mega\electronvolt} per ottenere lo spettro in energia, le incertezze sui parametri sono state propagate tramite bootstrap Monte Carlo.
 
 \noindent\textbf{Fase 2.} Gli spettri con le relative bande di confidenza vengono passati come input al 
 calcolatore SR-NIEL, un codice di trasporto che calcola la fluenza residua dietro schermature di 
-alluminio da \qty{10}{\gram\per\cm\squared} in geometria planare e sferica. La TID viene calcolata 
+alluminio in geometria planare e sferica. La TID viene calcolata 
 integrando lo spettro residuo con lo stopping power elettronico nel silicio (tabelle SRIM):
 \begin{equation}
     \text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \cdot S_{\text{el}}(E) \, dE
@@ -82,7 +81,7 @@ quadrati di questi 8 punti definisce la funzione di trasferimento empirica:
 \end{equation}
 Il procedimento viene ripetuto per tre soglie, $J(>\qty{30}{\mega\electronvolt})$, 
 $J(>\qty{60}{\mega\electronvolt})$ e $J(>\qty{100}{\mega\electronvolt})$, selezionando quella 
-che minimizza lo scatter spettrale $\sigma_{\text{spec}}$ attorno alla retta del fit. 
+che minimizza lo scatter spettrale $\sigma_{\text{spec}}$ attorno alla retta del fit e il chi-quadro ridotto migliore. 
 La funzione di trasferimento ottimizzata viene infine applicata alle fluenze cumulative fornite 
 dal modello probabilistico SAPPHIRE per stimare le dosi attese in funzione della durata della 
 missione, della fase del ciclo solare e del livello di confidenza.
