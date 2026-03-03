@@ -4,7 +4,10 @@
 \usepackage[T1]{fontenc}
 \usepackage[italian]{babel}
 \usepackage{subcaption}
+
+\usepackage{booktabs}
 \usepackage{geometry}
+
 \geometry{margin=2.0cm}
 \usepackage{setspace}
 \onehalfspacing
@@ -13,10 +16,15 @@
 \usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{natbib}
+\usepackage[backend=biber, sorting=none]{biblatex}
+\addbibresource{bibliography.bib}
 \usepackage{placeins}
 
+
+
 \begin{document}
+
+
 
 \begin{center}
     {\LARGE Università degli Studi di Milano-Bicocca}\\[0.2cm]
@@ -42,8 +50,8 @@
 \clearpage
 
 \section*{Introduzione}
-Nello spazio interplanetario, la radiazione cosmica è uno dei principali limiti per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle ad alta energia con origini  al di fuori del sistema solare, il loro flusso è isotropo e relativamente costante, per questo motivo rimangono uno dei principali rischi per la progettazione di missioni a lungo termine. D'altro canto i SEP sono particelle energetiche, tipicamente protoni, elettroni e ioni pesanti, che vengono accelerate come il risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi ponga un rischio inferiore rispetto a quello dei GCR, durante i periodi di massima attività solare, alcuni tra questi possono raggiungere flussi estremi in poche ore, diventando la componente dominante nel budget di radiazione per le missioni. La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l'obiettivo di stimare il rischio da tali eventi. Nel seguente elaborato si è cercato di fare proprio questo: considerando il solo contributo da SEP, stimare la dose che un'ipotetica sonda interplanetaria riceverebbe durante una tipica missione verso Marte. Per farlo sono stati analizzati gli spettri in energia da 8 eventi SEP, i più intensi e noti degli ultimi 5 cicli solari. Dagli spettri, utilizzando il calcolatore SR-NIEL, è stata stimata la \textit{Total Ionizing Dose (TID)} in silicio dietro a schermature di alluminio in varie geometrie. Infine combinando questi dati sperimentali con il modello probabilistico SAPPHIRE sono state stimate le dosi entro un certo intervallo di confidenza.
-Per una missione dalla durata di 8 mesi durante il massimo solare si stima con un livello di confidenza del 90\% che la TID in silicio dai soli SEP non superi $62.1\pm6.1$ mGy dietro una schermatura sferica in alluminio da 10\,g/cm$^2$.
+Nello spazio interplanetario, la radiazione cosmica è uno dei principali limiti per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle ad alta energia con origini al di fuori del sistema solare, il loro flusso è isotropo e relativamente costante, per questo motivo rimangono uno dei principali rischi per la progettazione di missioni a lungo termine. D'altro canto i SEP sono particelle energetiche, tipicamente protoni, elettroni e ioni pesanti, che vengono accelerate come risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi ponga un rischio inferiore rispetto a quello dei GCR, durante i periodi di massima attività solare, alcuni tra questi possono raggiungere flussi estremi in poche ore, diventando la componente dominante nel bilancio di radiazione. La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l'obiettivo di stimare il rischio da tali eventi. Nel seguente elaborato si è cercato di fare proprio questo: considerando il solo contributo da SEP, stimare la dose che un'ipotetica sonda interplanetaria riceverebbe durante una tipica missione verso Marte. Per farlo sono stati analizzati gli spettri in energia da 8 eventi SEP, i più intensi e noti degli ultimi 5 cicli solari. Dagli spettri, utilizzando il calcolatore SR-NIEL, è stata stimata la \textit{Total Ionizing Dose (TID)} in silicio dietro a schermature di alluminio in varie geometrie. Infine combinando questi dati sperimentali con il modello probabilistico SAPPHIRE sono state stimate le dosi entro un certo intervallo di confidenza.
+Per una missione dalla durata di 8 mesi durante il massimo solare si stima con un livello di confidenza del 90\% che la TID in silicio dai soli SEP non superi $62.1\pm6.2$ mGy dietro una schermatura sferica in alluminio da 10\,g/cm$^2$.
 
 
 
@@ -54,27 +62,27 @@ La \emph{Total Ionizing Dose} è una misura della quantità totale di energia de
 ionizzante in un materiale, ed è il parametro standard per valutare i danni a componenti elettronici. 
 La severità di un evento SEP dipende dalla durata, range energetico, composizione e 
 direzionalità del flusso; per questo motivo l'analisi spettrale semplifica notevolmente la 
-classificazione di un SEP. Di seguito vengono riassunte le tre fasi per stimare la dose partendo 
+classificazione di un SEP. Di seguito vengono riassunte le tre fasi successive per stimare la dose partendo 
 dagli spettri energetici.
 
 \noindent\textbf{Fase 1.} Sono stati selezionati i due eventi più intensi e rinomati per ciascun ciclo solare: 
 AUG~1972, OCT~1989, OCT~2003, JAN~2005, JUL~2012, SEP~2017, OCT~2021 e MAY~2024. Per ciascuno di 
-questi 8 eventi sono stati raccolti e processati i flussi differenziali protonici $d\Phi/dE$ da strumenti satellitari (GOES, ACE, STEREO-A), integrandoli nel tempo per la durata dell'evento si ottengono le fluenze spettrali differenziali $dJ/dE$, le quali sono state infine interpolate con una funzione di tipo Band (Band et al., 1993) o E-R (Ellison-Ramaty 1985) su un range energetico da \qty{0.05}{\mega\electronvolt} 
-a \qty{1000}{\mega\electronvolt} per ottenere lo spettro in energia, le incertezze sui parametri sono state propagate tramite bootstrap Monte Carlo.
+questi 8 eventi sono stati raccolti e processati i flussi differenziali protonici $d\Phi/dE$ da strumenti satellitari (GOES, ACE, STEREO-A), integrandoli nel tempo per la durata dell'evento si ottengono le fluenze spettrali differenziali $dJ/dE$, le quali sono state infine interpolate con una funzione di tipo Band \cite{Band1993} o E-R \cite{EllisonRamaty1985} su un range energetico da \qty{0.05}{\mega\electronvolt} 
+a \qty{1}{\giga\electronvolt} per ottenere lo spettro in energia, le incertezze sui parametri sono state propagate tramite bootstrap Monte Carlo.
 
 \noindent\textbf{Fase 2.} Le fluenze spettrali differenziali $dJ/dE$, moltiplicate per il 
-fattore geometrico $\pi$\,sr (slab planare) o $4\pi$\,sr (guscio sferico), vengono fornite 
-come input al calcolatore SR-NIEL, un codice di trasporto che restituisce la fluenza residua dietro schermature di alluminio da \qty{10}{\gram\per\cm\squared}. La TID in silicio è calcolata per entrambe le geometrie come:
+fattore geometrico $\pi$\,sr (slab planare) o $4\pi$\,sr (guscio sferico), vengono passate 
+come input al calcolatore SR-NIEL, un codice di trasporto che restituisce la fluenza residua dietro schermature, in questo caso di alluminio. La TID in silicio è calcolata per entrambe le geometrie come:
 \begin{equation}
     \mathrm{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\mathrm{res}}(E)\cdot S_{\mathrm{el}}(E)\,dE
 \end{equation}
-dove $S_\mathrm{el}(E)$ è lo stopping power elettronico del silicio ricavato dalle tabelle SRIM. 
+dove $S_\mathrm{el}(E)$ è lo \textit{Stopping power} elettronico del silicio ricavato dalle tabelle SRIM. 
 Il calcolo viene ripetuto per lo spettro mediano $\Phi_\mathrm{med}$ e per le bande di confidenza 
 ($\Phi_{16}$, $\Phi_{84}$), propagando così l'incertezza spettrale sulla TID.
 
 
 \noindent\textbf{Fase 3.} A ciascun evento si associa la coppia $(F_i, D_i)$, ovvero la fluenza 
-integrale omnidirezionale sopra soglia energetica $J(>E_0)$ e la TID calcolata. Il fit ai minimi 
+integrale omnidirezionale sopra soglia energetica $J(>E_0)$ e la TID calcolata. Il fit pesato ai minimi 
 quadrati di questi 8 punti definisce la funzione di trasferimento empirica:
 \begin{equation}
     D(F) = 10^{a} \cdot F^{b}
@@ -86,7 +94,7 @@ La funzione di trasferimento ottimizzata viene infine applicata alle fluenze cum
 dal modello probabilistico SAPPHIRE per stimare le dosi attese in funzione della durata della 
 missione, della fase del ciclo solare e del livello di confidenza.
 \section*{Risultati}
-Nella tabella \ref{tab:sep_events} vengono riportati i risultati per il campione degli 8 eventi SEP, calcolati nelle due geometrie di schermatura: planare con spessore $t=3.7$cm e guscio sferico di raggio $R=50 \mathrm{cm}$, spessore $t=3.7$cm e valutata a $r= R-t$.
+Nella tabella \ref{tab:sep_events} vengono riportati i risultati per il campione degli 8 eventi SEP, calcolati nelle due geometrie di schermatura: planare con spessore $t=3.7$cm e guscio sferico di raggio $R=50 \mathrm{cm}$, spessore $t=3.7$cm e valutata a $r= R - t$.
 \begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -110,35 +118,68 @@ OCT 2021 & $1.93 \times 10^{7}$ & $7.41 \times 10^{6}$ & $3.26 \times 10^{6}$ & 
 \hline\hline
 \end{tabular}%
 }
-\caption{Fluenze integrali e TID in silicio, 
-ordinati per dose decrescente. Le fluenze $J(>E_0)$ sono in unità di \unit{\per\cm\squared}, 
-le dosi in \unit{\milli\gray}.}
+\caption{Fluenze integrali e TID in silicio in ordine di dose decrescente. Le fluenze $J(>E_0)$ sono in unità di \unit{\per\cm\squared}, 
+le dosi in \unit{\milli\gray}. Per entrambe le geometrie lo spessore equivalente è di 10\,g/cm$^2$.}
 \label{tab:sep_events}
 \end{table}
  
 \clearpage
-\noindent Per la conversione fluenza-dose sono state scelte queste due funzioni di trasferimento per le due geometrie di schermatura:
-$$D(F)_{plan} = 10^{-6.475}\cdot F^{0.960}, \quad \sigma_{spec} = 7.7\% \qquad D(F)_{sfer} = 10^{-6.005}\cdot F^{0.998}, \quad \sigma_{spec} = 9.9\%$$
+\noindent Per la conversione fluenza--dose sono state selezionate le due funzioni di trasferimento che minimizzano lo scatter 
+spettrale e il $\chi^2$ ridotto:
+\begin{equation}
+D(F) = 10^{a}\cdot \bigl[J(>E_{\rm th})\bigr]^{b}
+\label{eq:transfer_function}
+\end{equation}
 
-\noindent Combinando queste funzioni con le fluenze cumulative previste dal modello SAPPHIRE $J(>100)$MeV per la sferica e $J(>60)$MeV per la planare, si stima che per transito alla Hohmann tipico Terra-Marte di 259.0 giorni (0.71 anni), durante il massimo solare, con un livello di confidenza del 90\%, la TID non superi i seguenti valori: planare $37.3\pm3.0$ mGy e per la sferica $62.1\pm6.1$ mGy. SAPPHIRE permette di estrarre la fluenza associata al \textit{single worst-case event}, ovvero l'evento più intenso atteso nel periodo di missione. Si stima che la dose, qualora si verificasse questo singolo evento SEP eccezionale durante una missione di 0.7 anni al 95\% di CL, non superi: planare $50.2\pm4.0$ mGy e sferica $92.1\pm9.1$ mGy un risultato paragonabile alla dose attesa da un evento SEP come quello di OCT 2003. 
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccccc}
+\hline\hline
+Geometria & $E_{\rm th}$ [MeV] & $a$ & $b$ & $R^2$ & $\chi^2_\nu$ & $\sigma_{\rm spec}$ \\
+\hline
+Planare & $60$  & $-6.475$ & $0.960$ & $0.998$ & $0.20$ & $\pm\,8\%$  \\
+Sferica & $100$ & $-6.005$ & $0.998$ & $0.997$ & $0.31$ & $\pm\,10\%$ \\
+\hline\hline
+\end{tabular}
+\caption{Parametri ottimali delle funzioni di trasferimento dose--fluenza (Eq.~\ref{eq:transfer_function}).}
+\label{tab:transfer_params}
+\end{table}
+\noindent Combinando queste funzioni con le fluenze cumulative previste dal modello SAPPHIRE, si stima che per una missione dalla durata di 0.7 anni (259 giorni di transito Hohmann), durante il massimo solare, con un livello di confidenza del 90\%, la TID non superi i seguenti valori: planare $37.3\pm3.0$ mGy e per la sferica $62.1\pm6.2$ mGy. SAPPHIRE fornisce anche la fluenza associata al \textit{single worst-case event}, ovvero l'evento più intenso atteso nel periodo di missione selezionato. Si stima che la dose, qualora si verificasse questo singolo evento SEP durante una missione di 0.7 anni al 95\% di CL, non superi: planare $50.2\pm4.0$ mGy e sferica $92.1\pm9.1$ mGy, un risultato paragonabile alla dose attesa da un evento SEP come quello di OCT 2003. 
 La figura \ref{fig:dose_duration}  mostra le stime per TID attesa cambiando la durata del transito, la fase del ciclo solare, e il livello di confidenza (90\% e 95\%). 
 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{figures/plot_finale.pdf}
-    \caption{TID cumulativa in silicio dietro schermatura di alluminio da \qty{10}{\gram\per\cm\squared} stimate con SAPPHIRE: a) schermatura sferica con metrica $J(>60)$MeV, b) schermatura planare con metrica $J(>100)$MeV.}
+    \caption{TID cumulativa in silicio dietro schermatura di alluminio da \qty{10}{\gram\per\cm\squared} stimate con SAPPHIRE: a) schermatura sferica con metrica $J(>100\,\mathrm{MeV})$, b) schermatura planare con metrica $J(>60\,\mathrm{MeV})$.}
 
     \label{fig:dose_duration}
 \end{figure}
 
 \section*{Discussione e conclusioni}
-I risultati trovati in questo elaborato hanno due conseguenze principali: da un lato le stime ottenute per una tipica missione verso Marte rientrano nei budget di radiazione tipici previsti per l'elettronica delle sonde (cite nasa estimate suggestion). Tuttavia il contributo dei soli SEP diventa comparabile e persino superiore a quello dei GCR qualora si considerano missioni più lunghe, lanci durante il massimo solare e sopratutto la coda della distribuzione di probabilità del modello SAPPHIRE. Misure effettuate dalla sonda MSL/RAD durante un transito di 253 giorni verso marte nel 2011 (Zeitlin 2013) riportano una dose da GCR in silicio (dietro una schermatura più complessa da 10g/cm$^2$ fino a circa 80g/cm$^2$) di circa 84 mGy per l'intera durata del transito. In un secondo articolo pubblicato da (Semkova2025) vengono riportate le dosi  misurate dall'orbiter TGO con schermatura media di circa 20 g/cm$^2$: per l'evento SEP di Maggio 2024 hanno misurato una dose pari a $24.7\pm2.5$ mGy; dunque questi risultati sono in buon accordo con le stime ottenute in questo lavoro.
-Il secondo risultato interessante riguarda la funzione di trasferimento D(F): già in precedenza era stato notato che la scelta di usare la fluenza integrale come predittore dei SEP è fortemente dipendente dalla soglia energetica che si sceglie. (Kim 2017 e Cuccinotta 2013) 
-In questo caso è stato valutato quantitativamente: passare dalla soglia convenzionale $J(>30)$ MeV, riportata nella maggior parte dei cataloghi, alla soglia ottimizzata $J(>100)$ MeV per la geometria sferica, riduce lo scatter spettrale da $\pm35\%$ a $\pm10\%$. La soglia energetica ottimale è legata all'energia di penetrazione dei protoni attraverso lo spessore di alluminio che si sta studiando. E' fisicamente coerente che protoni al di sotto di questa soglia vengono fermati dalla schermatura non contribuendo alla dose, 
-rendendo la loro fluenza un predittore di dose intrinsecamente meno accurato. La funzione di trasferimento si è dimostrata una relazione robusta ed efficace per stimare le dosi da SEP con parametri spettrali molti diversi e che coprono 5 cicli solari. Uno dei limiti di questo approccio riguarda la scelta del campione iniziale di SEP, aggiungere altri eventi SEP con caratteristiche spettrali diverse aiuterebbe a sondare il limite di validità della funzione di trasferimento. Infine considerando che tutta l'analisi è stata effettuata per dati misurati a 1 AU per coerenza con il modello SAPPHIRE, queste stime rappresentano di fatto un \textit{upper bound}, uno scaling più accurato delle fluenze in relazione alla distanza dal sole, approssimativamente $1/R^2$, ridurrebbe le stime delle dosi di circa il 34\%, ma la natura dei SEP e la loro direzionalità è molto più complessa e sarebbe sicuramente interessante estendere l'analisi introducendo queste correzioni. 
+I risultati ottenuti in questo elaborato hanno due conseguenze principali: da un lato, le stime della dose cumulativa da SEP rientrano nei margini di tolleranza dell'elettronica spaziale. Tuttavia, è importante notare il contributo dei soli SEP rispetto a quello dei GCR: basandosi su simulazioni dei principali modelli di trasporto GCR \cite{ramos2023} e validazioni sperimentali dal transito verso Marte dalla sonda MSL/RAD \cite{Zeitlin2013}, il \textit{dose rate} dai GCR in silicio è dell'ordine di $0.10$--$0.15$\,mGy/day per il massimo solare e $0.29$--$0.33$\,mGy/day per il minimo solare, usando un valore medio si ottengono le seguenti stime:
 
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\hline\hline
+Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
+\hline
+Massimo & $38.3$ & $62.1 \pm 6.2$ & $\sim 1.6$ \\
+Minimo  & $76.6$ & $5.1 \pm 0.5$  & $\sim 0.07$ \\
+\hline\hline
+\end{tabular}
+\caption{Confronto tra dose cumulativa da GCR e da SEP (90\% CL) in geometria sferica per un transito nominale di \SI{0.7}{yr} dietro $\sim$\SI{10}{\gram\per\centi\metre\squared} di alluminio.}
+\label{tab:confronto_sep_gcr}
+\end{table}
+\noindent Questo significa che durante il massimo solare e valutando la coda della distribuzione di probabilità, i SEP possono superare il fondo GCR, mentre al minimo solare i GCR rimangono la componente dominante.
+Il secondo risultato interessante riguarda l'ottimizzazione della funzione di trasferimento. Già in precedenza era stato notato \cite{kim2017} che la scelta di usare la fluenza integrale come predittore della dose da SEP è fortemente dipendente dalla soglia energetica e dallo spessore di schermatura considerato. 
+In questo caso è stato valutato quantitativamente: passare dalla soglia convenzionale $J(>30\,\mathrm{MeV})$, riportata nella maggior parte dei cataloghi, alle soglie ottimizzate $J(>100\,\mathrm{MeV})$ e $J(>60\,\mathrm{MeV})$, riduce lo scatter spettrale da $\pm28-35\%$ a $\pm8-10\%$. 
+Fisicamente la soglia ottimale è legata all'energia di penetrazione dei protoni, al di sotto di questa soglia vengono fermati dalla schermatura non contribuendo alla dose, rendendo la loro fluenza un predittore intrinsecamente meno accurato.
+Il $\chi^2_\nu < 1$ per le due metriche ottimali indica che la variabilità della forma spettrale tra eventi diversi non introduce scatter residuo oltre le incertezze sperimentali: la fluenza integrale sopra soglia è sufficiente a predire la dose, indipendentemente dalla forma dello spettro. 
+La robustezza di queste relazioni è stata verificata con test indipendenti: la \textit{leave-one-out cross-validation} produce un RMSE $\pm10$--$14\%$, prevedendo la dose dell'88--100\% degli eventi entro $1\sigma$; l'analisi dei residui in funzione di $\gamma_b$ non mostra correlazioni significative per le metriche ottimali ($|r| < 0.52$, $p > 0.19$).
+La funzione di trasferimento è dunque una relazione empirica robusta che permette di ottenere stime rapide senza ricorrere a simulazioni di trasporto più complesse. Tuttavia uno dei suoi limiti è il campione di 8 eventi, pur coprendo 5 cicli solari e spettri differenti con $\gamma_b$ da $1.9$ a $8.0$, resta statisticamente limitato; aggiungere ulteriori eventi SEP aiuterebbe a sondare i limiti di questa relazione. Inoltre, l'intera analisi è costruita con dati misurati a \SI{1}{AU} per coerenza con il modello SAPPHIRE: le stime rappresentano pertanto un \textit{upper bound} conservativo, combinare questi risultati con modelli di trasporto interplanetario migliorerebbe ulteriormente le stime della dose. 
 
-
+\printbibliography
 
 \end{document}

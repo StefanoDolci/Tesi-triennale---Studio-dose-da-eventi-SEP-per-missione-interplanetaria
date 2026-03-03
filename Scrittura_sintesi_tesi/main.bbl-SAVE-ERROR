@@ -1,0 +1,421 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Band1993}{article}{}{}
+      \name{author}{15}{}{%
+        {{hash=2cbd0fd9de38122220d0bff5b81ecf29}{%
+           family={Band},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2ccb505080278cb3fe9889128684ff16}{%
+           family={Matteson},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=185b5c7b65c7176452a60903ac5b1d3b}{%
+           family={Ford},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=596d5ab7cb5406df3d93c3e1d3a3218a}{%
+           family={Schaefer},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=48e246af492d3df01de07b4b25bf615e}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9c00f1923d2f9010e9d8c4ae1eb0ee8f}{%
+           family={Teegarden},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ac21389067fb69142b4a8ce4cfa357ae}{%
+           family={Cline},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e9ece7fc2af744151a214065592824bf}{%
+           family={Briggs},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b0bcb6a40d34d3acc7a442d553d0174}{%
+           family={Paciesas},
+           familyi={P\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=346b3b9c874dfde8c673e00ba276064a}{%
+           family={Pendleton},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8fd4193dabe05be1e7eb872bee720db5}{%
+           family={Fishman},
+           familyi={F\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6fb87024952034adfde1c7881423127e}{%
+           family={Kouveliotou},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4e4864073b277fb48e08387ab4513354}{%
+           family={Meegan},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1731ef8fa96b411a7c1ab32d20f8d1c8}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b3ce4822a6c164efd9a7eb16988c7563}{%
+           family={Lestrade},
+           familyi={L\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{fullhash}{6ea2e5d8806247c3844ebb15555ba15e}
+      \strng{fullhashraw}{6ea2e5d8806247c3844ebb15555ba15e}
+      \strng{bibnamehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{authorbibnamehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{authornamehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
+      \strng{authorfullhash}{6ea2e5d8806247c3844ebb15555ba15e}
+      \strng{authorfullhashraw}{6ea2e5d8806247c3844ebb15555ba15e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{title}{BATSE Observations of Gamma-Ray Burst Spectra. I. Spectral Diversity}
+      \field{volume}{413}
+      \field{year}{1993}
+      \field{pages}{281\bibrangedash 292}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1086/172995
+      \endverb
+    \endentry
+    \entry{EllisonRamaty1985}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1ec765c19f86773f807060406f3b03e0}{%
+           family={Ellison},
+           familyi={E\bibinitperiod},
+           given={Donald\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1699d38e1a62c1156453da9a465b588b}{%
+           family={Ramaty},
+           familyi={R\bibinitperiod},
+           given={Reuven},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{fullhash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{fullhashraw}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{bibnamehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authorbibnamehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authornamehash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authorfullhash}{d03c95f5170ed3bac3dce324931fd843}
+      \strng{authorfullhashraw}{d03c95f5170ed3bac3dce324931fd843}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{title}{Shock Acceleration of Electrons and Ions in Solar Flares}
+      \field{volume}{298}
+      \field{year}{1985}
+      \field{pages}{400\bibrangedash 408}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1086/163623
+      \endverb
+    \endentry
+    \entry{ramos2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=cfc934d1e69c8ad36806195ad14b1f89}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={Ricardo\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c32cce5b00364c8d918bbd380581b5ba}{%
+           family={Carante},
+           familyi={C\bibinitperiod},
+           given={Mario\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d4b8695c234203e973f35f4324c28ea7}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b8694b91519eb427b93e5e51d3445a18}{%
+           family={Sala},
+           familyi={S\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=09d8b662a70a93b4cef61fedd2f720dc}{%
+           family={Vercesi},
+           familyi={V\bibinitperiod},
+           given={Valerio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=b7e0402343acf84a34d470ae99bafc2e}{%
+           family={Ballarini},
+           familyi={B\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{fullhash}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{fullhashraw}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{bibnamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authorbibnamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authornamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authorfullhash}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{authorfullhashraw}{3a60c3d838baef15bf13b861f13b8886}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Molecular Sciences}
+      \field{number}{3}
+      \field{title}{A Mission to Mars: Prediction of GCR Doses and Comparison with Astronaut Dose Limits}
+      \field{volume}{24}
+      \field{year}{2023}
+      \field{pages}{2328}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ijms24032328
+      \endverb
+    \endentry
+    \entry{Zeitlin2013}{article}{}{}
+      \name{author}{17}{}{%
+        {{hash=5563d5957a97c931a54c6461327d0885}{%
+           family={Zeitlin},
+           familyi={Z\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1a5ca2f2550c986aa9f0e70d6615e7a3}{%
+           family={Hassler},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=1608b2878254b3759e3b07862f138458}{%
+           family={Cucinotta},
+           familyi={C\bibinitperiod},
+           given={F.\bibnamedelimi A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d16ee127189b75875b4115faa2751fac}{%
+           family={Ehresmann},
+           familyi={E\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8c2fc9efd6814ec80a035dd1b5cf1d6e}{%
+           family={Wimmer-Schweingruber},
+           familyi={W\bibinithyphendelim S\bibinitperiod},
+           given={R.\bibnamedelimi F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=0587e29abee1f587e87434368ef5a155}{%
+           family={Brinza},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b4c9776d8f435df4c91e94238a54fe11}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=08816eda4c28ff6d4ddb2ed231d21fa6}{%
+           family={Weigle},
+           familyi={W\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=824cb5ac5266e9b9e521c1d203a8c72f}{%
+           family={Böttcher},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=60f14aeed6d86a3df4860d675ac7f3c0}{%
+           family={Böhm},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0657d005581e7fd8bbb99e9d5cf22367}{%
+           family={Burmeister},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=28f6068ba57e60c5e27fc2490a8e1ffd}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=35c1c97c87484a76fee130f9213e068e}{%
+           family={Köhler},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=02110474c3073a162d4e09bdb9e8566f}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f25b1c70aea587b39b7cf7e474d5464a}{%
+           family={Posner},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4eb96f585b04cc2b3be0a7ed648ae2ed}{%
+           family={Rafkin},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=52b09089094f539bccd40521e28834f4}{%
+           family={Reitz},
+           familyi={R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9a35a51f7e898d3fe5899941daae7ce}
+      \strng{fullhash}{707550b928b779aaaf4ca3b4e3b211e7}
+      \strng{fullhashraw}{707550b928b779aaaf4ca3b4e3b211e7}
+      \strng{bibnamehash}{e9a35a51f7e898d3fe5899941daae7ce}
+      \strng{authorbibnamehash}{e9a35a51f7e898d3fe5899941daae7ce}
+      \strng{authornamehash}{e9a35a51f7e898d3fe5899941daae7ce}
+      \strng{authorfullhash}{707550b928b779aaaf4ca3b4e3b211e7}
+      \strng{authorfullhashraw}{707550b928b779aaaf4ca3b4e3b211e7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{6136}
+      \field{title}{Measurements of Energetic Particle Radiation in Transit to {Mars} on the {Mars Science Laboratory}}
+      \field{volume}{340}
+      \field{year}{2013}
+      \field{pages}{1080\bibrangedash 1084}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1126/science.1235989
+      \endverb
+    \endentry
+    \entry{kim2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=568bb5f6b085e85a59204e7fc5b11f3b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Myung-Hee\bibnamedelima Y.},
+           giveni={M\bibinithyphendelim H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=b97789a97e9d34e47af979381dbeb243}{%
+           family={Cucinotta},
+           familyi={C\bibinitperiod},
+           given={Francis\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0fb9c86a3961587a9004ff574d87cc4e}{%
+           family={Nounu},
+           familyi={N\bibinitperiod},
+           given={Hatem\bibnamedelima N.},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=e0c1997d2c11b50fd9ebec94135c5750}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Chirag},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e25e91a3d21cddb78fe533c4e056afda}{%
+           family={Simonsen},
+           familyi={S\bibinitperiod},
+           given={Lisa\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{fullhash}{0e602d4a8406909e6b3114bcca266793}
+      \strng{fullhashraw}{0e602d4a8406909e6b3114bcca266793}
+      \strng{bibnamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authorbibnamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authornamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authorfullhash}{0e602d4a8406909e6b3114bcca266793}
+      \strng{authorfullhashraw}{0e602d4a8406909e6b3114bcca266793}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Space Weather}
+      \field{title}{Using spectral shape and predictor fluence to evaluate temporal dependence of exposures from solar particle events}
+      \field{volume}{15}
+      \field{year}{2017}
+      \field{pages}{917\bibrangedash 931}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1002/2016SW001552
+      \endverb
+    \endentry
+    \entry{cucinotta2013}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=b97789a97e9d34e47af979381dbeb243}{%
+           family={Cucinotta},
+           familyi={C\bibinitperiod},
+           given={Francis\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=568bb5f6b085e85a59204e7fc5b11f3b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Myung-Hee\bibnamedelima Y.},
+           giveni={M\bibinithyphendelim H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=1b29ac8e6706428b86868da6083fcf2b}{%
+           family={Chappell},
+           familyi={C\bibinitperiod},
+           given={Lori\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NASA}%
+      }
+      \strng{namehash}{28b65f20b5b4d05f5742b884ee01326c}
+      \strng{fullhash}{28b65f20b5b4d05f5742b884ee01326c}
+      \strng{fullhashraw}{28b65f20b5b4d05f5742b884ee01326c}
+      \strng{bibnamehash}{28b65f20b5b4d05f5742b884ee01326c}
+      \strng{authorbibnamehash}{28b65f20b5b4d05f5742b884ee01326c}
+      \strng{authornamehash}{28b65f20b5b4d05f5742b884ee01326c}
+      \strng{authorfullhash}{28b65f20b5b4d05f5742b884ee01326c}
+      \strng{authorfullhashraw}{28b65f20b5b4d05f5742b884ee01326c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{NASA/TP-2013-217375}
+      \field{title}{Space Radiation Cancer Risk Projections and Uncertainties---2012}
+      \field{type}{techreport}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://three.jsc.nasa.gov/articles/TP_2013_CancerRisk.pdf
+      \endverb
+      \verb{url}
+      \verb https://three.jsc.nasa.gov/articles/TP_2013_CancerRisk.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
