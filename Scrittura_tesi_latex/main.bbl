@@ -199,32 +199,8 @@
       \field{year}{1985}
       \field{pages}{400\bibrangedash 408}
       \range{pages}{9}
-    \endentry
-    \entry{nasa_ref}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
-           family={NASA},
-           familyi={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{fullhashraw}{1f99771bc3e23e6097509a331544ab65}
-      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{NASA Official Website}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://science.nasa.gov/
-      \endverb
-      \verb{url}
-      \verb https://science.nasa.gov/
+      \verb{doi}
+      \verb 10.1086/163623
       \endverb
     \endentry
     \entry{MOS_transistor}{book}{}{}
