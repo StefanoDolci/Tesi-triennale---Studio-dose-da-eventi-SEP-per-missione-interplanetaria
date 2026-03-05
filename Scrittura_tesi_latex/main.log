@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  5 MAR 2026 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  5 MAR 2026 21:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -896,7 +896,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 ...}Funzione di trasferimento}{27}{chapter.4}
+l.28 ...}Funzione di trasferimento}{30}{chapter.4}
                                                   % [1
 
 ])
@@ -1054,43 +1054,81 @@ Package pdftex.def Info: figures/Spettri/JAN2005_spectral_fit.pdf  used on input
 <figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf, id=1149, 380.57382pt x 483.55843pt>
 File: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf Graphic file (type pdf)
 <use figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf>
-Package pdftex.def Info: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf  used on input line 459.
+Package pdftex.def Info: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf  used on input line 460.
 (pdftex.def)             Requested size: 429.3521pt x 545.544pt.
 
 
 [22]
 
 [23 <./Figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf>]
-
-[24]
-
-[25]
-Capitolo 3.
-
-
-[26
-
-]
-Capitolo 4.
+<figures/Spettri/JUL2012_spectral_fit.pdf, id=1270, 408.90826pt x 306.40033pt>
+File: figures/Spettri/JUL2012_spectral_fit.pdf Graphic file (type pdf)
+<use figures/Spettri/JUL2012_spectral_fit.pdf>
+Package pdftex.def Info: figures/Spettri/JUL2012_spectral_fit.pdf  used on input line 476.
+(pdftex.def)             Requested size: 429.3521pt x 321.71579pt.
 
 
-[27
+[24 <./Figures/Spettri/JUL2012_spectral_fit.pdf>]
+<figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf, id=1406, 408.71638pt x 306.40033pt>
+File: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf Graphic file (type pdf)
+<use figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>
+Package pdftex.def Info: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf  used on input line 485.
+(pdftex.def)             Requested size: 300.54515pt x 225.32074pt.
+<figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf, id=1407, 380.57382pt x 482.33855pt>
+File: figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf Graphic file (type pdf)
+<use figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf>
+Package pdftex.def Info: figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf  used on input line 495.
+(pdftex.def)             Requested size: 429.3521pt x 544.16776pt.
 
-]
-Capitolo 5.
+Overfull \hbox (122.66687pt too wide) in paragraph at lines 491--498
+\OT1/ptm/m/n/12 classe X9.3, il pi[]u in-ten-so da 10 an-ni.(cite:https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018SW002085
+ []
 
+
+
+[25
+
+ <./Figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>]
+
+[26 <./Figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf>]
+<figures/Spettri/SEP2017_spectral_fit_final.pdf, id=1577, 409.55183pt x 306.40033pt>
+File: figures/Spettri/SEP2017_spectral_fit_final.pdf Graphic file (type pdf)
+<use figures/Spettri/SEP2017_spectral_fit_final.pdf>
+Package pdftex.def Info: figures/Spettri/SEP2017_spectral_fit_final.pdf  used on input line 511.
+(pdftex.def)             Requested size: 429.3521pt x 321.2249pt.
+
+
+[27 <./Figures/Spettri/SEP2017_spectral_fit_final.pdf>]
 
 [28
 
 ]
-Capitolo 6.
+Capitolo 3.
 
 
 [29
 
 ]
+Capitolo 4.
+
 
 [30
+
+]
+Capitolo 5.
+
+
+[31
+
+]
+Capitolo 6.
+
+
+[32
+
+]
+
+[33
 
 ]
 Appendice A.
@@ -1100,7 +1138,7 @@ See the caption package documentation for explanation.
 
 
 
-[31
+[34
 
 ] (./main.aux)
  ***********
@@ -1108,24 +1146,24 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E1C1AB99BD4430FA3A6A007F497A052E;6174.
+(rerunfilecheck)             Checksum: 5291FF0C8A0F5F25E1C93B222218F477;6174.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29005 strings out of 475247
- 572185 string characters out of 5768378
- 1416484 words of memory out of 5000000
- 51459 multiletter control sequences out of 15000+600000
+ 29040 strings out of 475247
+ 573907 string characters out of 5768378
+ 1417093 words of memory out of 5000000
+ 51487 multiletter control sequences out of 15000+600000
  596778 words of font info for 110 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  123i,20n,121p,1616b,2749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (34 pages, 7238356 bytes).
+Output written on main.pdf (37 pages, 7481576 bytes).
 PDF statistics:
- 1386 PDF objects out of 1440 (max. 8388607)
- 548 compressed objects within 6 object streams
- 105 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1835 PDF objects out of 2073 (max. 8388607)
+ 635 compressed objects within 7 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 374 words of extra memory for PDF output out of 10000 (max. 10000000)
 

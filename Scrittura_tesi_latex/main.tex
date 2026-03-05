@@ -452,7 +452,8 @@ Per l'analisi spettrale di questo evento sono stati scaricati i dati dal satelli
 
 \subsection{Luglio 2012}
 L'evento del 23 Luglio 2012 è associato alla più intensa CME del ciclo solare 24. 
-Viene classificato come \textit{Carrington - class event}, ovvero un evento di intesità paragonabile a quello di Carrington del 1859, la tempesta geomagnetica più intensa mai registrata nella storia, che ha causato danni alle reti elettroniche  dell'epoca (principalmente telegrafi). Questo evento piuttosce eccezionale ha \textit{mancato} la Terra di soli 9 giorni, passando a circa 1.5 milioni di km. Lungo la traiettoria della CME lanciata alle 02:08 del 23 Luglio c'era però un satellite, STEREO-A, che è riuscito a sopravvivere parzialmente alla tempesta e a registrare dati.  I dati riportati in questa analisi vengono proprio dai detector a bordo di STEREO-A: LET(Low Energy Telescope) per le basse energie ($1.8-15.0$ MeV) e HET (High Energy Telescope) per le alte energie ($13.0-100$ MeV).
+Viene classificato come \textit{Carrington - class event}, ovvero un evento di intesità paragonabile a quello di Carrington del 1859, la tempesta geomagnetica più intensa mai registrata nella storia, che ha causato danni alle reti elettroniche  dell'epoca (principalmente telegrafi). Questo evento piuttosto eccezionale ha \textit{mancato} la Terra di soli 9 giorni,
+passando a circa 1.5 milioni di km. Lungo la traiettoria della CME lanciata alle 02:08 del 23 Luglio c'era però un satellite, STEREO-A, che è riuscito a sopravvivere parzialmente alla tempesta e a registrare dati. I dati riportati in questa analisi vengono proprio dai detector a bordo di STEREO-A: LET(Low Energy Telescope) per le basse energie ($1.8-15.0$ MeV) e HET (High Energy Telescope) per le alte energie ($13.0-100$ MeV). I dati riportati in questa analisi vengono proprio dai detector a bordo di STEREO-A: LET(Low Energy Telescope) per le basse energie ($1.8-15.0$ MeV) e HET (High Energy Telescope) per le alte energie ($13.0-100$ MeV).
 
 \begin{figure}[H]
 \centering
@@ -462,22 +463,57 @@ Viene classificato come \textit{Carrington - class event}, ovvero un evento di i
 \end{figure}
 \noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri:
 \begin{itemize}
-    \item[-] Periodo di \textit{background} per HET: 16/06/2012 00:00:00 UT - 28/06/2012 00:00:00 UT.
-    \item[]  Periodi di \textit{background} per LET: 17/06/2012 00:00:00 UT .- 24/06/2012 00:00:00 UT.
+    \item[-] Periodo di \textit{background} per HET: 16/06/2012 00:00:00 UT-28/06/2012 00:00:00 UT.
+    \item[]  Periodi di \textit{background} per LET: 17/06/2012 00:00:00 UT-24/06/2012 00:00:00 UT.
     \item[-] Periodo di integrazione: 23/07/2012 00:00:00 UT - 05/08/2012 00:00:00 UT.
     \item[-] Errore sistematico per HET e LET : 7.5\%.
-    \item[-] Fattore scaling: tra l'ultimo punto di HET e il primo di LET si ottiene un fattore di scaling $S= 1.16$. 
-
+    \item[-] Fattore scaling: $S=1.16$ I due detector hanno calibrazioni indipendenti e geometrie diverse, per questo motivo nella zona di sovrapposizione (10-12) MeV i dati non si raccordano perfettamente. Inoltre per un evento così estremo è stato riportato (cit) che i detector LET hanno possibilmente subito saturazione. 
 
 \end{itemize}
 
-I due detector hanno calibrazioni indipendenti e geoemtrie diverse, per questo motivo nella zona di sovrapposizione (10-12) MeV i dati non si raccordano perfettamente. Inoltre per un evento così estremo è stato riportato (cit) che i detector LET hanno possibilmente subito saturazione. Le fluenze di LET sono dunque state moltiplicate ~16\%. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Spettri/JUL2012_spectral_fit.pdf}
+\caption{Spettro fluenza differenziale per l'evento di Luglio 2012, con dati da STEREO-A (HET+LET) e bande di confidenza.}
+\label{fig:jul_2012_spectral_fit}
+\end{figure}
+\clearpage
+\noindent Anche per questo evento il fit è stato eseguito con il modello \textit{Band function}, con un $\chi_{\nu}^2 = 0.97$. IL $\gamma_a = 0.90$ indica uno spettro quasi piatto nella regione a basse energie, questa è la firma tipica dei SEP graduali, l'accelerazione dello shock della CME è più efficiente alle basse energie. I dati disponibili da STEREO-A HET arrivano solo fino a 100 MeV, per questo motivo la parte ad alta energia dello spettro ha bande di confidenza più larghe. Questo evento era comunque troppo importante per venire tralasciato ed è stato aggiunto comunque, estrapolando lo spettro fino a 1000 MeV. Per questo motivo le stime della fluenza integrale e della dose da questo evento vanno prese con cautela. Riportato in figura \ref{fig:jul_2012_ams_vs_stereo} c'è un rapido confronto tra le fluenze misurate da "di fronte" alla CME da STEREO-A e quelle misurate a Terra da AMS-02.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf}
+\caption{Fluenza differenziale misurata da STEREO-A(LET+HET) e da AMS-02 a Terra dal 23 al 24 luglio 2012.}
+\label{fig:jul_2012_ams_vs_stereo}
+\end{figure}
 
 \subsection{Settembre 2017}
+Tra il 4 e il 10 Settembre 2017 una successione di intense eruzioni solari è stata registrata da vari detector in orbita terrestre. Tra questi, il 6 Settembre è stato misurato un flare di classe X9.3, il più intenso da 10 anni.(cite:https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018SW002085 )
+Per questo evento sono stati usati i dati dal satellite ACE (energie da 0.047-4.8 MeV) e GOES-13 (EPEAD/HEPAD con energie da 4.2-700 MeV). 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf}
+\caption{Dati dei flussi differenziali protonici per l'evento di Settembre 2017: (a) flussi raw da GOES-13 (EPEAD/HEPAD), (b) flussi ripuliti.}
+\label{fig:sep_2017_goes13_fluxes}
+\end{figure}
+\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: 
+\begin{itemize}
+    \item [-] Periodo di \textit{background}: 10/08/2017 00:00:00 UT - 04/09/2017 00:00:00 UT.
+    \item [-] Periodo di integrazione: 04/09/2017 22:00:00 UT - 16/09/2017 00:00:00 UT.
+    \item [-] Errore sistematico per GOES-13 e ACE: 25\%.
+    \item [-] Canale P7 di EPEAD rimosso per ottimizzare il raccordo tra i due detector EPEAD e HEPAD.
+\end{itemize}
 
 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Spettri/SEP2017_spectral_fit_final.pdf}
+\caption{Spettro fluenza differenziale per l'evento di Settembre 2017, con dati da ACE (EPAM) e GOES-13 (EPEAD/HEPAD) e bande di confidenza.}
+\label{fig:sep_2017_spectral_fit}
+\end{figure}
+\clearpage
+\noindent In questo caso il range energetico di dati è molto ampio 0.05-1000 MeV, e il modello Band function descrive molto bene lo spettro, con un $\chi_{\nu}^2 = 0.8$. L'indice spettrale a basse energie $\gamma_a = 1.3\pm0.05$ è consistente con accelerazione da shock CME. Il break energetico è a $E_{break} = 40$ MeV, questo è un valore piuttosto alto, tipico per eventi \textit{Ground level enhancment}.
 
 \subsection{Ottobre 2021}
 
