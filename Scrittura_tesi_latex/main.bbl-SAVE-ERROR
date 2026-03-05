@@ -119,6 +119,55 @@
       \verb 10.1086/172995
       \endverb
     \endentry
+    \entry{Optimal_shielding}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=740840a7507193918eefa6f74f0c6de0}{%
+           family={Dobynde},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=548a907749287ab15e6a82d85e43c5c2}{%
+           family={Shprits},
+           familyi={S\bibinitperiod},
+           given={Y.\bibnamedelimi Y.},
+           giveni={Y\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=dbf370efe9019fa463ef1863beda0b4b}{%
+           family={Drozdov},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi Y.},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=6bc444709109c3cd7d910d1518126e25}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dadde2f83fe38bb817cb3efc30aa28cb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ju},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1191085f083e297bd5db4a0817e6147a}
+      \strng{fullhash}{73f3f4bfe17c1f16f6bb4bc4a9fccfe6}
+      \strng{fullhashraw}{73f3f4bfe17c1f16f6bb4bc4a9fccfe6}
+      \strng{bibnamehash}{1191085f083e297bd5db4a0817e6147a}
+      \strng{authorbibnamehash}{1191085f083e297bd5db4a0817e6147a}
+      \strng{authornamehash}{1191085f083e297bd5db4a0817e6147a}
+      \strng{authorfullhash}{73f3f4bfe17c1f16f6bb4bc4a9fccfe6}
+      \strng{authorfullhashraw}{73f3f4bfe17c1f16f6bb4bc4a9fccfe6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Space Weather}
+      \field{number}{9}
+      \field{title}{Beating 1 Sievert: Optimal Radiation Shielding of Astronauts on a Mission to Mars}
+      \field{volume}{19}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1029/2021SW002749
+      \endverb
+    \endentry
     \entry{Ellison-Ramaty}{article}{}{}
       \name{author}{2}{}{%
         {{hash=1ec765c19f86773f807060406f3b03e0}{%
@@ -150,32 +199,111 @@
       \field{year}{1985}
       \field{pages}{400\bibrangedash 408}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1086/163623
+      \endverb
     \endentry
-    \entry{nasa_ref}{misc}{}{}
+    \entry{MOS_transistor}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=1f99771bc3e23e6097509a331544ab65}{%
-           family={NASA},
-           familyi={N\bibinitperiod}}}%
+        {{hash=2ce5869b09c736918133f1c81bf29d2e}{%
+           family={Oldham},
+           familyi={O\bibinitperiod},
+           given={Timothy\bibnamedelima R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
-      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{fullhashraw}{1f99771bc3e23e6097509a331544ab65}
-      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
-      \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \list{publisher}{2}{%
+        {DSFG, Inc, NASA Goddard, Radiation Effects}%
+        {Analysis Group}%
+      }
+      \strng{namehash}{2ce5869b09c736918133f1c81bf29d2e}
+      \strng{fullhash}{2ce5869b09c736918133f1c81bf29d2e}
+      \strng{fullhashraw}{2ce5869b09c736918133f1c81bf29d2e}
+      \strng{bibnamehash}{2ce5869b09c736918133f1c81bf29d2e}
+      \strng{authorbibnamehash}{2ce5869b09c736918133f1c81bf29d2e}
+      \strng{authornamehash}{2ce5869b09c736918133f1c81bf29d2e}
+      \strng{authorfullhash}{2ce5869b09c736918133f1c81bf29d2e}
+      \strng{authorfullhashraw}{2ce5869b09c736918133f1c81bf29d2e}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{NASA Official Website}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://science.nasa.gov/
-      \endverb
-      \verb{url}
-      \verb https://science.nasa.gov/
+      \field{title}{Basic Mechanisms of TID and DDD Response in MOS and Bipolar Microelectronics}
+      \field{year}{2012}
+      \field{pages}{3}
+      \range{pages}{1}
+    \endentry
+    \entry{AUG_1972_Raukunen}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=833f08e62c0a52294af7d34b9b50ee40}{%
+           family={Raukunen},
+           familyi={R\bibinitperiod},
+           given={Osku},
+           giveni={O\bibinitperiod}}}%
+        {{hash=1ad7e0c74b8dad84f97746a80319a293}{%
+           family={Vainio},
+           familyi={V\bibinitperiod},
+           given={Rami},
+           giveni={R\bibinitperiod}}}%
+        {{hash=07cba595fa9867ba6fbf28692101413d}{%
+           family={Tylka},
+           familyi={T\bibinitperiod},
+           given={Allan\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=90ec98b5da56419c2cf060dc198a4f8d}{%
+           family={Dietrich},
+           familyi={D\bibinitperiod},
+           given={William\bibnamedelima F.},
+           giveni={W\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=ceea11cbfc16e2714fd6c483477cf400}{%
+           family={Jiggens},
+           familyi={J\bibinitperiod},
+           given={Piers},
+           giveni={P\bibinitperiod}}}%
+        {{hash=675096c369ed10805e83c4c5e59a87ea}{%
+           family={Heynderickx},
+           familyi={H\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6feac2d10fff3fb56928932413a01118}{%
+           family={Dierckxsens},
+           familyi={D\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8a3d225de7817d64316d27e310a345de}{%
+           family={Crosby},
+           familyi={C\bibinitperiod},
+           given={Norma},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ca00581ed90a5ddf13330b2b9d5f510e}{%
+           family={Ganse},
+           familyi={G\bibinitperiod},
+           given={Urs},
+           giveni={U\bibinitperiod}}}%
+        {{hash=b88975fa6e0cb96d47ff131e1883c23c}{%
+           family={Siipola},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{fullhash}{bef65533be3bd00e6582bcf68d63c294}
+      \strng{fullhashraw}{bef65533be3bd00e6582bcf68d63c294}
+      \strng{bibnamehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{authorbibnamehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{authornamehash}{c5d36161378d02e4b48fd61a237ee029}
+      \strng{authorfullhash}{bef65533be3bd00e6582bcf68d63c294}
+      \strng{authorfullhashraw}{bef65533be3bd00e6582bcf68d63c294}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Space Weather Space Clim.}
+      \field{number}{A04}
+      \field{title}{Two solar proton fluence models based on ground level enhancement observations}
+      \field{volume}{8}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1051/swsc/2017031
       \endverb
     \endentry
     \entry{Solar_Energetic_Particles_Reames}{book}{}{}

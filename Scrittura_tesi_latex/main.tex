@@ -14,6 +14,7 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{caption}
+\usepackage{pdflscape} 
 \usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{caption}
@@ -102,7 +103,7 @@
 %---------------------------------------------------------------
 \chapter{Introduzione}
 Nello spazio interplanetario, la radiazione cosmica è uno dei principali limiti per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle ad alta energia con origini al di fuori del sistema solare, il loro flusso è isotropo e relativamente costante, per questo motivo rimangono uno dei principali rischi per la progettazione
-di missioni a lungo termine. D’altro canto i SEP sono particelle cariche-- tipicamente protoni, elettroni e ioni pesanti-- con energie che spaziano da decine di keV fino a diversi GeV, le quali accelerate come risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi ponga un rischio inferiore rispetto a
+di missioni a lungo termine. D’altro canto i SEP sono particelle cariche-- tipicamente protoni, elettroni e ioni pesanti-- con energie che spaziano da decine di keV fino a diversi GeV, le quali vengono accelerate come risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi ponga un rischio inferiore rispetto a
 quello dei GCR, durante i periodi di massima attività solare, alcuni tra questi possono raggiungere flussi estremi in poche ore, diventando la componente dominante nel bilancio di radiazione.
 La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l’obiettivo di stimare il rischio da tali eventi. Nel seguente elaborato si è cercato di fare proprio questo: considerando il solo contributo da SEP, stimare la dose che un’ipotetica
 sonda interplanetaria riceverebbe durante una tipica missione verso Marte.
@@ -116,7 +117,7 @@ sonda interplanetaria riceverebbe durante una tipica missione verso Marte.
 \section{Particelle Energetiche Solari (SEP)}
 
 La fisica delle SEP è uno dei campi relativamente giovane dell'eliofisica, agli inizi degli anni 50' Scott Forbush riportò per la prima volta un evento SEP come un improvviso incremento del flusso di particelle energetiche che raggiungevano le camere a nebbia a terra. In quegli anni si conoscevano come candidati solamente i \textit{solar flare}, brillamenti solari, impulsive esplosioni visibili di energia in prossimità della corona solare.
-Con l'avvento dei satelliti per osservazioni solari, ad oggi la classificazione convenzionale li distingue in due grandi categorie:  
+Con l'avvento dei satelliti per il \textit{Space weather monitoring}, la classificazione convenzionale adottata ad oggi li distingue in due grandi categorie:  
 \clearpage
 \begin{itemize}
 
@@ -130,7 +131,7 @@ Con l'avvento dei satelliti per osservazioni solari, ad oggi la classificazione 
 \includegraphics[width=0.8\textwidth]{figures/Tipologia_SEP.png}
 \caption{Tipologia di eventi SEP, a sinistra evento impulsivo (\textit{Solar flare}) a destra evento graduale (CMEs). Immagine adattata da "Solar Energetic Particles - Reames" \cite{Solar_Energetic_Particles_Reames}.}
 \label{fig:tipologia_sep}
-\end{figure} Tale classificazione è supportata da differenze sistematiche: in primo luogo la loro origine e durata come spiegato poco fa, questo è di particolare importanza per i possibili danni alla strumentazione spaziale, come vedremo il tempo di esposizione è un fattore fondamentale per la dose accumulata. Abbiamo poi differenze nella composizione di tali eventi, i SEP graduali hanno una corrispondenza diretta con l'abbondanza isotopica misurabile negli strati della corona solare e bassi rapporti elettroni-protoni. Al contrario i SEP impulsivi hanno invece abbondanze arricchite di elementi pesanti e un sovraarricchimento di $^3$He rispetto a $^4$He, un chiaro segnale di un meccanismo di accelerazione selettivo. Altre differenze riguardano: la distribuzione angolare, dato che le linee di campo magnetico giocano un ruolo fondamentale nel guidare le particelle, l'intensità dei SEP dipende da quanto "bene" è magneticamente connesso il satellite che la misura rispetto alla sorgente. Gli eventi impulsivi sono molto più frequenti di quelli graduali, ma sono anche meno intensi e hanno durate tipicamente più brevi, nell'ordine di qualche ora. Studi sugli ultimi due cicli solari hanno sempre di più sfumato la differenza netta tra i due tipi di eventi, è molto probabile che i SEP siano il risultato di molteplici processi che si sovrappongono tra di loro. 
+\end{figure} Tale classificazione è supportata da differenze sistematiche: in primo luogo la loro origine, questo è di particolare importanza per i possibili danni alla strumentazione spaziale, come vedremo il tempo di esposizione è un fattore fondamentale per la dose accumulata. Abbiamo poi differenze nella composizione di tali eventi, i SEP graduali hanno una corrispondenza diretta con l'abbondanza isotopica misurabile negli strati della corona solare e bassi rapporti elettroni-protoni. Al contrario i SEP impulsivi hanno invece abbondanze arricchite di elementi pesanti e un sovraarricchimento di $^3$He rispetto a $^4$He, un chiaro segnale di un meccanismo di accelerazione selettivo. Altre differenze riguardano: la distribuzione angolare, dato che le linee di campo magnetico giocano un ruolo fondamentale nel guidare le particelle, l'intensità dei SEP dipende da quanto "bene" è magneticamente connesso il satellite che la misura rispetto alla sorgente. Gli eventi impulsivi sono molto più frequenti di quelli graduali, ma sono anche meno intensi e hanno durate tipicamente più brevi, nell'ordine di qualche ora. Studi sugli ultimi due cicli solari hanno sempre di più sfumato la differenza netta tra i due tipi di eventi, è molto probabile che i SEP siano il risultato di molteplici processi che si sovrappongono tra di loro. 
 
 
 
@@ -150,8 +151,8 @@ In prima approssimazione lo spettro ci dice quante particelle ci sono a una dete
     J(E) \propto E^{-\gamma} e^{-E/E_c}
 \end{equation}
 $\gamma$ è l'indice che descrivere la pendenza dello spettro, $E_c$ è l'energia di cut-off che indica dove lo spettro inizia a decadere esponenzialmente.
-I SEP impulsivi come abbiamo accennato dipendono da flare, riconnessioni magnetiche localizzate, tempi di accellerazione rapidi, forte selezione magnetica e quindi spettri più duri, tipicamente $\gamma$ è compreso tra 1.5-3 con cut-off a energie basse. Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e cut-off a energie più alte ($>100$MeV). Questo spettro riflette l'accelerazione continua sulle grandi scale dello spazio interplanetario, dove le particelle vengono accelerate più lentamente e possono raggiungere energie più elevate prima di essere espulse nello spazio. Come accennato un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza pure con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
-Esistono principalmente due modelli scelti dalla comunità scientifica per descrivere la maggior parte dei SEP, e sono anche i due modelli utilizzati per l'analisi di questa tesi. 
+I SEP impulsivi come accennato poco fa, sono legati ai \textit{Solar flares}, riconnessioni magnetiche localizzate, tempi di accellerazione rapidi, forte selezione magnetica e quindi spettri più duri, tipicamente $\gamma$ è compreso tra 1.5-3 con cut-off a energie basse. Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e cut-off a energie più alte ($>100$MeV). Questo spettro riflette l'accelerazione continua sulle grandi scale dello spazio interplanetario, dove le particelle vengono accelerate più lentamente e possono raggiungere energie più elevate prima di venire espulse nell'ambiente circostante. Un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza pure con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
+Esistono principalmente due modelli concordati dalla comunità scientifica per descrivere la maggior parte dei SEP, e sono anche i due modelli utilizzati per l'analisi in questo elaborato. 
 La prima forma funzionale è basata modello Ellison-Ramaty (1985) \cite{Ellison-Ramaty},  il quale deriva dalla teoria dell'accelerazione diffusiva da shock, un meccanismo di fermi al primo-ordine che descrive molto bene la fisica dei SEP associati a CME:
 \begin{equation}
     \Phi_{E-R}(E) = A E^{-\gamma} e^{-E/E_r}
@@ -167,7 +168,7 @@ Il secondo modello introdotto da Band et al.(1993) \cite{Band1993} era stato ori
       A E^{-\gamma_b} [(\gamma_b - \gamma_a) E_0]^{(\gamma_b - \gamma_a)} e^{(\gamma_a - \gamma_b)} & E \geq (\gamma_b - \gamma_a) E_0
    \end{cases}
 \end{equation}
-è una doppia legge di potenza con quattro parametri liberi, la normalizzazione A, due indici spettrali, $\gamma_a$ per le basse energie e $\gamma_b$ per le alte energie e un termine di transizione $(\gamma_b - \gamma_a) E_0$. Questa forma funzionale permette di descrivere un transizione "smooth", tipicamente a decine o centinaia di MeV, tra le due regioni di energie.
+È una doppia legge di potenza con quattro parametri liberi, la normalizzazione A, due indici spettrali, $\gamma_a$ per le basse energie e $\gamma_b$ per le alte energie e un termine di transizione $(\gamma_b - \gamma_a) E_0$. Questa forma funzionale permette di descrivere un transizione "smooth", tipicamente a decine o centinaia di MeV, tra le due regioni in energia.
 Chiaramente esistono molti altri modelli e persino una versione "combined" che unisce E-R con Band, gli eventi SEP reali sono spesso sovrapposti tra loro e sono il risultato di molteplici processi di accelerazione, inoltre il meccanismo di trasporto interplanetario introduce ulteriori cambiamenti. Tutto questo si traduce in correlazioni tra i parametri durante il fit e grandi incertezze. Per lo scopo di questo elaborato, questi due modelli sono sufficienti per descrivere la maggior parte dei SEP.
 
 \section{Dose e danni da radiazione per missioni spaziali}
@@ -182,13 +183,14 @@ Le particelle energetiche in ambiente interplanetario possono avere un profondo 
 Alla base della maggior parte dei componenti elettronici troviamo il transistor MOS (metal-on-silicon), sono dispositivi che sfruttano la fisica dei semiconduttori, applicando piccole tensioni si possono controllare i flussi di corrente tra il \textit{source} e il \textit{drain} come mostrato in figura:
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{figures/MOS_transistor.png}
+\includegraphics[width=0.8\textwidth]{figures/MOS_transistor.png}
 \caption{Schema di un transistor MOS con aumento di carica sull'ossido di gate indotta da radiazione esterna: a) operazione normale b) post irradiazione. Immagine adattata da "Basic Mechanisms of TID and DDD Response in MOS and Bipolar Microelectronics - Timothy R. Oldham" \cite{MOS_transistor}.}
 \label{fig:MOS_transistor}
-\end{figure} Quando della radiazione ionizzante passa per il dispositivo la sua energia può strappare elettroni dagli atomi di silicio, creando cosi delle lacune di carica positiva che si accumulano e rimangono intrappolate nello strato di ossido del gate. Questo accumulo di cariche positive intrappolate prende il nome di \textit{Total Ionizing Dose (TID)}, quando le cariche sono abbastanza il transistor può danneggiarsi permanentemente e rimanere bloccato nello stato ON.
+\end{figure}
+\noindent Quando della radiazione ionizzante passa per il dispositivo la sua energia può strappare elettroni dagli atomi di silicio, creando cosi delle lacune di carica positiva che si accumulano e rimangono intrappolate nello strato di ossido del gate. Questo accumulo di cariche positive può degradare o danneggiare permanentemente il transistor lasciandolo bloccato in uno dei due stati (ON o OFF).
 La \textit{TID} è definita come la quantità di energia per unità di massa depositata in un materiale da radiazione ionizzante. Nel SI ha come unità di misura il Gray (Gy):
 $$ \text{TID} = \frac{E_{dep}}{m} \qquad [(Gy) = 1 J/Kg]$$
-Tipicamente dispositivi elettronici a base CMOS sono progettati per resistere a TID nell'ordine di decine di Gy; tipicamente per mitigare i danni da radiazione si costruiscono le componenti dei circuiti con \textit{Radiation hardness-by-design techniques (RHBD)}, ad esempio l'utilizzo di materiali con ampio band-gap come il carburo di silicio (SiC) o l'arsenico di gallio (GaAs). Un altro approccio è quello di schermare accuratamente le componenti più sensibili con materiali che riducono drasticamente la fluenza di particelle incidenti. L'alluminio è storicamente il materiale più utilizzato per le schermature di sonde spaziali dove peso e costi dettano le scelte progettuali. Lo spessore della schermatura viene espresso in unità di g/cm$^2$, ad esempio 1 cm di alluminio ha una densità di 2.7 g/cm$^3$ e quindi uno spessore equivalente di 2.7 g/cm$^2$. Per missioni interplanetarie spessori di alluminio da 5 a 10 g/cm$^2$ sono sufficienti a schermare la maggior parte dei protoni da eventi SEP. In uno studio del 2021 Dobynde et al.\cite{Optimal_shielding} hanno dimostrato che esiste un minimo locale nella dose efficace per schermature di alluminio, superare 30 g/cm$^2$ porta a un aumento della dose accumulata a causa della produzione di particelle secondarie; quando particelle ad alta energia interagiscono con materiali ad alto numero atomico Z possono produrre particelle come neutroni che sono altamente penetranti, aumenta cosi il rischio di danni alle componenti.
+Tipicamente dispositivi elettronici a base CMOS sono progettati per resistere a TID nell'ordine di decine di Gy. Per mitigare i danni da radiazione si costruiscono le componenti dei circuiti con \textit{Radiation hardness-by-design techniques (RHBD)}, ad esempio l'utilizzo di materiali con ampio band-gap come il carburo di silicio (SiC) o l'arsenico di gallio (GaAs). Un altro approccio è quello di schermare accuratamente le componenti più sensibili con materiali che riducono drasticamente la fluenza delle particelle incidenti. L'alluminio è storicamente il materiale più utilizzato per le schermature di sonde spaziali, dove peso e costi dettano le scelte progettuali. Lo spessore della schermatura viene espresso in unità di g/cm$^2$, ad esempio 1 cm di alluminio ha una densità di 2.7 g/cm$^3$ e quindi uno spessore equivalente di 2.7 g/cm$^2$. Per missioni interplanetarie spessori di alluminio da 5 a 10 g/cm$^2$ sono spesso sufficienti a schermare la maggior parte dei protoni da eventi SEP. In uno studio del 2021 Dobynde et al.\cite{Optimal_shielding} hanno dimostrato che esiste un minimo locale nella dose efficace per schermature di alluminio, superare 30 g/cm$^2$ porta a un aumento della dose accumulata a causa della produzione di particelle secondarie; quando particelle ad alta energia interagiscono con materiali ad alto numero atomico Z possono produrre particelle altamente penetranti, come i neutroni, aumentando cosi il rischio di danni alle componenti.
 
 \chapter{Dati e analisi spettrale}
 
@@ -196,17 +198,17 @@ L'obiettivo principale di questa tesi è quello di partendo dall'analisi spettra
 L'idea è quella di utilizzare spettri da SEP reali e simulazioni con il calcolatore SR-NIEL, per costruire una funzione di trasferimento dose-fluenza D(F). Un'unica relazione che condensa la fisica del trasporto delle particelle attraverso la schermatura. Infine utilizzare questa funzione di trasferimento per stimare, con il modello probabilistico SAPPHIRE, il contributo dei soli eventi SEP alla dose cumulativa totale per la missione; il tutto in relazione alla schermatura della sonda, alla durata del transito e alla fase del ciclo solare. 
 
 \section{Procedura sistematica}
-Nel seguente capitolo viene descritta la procedura sistematica applicata a ciascuno dei 8 SEP selezionati. Si articola in tre fasi: una descrizione dei dati e dei metodi di pulizia, il calcolo della fluenza integrata, il fit spettrale e infine una tabella riassuntiva con i risultati ottenuti, i quali verranno poi utilizzati per la fase successiva ovvero il calcolo della dose con SR-NIEL.
+Nel seguente capitolo viene descritta la procedura sistematica applicata a ciascuno dei 8 SEP selezionati. Si articola in tre fasi: una descrizione dei dati e dei metodi di pulizia, il calcolo della fluenza integrata e il fit spettrale. Infine viene riportata una tabella riassuntiva con i risultati ottenuti, i quali verranno poi utilizzati per la fase successiva ovvero il calcolo della dose con SR-NIEL.
 
 \subsection{Fase 1: Raccolta dati e preprocessing}
-Come punto di partenza sono stati scelti 8 eventi SEP: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. Due degli eventi più noti in letteratura per i rispettivi cicli solari. Il sole è noto per attraversare periodi di massima attività alternati a periodi di quiete su un ciclo di circa 11 anni.
+Come punto di partenza sono stati scelti 8 eventi SEP: AUG 1972, OCT 1989, OCT 2003, JAN 2005, JUL 2012, SEP 2017, OCT 2021 e MAY 2024. Scelti in quanto campione dei due eventi più studiati in letteratura per i rispettivi cicli solari. Il sole è noto per attraversare periodi di massima attività alternati a periodi di quiete su un ciclo di circa 11 anni.
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/Solar_cycle.png}
 \caption{Ciclo solare misurato con progressione del numero di macchie solare, Immagine adattata da \href{https://www.swpc.noaa.gov/products/solar-cycle-progression}{NOAA-Space Weather Prediction Center}.}
 \label{fig:ciclo_solare}
 \end{figure} 
-\noindent Ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. Alcuni tra questi sono stati scelti in quanto rappresentativi del \textit{Worst-case scenario}, ovvero l'evento più intenso del rispettivo ciclo solare. Questi vengono spesso utilizzati come riferimento per le stime di dose in fase di \textit{mission design}: AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poter confrontare i risultati ottenuti.
+\noindent Ci sono molte differenze tra i vari cicli solari ed è una distinzione tutt'altro che perfettamente simmetrica ma in generale è noto che durante periodi di massima attività solare si verificano più eventi SEP e più intensi. Alcuni tra questi sono stati scelti in quanto rappresentativi del \textit{Worst-case scenario}, ovvero l'evento più intenso del rispettivo ciclo solare. Questi vengono spesso utilizzati come riferimento per le stime di dose in fase di \textit{mission design}: AUG 1972, OCT 1989 e OCT 2003 sono lo standard sempre presente in letteratura, anche per questo sono stati scelti, in modo da poterne confrontare i risultati.
 Per ciascuno di questi 8 eventi sono stati scaricati i dati di flussi differenziali protonici $d\Phi/dE$ da strumenti satellitari come GOES (EPS/HEPAD), ACE (EPAM), STEREO (LET/HET) e IMP-8, tramite principalmente 2 portali. Il primo è il sito della Nasa "OMNIWeb" che raccoglie dati in formato standardizzato da molteplici missioni; il secondo è il catalogo SEPEM Reference Data Set v3.0 (RDS v3.0), un database realizzato dall'agenzia spaziale europea (ESA) che raccoglie dati di eventi SEP dal 1973 fino ad oggi. 
 I satelliti utilizzati hanno detector che misurano i protoni in vari canali energetici, il range energetico varia da pochi KeV fino a centinaia di MeV. 
 I dati scaricati sono stati puliti secondo la seguente procedura: 
@@ -246,15 +248,15 @@ Si calcola poi la fluenza differenziale $F$ per ciascun canale energetico come l
     \label{eq:calcolo_fluenza_diff}
 \end{equation}
 dove $\Phi(E)$ è il flusso differenziale in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{s}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$], $dt$ è l'intervallo di campionamento in secondi tra due misure consecutive, $t_1$ e $t_2$ sono i tempi di inizio e fine dell'evento.
-Per ogni canale k, si sommano i flussi netti per l'intera durata dell'evento:
+All'atto pratico, per ogni canale k, si sommano i flussi netti per l'intera durata dell'evento:
 \begin{equation}
     F_k = \sum_{i} \Phi_{\text{net},k}(t_i) \cdot \Delta t
 \end{equation}
- Il risultato è appunto la fluenza differenziale totale $F_k$ in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$]. A ciascun canale energetico si associa l'energia efficace $E_{eff} [\mathrm{MeV}]$, questo valore può essere o la media geometrica dei due estremi del canale  $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$, oppure quando disponibile si usa il valore riportato nelle tabelle di calibrazione dei sensori. 
+ Il risultato è appunto la fluenza differenziale totale $F_k$ in unità [$\,\mathrm{p}\!\cdot\!\mathrm{cm}^{-2}\!\cdot\!\mathrm{sr}^{-1}\!\cdot\!\mathrm{MeV}^{-1}$]. A ciascun canale energetico si associa l'energia efficace $E_{eff} [\mathrm{MeV}]$, questo valore può essere o la media geometrica dei due estremi del canale  $E_{eff} = \sqrt{E_{min} \cdot E_{max}}$, oppure quando disponibile si usa il valore riportato nelle tabelle di calibrazione dei detector. 
 Per quanto riguarda le incertezze sulla fluenza sono due i principali contributi: 
 \begin{itemize}
     \item[-] Errore sistematico: costante su tutto il canale e proviene dalle calibrazioni dei sensori e si applica al valore di $F_k$ misurato, tipicamente $\sigma_{sys} = 10-30\%$ tiene conto delle efficienze geometriche e delle cross-calibrazioni tra sensori diversi. 
-    \item[-] Errore statistico: conteggi discreti del numero di particelle contate aggiungono l'errore poissoniano $\sigma_{stat} = \sqrt{F_k}$, tipicamente trascurabile per fluenze elevate. 
+    \item[-] Errore statistico: conteggi discreti del numero di particelle misurate aggiungono l'errore poissoniano $\sigma_{stat} = \sqrt{F_k}$, tipicamente trascurabile per fluenze elevate. 
     \item[] 
 \end{itemize}
 L'errore totale è dato dalla somma in quadratura dei due: 
@@ -275,8 +277,8 @@ Gli errori in spazio logaritmico sono:
 \begin{equation}
     \sigma_{\log,k} = \frac{\sigma_{F_k}}{F_k \cdot \ln(10)} 
 \end{equation}
-La correlazione tra parametri della Band function non consente la semplice propagazione lineare degli errori. Si salva dunque la matrice di covarianza ottenuta dal fit e per propagare gli errori si sfrutta un campionamento Monte Carlo parametrico.
-La matrice di covarianza viene prima stabilizzata, dopo averla simmetrizzata si impone che tutti gli autovalori siano positivi in modo che la matrice sia definita positiva, questo è necessario per poter campionare da una distribuzione normale multivariata. La procedura per ottenere gli intervalli di confidenza è la seguente:
+La correlazione tra parametri della Band function non consente la semplice propagazione lineare degli errori. Si salva dunque la matrice di covarianza $C_{fit}$ ottenuta dal fit e per propagare gli errori si sfrutta un campionamento Monte Carlo parametrico.
+La matrice di covarianza viene prima stabilizzata: dopo averla simmetrizzata si impone che tutti gli autovalori siano positivi in modo che la matrice sia definita positiva, questo è necessario per poter campionare da una distribuzione normale multivariata. La procedura per ottenere gli intervalli di confidenza è la seguente:
 
 \begin{itemize}
     \item[-] Si generano 1000 set di parametri da una distribuzione multivariata normale $$ \mathbf{p}^{(j)} \sim \mathcal{N}(\hat{\mathbf{p}}, C_{\text{stab}}), \qquad j = 1, \ldots, 1000 $$ dove $\hat{\mathbf{p}}$ sono i parametri migliori ottenuti dal fit e $\mathbf{C_{stab}}$ è la matrice di covarianza stabilizzata.
@@ -286,19 +288,19 @@ La matrice di covarianza viene prima stabilizzata, dopo averla simmetrizzata si 
     $$ F_{16}(E_i) = \text{percentile}_{16}\left\{{F^{(j)}(E_i)}\right\}, \qquad F_{84}(E_i) = \text{percentile}_{84}\left\{{F^{(j)}(E_i)}\right\} $$
     
 \end{itemize}
-Si ottengono dunque tre spettri, uno per la mediana $F_{med}$, più robusta della media rispetto ai possibili outlier generati, e due per i limiti di confidenza $[F_{16}, F_{84}] $, si costruisce una tabella energia e fluenza ($E_i, F_i$). Questi risultati vengono esportati in SR-NIEL per il calcolo della fluenza residua dietro la schermatura di alluminio.
-Infine usando lo spettro differenziale dal miglior fit si calcolano le fluenze integrali omnidirezionali, ovvero la fluenza totale di particelle con energia maggiore di una certa soglia $E_{0}$, integrando numericamente su una griglia discreta (5000 punti equi spaziati in spazio logaritmico da 0.05 a 1000 MeV):
+Si ottengono dunque tre spettri, uno per la mediana $F_{med}$, più robusta della media rispetto ai possibili outlier generati, e due per i limiti di confidenza $[F_{16}, F_{84}] $. Successivamente si costruisce una tabella con energia e fluenza ($E_i, F_i$). Questi risultati vengono esportati in SR-NIEL per il calcolo della fluenza residua dietro una schermatura di alluminio.
+Infine usando lo spettro differenziale dal miglior fit si calcolano le fluenze integrali omnidirezionali, ovvero la fluenza totale di particelle con energia maggiore di una certa soglia $E_{0}$. Integrando numericamente su una griglia discreta (5000 punti equi spaziati in spazio logaritmico da 0.05 a 1000 MeV) si ottiene:
 \begin{equation}
     J(>E_{0}) = 4\pi \int_{E_{0}}^{\infty} F(E) dE 
     \label{eq: fluenza integrale}
 \end{equation}
-Le soglie tipicamente utilizzate nella fisica dei SEP sono $E_0 = {10,30,60,100,500}$ MeV, questi valori di fluenza integrale vengono poi utilizzati per costruire la funzione di trasferimento dose-fluenza D(F) nel Capitolo 4.
+Le soglie tipicamente utilizzate nella fisica dei SEP sono $E_0 = {10,30,60,100,500}$ MeV. Questi valori di fluenza integrale vengono poi utilizzati per costruire la funzione di trasferimento dose-fluenza D(F) nel Capitolo 4.
 
 \section{Analisi 8 SEP}
-[piccola intro] Nel seguente capitolo vengono presentati i risultati dell'analisi spettrale appena descritta per ciascuno dei 8 eventi selezionati, alla fine viene presentata una tabella riassuntiva dei risultati ottenuti.
+Nel seguente capitolo vengono presentati i risultati dell'analisi spettrale appena descritta per ciascuno dei 8 eventi SEP selezionati, alla fine viene presentata una tabella riassuntiva dei risultati ottenuti.
 
 \subsection{Agosto 1972}
-L'evento SEP di Agosto 1972 è il prototipo del \textit{Worst-case scenario} per le missioni spaziali, nello studio di King et al. (1974) viene mostrato come questo evento sia estremamente anomalo rispetto agli altri eventi del ciclo solare 20, è probabilmente il più inteso mai registrato negli ultimi anni. Vari studi riportano la presenza di incompletezza nei dati probabilmente a causa di saturazione dei sensori, per questo motivo per questo evento a differenza degli altri, sono stati presi i parametri dello spettro riportati in un dataset da Raukunen et al.\cite{AUG_1972_Raukunen}, la Band function usata per questo fit comprende i dati dal satellite IMP-5 e da neutron monitor a terra, per avere un range energetico più ampio possibile:
+L'evento SEP di Agosto 1972 è il prototipo del \textit{Worst-case scenario} per le missioni spaziali. Nello studio di King et al. (1974) viene mostrato come questo evento sia estremamente anomalo rispetto agli altri avvenuti nel ciclo solare 20. E' uno tra i più intensi mai registrati negli ultimi anni. Vari studi riportano la presenza di incompletezza nei dati, probabilmente a causa di saturazione dei sensori. Per questo motivo, a differenza degli altri eventi, sono stati presi i parametri dello spettro riportati in un dataset da Raukunen et al.\cite{AUG_1972_Raukunen}. La Band function usata per questo fit comprende i dati dal satellite IMP-5 e da neutron monitor a terra, per avere un range energetico più ampio possibile:
 
 \begin{table}[h]
 \centering
@@ -324,69 +326,152 @@ GLE & {$J_0(p/cm^2)$} & {$\Delta J_0(p/cm^2)$} & {$\gamma_1$} & {$\Delta \gamma_
 \bottomrule
 \end{tabular}
 }%
-\end{table}la scelta di includere comunque questo evento senza rifare l'analisi dati da zero è giustificata dal fatto che questo evento è per l'appunto il riferimento standard per le stime di dose, e rappresenta il caso estremo peggiore da includere. Questi parametri sono stati ottenuti da un fit con la Band function e le incertezze sono stimate variando i parametri di interesse mantenendo gli altri fissi ai loro \textit{best-fit values}. In questo caso lo spettro è parametrizzato con la rigidità R anziché l'energia cinetica, questo è tipico di molti cataloghi SEP. La rigidità è definita come $R = \frac{p}{Ze}$ dove p è il momento della particella, Z il numero atomico e e la carica di un elettrone. Per protoni la conversione tra rigidità R in GV (giga-volt) e energia cinetica E in MeV è data dalla seguente formula:
-
-$$ R = \sqrt{(E^2 + 2Em)} \cdot 10^{-3} $$
+\end{table}
+\noindent La scelta di includere comunque questo evento, senza rifare l'analisi dati da zero, è giustificata dal fatto che questo evento è per l'appunto il riferimento standard per le stime di dose, e rappresenta il caso estremo peggiore da includere. Questi parametri sono stati ottenuti da un fit con la Band function e le incertezze sono stimate variando i parametri di interesse mantenendo gli altri fissi ai loro \textit{best-fit values}. In questo caso lo spettro è parametrizzato con la rigidità R anziché l'energia cinetica, questo è tipico di molti cataloghi SEP. La rigidità è definita come $R = \frac{p}{Ze}$ dove p è il momento della particella, e la carica di un elettrone e Z il numero atomico. Per protoni la conversione tra rigidità R in GV (giga-volt) e energia cinetica E in MeV è data dalla seguente formula:
+\begin{equation}
+    R = \sqrt{(E^2 + 2Em)} \cdot 10^{-3} 
+\end{equation}
 m rappresenta la massa del protone, 938.272 MeV. Per ricostruire lo spettro differenziale in energia si usa la regola della catena per le derivate: 
-$$\frac{dJ}{dE} = -\frac{dJ}{dR} \cdot \frac{dR}{dE} $$
-in questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale e $\frac{dR}{dE}$ è la derivata della formula di conversione tra rigidità ed energia. Questo da lo spettro omnidirezionale già integrato su angolo solido di $4\pi$ sr. Di seguito in Figura \ref{fig:aug_1972_spettro} viene riportato lo spettro differenziale ricostruito diviso per l'angolo solido $4\pi$ per coerenza con gli spettri.
+\begin{equation}
+    \frac{dJ}{dE} = -\frac{dJ}{dR} \cdot \frac{dR}{dE} 
+\end{equation}
+In questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale e $\frac{dR}{dE}$ è la derivata della formula di conversione tra rigidità ed energia. Questi dati forniscono lo spettro omnidirezionale, di seguito in Figura \ref{fig:aug_1972_spettro} viene riportato lo spettro differenziale ricostruito, diviso per l'angolo solido $4\pi$ per coerenza con gli spettri.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/AUG_1972_spettro.png}
-\caption{Spettro differenziale per l'evento di Agosto 1972.}
+\includegraphics[width=0.9\textwidth]{figures/Spettri/AUG1972_spectral_fit.pdf}
+\caption{Spettro fluenza differenziale ricostruito per l'evento di Agosto 1972.}
 \label{fig:aug_1972_spettro}
 \end{figure}
-
-Lo spettro ha un indice spettrale particolarmente duro $\gamma_1 = 0.87$, alle basse energie è relativamente piatto, per eventi cosi estremi infatti l'accelerazione da shock è molto efficiente, più particelle vengono accelerate alle alte energie. Attorno a $E_{break} = 127$ MeV c'è una transizione molto netta, lo spettro decade rapidamente con indice $\gamma_2 = 7.95$ anch'esso in accordo per eventi \textit{hard} come questo di Agosto 1972. Successivamente sono state calcolate le fluenze integrali, i risultati sono riportati nella seguente tabella:
-\begin{table}[h]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{
-c
-S[scientific-notation=true]
-S[scientific-notation=true]
-S[scientific-notation=true]
-l
-l
-}
-\toprule
-{Soglia} & {Calcolata ($\text{cm}^{-2}$)} & {Jiggens (2018) ($\text{cm}^{-2}$)} & {King (1974) ($\text{cm}^{-2}$)} & {Note} \\
-\midrule
-$>10$ MeV  & 5.30e10 & 1.96e10 & 2.25e10 & {$\sim 2.4\times$ King} \\
-$>30$ MeV  & 7.85e9  & 8.42e9  & 8.10e9  & {buon accordo} \\
-$>60$ MeV  & 1.38e9  & 2.58e9  & 2.45e9  & {$\sim 0.6\times$ King} \\
-$>100$ MeV & 2.57e8  & {---}   & 5.50e8  & {$\sim 0.5\times$ King} \\
-$>500$ MeV & 2.17e5  & {---}   & {---}   & {---} \\
-\bottomrule
-\end{tabular}
-}%
-\caption{Fluenze integrali calcolate per l'evento di Agosto 1972 (GLE 24) dalla Band function (Raukunen et al. 2018), confrontate con i valori di King (1974) e Jiggens et al. (2014, dati IMP-5).}
-\end{table}
-
-
-Le differenze tra i valori di fluenza integrale calcolata e i valori riportati da King(1974) sono attese, i parametri usati da Raukunen sono calibrati non solo sui dati di IMP-5, che come accennato in precedenza presenta problemi noti di saturazione dei sensori come notato da Jiggens et al. (2014).
-
-
-
-
+\noindent Lo spettro ha un indice spettrale particolarmente duro $\gamma_1 = 0.87$, alle basse energie è relativamente piatto, per eventi cosi estremi infatti l'accelerazione da shock è molto efficiente, più particelle vengono accelerate alle alte energie. Attorno a $E_{break} = 127$ MeV c'è una transizione molto netta, lo spettro decade rapidamente con indice $\gamma_2 = 7.95$ anch'esso in accordo per eventi estremi come questo di Agosto 1972.
 
 
 
 \subsection{Ottobre 1989}
+Durante la seconda metà del 1989 il sole era particolarmente attivo. L'evento di Ottobre 1989 è uno dei più intensi registrati nel ciclo solare 22. L'evento è iniziato alle 12:58 UT del 19 Ottobre, in concordanza con un flare di classe X13, i protoni energetici hanno raggiunto il picco a Terra attorno alle 15:30 del 20 Ottobre. I dati scaricati per questo evento provengono dal satellite GOES-07 (SEPEM RDSv3), equipaggiato con il detector EPS (canali energetici da $4.2-500$ MeV).
 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Flussi/OCT1989_fluxes_raw_net_final.pdf}
+\caption{Dati dei flussi differenziali protonici da GOES-07 (EPS) per l'evento di OCT 1989: a) Flussi differenziali scaricati da SEPEM RDSv3, b) Flussi ripuliti con tecnica discussa capitolo precedente.}
+\label{fig:oct_1989_goes_fluxes}
+\end{figure}
+\noindent Per il calcolo della fluenza differenziale sono stati utilizzati i dati ripuliti, come mostrato in Figura \ref{fig:oct_1989_goes_fluxes}, gli intervalli e gli errori selezioni per questo evento sono:
+\begin{itemize}
+    \item [-] Periodo di \textit{background}: 09/10/1989 00:00:00 UT - 17/10/1989 00:00:00 UT
+    \item [-] Periodo di integrazione: 19/10/1989 00:00:00 UT - 01/11/1989 00:00:00 UT
+    \item [-] Errore sistematico per GOES-07 (EPS): 25\%
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Spettri/OCT1989_spectral_fit_final.pdf}
+\caption{Spettro fluenza differenziale per l'evento di Ottobre 1989, con dati da GOES-07 (EPS) e bande di confidenza.}
+\label{fig:oct_1989_spettro}
+\end{figure}
+\noindent Come si nota dalla figura \ref{fig:oct_1989_goes_fluxes} l'evento di OCT 1989 è in realtà una sequenza di più eventi ravvicinati, lo scopo di questo elaborato è quello stimare la fluenza cumulativa degli eventi, per questo si è scelto di integrare su tutto il periodo dal 19 Ottobre fino al 01 Novembre, quando il flusso torna vicino al valore del background.
+La Band function descrive bene lo spettro di questo evento con un $\chi_{\nu}^2 = 1.2$. Il risultato cumulativo di tutti questi eventi produce uno spettro con indice spettrale molto duro $\gamma_a = 1.2$ e un $E_{break}= 44$ MeV piuttosto alto. Questo è coerente con un evento intenso come quello di AUG 1972, il flusso di particelle rimane alto fino a centinaia di MeV.
+Avendo scelto solo lo strumento EPS per i punti di questo fit, il range energetico selezionato in questo caso va da $1-1000$ MeV. Da notare infatti che ulteriori estrapolazioni sotto o sopra questi valori producono bande di confidenza più larghe.
 
 \subsection{Ottobre 2003}
 
+L'evento di Ottobre 2003, noto anche come \textit{Halloween storm}, è forse l'evento SEP più famoso e studiato in letteratura. Tre gruppi di macchie solari, tra cui la più grande misurava 13 volte la Terra (cite: https://www.ncei.noaa.gov/news/great-halloween-solar-storm-2003) sono comparse sul Sole verso la fine di Ottobre 2003, successivamente una serie di tempeste solari hanno colpito la terra fino all'inizio di Novembre. Il picco è avvenuto il 28 Ottobre, quando un \textit{X17.2 flare} ha accelerato enormi quantità di gas nell'atmosfera solare, provocando molteplici tempeste geomagnetiche misurabili a Terra.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{figures/Solar_storm2003.png}
+\caption{Immagine del solar flare del 28 Ottobre 2003, catturata dal satellite SOHO, \href{https://soho.nascom.nasa.gov/hotshots/2003_10_28/}{link originale}.}
+\label{fig:halloween storm}
+\end{figure}
+\noindent Questo evento è spesso considerato come il \textit{Worst-case scenario} per il ciclo solare 23 ed è un benchmark da inserire nelle stime di dose per missioni spaziali. I dati utilizzati per l'analisi di questo evento provengono dal satellite GOES-11 (EPS/HEPAD), per le alte energie ($4-700$ MeV) e da ACE (EPAM/LEMS120) per le basse energie ($0.068-4.80$ MeV).
+
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf}
+\caption{Dati dei flussi differenziali protonici da GOES-11 (EPS+HEPAD) per l'evento di Ottobre 2003: (a) flussi raw da SEPEM RDS v3.0, (b) flussi ripuliti. Le linee verticali rosse tratteggiate indicano i brillamenti associati.}
+\label{fig:oct_2003_goes_fluxes}
+\end{figure}
+
+
+
+Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri:
+\begin{itemize}
+    \item[-] Periodo di \textit{background}: 07/10/2003 00:00:00 UT - 21/10/2003 00:00:00 UT.
+    \item[-] Periodo di integrazione:  26/10/2003 12:00:00 UT - 09/11/2003 00:00:00 UT.
+    \item[-] Errore sistematico per GOES-11 e ACE: 25\%.
+    \item[-] Rimozione del canale ACE P1p ($0.047, 0.068$) MeV poichè troppo rumoroso.
+\end{itemize}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Spettri/OCT2003_spectral_fit_finale.pdf}
+\caption{Spettro fluenza differenziale per l'evento di Ottobre 2003, con dati da GOES-11 (EPS+HEPAD), ACE (LEMS120) e bande di confidenza.}
+\label{fig:oct_2003_spectral_fit}
+\end{figure}
+\noindent La Band function cattura bene l'andamento globale dello spettro, il $\chi_{\nu}^2 =2.20$ indica che ci sono alcune deviazioni dovute principalmente alla combinanazione di strumenti diversi. Nonostante ciò le bande di confidenza sono molto strette, indicando che i parametri sono ben vincolati. Questo evento a differenza degli altri ha uno spettro piuttosto piatto alle basse energie $\gamma_a = 1.01$, ciò significa che c'è un ampia popolazione di particelle a basse energie. Crolla moderatamente sopra i 40 MeV, $\gamma_b= 3.7$, quindi non è tra i più duri alle alte energie. Questo significa che la dose dietro una schermatura sottile sarà altissima perchè a basse energie la fluenza è molto alta, tuttavia per schermature più spesse il contributo decade rapidamente rispetto ad un evento come AUG 1972 con spettro durissimo $\gamma_b = 7.95$.
 
 
 \subsection{Gennaio 2005}
+L'evento di Gennaio 2005 è stato l'altro grande evento record del ciclo solare 23. E' particolare sopratutto perché si è verificato verso la fine del massimo solare, quando l'attività stava diminuendo, questo a dimostrazione del fatto che eventi estremi e intensi possono verificarsi anche a prescindere dal periodo del ciclo solare. 
+Il 20 Gennaio 2005 il flusso di protoni ha registrato un picco senza precedenti: 650 pfu (particle flux unit) per protoni con $E>100$ MeV (cite:https://arxiv.org/pdf/0806.4424). Prima di questo solamente 5 altri eventi avevano superato i 100 pfu. 
+Per l'analisi spettrale di questo evento sono stati scaricati i dati dal satellite GOES-11 (EPS/HEPAD) e ACE(EPAM/LEMS120), analogamente a quanto fatto per l'evento di OCT 2003. 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf}
+\caption{Dati dei flussi differenziali protonici per l'evento di Gennaio 2005: (a) flussi raw da GOES-11 (EPS+HEPAD), (b) flussi ripuliti.}
+\label{fig:jan_2005_goes_fluxes}
+\end{figure}
+\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri:
+\begin{itemize}
+    \item[-] Periodo di \textit{background}: 05/01/2005 00:00:00 UT - 14/01/2005 00:00:00 UT.
+    \item[-] Periodo di integrazione: 15/01/2005 00:00:00 UT - 25/01/2005 00:00:00 UT.
+    \item[-] Errore sistematico per GOES-11 e ACE: 25\%.
+    \item[-] Rimozione del canale GOES EPS-P7 ($165.0, 500$) MeV poichè spesso rumoroso, al suo posto per ancorare i dati a quelle energie sono stati usati i canali di HEPAD.
+    \item[-] Rimozione del canale ACE P1p ($0.047, 0.068$) MeV come per OCT 2003 troppo rumoroso. 
+\end{itemize}
+
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Spettri/JAN2005_spectral_fit.pdf}
+\caption{Spettro fluenza differenziale per l'evento di Gennaio 2005, con dati da GOES-11 (EPS+HEPAD), ACE (LEMS120) e bande di confidenza.}
+\label{fig:jan_2005_spectral_fit}
+\end{figure}
+\noindent Anche in questo caso lo spettro trovato per questo evento segue la Band Function con un $\chi_{\nu}^2 = 1.6$. Il fit è ben vincolato e le bande di confidenza sono altrettanto strette. Il $\gamma_a = 1.3$ è più ripido di quello di OCT 2003, rientra comunque nel range di eventi SEP graduali $1.2-1.6$. Il break energetico è a $E_{break} = 30$ MeV, più basso di quello di OCT 2003, questo significa che il contributo alle alte energie decade più rapidamente rispetto a quest'ultimo. Tuttavia, nonostante questo, il $\gamma_b = 3.2$ è più duro di quello di OCT 2003, questo significa che la fluenza alle alte energie è comunque piuttosto alta, e non decade così rapidamente come in altri eventi con $\gamma_b > 4$.
 
 
 
 \subsection{Luglio 2012}
+L'evento del 23 Luglio 2012 è associato alla più intensa CME del ciclo solare 24. 
+Viene classificato come \textit{Carrington - class event}, ovvero un evento di intesità paragonabile a quello di Carrington del 1859, la tempesta geomagnetica più intensa mai registrata nella storia, che ha causato danni alle reti elettroniche  dell'epoca (principalmente telegrafi). Questo evento piuttosce eccezionale ha \textit{mancato} la Terra di soli 9 giorni, passando a circa 1.5 milioni di km. Lungo la traiettoria della CME lanciata alle 02:08 del 23 Luglio c'era però un satellite, STEREO-A, che è riuscito a sopravvivere parzialmente alla tempesta e a registrare dati.  I dati riportati in questa analisi vengono proprio dai detector a bordo di STEREO-A: LET(Low Energy Telescope) per le basse energie ($1.8-15.0$ MeV) e HET (High Energy Telescope) per le alte energie ($13.0-100$ MeV).
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf}
+\caption{Dati dei flussi differenziali protonici per l'evento di Luglio 2012: (a) flussi raw da STEREO-A (HET), (b) flussi ripuliti.}
+\label{fig:jul_2012_stereo_fluxes}
+\end{figure}
+\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri:
+\begin{itemize}
+    \item[-] Periodo di \textit{background} per HET: 16/06/2012 00:00:00 UT - 28/06/2012 00:00:00 UT.
+    \item[]  Periodi di \textit{background} per LET: 17/06/2012 00:00:00 UT .- 24/06/2012 00:00:00 UT.
+    \item[-] Periodo di integrazione: 23/07/2012 00:00:00 UT - 05/08/2012 00:00:00 UT.
+    \item[-] Errore sistematico per HET e LET : 7.5\%.
+    \item[-] Fattore scaling: tra l'ultimo punto di HET e il primo di LET si ottiene un fattore di scaling $S= 1.16$. 
+
+
+\end{itemize}
+
+I due detector hanno calibrazioni indipendenti e geoemtrie diverse, per questo motivo nella zona di sovrapposizione (10-12) MeV i dati non si raccordano perfettamente. Inoltre per un evento così estremo è stato riportato (cit) che i detector LET hanno possibilmente subito saturazione. Le fluenze di LET sono dunque state moltiplicate ~16\%. 
 
 
 \subsection{Settembre 2017}
