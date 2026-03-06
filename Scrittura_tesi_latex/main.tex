@@ -516,19 +516,93 @@ Per questo evento sono stati usati i dati dal satellite ACE (energie da 0.047-4.
 \noindent In questo caso il range energetico di dati è molto ampio 0.05-1000 MeV, e il modello Band function descrive molto bene lo spettro, con un $\chi_{\nu}^2 = 0.8$. L'indice spettrale a basse energie $\gamma_a = 1.3\pm0.05$ è consistente con accelerazione da shock CME. Il break energetico è a $E_{break} = 40$ MeV, questo è un valore piuttosto alto, tipico per eventi \textit{Ground level enhancment}.
 
 \subsection{Ottobre 2021}
+Il primo \textit{Ground-level enhancement} (GLE) del ciclo solare 25 è stato registrato il 28 Ottobre 2021. A questo evento è stato associato un flare di classe X1.0 e successivamente una CME con velocità di circa 1240km/s (). E' stato il primo evento SEP \textit{multi-spacecraft} registrato durante questo ciclo solare. PSP, GOES, STEREO-A, Solar Orbiter, SOHO, BepiColombo e persino MSL sulla superfice di Marte hanno tutte registrato un incremento di flusso associato a questo evento, con una distribuzione quasi a 360 gradi intorno al Sole.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/OCT_2021_multispacecraft_image.png}
+\caption{Vista del piano equatoriale solare con la posizione di vari satelliti e i flussi da loro registrati il 28 Ottobre 2021. Immagine adattata da \href{https://arxiv.org/html/2401.05991v1}{link.}}
+\label{fig:oct_2021_multispacecraft}
+\end{figure}
+\noindent I risultati suggeriscono che STEREO-A era ben connesso alla CME e i flussi misurati erano dominati dall'accelerazione e iniezione da parte dello shock. Al contrario i flussi misurati dal satellite GOES, più vicino alla Terra, provengono da un shock secondario. Un primo fit è stato eseguito con i dati da STEREO-A (LET/HET) tuttavia il range energetico ristretto da 1.2-100 MeV non ha permesso di vincolare bene il break energetico di un evento così intenso. Dunque è stato scelto di usare i dati da GOES-16 (SGPS), con copertura energetica 1.02-400 MeV più adatta per gli scopi di questo elaborato per le stime della TID dietro schermatura.
 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf}
+\caption{Dati dei flussi differenziali protonici per l'evento di Ottobre 2021: (a) flussi raw da GOES-16 (SGPS), (b) flussi ripuliti.}
+\label{fig:oct_2021_goes16_fluxes}
+\end{figure}
+\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri:
 
+\begin{itemize}
+    \item[-] Periodo di \textit{background}: 12/10/2021 00:00:00 UT - 25/10/2021 00:00:00 UT.
+    \item[-] Periodo di integrazione: 28/10/2021 10:00:00 UT - 03/11/2021 18:00:00 UT.    
+    \item[-] Errore sistematico per GOES-16 (SGPS): 25\%.
+    \item[-] Range energetico per il fit: 0.05-1000 MeV.
+\end{itemize}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf}
+\caption{Spettro fluenza differenziale per l'evento di Ottobre 2021, con dati da GOES-16 (SGPS) e bande di confidenza.}
+\label{fig:oct_2021_spectral_fit}
+\end{figure}
+\noindent Per questo evento il fit è stato eseguito con il modello funzionale E-R con un $\chi_{\nu}^2 = 1.7$. L'indice spettrale $\gamma = 1.97\pm0.7$ indica uno spettro piatto coerente con i risultati trovati da () che riportavano un picco di flusso $E>10$ MeV di soli 30 pfu. L'energia di cutoff $E_{R} = 232.7\pm72.5$ MeV è particolarmente alta. Questo significa che lo shock della CME ha accellerato i protoni fino a centinaia di MeV prima che il cutoff intervenisse, questo conferma che le particelle ad alta energia erano più abbondanti rispetto a quella a bassa energia.
 \subsection{Maggio 2024}
+Arriviamo ora all'ultimo evento SEP selezionato per il ciclo solare 25. Noto anche come \textit{Mother's day storm}, questo evento è stato registrato a partire dal 7 Maggio 2024, quando almeno sette CME in sequenza hanno colpito i \textit{neutron monitors} a Terra, classificando questo evento come un \textit{Ground level enhancement} (GLE). Il picco di flusso è stato misurato il 10 Maggio, in concomitanza di un potente flare di classe X5.8. Per questo evento sono stati selezionati i dati da GOES-18 (SGPS) con copertura energetica da 1.0-390.0 MeV. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf}
+\caption{Dati dei flussi differenziali protonici per l'evento di Maggio 2024: (a) flussi raw da GOES-18 (SGPS), (b) flussi ripuliti.}
+\label{fig:may_2024_goes18_fluxes}
+\end{figure}
+\noindent I parametri selezionati per il calcolo della fluenza differenziale sono:
+\begin{itemize}
+    \item[-] Periodo di \textit{background}: 04/05/2024 00:00:00 UT - 08/05/2024 00:00:00 UT.
+    \item[-] Periodo di integrazione: 10/05/2024 00:00:00 UT - 18/05/2024 00:00:00 UT.    
+    \item[-] Errore sistematico per GOES-18 (SGPS): 20\%.
+\end{itemize}
 
-
-
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/Spettri/MAY2024_ER_spectral_fit1.pdf}
+\caption{Spettro fluenza differenziale per l'evento di Maggio 2024, con dati da GOES-18 (SGPS) e bande di confidenza.}
+\label{fig:may_2024_spectral_fit}
+\end{figure}
+\noindent Per questo evento il fit è stato eseguito con il modello funzionale E-R con un $\chi_{\nu}^2 = 2.0$. L'indice spettrale $\gamma = 2.67\pm0.06$ è significativamente più ripido di quello di OCT 2021, coerente con il fatto che questo evento ha riportato un flusso $E>10$ MeV più alto, circa 116 pfu contro i 30 pfu di OCT 2021.  
 
 
 \section{Tabella riassuntiva: risultati}
+Nella seguente sezione vengono riportati i risultati ottenuti per tutti 8 eventi SEP analizzati. Oltre ai valori degli indici spettrali, la grandezza più importante per confrontarli è la fluenza integrale omnidirezionale sopra soglia $J(>E_0)$ calcolata secondo l'equazione \ref{eq: fluenza integrale}.
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\hline\hline
+Evento 
+& $J(>10\,\mathrm{MeV})$ 
+& $J(>30\,\mathrm{MeV})$ 
+& $J(>60\,\mathrm{MeV})$ 
+& $J(>100\,\mathrm{MeV})$ 
+& $J(>500\,\mathrm{MeV})$ \\
+\hline
+AUG 1972 & $5.30 \times 10^{10}$ & $7.85 \times 10^{9}$  & $1.38 \times 10^{9}$  & $2.57 \times 10^{8}$  & $2.17 \times 10^{5}$ \\
+OCT 1989 & $1.56 \times 10^{10}$ & $2.42 \times 10^{9}$  & $5.84 \times 10^{8}$  & $2.02 \times 10^{8}$  & $5.54 \times 10^{6}$ \\
+OCT 2003 & $1.56 \times 10^{10}$ & $2.27 \times 10^{9}$  & $3.62 \times 10^{8}$  & $9.07 \times 10^{7}$  & $9.87 \times 10^{5}$ \\
+JUL 2012 & $7.76 \times 10^{9}$  & $1.98 \times 10^{9}$  & $4.89 \times 10^{8}$  & $1.58 \times 10^{8}$  & $3.60 \times 10^{6}$ \\
+JAN 2005 & $3.88 \times 10^{9}$  & $7.01 \times 10^{8}$  & $2.08 \times 10^{8}$  & $8.45 \times 10^{7}$  & $3.64 \times 10^{6}$ \\
+SEP 2017 & $2.69 \times 10^{9}$  & $4.07 \times 10^{8}$  & $8.12 \times 10^{7}$  & $2.45 \times 10^{7}$  & $4.55 \times 10^{5}$ \\
+MAY 2024 & $2.58 \times 10^{8}$  & $3.72 \times 10^{7}$  & $1.01 \times 10^{7}$  & $3.62 \times 10^{6}$  & $5.24 \times 10^{4}$ \\
+OCT 2021 & $7.06 \times 10^{7}$  & $1.93 \times 10^{7}$  & $7.41 \times 10^{6}$  & $3.26 \times 10^{6}$  & $5.44 \times 10^{4}$ \\
+\hline\hline
+\end{tabular}%
+}
+\caption{Fluenze integrali omnidirezionali per gli otto eventi SEP analizzati, ordinate per $J(>10\,\mathrm{MeV})$ decrescente. Le fluenze sono espresse in \unit{\per\cm\squared}.}
+\label{tab:fluenze_integrali}
+\end{table}
+
 
 \begin{itemize}
     \item[-] AUG 1972
