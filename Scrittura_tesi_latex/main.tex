@@ -575,6 +575,10 @@ Arriviamo ora all'ultimo evento SEP selezionato per il ciclo solare 25. Noto anc
 
 \section{Tabella riassuntiva: risultati}
 Nella seguente sezione vengono riportati i risultati ottenuti per tutti 8 eventi SEP analizzati. Oltre ai valori degli indici spettrali, la grandezza più importante per confrontarli è la fluenza integrale omnidirezionale sopra soglia $J(>E_0)$ calcolata secondo l'equazione \ref{eq: fluenza integrale}.
+Questi 8 eventi SEP coprono quasi tre ordini di grandezza in fluenza integrale sopra 10 MeV, da $5.3 \times 10^{10}$ a $7.06 \times 10^7$ particelle per cm$^2$. In particolare, gli eventi di AUG 1972, OCT 1989 e OCT 2003 come ci si aspettava sono i più intensi. Mentre gli eventi di OCT 2021 e MAY 2024 hanno fluenze integrali più basse, rispettivamente $7.06 \times 10^7$ e $2.58 \times 10^8$ particelle per cm$^2$ sopra 10 MeV. Questi risultati riflettono la grande variabilità degli eventi SEP, e dimostra che esistono cicli solari più attivi di altri.
+
+
+
 
 \begin{table}[h]
 \centering
@@ -603,23 +607,46 @@ OCT 2021 & $7.06 \times 10^{7}$  & $1.93 \times 10^{7}$  & $7.41 \times 10^{6}$ 
 \label{tab:fluenze_integrali}
 \end{table}
 
-
-\begin{itemize}
-    \item[-] AUG 1972
-    \item[-] OCT 1989 
-    \item[-] OCT 2003
-    \item[-] JAN 2005
-    \item[-] JUL 2012
-    \item[-] SEP 2017
-    \item[-] OCT 2021
-    \item[-] MAY 2024
-\end{itemize}
-
-
-%---------------------------------------------------------------
-% CAPITOLO 3 — CALCOLO DOSE SRNIEL
-%---------------------------------------------------------------
 \chapter{Calcolo della dose SR-NIEL}
+Nel seguente capitolo vengono riportati i risultati ottenuti per il calcolo della TID dietro schermatura. Per queste simulazioni è stata utilizzata la piattaforma web SR-NIEL, sviluppata nel framework ASIF (ASI Supported Irradiation Facilities) dall'Agenzia Spaziale Italiana con notevoli contributi dall'università di Milano-Bicocca. Lo scopo di questo elaborato era quello di calcolare la \textit{Total Ionizing Dose} (TID) in silicio dietro uno spessore di alluminio, un modello semplificato per la schermatura di una sonda spaziale interplanetaria.
+Quando una particella carica attraversa un materiale, perde la sua energia cinetica principalmente attraverso interazioni elettromagnetiche anelastiche con gli elettroni atomici. La quantità di energia $dE$ persa per unità di percorso $dx$ prende il nome di \textit{stopping power elettronico}:
+\begin{equation}
+    S(E) = -\frac{dE}{dx}    
+\end{equation}
+Una prima espressone della perdita di energia fu derivata da Bohr (1913). Usando un approccio puramente classico si considera una particella incidente con carica $Z_1e$, massa m, velocità v che interagisce con potenziale coulombiano con un elettrone. L'energia trasferita a ciascun elettrone dipende dal parametro d'impatto b, ovvero la distanza minima tra la traiettoria della particella e l'elettrone bersaglio. Integrando su tutti i parametri d'impatto possibili si ottiene la seguente espressione: 
+
+\begin{equation}
+    \frac{dE}{dx} = \frac{4\pi Z_2 e^4}{mv^2}Z_1^2 \ln(\frac{mv^3}{Z_1 e^2 \omega})
+\end{equation}
+Dove $Z_2$ è il numero atomico degli atomi del bersagio e $\omega$ è la frequenza di rotazione dell'elettrone $b_{max} = \frac{v}{\omega}$.
+Bethe (1930) e Bloch (1933) migliorarono questa espressione rifacendo il calcolo usando la meccanica quantistica, ottenendo la seguente formula, nota come \textit{formula di Bethe-Bloch}:
+\begin{equation}
+    \frac{dE}{dx} = 2\pi N_a r_e^2 m_e c^2 \rho \frac{Z z^2}{A \beta} \left(\ln\left(\frac{2m_e\gamma^2v^2W_m}{I^2}\right)-2\beta^2\right)
+\end{equation}
+Dove $N_a$ è il numero di Avogadro, $r_e$ è il raggio classico dell'elettrone, $m_e$ la sua massa, $\rho$ la densità del materiale, $Z$ e $A$ sono rispettivamente il numero atomico e il peso atomico del materiale, $z$ è la carica della particella incidente, $\beta$ è la velocità della particella incidente in unità di c, $\gamma$ è il fattore di Lorentz, $W_m$ è l'energia massima trasferibile per una particella con massa $m >> m_e$ e $I$ è il potenziale di ionizzazione del materiale. Ad oggi la formula di Bethe-Bloch è stata ulteriormente modificata, aggiungendo termini di correzione:
+
+\begin{equation}
+    -\frac{dE}{dx} = \frac{0.1535 \, \rho \, z^2 Z}{A \, \beta^2} \left[ \ln\!\left(\frac{2m v^2 W_m}{I^2(1-\beta^2)}\right) - 2\beta^2 - \delta - U \right] \quad [\text{MeV/cm}]
+    \label{eq:bethe_bloch}
+\end{equation}
+Dove $\delta$ è la correzione di densità e $U=2\frac{C}{Z}$ è il termine di shell correction. Il calcolatore SR-NIEL per il calcolo dello stopping power usa le tabelle sperimentali messe a disposizione da SRIM 2013 fino a 5 GeV/amu, ma a basse energie si basa proprio sulla Bethe-Bloch \ref{eq:bethe_bloch}. SR-NIEL adotta l'approssimazione CSDA (\textit{Continuos Slowing Down Approximation}) per propagare lo spettro attraverso la schermatura: viene suddiviso lo spessore totale in N step e propaga lo spettro iterativamente. Questi codici considerano solo la perdita di energia elettronica e non tengono conto della produzione di particelle secondarie (neutroni, frammenti nucleari e protoni secondari) che tipicamente si verificano attraverso processi di interazione nucleare.
+
+I codici utilizzati per questi calcoli sono principalmente tre. Il primo \textit{Web Calculator for residual spectral fluences for unidirectional protons and ions traversing a shielding material} è un calcolatore che permette di ottenere la fluenza spettrale residua per un flusso di particelle uniforme e unidirezionale che incide perpendicolarmente su un assorbitore planare.  
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/SRNIEL_calcolatore_planare.png}
+\caption{Schema del flusso di particelle incidenti per il calcolatore SR-NIEL di fluenza residua in geometria planare.}
+\label{fig:SRNIEL_calcolatore_planare}
+\end{figure}
+\noindent I parametri di input utilizzati per questa configurazione sono i seguenti:
+\begin{itemize}
+    \item [-] Particella incidente: protone, massa 1.0078 [amu].
+    \item [-] Materiale del target: Alluminio (Z=13), densità 2.7 g/cm$^3$.
+    \item [-] Spessore attraversato : 10 g/cm$^2$ (equivalente a 3.7 cm di alluminio).
+    \item [-] Spettro in ingresso: Energia [MeV] e fluenza spettrale ricavata dai fit dei 8 SEP [cm$^{-2}$ MeV$^{-1}$].
+\end{itemize}
+Il second codice utilizzato è \textit{Web Calcu}
+
 
 
 \section{Modello simulazione SR-NIEL}

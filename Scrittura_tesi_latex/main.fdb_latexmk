@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1772803360.6283 "main.bcf" "main.bbl" "main" 1772809202.60724 0
+["biber main"] 1772817094.66351 "main.bcf" "main.bbl" "main" 1772818951.43656 0
   "bibliography.bib" 1772563889 3170 6cc82ff05ee9f5d495c38da13e79d276 ""
-  "main.bcf" 1772809202 109212 9fe66d3bc82f931aded0d50ef90da81c "pdflatex"
+  "main.bcf" 1772818951 109212 9fe66d3bc82f931aded0d50ef90da81c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1772809198.36289 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1772809202.60861 0
+["pdflatex"] 1772818942.70758 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1772818951.43751 0
   "Figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf" 1772730125 126691 b1e92314ea6ec3d8e04c0b2f31514373 ""
   "Figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf" 1772731988 209981 99ba64cfdad7fbccdc57920cdf8116b5 ""
   "Figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf" 1772807793 146060 f92792ace9dd5e4d948eb5ec50617a16 ""
@@ -16,6 +16,7 @@
   "Figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf" 1772740638 114265 428fbf55abba64b52566e5231aecd706 ""
   "Figures/MOS_transistor.png" 1771854759 233561 61ce332ea85b9bd2bb9a172e831a0ba1 ""
   "Figures/OCT_2021_multispacecraft_image.png" 1772803164 907617 30335317f84b5786d284ce77c118573d ""
+  "Figures/SRNIEL_calcolatore_planare.png" 1772812828 62224 9321d03c2ed326630541b27a12c7a537 ""
   "Figures/Solar_cycle.png" 1771669442 401107 d68e28e26324cba23a44776af5922711 ""
   "Figures/Solar_storm2003.png" 1772722172 4050332 7bbf2a9ab2c20e02f791d5907943a5c5 ""
   "Figures/Spettri/AUG1972_spectral_fit.pdf" 1772727410 58896 4c365027ea3c3970c89f159ddb0db4f1 ""
@@ -28,7 +29,7 @@
   "Figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf" 1772805556 56064 4f3374599dc770c7a99e5cf0586da990 ""
   "Figures/Spettri/SEP2017_spectral_fit_final.pdf" 1772741907 68600 6879d5e3204f567fe89e289b482375a6 ""
   "Figures/Tipologia_SEP.png" 1771512839 177798 a93b19330033d3af433b5233bba30848 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1772809195 54486 7bcfa4e35938d179824d6f64ebe1ac38 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1772818940 59483 7f0ac75d60a40dbfc56e5dc386f7b0d3 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -183,12 +184,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1772809202 18225 451f9d1a6da9311a69bd9c710ec89478 "pdflatex"
-  "main.bbl" 1772803370 19357 a44a0f5a08de8cd4c01e839e25ea618d "biber main"
-  "main.out" 1772809202 6174 fa8a8ea11564492bf499c36352d2571a "pdflatex"
-  "main.run.xml" 1772809202 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1772809195 54486 7bcfa4e35938d179824d6f64ebe1ac38 ""
-  "main.toc" 1772809202 3119 59622ad0fbf5b8f11e2c6f8c9912aa4e "pdflatex"
+  "main.aux" 1772818951 18722 b743d0c770760144cc2c2869aa2d6106 "pdflatex"
+  "main.bbl" 1772817096 19357 a44a0f5a08de8cd4c01e839e25ea618d "biber main"
+  "main.out" 1772818951 6174 c5733603be4d43819c681c7484af8ded "pdflatex"
+  "main.run.xml" 1772818951 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1772818940 59483 7f0ac75d60a40dbfc56e5dc386f7b0d3 ""
+  "main.toc" 1772818951 3119 3edcae32857e1a4d4dadb543107809ad "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
