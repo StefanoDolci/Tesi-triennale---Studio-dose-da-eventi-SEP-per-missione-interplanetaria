@@ -21,18 +21,13 @@
 \contentsline {subsection}{\numberline {2.2.8}Maggio 2024}{31}{subsection.2.2.8}%
 \contentsline {section}{\numberline {2.3}Tabella riassuntiva: risultati}{33}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Calcolo della dose SR-NIEL}{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Modello simulazione SR-NIEL}{37}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Geometrie e modello della sonda}{37}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Propagazione delle incertezze}{38}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Risultati dosi stimate}{38}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Funzione di trasferimento}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Funzione dose-fluenza D(F)}{39}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Influenza della metrica}{39}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Stime della dose per la missione}{40}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Modelli probabilistici SEP}{40}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Parametri missionistici}{40}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Simulazioni SAPPHIRE}{40}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Validazione con missioni reali}{40}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusioni e miglioramenti}{41}{chapter.6}%
-\contentsline {chapter}{Bibliografia}{42}{chapter*.27}%
-\contentsline {chapter}{\numberline {A}Appendice}{43}{appendix.Alph1}%
+\contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{39}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{42}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Stime della dose per la missione}{44}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modelli probabilistici SEP}{44}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Parametri missionistici}{44}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Simulazioni SAPPHIRE}{44}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Validazione con missioni reali}{44}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusioni e miglioramenti}{45}{chapter.5}%
+\contentsline {chapter}{Bibliografia}{46}{chapter*.32}%
+\contentsline {chapter}{\numberline {A}Appendice}{47}{appendix.Alph1}%

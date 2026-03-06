@@ -630,7 +630,6 @@ Dove $N_a$ è il numero di Avogadro, $r_e$ è il raggio classico dell'elettrone,
     \label{eq:bethe_bloch}
 \end{equation}
 Dove $\delta$ è la correzione di densità e $U=2\frac{C}{Z}$ è il termine di shell correction. Il calcolatore SR-NIEL per il calcolo dello stopping power usa le tabelle sperimentali messe a disposizione da SRIM 2013 fino a 5 GeV/amu, ma a basse energie si basa proprio sulla Bethe-Bloch \ref{eq:bethe_bloch}. SR-NIEL adotta l'approssimazione CSDA (\textit{Continuos Slowing Down Approximation}) per propagare lo spettro attraverso la schermatura: viene suddiviso lo spessore totale in N step e propaga lo spettro iterativamente. Questi codici considerano solo la perdita di energia elettronica e non tengono conto della produzione di particelle secondarie (neutroni, frammenti nucleari e protoni secondari) che tipicamente si verificano attraverso processi di interazione nucleare.
-
 I codici utilizzati per questi calcoli sono principalmente tre. Il primo \textit{Web Calculator for residual spectral fluences for unidirectional protons and ions traversing a shielding material} è un calcolatore che permette di ottenere la fluenza spettrale residua per un flusso di particelle uniforme e unidirezionale che incide perpendicolarmente su un assorbitore planare.  
 \begin{figure}[H]
 \centering
@@ -645,40 +644,120 @@ I codici utilizzati per questi calcoli sono principalmente tre. Il primo \textit
     \item [-] Spessore attraversato : 10 g/cm$^2$ (equivalente a 3.7 cm di alluminio).
     \item [-] Spettro in ingresso: Energia [MeV] e fluenza spettrale ricavata dai fit dei 8 SEP [cm$^{-2}$ MeV$^{-1}$].
 \end{itemize}
-Il second codice utilizzato è \textit{Web Calcu}
+Il second codice utilizzato è \textit{Web Calculator for residual spectral fluences of isotropically distributed protons and ions traversing a spherical absorber}. Questo codice a differenza del caso planare, considera un flusso di particelle isotropico, calcola la distribuzione di probabilità dei cammini all'interno dell'assorbitore tramite simulazione GEANT4, per ciascun cammino applica lo stesso calcolo CSDA, infine restituisce la fluenza spettrale residua dentro un assorbitore sferico di raggio R e spessore t a distanza dal centro $r= R-t$. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figures/Schermatura_sferica.png}
+\caption{Schema del flusso di particelle incidenti per il calcolatore SR-NIEL di fluenza residua in geometria sferica.}
+\label{fig:SRNIEL_calcolatore_sferico}
+\end{figure}
+\noindent I parametri di input utilizzati per questa configurazione sono i seguenti:
+\begin{itemize}
+    \item [-] Particella incidente: protone, massa 1.0078 [amu].
+    \item [-] Materiale del target: Alluminio (Z=13), densità 2.7 g/cm$^3$.
+    \item [-] Raggio della sfera: $R = 50$ cm.
+    \item [-] Spessore attraversato: $t=3.7$ cm equivalenti a 10 g/cm$^2$
+    \item [-] Distanza dal centro: $r=R-t=46.3$ cm.
+    \item [-] Spettro in ingresso: Energia [MeV] e fluenza spettrale ricavata dai fit dei 8 SEP [cm$^{-2}$ MeV$^{-1}$].
+\end{itemize}
 
+Il terzo tool di SR-NIEL è il \textit{Web Calculator for Electronic Stopping Powers and Ionizing Doses for Protons and Ions in elements and compounds}. Questo calcolatore è l'implementazione del modulo SRIM 2013, permette di calcolare la curva dello stopping power elettronico per una particella incidente su un materiale. E' stato utilizzato per ricavare latabella dello stopping power dei protoni in silicio. Fornendo come parametri in input: 
 
-\section{Modello simulazione SR-NIEL}
+\begin{itemize}
+    \item [-] Particella incidente: Protone, massa= 1.0078 [amu].
+    \item [-] Materiale target: Silicio (Z=14).
+    \item [-] Range energetico: 0.001-1000 MeV.
+    \item [-] Fluenza incidente: 1 protone/cm$^2$.
+\end{itemize}
 
-\section{Geometrie e modello della sonda}
-Il modello rappresentativo della sonda spaziale e della sua elettronica è costruito con schermatura (Al) + strato di silicio (Si) nel quale si calcola la dose. Per lo strato di schermatura si studiano due geometrie: una planare e una sferica. In entrambi i casi si assume una schermatura di alluminio con spessore $X= 3.7cm$ che fornisce uno spessore equivalente di 10g/cm$^2$, il quale rappresenta un valore medio utilizzato per le sonde interplanetarie. Lo spettro di fluenza incidente viene propagato attraverso la schermatura e il codice SR-NIEL resistuisce la fluenza residua $\Phi_{res}(E)$
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figures/Electronic_stopping_power_Si_SRIM.png}
+\caption{Grafico per l'elettronic stopping power di un protone in silicio calcolato con calcolatore SR-NIEL SRIM.}
+\label{fig:SRIM_Electronic_stopping_power_Si}
+\end{figure}
+\noindent
 
+\section{Risultati simulazioni SR-NIEL}
+Dall'analisi spettrale dei 8 eventi SEP sono stati salvati tre spettri: mediana e le percentili 16° e 84° ottenuti dalla distribuzione Monte Carlo dei parametri del best-fit model. I due spettri al percentile rappresentano le bande di confidenza al 68\%, equivalente a $\pm1\sigma$. I fit spettrali restituiscono la fluenza direzionale in unità $\mathrm{p}\cdot\si{cm^{-2}}\cdot\si{sr^{-1}}\cdot\si{MeV^{-1}}$, l'input di SR-NIEL richiede la fluenza omnidirezionale ottenuta moltiplicando per l'angolo solido. Per particelle incidenti su una superficie piana con un angolo $\theta$ rispetto alla normale, l'area efficacie è ridotta di un fattore $\cos(\theta)$ e l'integrale diventa:
 
-\section{Propagazione delle incertezze}
+\begin{equation}
+    \Phi_{\text{plan}}(E) = \int_{2\pi} \Phi_{\text{dir}}(E)\cos(\theta) \, d\Omega
+\end{equation}
+La $\Phi_{dir}$ non dipende dalla direzione si porta fuori dall'integrale: 
 
-\section{Risultati dosi stimate}
-Calcoli dose e propagazione incertezze 
-Modello shielding planare e sferico utilizzati per sonda
+\begin{equation}
+    \Phi_{\text{plan}}(E) =\Phi_{\text{dir}}(E) \int_{2\pi} \cos(\theta) \, d\Omega
+\end{equation}
+Integrando in coordinate sferiche, l'elemento di angolo soldio $d\Omega = \sin(\theta)d\theta d\phi$ con $\theta = [0,\pi/2]$ sull'emisfero e $\phi=[0,2\pi]$. Il risultato diventa: 
+\begin{equation}
+    \Phi_{\text{plan}}(E) = \pi \Phi_{\text{dir}}(E)
+\end{equation}
+Per una superfice sferica immersa in radiazione isotropa vede le particelle arrivare da tutte le direzioni quindi: 
+\begin{equation}
+\Phi_{\mathrm{sfer}}(E)
+= \int_{4\pi} \Phi_{\mathrm{dir}}(E)\, d\Omega
+= \Phi_{\mathrm{dir}}(E) \int_{4\pi} d\Omega
+= 4\pi \, \Phi_{\mathrm{dir}}(E)
+\end{equation}
+Questi tre spettri vengono quindi passati in input ai calcolatori SR-NIEL per ciascuno dei 8 eventi SEP, in entrambe le configurazioni geometriche. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png}
+\caption{Esempio della fluenza spettrale residua restituita dal calcolatore SR-NIEL per geometria planare per l'evento di Ottobre 2003.}
+\label{fig:Esempio_oct2003_fluenza_residua_SRNIEL}
+\end{figure}
+\noindent Finalmente si può calcolare la TID in silicio dietro 10 g/cm$^2$ di alluminio, integrando lo spettro residuo:
 
-%---------------------------------------------------------------
-% CAPITOLO 4 — ANALISI PROBABILISTICA}
-%---------------------------------------------------------------
-\chapter{Funzione di trasferimento}
-
-
-
+\begin{equation}
+    \text{TID} = \int_{E_{min}}^{E_{max}} \Phi_{\text{res}}(E) \frac{S_{Si}(E)}{\rho_{Si}} \, dE \cdot C 
+\end{equation}
+In questa formula $\frac{S_{si}(E)}{\rho_{Si}}$ è il \textit{mass electronic stopping power} ricavato dai calcoli SRIM in unità $[\mathrm{MeV \cdot cm^2 \cdot g^{-1}}]$. La costante $C = 1.602\times 10^{-10}$ è il fattore di conversione da $\mathrm{MeV/g}$ a $\mathrm{Gy}$.
+Le incertezze spettrali vengono quindi propagate alla TID passando i tre spettri in input a SR-NIEL e a queste viene sommato in quadratura un incertezza sullo stopping power calcolato da SRIM $\pm5\%$ per tenere conto delle particelle secondarie non considerate e l'incertezza stesa del modello SRIM. Di seguito vengono riportati i risultati ottenuti per le simulazioni della TID per tutti 8 eventi SEP precedentemente analizzati.
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline\hline
+Evento 
+& $J(>30\,\mathrm{MeV})$ 
+& $J(>60\,\mathrm{MeV})$ 
+& $J(>100\,\mathrm{MeV})$ 
+& $D_\mathrm{plan}$ [mGy] 
+& $D_\mathrm{sfer}$ [mGy] \\
+\hline
+AUG 1972 & $7.85 \times 10^{9}$ & $1.38 \times 10^{9}$ & $2.57 \times 10^{8}$ & $187.1^{+37.1}_{-33.7}$ & $255.4^{+52.1}_{-47.3}$ \\
+OCT 1989 & $2.42 \times 10^{9}$ & $5.84 \times 10^{8}$ & $2.02 \times 10^{8}$ & $99.1^{+22.7}_{-18.5}$  & $181.6^{+45.7}_{-37.2}$ \\
+JUL 2012 & $1.98 \times 10^{9}$ & $4.89 \times 10^{8}$ & $1.58 \times 10^{8}$ & $79.7^{+25.3}_{-14.8}$  & $167.1^{+66.4}_{-37.8}$ \\
+OCT 2003 & $2.27 \times 10^{9}$ & $3.62 \times 10^{8}$ & $9.07 \times 10^{7}$ & $51.9^{+9.5}_{-8.3}$    & $83.9^{+14.8}_{-13.1}$  \\
+JAN 2005 & $7.01 \times 10^{8}$ & $2.08 \times 10^{8}$ & $8.45 \times 10^{7}$ & $35.6^{+6.8}_{-6.4}$    & $69.9^{+13.2}_{-12.6}$  \\
+SEP 2017 & $4.07 \times 10^{8}$ & $8.12 \times 10^{7}$ & $2.45 \times 10^{7}$ & $12.6^{+2.1}_{-1.9}$    & $25.8^{+4.2}_{-3.9}$    \\
+MAY 2024 & $3.72 \times 10^{7}$ & $1.01 \times 10^{7}$ & $3.62 \times 10^{6}$ & $1.7^{+0.3}_{-0.3}$     & $3.7^{+0.6}_{-0.7}$     \\
+OCT 2021 & $1.93 \times 10^{7}$ & $7.41 \times 10^{6}$ & $3.26 \times 10^{6}$ & $1.4^{+0.2}_{-0.3}$     & $2.7^{+0.6}_{-0.5}$     \\
+\hline\hline
+\end{tabular}%
+}
+\caption{Fluenze integrali omnidirezionali e TID in silicio in ordine di dose decrescente. Le fluenze $J(>E_0)$ sono in unità di \unit{\per\cm\squared}, 
+le dosi in \unit{\milli\gray}. Per entrambe le geometrie lo spessore equivalente è di 10\,g/cm$^2$.}
+\label{tab:sep_events}
+\end{table}
 
 \section{Funzione dose-fluenza D(F)}
-
-
-\section{Influenza della metrica}
-
-
-
-
+Gli 8 eventi SEP del campione mostrano dosi che variano da decine a centinaia di mGy. Nonostante tutti rappresentassero eventi estremi dei relativi cicli solari, le diverse caratteristiche degli spettri mostrano l'ampia varietà della popolazione di eventi SEP. La dose dietro schermatura dipende dall'intera forma dello spettro energetico. Il grafico riportato in figura \ref{fig:Esempio_jan2005_dose_graph} mostra un risultato interessante. Tale grafico rappresenta la distribuzione della dose in funzione dell'energia. La schermatura rimuove completamente i protoni sotto una certa soglia, che fisicamente dipende dallo spessore equivalente, degrada quelli con energia intermedia e lascia passare inalterati quelli ad alta energia. Considerando che lo stopping power in silicio decresce con l'energia, questo significa che la maggiorparte dell'energia depositata "proviene" dai protoni con energia intermedia e non, come verrebbe da pensare, da quelli a più alta energia. Nel grafico infatti si nota un picco attorno a 60 MeV, che è proprio l'energia a cui si ha il massimo contributo alla dose. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf}
+\caption{Dose differenziale dietro la schermatura $E\times dD/dE$ in funzione dell'energia del protone incidente prima della schermatura. Evento di JAN 2005 in geoemetria sferica.}
+\label{fig:Esempio_jan2005_dose_graph}
+\end{figure}
+\noindent L'idea è quella di costruire una relazione empirica che permetta di stimare la dose dietro schermatura di un qualunque altro evento SEP con grandezze facili da ricavare, senza dover ripetere l'analisi spettrale ogni volta. 
+Per ognuno dei 8 SEP abbiamo le stime della dose e le fluenze integrali sopra soglia $J(>E_0)$. Con questi risultati è stata costruita una relazione empirica tra queste due grandezze 
  
+
+
+
 
 %---------------------------------------------------------------
 % CAPITOLO 5 — CONFRONTO RISULTATI CON MISSIONI REALI
