@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1772892760.00012 "main.bcf" "main.bbl" "main" 1772894594.68502 0
+["biber main"] 1772903050.19024 "main.bcf" "main.bbl" "main" 1772904698.44198 0
   "bibliography.bib" 1772891927 3576 5240a7f2b054439e0d4df6c099b078bb ""
-  "main.bcf" 1772894594 109275 f56b23594afd7e71cdee9528067948d5 "pdflatex"
+  "main.bcf" 1772904698 109275 f56b23594afd7e71cdee9528067948d5 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1772894587.30577 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1772894594.68633 0
+["pdflatex"] 1772904689.81698 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1772904698.44318 0
   "Figures/Electronic_stopping_power_Si_SRIM.png" 1772824583 12104 25bee2065ab17ae333c776d53e236294 ""
   "Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf" 1772827693 56849 bf3b0e124f7b55f8a82fbcdd35db2da5 ""
   "Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png" 1772826335 116233 ea26b01f1fc9f774b6b7145f780f5428 ""
@@ -20,6 +20,7 @@
   "Figures/LOO_cross_validation_errors_finale.pdf" 1772893631 43251 d0a8930f499edfc2b8da8036fabfba72 ""
   "Figures/MOS_transistor.png" 1771854759 233561 61ce332ea85b9bd2bb9a172e831a0ba1 ""
   "Figures/OCT_2021_multispacecraft_image.png" 1772803164 907617 30335317f84b5786d284ce77c118573d ""
+  "Figures/SAPPHIRE_example.png" 1772899650 40503 c2bb65a24045b9bd25c7465e4bc36b3c ""
   "Figures/SRNIEL_calcolatore_planare.png" 1772812828 62224 9321d03c2ed326630541b27a12c7a537 ""
   "Figures/Schermatura_sferica.png" 1772823751 692832 3ca20a3d7ab88f412e09b9e44e9890fe ""
   "Figures/Solar_cycle.png" 1771669442 401107 d68e28e26324cba23a44776af5922711 ""
@@ -35,7 +36,8 @@
   "Figures/Spettri/SEP2017_spectral_fit_final.pdf" 1772741907 68600 6879d5e3204f567fe89e289b482375a6 ""
   "Figures/Tipologia_SEP.png" 1771512839 177798 a93b19330033d3af433b5233bba30848 ""
   "Figures/dose_fluence_transfer_function_finale.pdf" 1772890194 92124 59b220808b6d53d20d0aeea2c735b109 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1772894584 74014 fab872bb9a7fe3f58c12032bb9dea580 ""
+  "Figures/plot_finale_missioni1.pdf" 1772901772 30175 39694f8055fe6ee1fc6cf217a94bec23 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1772904552 82581 1fee296599dc94178fe6a589e12b1a01 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -193,12 +195,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1772894594 21756 6366eb12f1e83dabcf886d881e8eaf2d "pdflatex"
-  "main.bbl" 1772892778 21624 b4c990b93a461bfd9620d83094026836 "biber main"
-  "main.out" 1772894594 5015 e014dfd370218bfa8023fb826510740b "pdflatex"
-  "main.run.xml" 1772894594 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1772894584 74014 fab872bb9a7fe3f58c12032bb9dea580 ""
-  "main.toc" 1772894594 2601 2e480027329eda064dcaf53c80be28d6 "pdflatex"
+  "main.aux" 1772904697 23030 c668d2a04dbe43c5f8503ed17601eed1 "pdflatex"
+  "main.bbl" 1772903053 21624 b4c990b93a461bfd9620d83094026836 "biber main"
+  "main.out" 1772904698 4806 13a9df3ebe542f928bfd351db7814d56 "pdflatex"
+  "main.run.xml" 1772904698 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1772904552 82581 1fee296599dc94178fe6a589e12b1a01 ""
+  "main.toc" 1772904698 2508 16421281ccbb168ed1e0923b0614ffc0 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

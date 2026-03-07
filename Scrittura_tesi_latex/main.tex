@@ -819,24 +819,88 @@ Per dimostrare ulteriormente la validità della fluenza integrale come unico ind
 Dove la $D_{pred}$ è la dose predetta dalla funzione di trasferimento e $D_{obs}$ è la dose calcolata con SR-NIEL. Per la soglia in configurazione sferica $J(>100)$ MeV, si osserva una distribuzione dei residui casuale attorno allo zero, la rigressione lineare dei redisui mostra un coefficiente di Pearson $|r| = 0.37$ e un \textit{p-value} $p=0.37$ indicando una relazione fortemente non significativa. Allo stesso modo per la configurazione planare $J(>60)$ MeV, si ottiene un coefficiente di Pearson $|r| = 0.52$ e un \textit{p-value} $p=0.19$.  
 
 
+\chapter{Modello probabilistico SAPPHIRE}
+Come già accennato in precedenza una componente critica nel \textit{mission design process} consiste nel quantificare i livelli di radiazione a cui vengono esposti gli strumenti a bordo delle satelliti e delle sonde spaziali. Per missioni in orbita terrestre (oltre LEO) o missioni interplanetarie i SEP possono avere un ruolo dominante nella dose da radiazione. Gli eventi SEP hanno una natura altamente stocastica, per questo motivo grandi sforzi sono rivolti a stimare l'intensità e l'occorenza di questi eventi con modelli probabilistici. Tra i più noti troviamo: il modello King (1974) standard storico, il modello JPL (Feynman 1993) raccomandato per il \textit{mission planning} e i modelli ESP (Xapos 1999). Il modello utilizzato in questo elaborato si chiama SAPPHIRE (\textit{Solar Accumulated and Peak Proton and Heavy Ion Radiation Environment}), sviluppato da Jiggens et al.(2018)(cite) nel contesto del progetto ESA per la realizzazione di SEPEM \textit{Solar Energetic Particle Environmet Modelling}. Un interfaccia web-API \href{(http://sepem.eu)}{http://sepem.eu} che permette di accedere a svariati dati e modelli riguardanti la fisica dei SEP. Il modello SAPPHIRE si basa sul SEPEM Reference DataSet (RDSv2), che include i dati cross-calibrati di GOES e IMP-8 di eventi SEP dal 1974 al 2016. SAPPHIRE fornisce stime probabilistiche per: fluenza cumulativa per intera missione, fluenza del \textit{worst-case event} e il flusso di picco dei SEP. Il modello definisce un periodi di attività solare massima di 7 anni all'interno di ciascuno dei cicli solari standard di 11 anni (distribuiti 2.5 anni prima e 4.5 anni dopo il picco massimo del numero di macchie solari). Il cuore di SAPPHIRE sono le \textit{virtual timelines}, un approcio Monte Carlo che genera sequenze simulate di eventi tenendo conto della loro durata effettiva. I tempi di attesa tra gli eventi sono invece modellati con una distribuzione di Lévy per i periodi di massimo solare e una Poisson per i periodi di minimo. Una volta calcolato "ogni quanto avviene un SEP", SAPPHIRE fornisce una stima di "quanto è forte" usando distribuzione cumulativa dei flussi con una \textit{Exponential cut-off power law}. Pescato un valore di intensità da questa distribuzione, genera 100.000 \textit{Virtual Timelines} ei risultati vengono uniti in uno spettro unico e fittati con una Band function su un range energetico da 0.1MeV/nuc fino a 1GeV/nuc. Una volta definita la durata della missione, SAPPHIRE fornisce il risultato finale espresso come probabilità di superamento (1- Confidence Level).
+
+\section{Stime della dose per missione}
+Combinando le fluenze cumulative fornite da SAPPHIRE, con la funzione di trasferimento calcolata precedenteente D(J), è possibile ottenere delle stime per la TID secondo una serie di parametri importanti per una missione interplanetaria. Nel seguente elaborato il modello SAPPHIRE è stato ricavato dalla piattaforma web SPENVIS (4.6.14) (SPace EnVironment Information System)\href{https://www.spenvis.oma.be/intro.php}{(https://www.spenvis.oma.be/intro.php)} messa a disposizione dall' Agenzia Spaziale Europea (ESA). Innanzitutto i pacchetti all'interno di SPENVIS richiedono la definizione di \textit{Spacecraft trajectories}. Il modello SAPRE permette di generare una \textit{near Earth interplanetary orbit}, ovvero di simulare un satellite in orbita terrestre al di fuori della magnetosfera. La sonda modello si trova quindi a 1AU di distanza dal Sole. Questo valore rappresenta l'\textit{ upper bound } conservativo. Questa è la distanza standard per le stime dosimetriche di satelliti e sonde ed è stata scelta anche per coerenza con i dati degli 8 eventi SEP usati per la calibrazione della D(J) (erano stati infatti utilizzati principalmente satelliti GOES/ACE/STEREO-A che si trovano tutti a circa 1AU). Successivamente verso la fine di questo capitolo viene anche discusso l'effetto che potrebbe avere applicare un fattore di scaling dovuto alla distanza lungo una vera orbita di trasferimento (Hohmann) Terra-Marte.
+
+\section{Simulazioni}
+Una volta definita la traiettoria della sonda è possibile accedere alle simulazioni del modello SAPPHIRE (Total Fluence). I parametri scelti per queste simulazioni sono i seguenti: 
+
+\begin{itemize}
+    \item [-] Durata della missione: [0.5, 0.71, 1.0] anni. Queste rappresentano rispettivamente tre durate standard per una missione verso Marte. La prima consiste in un \textit{fast transfer} tipico per missioni con equipaggio umano, dove diventa importante minimizzare il tempo di esposizione alla radiazione. La seconda rappresenta la durata dell'orbita alla Hohmann, una traiettoria semi-ellittica. Il perielio è tangente all'orbita terrestre, mentre l'afelio è tangente a quella di Marte. E' la rotta più efficiente dal punto di vista energetico, nonostante richieda una finestra di lancio perfetta con periodo ogni 26 mesi. La terza rappresenta un trasferimento più lento, tipico per missioni con payload pesante o senza vincoli di tempo. 
+    \item [-] Livello di confidenza: Tutte le simulazioni sono state ripetute per 90\% CL, più ottimistico e 95\% CL, più conservativo.
+    \item [-] Ciclo Solare: tutte le simulazioni sono state ripetute per un lancio durante il minimo e massimo solare.  
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figures/SAPPHIRE_example.png}
+\caption{Esempio dell'output di una simulazione con SAPPHIRE}
+\label{fig:SAPPHIRE_example}
+\end{figure}
+\noindent Per ciascuno di questi parametri si simula la fluenza integrata cumulativa attesa secondo il modello SAPPHIRE, e si estraggono i risultati per le fluenze $J(>60)$ MeV e $J(>100)$ MeV. 
+Questi risultati vengono poi inseriti nelle funzioni di trasferimento D(J) ottimali calcolate precedentemente per le due geometrie per ricavare le stime della TID: 
+\begin{equation}
+    D(J)_{\text{planar}} = 10^{-6.475} \cdot J_{>60}^{0.960} \qquad
+    D(J)_{\text{sferica}} = 10^{-6.005} \cdot J_{>100}^{0.998}
+\end{equation}
+Nella tabella \ref{tab:sapphire_doses} sono riportati i risultati di tutte le simulazioni. Le incertezze sono state propagate usando lo scatter spettrale $\sigma_{spec}$ ricavato dai fit della D(J): rispettivamente $\pm7.7\%$ per la geometria planare e $\pm10\%$ per la geometria sferica.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccc}
+\hline\hline
+Durata [anni] 
+& Ciclo Solare 
+& CL [\%] 
+& $D_\mathrm{plan}$ [mGy] 
+& $D_\mathrm{sfer}$ [mGy] \\
+\hline
+0.5 & Max & 90 & $27.4 \pm 2.1$ & $43.4 \pm 4.3$ \\
+0.5 & Min & 90 & $1.70 \pm 0.1$  & $2.3 \pm 0.2$ \\
+0.5 & Max & 95 & $47.2 \pm 3.6$ & $83.4 \pm 8.3$ \\
+0.5 & Min & 95 & $8.3 \pm 0.6$  & $11.9 \pm 1.2$ \\
+0.7 & Max & 90 & $37.3 \pm 2.9$ & $62.1 \pm 6.2$ \\
+0.7 & Min & 90 & $3.6 \pm 0.3$  & $5.1 \pm 0.5$ \\
+0.7 & Max & 95 & $59.1 \pm 4.6$ & $107.2 \pm 10.6$ \\
+0.7 & Min & 95 & $13.2 \pm 1.0$ & $19.9 \pm 2.0$ \\
+1.0 & Max & 90 & $50.6 \pm 3.9$ & $88.1 \pm 8.7$ \\
+1.0 & Min & 90 & $7.7 \pm 0.6$  & $11.1 \pm 1.1$ \\
+1.0 & Max & 95 & $73.7 \pm 5.7$ & $137.1 \pm 13.6$ \\
+1.0 & Min & 95 & $20.7 \pm 1.6$ & $32.8 \pm 3.3$ \\
+\hline\hline
+\end{tabular}
+\caption{TID in silicio dietro schermatura dallo spessore equivalente di 10g/cm$^2$ di alluminio stimate in funzione della durata della missione, delle condizioni del ciclo solare e del livello di confidenza (CL) con il modello SAPPHIRE.}
+\label{tab:sapphire_doses}
+\end{table}
+Con il modello SAPPHIRE \textit{Worst-event-fluence}. SAPPHIRE registra il più grande evento campionato in ogni iterazione con gli stessi input di durata della missione e livello di confidenza. 
+
+
+
+\clearpage
+\noindent La figura \ref{fig:dosi_finali} mostra i profili di dose attesa in funzione della durata della missione. La scala logaritmica evidenzia il fattore più impattante sulle stime della dose, ovvero la fase del ciclo solare. Per un lancio durante il massimo (curve rosse) le dosi stimate sono circa due ordini di grandezza al di sopra del corrispettivo scenario di minimo solare (curve blu). Il secondo fattore importante è il livello di confidenza del modello SAPPHIRE e il tempo di esposizione. Passare da \%90 CL a 95\% CL comporta un incremento non lineare, a dimostrazione del fatto che la coda della distribuzione della fluenza SAPPHIRE pesa molto di più in termini di dose. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figures/plot_finale_missioni1.pdf}
+\caption{Profili di dose attesa in funzione della durata della missione: a) Schermatura sferica b) Schermatura planare}
+\label{fig:dosi_finali}
+\end{figure}
+\noindent
 
 
 
 
-\section{Modelli probabilistici SEP}
-
-
-\section{Parametri missionistici}
-
-
-\section{Simulazioni SAPPHIRE}
 
 
 
-\section{Validazione con missioni reali}
 
 
-\cite{zeitlin2013}
+
+
+
 
 %---------------------------------------------------------------
 % CAPITOLO 6 — CONCLUSIONI
@@ -847,6 +911,12 @@ Sintesi dei risultati ottenuti
 confronto SEP vs GCR
 Punti critici di queste stime 
 Possibili miglioramenti generali per il lavoro di Tesi 
+
+
+
+
+\cite{zeitlin2013}
+
 
 %---------------------------------------------------------------
 % BIBLIOGRAFIA
