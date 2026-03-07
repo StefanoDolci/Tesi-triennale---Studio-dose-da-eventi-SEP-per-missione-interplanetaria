@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1772825877.1915 "main.bcf" "main.bbl" "main" 1772828970.54606 0
-  "bibliography.bib" 1772563889 3170 6cc82ff05ee9f5d495c38da13e79d276 ""
-  "main.bcf" 1772828970 109212 9fe66d3bc82f931aded0d50ef90da81c "pdflatex"
+["biber main"] 1772892760.00012 "main.bcf" "main.bbl" "main" 1772894594.68502 0
+  "bibliography.bib" 1772891927 3576 5240a7f2b054439e0d4df6c099b078bb ""
+  "main.bcf" 1772894594 109275 f56b23594afd7e71cdee9528067948d5 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1772828963.61722 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1772828970.54757 0
+["pdflatex"] 1772894587.30577 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1772894594.68633 0
   "Figures/Electronic_stopping_power_Si_SRIM.png" 1772824583 12104 25bee2065ab17ae333c776d53e236294 ""
   "Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf" 1772827693 56849 bf3b0e124f7b55f8a82fbcdd35db2da5 ""
   "Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png" 1772826335 116233 ea26b01f1fc9f774b6b7145f780f5428 ""
@@ -17,6 +17,7 @@
   "Figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf" 1772726733 150166 9aa2c689301fd815fb7dc01c3478e4bc ""
   "Figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf" 1772804847 124986 908ca013eb2bf937d851a5bc6a271c30 ""
   "Figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf" 1772740638 114265 428fbf55abba64b52566e5231aecd706 ""
+  "Figures/LOO_cross_validation_errors_finale.pdf" 1772893631 43251 d0a8930f499edfc2b8da8036fabfba72 ""
   "Figures/MOS_transistor.png" 1771854759 233561 61ce332ea85b9bd2bb9a172e831a0ba1 ""
   "Figures/OCT_2021_multispacecraft_image.png" 1772803164 907617 30335317f84b5786d284ce77c118573d ""
   "Figures/SRNIEL_calcolatore_planare.png" 1772812828 62224 9321d03c2ed326630541b27a12c7a537 ""
@@ -33,7 +34,8 @@
   "Figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf" 1772805556 56064 4f3374599dc770c7a99e5cf0586da990 ""
   "Figures/Spettri/SEP2017_spectral_fit_final.pdf" 1772741907 68600 6879d5e3204f567fe89e289b482375a6 ""
   "Figures/Tipologia_SEP.png" 1771512839 177798 a93b19330033d3af433b5233bba30848 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1772828948 66971 c71d792c571734524b6c77fb39403e17 ""
+  "Figures/dose_fluence_transfer_function_finale.pdf" 1772890194 92124 59b220808b6d53d20d0aeea2c735b109 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1772894584 74014 fab872bb9a7fe3f58c12032bb9dea580 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -191,12 +193,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1772828970 20524 a818e8a0039e2ce5cb6603b00cb5efb5 "pdflatex"
-  "main.bbl" 1772825879 19357 a44a0f5a08de8cd4c01e839e25ea618d "biber main"
-  "main.out" 1772828970 5234 2c111c81f493c2414658aa8dd2d9cb8b "pdflatex"
-  "main.run.xml" 1772828970 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1772828948 66971 c71d792c571734524b6c77fb39403e17 ""
-  "main.toc" 1772828970 2690 ef0e6ea70e102f7b22dcb6ffe7fa4ca6 "pdflatex"
+  "main.aux" 1772894594 21756 6366eb12f1e83dabcf886d881e8eaf2d "pdflatex"
+  "main.bbl" 1772892778 21624 b4c990b93a461bfd9620d83094026836 "biber main"
+  "main.out" 1772894594 5015 e014dfd370218bfa8023fb826510740b "pdflatex"
+  "main.run.xml" 1772894594 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1772894584 74014 fab872bb9a7fe3f58c12032bb9dea580 ""
+  "main.toc" 1772894594 2601 2e480027329eda064dcaf53c80be28d6 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

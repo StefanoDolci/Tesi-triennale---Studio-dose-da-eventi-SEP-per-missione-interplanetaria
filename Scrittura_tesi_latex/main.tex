@@ -713,6 +713,7 @@ Questi tre spettri vengono quindi passati in input ai calcolatori SR-NIEL per ci
 
 \begin{equation}
     \text{TID} = \int_{E_{min}}^{E_{max}} \Phi_{\text{res}}(E) \frac{S_{Si}(E)}{\rho_{Si}} \, dE \cdot C 
+    \label{eq:TID_calcolo}
 \end{equation}
 In questa formula $\frac{S_{si}(E)}{\rho_{Si}}$ è il \textit{mass electronic stopping power} ricavato dai calcoli SRIM in unità $[\mathrm{MeV \cdot cm^2 \cdot g^{-1}}]$. La costante $C = 1.602\times 10^{-10}$ è il fattore di conversione da $\mathrm{MeV/g}$ a $\mathrm{Gy}$.
 Le incertezze spettrali vengono quindi propagate alla TID passando i tre spettri in input a SR-NIEL e a queste viene sommato in quadratura un incertezza sullo stopping power calcolato da SRIM $\pm5\%$ per tenere conto delle particelle secondarie non considerate e l'incertezza stesa del modello SRIM. Di seguito vengono riportati i risultati ottenuti per le simulazioni della TID per tutti 8 eventi SEP precedentemente analizzati.
@@ -745,7 +746,7 @@ le dosi in \unit{\milli\gray}. Per entrambe le geometrie lo spessore equivalente
 \end{table}
 
 \section{Funzione dose-fluenza D(F)}
-Gli 8 eventi SEP del campione mostrano dosi che variano da decine a centinaia di mGy. Nonostante tutti rappresentassero eventi estremi dei relativi cicli solari, le diverse caratteristiche degli spettri mostrano l'ampia varietà della popolazione di eventi SEP. La dose dietro schermatura dipende dall'intera forma dello spettro energetico. Il grafico riportato in figura \ref{fig:Esempio_jan2005_dose_graph} mostra un risultato interessante. Tale grafico rappresenta la distribuzione della dose in funzione dell'energia. La schermatura rimuove completamente i protoni sotto una certa soglia, che fisicamente dipende dallo spessore equivalente, degrada quelli con energia intermedia e lascia passare inalterati quelli ad alta energia. Considerando che lo stopping power in silicio decresce con l'energia, questo significa che la maggiorparte dell'energia depositata "proviene" dai protoni con energia intermedia e non, come verrebbe da pensare, da quelli a più alta energia. Nel grafico infatti si nota un picco attorno a 60 MeV, che è proprio l'energia a cui si ha il massimo contributo alla dose. 
+Gli 8 eventi SEP del campione mostrano dosi che variano da decine a centinaia di mGy. Nonostante tutti rappresentassero eventi estremi dei relativi cicli solari, le diverse caratteristiche degli spettri mostrano l'ampia varietà della popolazione di eventi SEP. La dose dietro schermatura dipende dall'intera forma dello spettro energetico. Il grafico riportato in figura \ref{fig:Esempio_jan2005_dose_graph} mostra un risultato interessante. Tale grafico rappresenta la distribuzione della dose in funzione dell'energia. La schermatura rimuove completamente i protoni sotto una certa soglia, che fisicamente dipende dallo spessore equivalente, degrada quelli con energia intermedia e lascia passare quasi inalterati quelli ad alta energia. Considerando che lo stopping power in silicio decresce con l'energia, questo significa che la maggior parte dell'energia depositata "proviene" dai protoni con energia intermedia e non, come verrebbe da pensare, da quelli a più alta energia. Nel grafico infatti si nota un picco attorno a 60 MeV, che è proprio l'energia a cui si ha il massimo contributo alla dose. 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf}
@@ -753,16 +754,74 @@ Gli 8 eventi SEP del campione mostrano dosi che variano da decine a centinaia di
 \label{fig:Esempio_jan2005_dose_graph}
 \end{figure}
 \noindent L'idea è quella di costruire una relazione empirica che permetta di stimare la dose dietro schermatura di un qualunque altro evento SEP con grandezze facili da ricavare, senza dover ripetere l'analisi spettrale ogni volta. 
-Per ognuno dei 8 SEP abbiamo le stime della dose e le fluenze integrali sopra soglia $J(>E_0)$. Con questi risultati è stata costruita una relazione empirica tra queste due grandezze 
- 
+Per ognuno dei 8 SEP abbiamo le stime della dose e le fluenze integrali sopra soglia $J(>E_0)$. Con questi risultati è stata costruita una relazione empirica tra queste due grandezze:
+
+\begin{equation}
+    D(J) = 10^a \cdot J(>E_0)^b
+    \label{Funzione di trasferimento}
+\end{equation}
+La dose calcolata secondo l'equazione \ref{eq:TID_calcolo} dipende da tutti i parametri spettrali, dallo spettro residuo e dalle caratteristiche della schermatua. La funzione di trasferimento condensa tutte queste informazioni e considera  una sola variabile indipendente - la fluenza integrale.
+Considerando uno spettro semplice pura power law:
+\begin{equation}
+    \Phi(E) = A E^{-\gamma}
+\end{equation}
+La fluenza integrale sopra soglia $E_0$ è data da:
+\begin{equation}
+    J(>E_0) = \int_{E_0}^{\infty} A E^{-\gamma} \, dE = \frac{AE_0^{1-\gamma}}{\gamma-1}
+\end{equation}
+La dose invece è data da:
+\begin{equation}
+    D = \int A E^{-\gamma}\cdot S(E) \, dE
+\end{equation}
+Entrambe sono proporzionali alla normalizzazione A. Prendendo il rapporto $D/J(>E_0)$ si elimina A e si ottiene una dipendenza solo da $\gamma$ e dalla schermatura. Questo porta ad una relazione lineare tra $\log(D)$ e $\log(J(>E_0))$, l'esponente b è la pendenza della retta in spazio logaritmico, l'intercetta a condensa l'efficienza della conversione della schermatura dando per l'appunto una power law come quella dell'equazione \ref{Funzione di trasferimento}.
+Due eventi con la stessa fluenza integrale possono dare dosi diverse a seconda della forma dello spettro. Questa informazione è condensata nello scatter spettrale $\sigma_{\text{spec}}$ attorno alla retta. 
+Per ricavare questa funzione con gli 8 punti a disposizione è stato eseguito un fit ai minimi quadrati pesati in spazio logaritmico. 
+\begin{equation}
+    \log(D) = a + b \cdot \log(J(>E_0)) \qquad \sigma_{\log D} = \frac{\Delta D}{D\cdot \ln(10)}
+\end{equation}
+\noindent $\sigma_{\log D}$ sono i pesi e $\Delta D$ è la media tra l'errore superiore e inferiore della dose. Il fit è stato eseguito per 6 combinazioni: 2 geometrie (planare e sferica) e 3 soglie di energia (30, 60 e 100 MeV).
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figures/dose_fluence_transfer_function_finale.pdf}
+\caption{Funzioni di trasferimento calcolate per le 6 configurazioni: a) Schermatura sferica b) Schermatura planare.}
+\label{fig:fit_funzioni_di_trasferimento}
+\end{figure}
+\noindent I risultati di questi fit, riportati in tabella \ref{tab:transfer_params}, mostrano che la metrica di fluenza integrale è un buon indicatore per la TID dietro la schermatura selezionata. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccccc}
+\hline\hline
+Geometria & $E_{0}$ [MeV] & $a$ & $b$ & $R^2$ & $\chi^2_\nu$ & $\sigma_{\rm spec}$ \\
+\hline
+Planare & $30$  & $-6.161$ & $0.855$ & $0.980$ & $2.30$ & $\pm\,27.5\%$  \\
+Planare & $60$  & $-6.475$ & $0.960$ & $0.998$ & $0.20$ & $\pm\,7.7\%$  \\
+Sferica & $30$ & $-5.429$ & $0.801$ & $0.967$ & $2.88$ & $\pm\,35\%$ \\
+Sferica & $100$ & $-6.005$ & $0.998$ & $0.997$ & $0.31$ & $\pm\,9.9\%$ \\
+\hline\hline
+\end{tabular}
+\caption{Parametri ricavati dai fit per le funzioni di trasferimento dose--fluenza.}
+\label{tab:transfer_params}
+\end{table}
+\noindent Con questi risultati si riesce a quantificare la scelta della metrica ottimale. In entrambe le configurazioni geometriche la $J(>30)$ MeV ha un $\chi_{\nu}^2 >> 1$ indicando che le sole incertezze sperimentali non sono sufficienti a spiegare la dispersione.Questo effetto sulla scelta della \textit{predictor fluence} per il calcolo della dose era già stato notato da Kim et al. (2017) \cite{kim2017}. Nel loro studio avevano notato che schermature diverse richiedono soglie di integrazione diverse per mantenere una buona correlazione e minimizzare l'errore, in questo elaborato è stato valutato quantitativamente per la schermatura di alluminio dallo spessore equivalente di 10g/cm$^2$. Nel caso della geometria sferica, passare da $J(>30)$ MeV alla metrica $J(>100)$ MeV, non solo fornisce $\chi_{\nu}^2$ più vicini a 1, ma riduce drasticamente lo scatter spettrale da $\pm35\%$ a $\pm10\%$. Questo significa che individuando la soglia energetica ottimale è possibile condensare al meglio tutte le differenze spettrali degli eventi SEP, ottenendo una relazione quasi lineare $R^2 = 0.998$, permettendo così di stimare la TID con un errore del 10\%, conoscendo solamente il valore della fluenza integrale di un evento. Oltre alle riduzioni dello scatter spettrale e ai $\chi_{\nu}^2$ migliori, per la validazione statistica di questo modello sono stati eseguiti altri test aggiuntivi.
+Il test statistico \textit{Leave-One-Out Cross-Validation} (LOO-CV) è una tecnica di validazione utile quando si hanno pochi dati a disposizione. Consiste nel rimuovere un punto alla volta dal datase, ri-eseguire il fit con i restanti 7 punti e utilizzare la funzione ricavata per predire la TID dell'evento isolato. Ripetendo questo processo per tutti gli 8 eventi si ottiene una stima della capacità predittiva del modello. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{Figures/LOO_cross_validation_errors_finale.pdf}
+\caption{Testi di validazione LOO-CV eseguito sul campione dei 8 eventi SEP confrontando le metriche ottimali.}
+\label{fig:LOO_CV_test}
+\end{figure}
+\noindent I risultati di questo test dimostrano ulteriormente l'importanza della scelta della $J(>E_0)$. Utilizzando $J(>30)$ MeV per la geometria sferica, si ottiene un RMSE del $\pm35.6\%$ e solo il 12\% delle previsioni cade nell'intervallo di confidenza al 68\% ($\pm1\sigma$). Passando invece a $J(>100)$ MeV, il RMSE si riduce a $\pm13.6\%$ e l'88\% degli eventi viene correttamente predetto. Per la geometria planare la $J(>)60$ MeV fornisce un RMSE del $\pm9.8\%$ e il 100\% degli eventi viene predetto correttamente entro $\pm1\sigma$, mentre con $J(>30)$ MeV l'RMSE sale a $\pm31.4\%$. 
+Per dimostrare ulteriormente la validità della fluenza integrale come unico indicatore per le stime della dose, è stata eseguita un analisi dei residui in funzione dell'indice spettrale $\gamma_b$. Il modello predittivo ideale non deve mostrare alcuna correlazione lineare rispetto a parametri esterni come l'indice spettrale. I residui, o errori percentuali sono definiti come: 
+\begin{equation}
+    \text{res} = \frac{D_{pred} - D_{obs}}{D_{obs}} \cdot 100\%
+\end{equation} 
+Dove la $D_{pred}$ è la dose predetta dalla funzione di trasferimento e $D_{obs}$ è la dose calcolata con SR-NIEL. Per la soglia in configurazione sferica $J(>100)$ MeV, si osserva una distribuzione dei residui casuale attorno allo zero, la rigressione lineare dei redisui mostra un coefficiente di Pearson $|r| = 0.37$ e un \textit{p-value} $p=0.37$ indicando una relazione fortemente non significativa. Allo stesso modo per la configurazione planare $J(>60)$ MeV, si ottiene un coefficiente di Pearson $|r| = 0.52$ e un \textit{p-value} $p=0.19$.  
 
 
 
 
-%---------------------------------------------------------------
-% CAPITOLO 5 — CONFRONTO RISULTATI CON MISSIONI REALI
-%---------------------------------------------------------------
-\chapter{Stime della dose per la missione}
+
 
 \section{Modelli probabilistici SEP}
 
@@ -802,3 +861,4 @@ Possibili miglioramenti generali per il lavoro di Tesi
 Materiale aggiuntivo, formule, grafici supplementari.
 
 \end{document}
+

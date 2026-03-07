@@ -203,6 +203,56 @@
       \verb 10.1086/163623
       \endverb
     \endentry
+    \entry{kim2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=568bb5f6b085e85a59204e7fc5b11f3b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Myung-Hee\bibnamedelima Y.},
+           giveni={M\bibinithyphendelim H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=b97789a97e9d34e47af979381dbeb243}{%
+           family={Cucinotta},
+           familyi={C\bibinitperiod},
+           given={Francis\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0fb9c86a3961587a9004ff574d87cc4e}{%
+           family={Nounu},
+           familyi={N\bibinitperiod},
+           given={Hatem\bibnamedelima N.},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=e0c1997d2c11b50fd9ebec94135c5750}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Chirag},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e25e91a3d21cddb78fe533c4e056afda}{%
+           family={Simonsen},
+           familyi={S\bibinitperiod},
+           given={Lisa\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{fullhash}{0e602d4a8406909e6b3114bcca266793}
+      \strng{fullhashraw}{0e602d4a8406909e6b3114bcca266793}
+      \strng{bibnamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authorbibnamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authornamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authorfullhash}{0e602d4a8406909e6b3114bcca266793}
+      \strng{authorfullhashraw}{0e602d4a8406909e6b3114bcca266793}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Space Weather}
+      \field{title}{Using spectral shape and predictor fluence to evaluate temporal dependence of exposures from solar particle events}
+      \field{volume}{15}
+      \field{year}{2017}
+      \field{pages}{917\bibrangedash 931}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1002/2016SW001552
+      \endverb
+    \endentry
     \entry{MOS_transistor}{book}{}{}
       \name{author}{1}{}{%
         {{hash=2ce5869b09c736918133f1c81bf29d2e}{%

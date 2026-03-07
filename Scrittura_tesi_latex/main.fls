@@ -497,6 +497,16 @@ INPUT ./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf
 INPUT ./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf
 INPUT ./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf
 INPUT ./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf
+INPUT ./Figures/dose_fluence_transfer_function_finale.pdf
+INPUT ./Figures/dose_fluence_transfer_function_finale.pdf
+INPUT ./Figures/dose_fluence_transfer_function_finale.pdf
+INPUT ./Figures/dose_fluence_transfer_function_finale.pdf
+INPUT ./Figures/dose_fluence_transfer_function_finale.pdf
+INPUT ./Figures/LOO_cross_validation_errors_finale.pdf
+INPUT ./Figures/LOO_cross_validation_errors_finale.pdf
+INPUT ./Figures/LOO_cross_validation_errors_finale.pdf
+INPUT ./Figures/LOO_cross_validation_errors_finale.pdf
+INPUT ./Figures/LOO_cross_validation_errors_finale.pdf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
