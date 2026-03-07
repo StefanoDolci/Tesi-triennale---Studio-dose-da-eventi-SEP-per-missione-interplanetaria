@@ -282,6 +282,62 @@
       \field{pages}{3}
       \range{pages}{1}
     \endentry
+    \entry{ramos2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=cfc934d1e69c8ad36806195ad14b1f89}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={Ricardo\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c32cce5b00364c8d918bbd380581b5ba}{%
+           family={Carante},
+           familyi={C\bibinitperiod},
+           given={Mario\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d4b8695c234203e973f35f4324c28ea7}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b8694b91519eb427b93e5e51d3445a18}{%
+           family={Sala},
+           familyi={S\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=09d8b662a70a93b4cef61fedd2f720dc}{%
+           family={Vercesi},
+           familyi={V\bibinitperiod},
+           given={Valerio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=b7e0402343acf84a34d470ae99bafc2e}{%
+           family={Ballarini},
+           familyi={B\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{fullhash}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{fullhashraw}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{bibnamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authorbibnamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authornamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authorfullhash}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{authorfullhashraw}{3a60c3d838baef15bf13b861f13b8886}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Molecular Sciences}
+      \field{number}{3}
+      \field{title}{A Mission to Mars: Prediction of GCR Doses and Comparison with Astronaut Dose Limits}
+      \field{volume}{24}
+      \field{year}{2023}
+      \field{pages}{2328}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ijms24032328
+      \endverb
+    \endentry
     \entry{AUG_1972_Raukunen}{article}{}{}
       \name{author}{10}{}{%
         {{hash=833f08e62c0a52294af7d34b9b50ee40}{%
