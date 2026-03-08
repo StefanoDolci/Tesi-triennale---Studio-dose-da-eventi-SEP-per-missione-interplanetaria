@@ -974,7 +974,7 @@ Durante il loro percorso l'accellerazione continua da shock e le irregolarità d
 \begin{equation}
     J(r) \propto r^{-\alpha}
 \end{equation}  
-Dove $\alpha$ cambia in base all'evento e all'energia, tipicamente è un valore tra [1.5-3.0]\cite{Aran2006}. Nel seguente elaborato aver assunto le dosi calcolate a 1AU per l'intera durata della missione Terra-Marte, rappresenta un upper bound conservativo. 
+Dove $\alpha$ cambia in base all'evento e all'energia \cite{Aran2006}. Nel seguente elaborato aver assunto le dosi calcolate a 1AU per l'intera durata della missione Terra-Marte, rappresenta un upper bound conservativo. 
 \subsection{Scaling geometrico medio}
 Per questo approccio teorico si considera l'orbita di trasferimento alla Hohmann. Lungo questa orbita ellittica la distanza eliocentrica varia da $r_1= 1.0$ AU a $r_2= 1.52 $ AU tra la Terra e Marte,. La distanza in funzione del tempo è: 
 \begin{equation}
@@ -1020,15 +1020,49 @@ MSL/RAD     & ---   & ---    & $\sim 24.7$      & ---             \\
 di riferimento: 0.71 anni, Massimo Solare, 90\% CL, schermatura 10~g/cm$^2$ Al.}
 \label{tab:scaling}
 \end{table}
-\noindent Questo scaling teorico riduce le dosi da SEP approssimativamente dal 30\% al 50\%, portando queste stime sempre più vicine al valore reale misurato dalla sonda MSL/RAD. Per confrontare questi risultati sono state eseguite delle simulazioni con il modello di trasporto SOLPENCO2. Un modello sviluppato nell'ambito di SEPEM/ESA che simula la propagazione degli shock guidati da CME dal Sole fino a 1.6 AU, usando modelli MHD. Questo modello simula 10 eventi SEP di riferimento per osservatori a diverse distanze su un unica linea del campo IMF. Dalle simulazioni vengono estratte le dipendenze radiali della fluenza per ciascun tipo di evento (4 categorie in base a energia, longitudine solare e intensità). Il risultato più importante è che considerando meccanismi più complessi gli indici $\alpha$ differiscono dalla semplice legge $r^{-2}$ o $r^{-3}$. 
+\noindent Questo scaling teorico riduce le dosi da SEP approssimativamente dal 30\% al 50\%, portando queste stime sempre più vicine al valore reale misurato dalla sonda MSL/RAD. 
+
+
+\section{SOLPENCO scaling}
+Per confrontare questi risultati sono state eseguite delle simulazioni con il modello di trasporto SOLPENCO2. Un modello sviluppato nell'ambito di SEPEM/ESA che simula la propagazione degli shock guidati da CME dal Sole fino a 1.6 AU, usando modelli MHD. Questo modello simula 10 eventi SEP di riferimento per osservatori a diverse distanze su un unica linea del campo IMF. Dalle simulazioni vengono estratte le dipendenze radiali della fluenza per ciascun tipo di evento (4 categorie in base a energia, longitudine solare e intensità). Il risultato più importante è che considerando meccanismi più complessi gli indici $\alpha$ differiscono dalla semplice legge $r^{-2}$ o $r^{-3}$. Dalle simulazioni con il modello SOLPENCO2 per una missione, solito transfer Hohmann (1.0-1.52 AU) di circa 259 giorni durante il massimo solare, sono stati ricavati i seguenti risultati: 
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c c c c c c}
+\hline\hline
+Scenario & CL & $J(>60)$ [cm$^{-2}$] & Scaling factor $f$ & Riduzione & $D_{\mathrm{plan}}$ [mGy] \\
+\hline
+
+1 AU  & 90\% & $2.79\times10^{8}$ & 1.000 & --- & $37.3\pm2.9$ \\
+Hohmann orbit & 90\% & $2.22\times10^{8}$ & 0.795 & 20.5\% & $29.6\pm2.3$ \\
+
+\hline
+
+1 AU  & 95\% & $4.37\times10^{8}$ & 1.000 & --- & $59.1\pm4.6$ \\
+Hohmann orbit & 95\% & $3.42\times10^{8}$ & 0.783 & 21.7\% & $46.3\pm3.6$ \\
+
+\hline\hline
+\end{tabular}
+
+\caption{Scaling della fluenza SEP calcolato con SOLPENCO2 lungo una traiettoria
+di trasferimento Hohmann Terra--Marte.}
+\label{tab:solpenco_scaling}
+\end{table}
+\noindent I risultati nella tabella \ref{tab:solpenco_scaling} indicano che quando si considerano gli effetti della propagazione lungo spirale di Parker, la connessione magnetica con la sorgente e la diffusione dei SEP lungo la traiettoria reale, il fattore di scaling è molto più conservativo. Considerando queste simulazioni per un trasferimento Terra-Marte la fluenza dei SEP si riduce solo del $\sim20\%$. 
+
+
 
 
 \chapter{Conclusioni}
-I risultati trovati in questo elaborato hanno due conseguenze principali. La prima riguarda il risultato centrale, ovvero le stime della dose e il contributo dei soli SEP. Innanzitutto questo approccio - dati sperimentali, funzione di trasferimento, modelli statistici - ha prodotto dei risultati notevolmente vicini a misure \textit{in-situ} riportate per la dose da SEP, ad un costo computazionale inferiore. Con questa costruzione è stato possibile rispondere alla domanda iniziale sul contributo dei SEP alla dose per missioni. Per il caso più conservativo, 1AU da SAPPHIRE assieme alla funzione D(J), la TID in silicio dietro 10/g$cm^2$ di Al in geometria sferica, per una missione di 0.71 anni durante il massimo solare, si stima al 90\% CL essere pari a $62.1\pm6.2$ mGy. I vari parametri riportati nella tabella \ref{tab:sapphire_doses} mostrano come questo valore cambia. Si passa da un minimo di $2.3\pm0.2$ mGy per una missione di 0.5 anni al minimo solare fino a $137.1\pm13.6$ mGy per una missione di 1 anno durante il massimo solare. Usando questo scenario più conservativo con i calcoli riportati nella tabella \ref{tab:confronto_sep_gcr} per una missione nominale di 0.7 anni durante il massimo solare la dose da radiazione SEP diventa il contributo dominante, con un rapporto SEP/GRC di circa 1.6. Durante il minimo invece la componente GCR rimane quella dominante con un rapporto SEP/GCR di circa 0.07. Nel secondo approccio meno conservativo sono stati considerati gli effetti aggiuntivi della distanza radiale sulla fluenza, durante una vera orbita di trasferimento che seguirebbe una sonda verso Marte. Applicando un fattore di scaling medio come discusso nel capitolo precedente \ref{sec:Scaling factor}, le dosi dai SEP si riducono dal 30\% al 50\%. Prendendo ad esempio il caso medio con scaling $\alpha= 2.5$ il rapporto della dose SEP/GCR durante un massimo solare scende a $\sim0.93$. I SEP non dominano più rispetto ai GCR ma le due componenti diventano praticamente comparabili.
+I risultati trovati in questo elaborato hanno due conseguenze principali. La prima riguarda il risultato centrale, ovvero le stime della dose e il contributo dei soli SEP. Innanzitutto questo approccio - dati sperimentali, funzione di trasferimento, modelli statistici - ha prodotto dei risultati notevolmente vicini a misure \textit{in-situ} riportate per la dose da SEP, ad un costo computazionale inferiore. Con questa costruzione è stato possibile rispondere alla domanda iniziale sul contributo dei SEP alla dose per missioni. Per il caso più conservativo, 1AU da SAPPHIRE assieme alla funzione D(J), la TID in silicio dietro 10/g$cm^2$ di Al in geometria sferica, per una missione di 0.71 anni durante il massimo solare, si stima al 90\% CL essere pari a $62.1\pm6.2$ mGy. I vari parametri riportati nella tabella \ref{tab:sapphire_doses} mostrano come questo valore cambia. Si passa da un minimo di $2.3\pm0.2$ mGy per una missione di 0.5 anni al minimo solare fino a $137.1\pm13.6$ mGy per una missione di 1 anno durante il massimo solare. Usando questo scenario più conservativo con i calcoli riportati nella tabella \ref{tab:confronto_sep_gcr} per una missione nominale di 0.7 anni durante il massimo solare la dose da radiazione SEP diventa il contributo dominante, con un rapporto SEP/GRC di circa 1.6. Durante il minimo invece la componente GCR rimane quella dominante con un rapporto SEP/GCR di circa 0.07. Nel secondo approccio meno conservativo sono stati considerati gli effetti aggiuntivi della distanza radiale sulla fluenza, per una vera orbita di trasferimento Terra-Marte. Il confronto tra lo scaling geometrico \ref{tab:scaling} e quello derivato dalle simulazioni SOLPENCO2 \ref{tab:solpenco_scaling} mostra una differenza significativa. Il modello puramente teorico suggerisce una riduzione tra il $30-50\%$, mentre le simulazioni di trasporto indicano una riduzione più moderata $\sim20\%$. Questo risultato riflette la complessità del trasporto delle particelle, i vari fattori che entrano in gioco riducono la dipendenza radiale della fluenza. Misure da missioni come Helios1/2 e MSL riportano uno scaling SEP tipicamente $r^{-0.8} - r^{-1.3}$ che per una traiettoria Terra-Marte si traduce in una diminuzione della fluenza e quindi della dose di circa $15-35\%$. (cite someone). In questo scenario meno conservativo applicando il fattore di scaling ricavato da queste simulazioni SOLPENCO, a parità di parametri missione, il rapporto SEP/GCR si abbassa a circa $\sim1.3$ per il massimo solare, mentre per il minimo diventa $\sim0.05$. Dunque anche considerando questo scaling Terra-Marte durante il massimo i SEP restano la componente dominante, al contrario durante un minimo solare i GCR sono pressochè identici alle misure 1AU e restano i protagonisti.
 
 
 
-Il secondo risultato più importante riguarda la funzione di trasferimento. 
+Il secondo risultato più importante riguarda la funzione di trasferimento. L'analisi sul campione degli 8 eventi SEP storici ha mostrato quando la scelta della soglia energetica sia importante per ottenere una buona correlazione tra fluenza e dose. La validità della fluenza come predittore della dose è stata valutata quantitativamente. Passare dalla soglia convenzionale $J(>30)$ MeV, riportata nella maggiorparte dei cataloghi SEP, alle soglie ottimizzate per la schermature utilizzate in questo lavoro, rispettivamente $J(>100)$ MeV per la sferica e $J(>60)$ MeV per la planare, riduce lo scatter spettrale da $\pm28-35\%$ a $\pm8-10\%$. Con queste soglie ottimizzate la funzione di trasferimento mostra una correlazione quasi lineare $R^2 = 0.998$ tra la fluenza e la dose. Questo all'atto pratico permette di stimare la dose dietro schermatura con una precisione nell'ordine del $10\%$ utilizzando come unica variabile indipendente la fluenza integrale. 
+
+
+\section{}
+
+
 
 \chapter{Ringraziamenti}
 
