@@ -31,6 +31,7 @@
 \contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{56}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}SOLPENCO scaling}{57}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusioni}{59}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Ringraziamenti}{61}{chapter.7}%
-\contentsline {chapter}{Bibliografia}{62}{chapter*.43}%
-\contentsline {chapter}{\numberline {A}Appendice}{64}{appendix.Alph1}%
+\contentsline {section}{\numberline {6.1}Limiti e miglioramenti}{60}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{62}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{63}{chapter*.43}%
+\contentsline {chapter}{\numberline {A}Appendice}{65}{appendix.Alph1}%
