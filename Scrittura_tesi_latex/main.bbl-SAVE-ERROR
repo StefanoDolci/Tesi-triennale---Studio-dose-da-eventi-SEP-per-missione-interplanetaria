@@ -19,6 +19,48 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{Aran2006}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=8495674461ce34fcc97b324fbcf9cf2f}{%
+           family={Aran},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8869debbae5015160fe4112026cb2088}{%
+           family={Sanahuja},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a3c7d18c6170f4191d3367183e748124}{%
+           family={Lario},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b504ecf3e1130672804bc0d419eae34c}
+      \strng{fullhash}{b504ecf3e1130672804bc0d419eae34c}
+      \strng{fullhashraw}{b504ecf3e1130672804bc0d419eae34c}
+      \strng{bibnamehash}{b504ecf3e1130672804bc0d419eae34c}
+      \strng{authorbibnamehash}{b504ecf3e1130672804bc0d419eae34c}
+      \strng{authornamehash}{b504ecf3e1130672804bc0d419eae34c}
+      \strng{authorfullhash}{b504ecf3e1130672804bc0d419eae34c}
+      \strng{authorfullhashraw}{b504ecf3e1130672804bc0d419eae34c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0273-1177}
+      \field{journaltitle}{Advances in Space Research}
+      \field{number}{6}
+      \field{title}{SOLPENCO: A solar particle engineering code}
+      \field{volume}{37}
+      \field{year}{2006}
+      \field{pages}{1240\bibrangedash 1246}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.asr.2005.09.019
+      \endverb
+    \endentry
     \entry{Band1993}{article}{}{}
       \name{author}{15}{}{%
         {{hash=2cbd0fd9de38122220d0bff5b81ecf29}{%
@@ -203,6 +245,97 @@
       \verb 10.1086/163623
       \endverb
     \endentry
+    \entry{Giacalone2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=cdad739c305d0d304a89579ed442f218}{%
+           family={Giacalone},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5320a12642a0269e91272a36bc8517d9}{%
+           family={Jokipii},
+           familyi={J\bibinitperiod},
+           given={J.R.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0ddf6b716029a6ca8631a991ea90540a}{%
+           family={Mazur},
+           familyi={M\bibinitperiod},
+           given={J.E.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \strng{fullhash}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \strng{fullhashraw}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \strng{bibnamehash}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \strng{authorbibnamehash}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \strng{authornamehash}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \strng{authorfullhash}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \strng{authorfullhashraw}{114ad1e53fd8bb3c06191c8dff94dcc3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Astrophysical Journal}
+      \field{number}{1}
+      \field{title}{Small-scale Gradients and Large-scale Diffusion of Charged Particles in the Heliospheric Magnetic Field}
+      \field{volume}{532}
+      \field{year}{2000}
+      \field{pages}{L75\bibrangedash L78}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1086/312564
+      \endverb
+    \endentry
+    \entry{kim2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=568bb5f6b085e85a59204e7fc5b11f3b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Myung-Hee\bibnamedelima Y.},
+           giveni={M\bibinithyphendelim H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=b97789a97e9d34e47af979381dbeb243}{%
+           family={Cucinotta},
+           familyi={C\bibinitperiod},
+           given={Francis\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0fb9c86a3961587a9004ff574d87cc4e}{%
+           family={Nounu},
+           familyi={N\bibinitperiod},
+           given={Hatem\bibnamedelima N.},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=e0c1997d2c11b50fd9ebec94135c5750}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Chirag},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e25e91a3d21cddb78fe533c4e056afda}{%
+           family={Simonsen},
+           familyi={S\bibinitperiod},
+           given={Lisa\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{fullhash}{0e602d4a8406909e6b3114bcca266793}
+      \strng{fullhashraw}{0e602d4a8406909e6b3114bcca266793}
+      \strng{bibnamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authorbibnamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authornamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
+      \strng{authorfullhash}{0e602d4a8406909e6b3114bcca266793}
+      \strng{authorfullhashraw}{0e602d4a8406909e6b3114bcca266793}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Space Weather}
+      \field{title}{Using spectral shape and predictor fluence to evaluate temporal dependence of exposures from solar particle events}
+      \field{volume}{15}
+      \field{year}{2017}
+      \field{pages}{917\bibrangedash 931}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1002/2016SW001552
+      \endverb
+    \endentry
     \entry{MOS_transistor}{book}{}{}
       \name{author}{1}{}{%
         {{hash=2ce5869b09c736918133f1c81bf29d2e}{%
@@ -231,6 +364,92 @@
       \field{year}{2012}
       \field{pages}{3}
       \range{pages}{1}
+    \endentry
+    \entry{Parker1958}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1b8298bb4e7ccf76c3e1a5f988f5cd97}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={E.N.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \strng{fullhash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \strng{fullhashraw}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \strng{bibnamehash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \strng{authorbibnamehash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \strng{authornamehash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \strng{authorfullhash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \strng{authorfullhashraw}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astrophysical Journal}
+      \field{title}{Dynamics of the Interplanetary Gas and Magnetic Fields.}
+      \field{volume}{128}
+      \field{year}{1958}
+      \field{pages}{664}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/146579
+      \endverb
+    \endentry
+    \entry{ramos2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=cfc934d1e69c8ad36806195ad14b1f89}{%
+           family={Ramos},
+           familyi={R\bibinitperiod},
+           given={Ricardo\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c32cce5b00364c8d918bbd380581b5ba}{%
+           family={Carante},
+           familyi={C\bibinitperiod},
+           given={Mario\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d4b8695c234203e973f35f4324c28ea7}{%
+           family={Ferrari},
+           familyi={F\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b8694b91519eb427b93e5e51d3445a18}{%
+           family={Sala},
+           familyi={S\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=09d8b662a70a93b4cef61fedd2f720dc}{%
+           family={Vercesi},
+           familyi={V\bibinitperiod},
+           given={Valerio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=b7e0402343acf84a34d470ae99bafc2e}{%
+           family={Ballarini},
+           familyi={B\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{fullhash}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{fullhashraw}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{bibnamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authorbibnamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authornamehash}{95c93fa0d158b9ae092bc29215d04120}
+      \strng{authorfullhash}{3a60c3d838baef15bf13b861f13b8886}
+      \strng{authorfullhashraw}{3a60c3d838baef15bf13b861f13b8886}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Molecular Sciences}
+      \field{number}{3}
+      \field{title}{A Mission to Mars: Prediction of GCR Doses and Comparison with Astronaut Dose Limits}
+      \field{volume}{24}
+      \field{year}{2023}
+      \field{pages}{2328}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/ijms24032328
+      \endverb
     \endentry
     \entry{AUG_1972_Raukunen}{article}{}{}
       \name{author}{10}{}{%

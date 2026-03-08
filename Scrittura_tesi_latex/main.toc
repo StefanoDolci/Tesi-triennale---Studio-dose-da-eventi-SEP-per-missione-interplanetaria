@@ -26,8 +26,10 @@
 \contentsline {chapter}{\numberline {4}Modello probabilistico SAPPHIRE}{48}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Stime della dose per missione}{49}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Simulazioni}{50}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusioni}{53}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Discussione e confronto con misure reali}{53}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Scaling factor}{54}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Limiti e miglioramenti successivi}{54}{section.5.2}%
-\contentsline {chapter}{Bibliografia}{55}{chapter*.39}%
-\contentsline {chapter}{\numberline {A}Appendice}{57}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{56}{subsection.5.1.1}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{58}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{59}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{60}{chapter*.42}%
+\contentsline {chapter}{\numberline {A}Appendice}{62}{appendix.Alph1}%
