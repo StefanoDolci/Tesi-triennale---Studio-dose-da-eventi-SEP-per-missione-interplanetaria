@@ -8,9 +8,9 @@
 \usepackage{booktabs}
 \usepackage{geometry}
 
-\geometry{margin=2.0cm}
+\geometry{margin=2.0cm, top = 1.0cm}
 \usepackage{setspace}
-\onehalfspacing
+\setstretch{1.1}
 
 \usepackage{amsmath,amssymb}
 \usepackage{siunitx}
@@ -19,6 +19,15 @@
 \usepackage[backend=biber, sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
 \usepackage{placeins}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{0pt}
+% Riduci spazio attorno alle equazioni inline
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+
+% Riduci spazio tra paragrafi
+\setlength{\parskip}{1pt}
 
 \begin{document}
 
@@ -43,14 +52,14 @@ che minimizza lo scatter spettrale $\sigma_{\text{spec}}$ attorno alla retta del
 La funzione di trasferimento ottimizzata viene infine applicata alle fluenze cumulative fornite 
 dal modello probabilistico SAPPHIRE per stimare le dosi attese a 1AU in funzione della durata di 
 missione e fase del ciclo solare. Infine a questi risultati vengono applicati dei fattori di correzione, uno scaling medio teorico e uno ricavato da simulazioni con il modello SOLPENCO2, per tenere conto del trasporto delle particelle lungo l'orbita di trasferimento verso Marte.
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{figures/plot_finale_missioni1.pdf}
+\includegraphics[width=0.65\textwidth]{figures/plot_finale_missioni1.pdf}
 \caption{Profili di dose attesa in funzione della durata della missione: a) Schermatura sferica b) Schermatura planare}
 \label{fig:dosi_finali}
 \end{figure}
-
-\noindent Si stima che per una missione dalla durata di 0.7 anni (259 giorni per orbita Hohmann) durante il massimo solare, con un livello di confidenza del 90\%, la TID non superi i seguenti valori: planare $37.3\pm3.0$ mGy e per la sferica $62.1\pm6.2$ mGy. Confrontando questi risultati con dei valori medi per il \textit{dose rate} dai soli GCR \cite{ramos2023}, si calcola il contributo dei SEP alla dose totale. A parità di durata della missione, schermatura e fase del ciclo solare.
+\noindent Si stima che per una missione dalla durata di 0.7 anni (259 giorni per orbita Hohmann) durante il massimo solare, con un livello di confidenza del 90\%, la TID non superi i seguenti valori: planare $37.3\pm3.0$ mGy e per la sferica $62.1\pm6.2$ mGy. Confrontando questi risultati con dei valori medi per il \textit{dose rate} dai soli GCR \cite{ramos2023}, si calcola il contributo dei SEP per la dose totale, a parità di durata della missione, schermatura e fase del ciclo solare.
 \begin{table}[h]
 \centering
 \begin{tabular}{lccc}
@@ -64,8 +73,9 @@ Minimo  & $76.6$ & $5.1 \pm 0.5$  & $\sim 0.07$ \\
 \caption{Confronto tra dose cumulativa da GCR e da SEP (90\% CL) in geometria sferica per un transito nominale di \SI{0.7}{yr} dietro $\sim$\SI{10}{\gram\per\centi\metre\squared} di alluminio.}
 \label{tab:confronto_sep_gcr}
 \end{table}
-\noindent Durante il massimo solare i SEP dominano la dose con un rapporto SEP/GCR$\sim1.6$, durante il minimo invece i GCR rimangono la componente dominante. Questi risultati rappresentano l'\textit{upper bound} conservativo a 1AU. Considerando gli effetti del trasporto delle particelle lungo l'orbita di trasferimento la fluenza scala approssimativamente $J(r)\propto r^{-\alpha}$. Tramite simulazioni con il modello di trasporto SOLPENCO2, selezionando un orbita di trasferimento Terra-Marte (1.0-1.52 AU) si stima una riduzione in percentuale della fluenza, e di conseguenza della dose, pari al $20.5\%$. Questa combinazione di dati sperimentali e modelli statistici fornisce delle stime compatibili con misure reali SEP da satelliti in transito \cite{Zeitlin2013}. L'ottimizzazione della soglia energetica per la $D(J)$ ha dimostrato che la fluenza integrale permette di condensare tutte le differenze spettrali in un'unica grandezza. In questo elaborato è stato valutato quantitativamente: passare dalla soglia convenzionale $J(>30\,\mathrm{MeV})$, riportata nella maggior parte dei cataloghi, alle soglie ottimizzate $J(>100\,\mathrm{MeV})$ e $J(>60\,\mathrm{MeV})$, riduce lo scatter spettrale da $\pm28-35\%$ a $\pm8-10\%$. Questo permette di ottenere delle stime della dose da SEP ad un costo computazionale inferiore rispetto a simulazioni di trasporto più complesse.  
-
+\noindent Durante il massimo solare i SEP dominano la dose con un rapporto SEP/GCR$\sim1.6$, durante il minimo invece i GCR rimangono la componente dominante. Questi risultati rappresentano l'\textit{upper bound} conservativo a 1AU. Considerando gli effetti del trasporto delle particelle lungo l'orbita di trasferimento, la fluenza scala approssimativamente $J(r)\propto r^{-\alpha}$. Tramite simulazioni con il modello di trasporto SOLPENCO2, selezionando un' orbita di trasferimento Terra-Marte (1.0-1.52 AU) si stima una riduzione in percentuale della fluenza, e di conseguenza della dose, pari al $20.5\%$. Questa combinazione di dati sperimentali e modelli statistici fornisce delle stime compatibili con misure \textit{in-situ} dei SEP riportate dalla sonda MSL/RAD, che durante il transito verso Marte, nel picco del ciclo solare 24, ha registrato una dose da 5 eventi SEP pari a $24.7$ mGy dietro schermatura compatibile \cite{Zeitlin2013}. L'ottimizzazione della soglia energetica per la $D(J)$ ha dimostrato che la fluenza integrale permette di condensare tutte le differenze spettrali in un'unica grandezza. La validità di questa relazione è stata verificata con \textit{Leave-one-out cross-validation} ($88-100\%$ degli eventi viene predetto entro $\pm1\sigma$ con un RMSE del $10-14\%$) e l'analisi dei residui non mostra correlazione significativa con altri parametri come l'indice spettrale. Passare dalla soglia convenzionale $J(>30\,\mathrm{MeV})$, riportata nella maggior parte dei cataloghi, alle soglie ottimizzate $J(>100\,\mathrm{MeV})$ e $J(>60\,\mathrm{MeV})$, riduce lo scatter spettrale da $\pm28-35\%$ a $\pm8-10\%$. Questo permette di ottenere delle stime della dose da SEP ad un costo computazionale inferiore rispetto a simulazioni di trasporto più complesse. Le principali limitazioni di queste stime sono: aver considerato solo il contributo dei protoni senza includere ioni più pesanti e particelle secondarie prodotte nella schermatura; il campione degli 8 SEP storici resta statisticamente limitato, aggiungere ulteriori eventi aiuterebbe a controllare la validità della $D(J)$; testare l'effetto di schermature con materiali compositi e spessori diversi. Infine l'uso di codici Monte Carlo più completi (FLUKA/GEANT4) e un modello 3D più complesso di una sonda reale rappresentano il passo successivo naturale di questo elaborato.
+\clearpage
+\printbibliography
 
 
 \begin{table}[h]
@@ -108,6 +118,5 @@ Sferica & $100$ & $-6.005$ & $0.998$ & $0.997$ & $0.31$ & $\pm\,10\%$ \\
 \caption{Parametri ottimali delle funzioni di trasferimento dose--fluenza.}
 \label{tab:transfer_params}
 \end{table}
-\printbibliography
 
 \end{document}
