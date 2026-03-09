@@ -182,4 +182,61 @@ La funzione di trasferimento è dunque una relazione empirica robusta che permet
 
 \printbibliography
 
+
+\begin{table}[h]
+\centering
+\resizebox{0.8\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline\hline
+Evento 
+& $J_{>30}$ [cm$^{-2}$]
+& $J_{>60}$ [cm$^{-2}$]
+& $J_{>100}$ [cm$^{-2}$]
+& $D_\mathrm{plan}$ [mGy] 
+& $D_\mathrm{sfer}$ [mGy] \\
+\hline
+AUG 1972 & $7.85 \times 10^{9}$ & $1.38 \times 10^{9}$ & $2.57 \times 10^{8}$ & $187.1^{+37.1}_{-33.7}$ & $255.4^{+52.1}_{-47.3}$ \\
+OCT 1989 & $2.42 \times 10^{9}$ & $5.84 \times 10^{8}$ & $2.02 \times 10^{8}$ & $99.1^{+22.7}_{-18.5}$  & $181.6^{+45.7}_{-37.2}$ \\
+JUL 2012 & $1.98 \times 10^{9}$ & $4.89 \times 10^{8}$ & $1.58 \times 10^{8}$ & $79.7^{+25.3}_{-14.8}$  & $167.1^{+66.4}_{-37.8}$ \\
+OCT 2003 & $2.27 \times 10^{9}$ & $3.62 \times 10^{8}$ & $9.07 \times 10^{7}$ & $51.9^{+9.5}_{-8.3}$    & $83.9^{+14.8}_{-13.1}$  \\
+JAN 2005 & $7.01 \times 10^{8}$ & $2.08 \times 10^{8}$ & $8.45 \times 10^{7}$ & $35.6^{+6.8}_{-6.4}$    & $69.9^{+13.2}_{-12.6}$  \\
+SEP 2017 & $4.07 \times 10^{8}$ & $8.12 \times 10^{7}$ & $2.45 \times 10^{7}$ & $12.6^{+2.1}_{-1.9}$    & $25.8^{+4.2}_{-3.9}$    \\
+MAY 2024 & $3.72 \times 10^{7}$ & $1.01 \times 10^{7}$ & $3.62 \times 10^{6}$ & $1.7^{+0.3}_{-0.3}$     & $3.7^{+0.6}_{-0.7}$     \\
+OCT 2021 & $1.93 \times 10^{7}$ & $7.41 \times 10^{6}$ & $3.26 \times 10^{6}$ & $1.4^{+0.2}_{-0.3}$     & $2.7^{+0.6}_{-0.5}$     \\
+\hline\hline
+\end{tabular}%
+}
+\caption{Fluenze integrali e TID in silicio dietro schermatura in ordine di dose decrescente.}
+\label{tab:sep_events}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccccc}
+\hline\hline
+Geometria & $E_{\rm th}$ [MeV] & $a$ & $b$ & $R^2$ & $\chi^2_\nu$ & $\sigma_{\rm spec}$ \\
+\hline
+Planare & $60$  & $-6.475$ & $0.960$ & $0.998$ & $0.20$ & $\pm\,8\%$  \\
+Sferica & $100$ & $-6.005$ & $0.998$ & $0.997$ & $0.31$ & $\pm\,10\%$ \\
+\hline\hline
+\end{tabular}
+\caption{Parametri ottimali delle funzioni di trasferimento dose--fluenza.}
+\label{tab:transfer_params}
+\end{table}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\hline\hline
+Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
+\hline
+Massimo & $38.3$ & $62.1 \pm 6.2$ & $\sim 1.6$ \\
+Minimo  & $76.6$ & $5.1 \pm 0.5$  & $\sim 0.07$ \\
+\hline\hline
+\end{tabular}
+\caption{Confronto tra dose cumulativa da GCR e da SEP (90\% CL) in geometria sferica per un transito nominale di \SI{0.7}{yr} dietro $\sim$\SI{10}{\gram\per\centi\metre\squared} di alluminio.}
+\label{tab:confronto_sep_gcr}
+\end{table}
+
 \end{document}

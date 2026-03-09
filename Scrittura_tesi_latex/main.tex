@@ -32,7 +32,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{csquotes}
-\usepackage[backend=biber, sorting=nty]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
 \appto{\bibsetup}{\raggedright}
 \addbibresource{bibliography.bib}
 
@@ -102,29 +102,23 @@
 % CAPITOLO 1 — INTRODUZIONE
 %---------------------------------------------------------------
 \chapter{Introduzione}
-Nello spazio interplanetario, la radiazione cosmica è uno dei principali limiti per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle ad alta energia con origini al di fuori del sistema solare, il loro flusso è isotropo e relativamente costante, per questo motivo rimangono uno dei principali rischi per la progettazione
-di missioni a lungo termine. D’altro canto i SEP sono particelle cariche-- tipicamente protoni, elettroni e ioni pesanti-- con energie che spaziano da decine di keV fino a diversi GeV, le quali vengono accelerate come risultato di improvvise ed energetiche eruzioni solari. Nonostante la maggior parte di questi eventi ponga un rischio inferiore rispetto a
-quello dei GCR, durante i periodi di massima attività solare, alcuni tra questi possono raggiungere flussi estremi in poche ore, diventando la componente dominante nel bilancio di radiazione.
-La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l’obiettivo di stimare il rischio da tali eventi. Nel seguente elaborato si è cercato di fare proprio questo: considerando il solo contributo da SEP, stimare la dose che un’ipotetica
-sonda interplanetaria riceverebbe durante una tipica missione verso Marte.
-
-
+Nello spazio interplanetario, la radiazione ionizzante è una delle principali minacce per il successo delle missioni spaziali. Al di fuori della magnetosfera terrestre sono due le principali sorgenti di radiazione: i raggi cosmici galattici (GCR) e le particelle energetiche solari (SEP). I GCR sono particelle cariche ad alta energia (protoni, He e nuclei pesanti) con origini al di fuori del sistema solare \cite{Prantzos2012}. D'altro canto i SEP sono occasionali iniezioni di flussi molto intensi (fino a $10^{10}  \text{p}\cdot \text{cm}^{-2}$) di particelle cariche provenienti dal Sole, tipicamente protoni ed elettroni, con energie che spaziano da decine di keV fino al GeV \cite{Wang2024}.
+La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilistico quando ci si pone l’obiettivo di stimare il rischio associato. Nel seguente elaborato si stima la dose dai soli SEP, che un'ipotetica sonda interplanetaria riceverebbe durante una tipica missione verso Marte.
 
 
 
 
 
 \section{Particelle Energetiche Solari (SEP)}
+Nel 1946 Scott Forbush \cite{PhysRev.70.771} riportò per la prima volta un evento SEP come un improvviso incremento del flusso di particelle energetiche che raggiungevano le camere di ionizzazione a terra. Dieci anni dopo, il \textit{Ground-level enhancment} di Febbraio 1956 \cite{Cliver_2008} venne collegato all'accelerazione da brillamenti solari, rapide esplosioni che si verificano in prossimità della corona solare quando l'energia immagazzinata nei campi magnetici contorti del Sole viene improvvisamente rilasciata. Il quadro più completo fu presentato dagli astronomi Wilde, Smerd e Weiss nel 1963\cite{Wild1963}. Identificarono due processi distinti per l'accelerazione dei SEP: una prima fase che accelerava gli elettroni dando origine a emissioni radio di tipo III mentre questi si propagavano nel mezzo interplanetario, e una seconda fase prodotta da uno shock MHD con emissioni radio di tipo II, che accelerava principalmente protoni ed elettroni a energie più elevate.
+Questo modello a due classi fu successivamente accettato negli anni '80 \cite{Reames1999}, quando misure sull'abbondanza isotopica e stato di carica rafforzarono l'idea.\\ Questa classificazione convenzionale utilizzata ancora oggi distingue i SEP in due categorie:  
 
-La fisica delle SEP è uno dei campi relativamente giovane dell'eliofisica, agli inizi degli anni 50' Scott Forbush riportò per la prima volta un evento SEP come un improvviso incremento del flusso di particelle energetiche che raggiungevano le camere a nebbia a terra. In quegli anni si conoscevano come candidati solamente i \textit{solar flare}, brillamenti solari, impulsive esplosioni visibili di energia in prossimità della corona solare.
-Con l'avvento dei satelliti per il \textit{Space weather monitoring}, la classificazione convenzionale adottata ad oggi li distingue in due grandi categorie:  
-\clearpage
 \begin{itemize}
 
-    \item[-] SEP impulsivi: brevi e intensi incrementi del flusso di particelle ed emissioni di \textit{soft X-ray}. Il  plasma intrappolato nelle linee di campo chiuse del Sole viene accelerato verso la superficie e in fine espulso, questi eventi sono legati proprio ai brillamenti solari (\textit{flares}).
-    
+    \item[-] SEP impulsivi: eventi di breve durate (da minuti a poche ore) caratterizzati da rapidi incrementi del flusso di particelle, tipicamente associati ai \textit{solar flares} e emissioni radio di tipo III. Il plasma intrappolato nelle linee di campo chiuse del Sole viene accelerato verso la superficie e in fine espulso.
 
-    \item[-] SEP graduali: si tratta di eventi più lunghi che si possono estendere per più giorni, sono legati alle espulsioni di massa coronale (CMEs), quando le linee di campo vengono stirate dal vento solare possono rompersi e il plasma intrappolato viene espluso, le particelle presenti nel tragitto vengono costantemente accellerate dall'onda d'urto e guidate verso lo spazio interplanetario. 
+    \item[-] SEP graduali: eventi di durata molto maggiore (da alcune ore a giorni) legati alle espulsioni di massa coronale (CMEs). Quando le linee di campo magnetico vengono stirate dal vento solare possono rompersi e il plasma intrappolato viene espluso, le particelle presenti nel tragitto vengono costantemente accellerate da onde d'urto magnetoidrodinamiche e guidate verso lo spazio interplanetario. 
+    \item[] 
 \end{itemize}
 \begin{figure}[H]
 \centering
@@ -350,7 +344,7 @@ In questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale 
 Durante la seconda metà del 1989 il sole era particolarmente attivo. L'evento di Ottobre 1989 è uno dei più intensi registrati nel ciclo solare 22. L'evento è iniziato alle 12:58 UT del 19 Ottobre, in concordanza con un flare di classe X13, i protoni energetici hanno raggiunto il picco a Terra attorno alle 15:30 del 20 Ottobre. I dati scaricati per questo evento provengono dal satellite GOES-07 (SEPEM RDSv3), equipaggiato con il detector EPS (canali energetici da $4.2-500$ MeV).
 
 
-\begin{figure}[H]
+\begin{figure}[htp]
 \centering
 \includegraphics[width=\textwidth]{figures/Flussi/OCT1989_fluxes_raw_net_final.pdf}
 \caption{Dati dei flussi differenziali protonici da GOES-07 (EPS) per l'evento di OCT 1989: a) Flussi differenziali scaricati da SEPEM RDSv3, b) Flussi ripuliti con tecnica discussa capitolo precedente.}
@@ -364,7 +358,7 @@ Durante la seconda metà del 1989 il sole era particolarmente attivo. L'evento d
 \end{itemize}
 
 
-\begin{figure}[H]
+\begin{figure}[htp]
 \centering
 \includegraphics[width=\textwidth]{figures/Spettri/OCT1989_spectral_fit_final.pdf}
 \caption{Spettro fluenza differenziale per l'evento di Ottobre 1989, con dati da GOES-07 (EPS) e bande di confidenza.}
