@@ -153,6 +153,77 @@
       \verb 10.1017/S1743921309029639
       \endverb
     \endentry
+    \entry{Wild1963}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=84e55c3c3501c3c4d95713e5e8609227}{%
+           family={Wild},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a051985cba0855b6c81f997bb147ecd5}{%
+           family={Smerd},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi F.},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=2f850a716fd3ae765db2e46b6f49c463}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \strng{fullhash}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \strng{fullhashraw}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \strng{bibnamehash}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \strng{authorbibnamehash}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \strng{authornamehash}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \strng{authorfullhash}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \strng{authorfullhashraw}{b4a0fe680f09302184dbf8d5f248c7e7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Review of Astronomy and Astrophysics}
+      \field{title}{Solar Bursts}
+      \field{volume}{1}
+      \field{year}{1963}
+      \field{pages}{291\bibrangedash 336}
+      \range{pages}{46}
+      \verb{doi}
+      \verb 10.1146/annurev.aa.01.090163.001451
+      \endverb
+    \endentry
+    \entry{Reames1999}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0c06344ed5f8739063a74ec46cd68c9b}{%
+           family={Reames},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima V.},
+           giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{fullhash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{fullhashraw}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{bibnamehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authorbibnamehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authornamehash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authorfullhash}{0c06344ed5f8739063a74ec46cd68c9b}
+      \strng{authorfullhashraw}{0c06344ed5f8739063a74ec46cd68c9b}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Space Science Reviews}
+      \field{title}{Particle Acceleration at the Sun and in the Heliosphere}
+      \field{volume}{90}
+      \field{year}{1999}
+      \field{pages}{413\bibrangedash 491}
+      \range{pages}{79}
+      \verb{doi}
+      \verb 10.1023/A:1005105831781
+      \endverb
+    \endentry
     \entry{Solar_Energetic_Particles_Reames}{book}{}{}
       \name{author}{1}{}{%
         {{hash=0c06344ed5f8739063a74ec46cd68c9b}{%
@@ -172,8 +243,9 @@
       \strng{authornamehash}{0c06344ed5f8739063a74ec46cd68c9b}
       \strng{authorfullhash}{0c06344ed5f8739063a74ec46cd68c9b}
       \strng{authorfullhashraw}{0c06344ed5f8739063a74ec46cd68c9b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Solar Energetic Particles: A Modern Primer on Understanding Sources, Acceleration and Propagation}
@@ -202,8 +274,8 @@
       \strng{authornamehash}{d03c95f5170ed3bac3dce324931fd843}
       \strng{authorfullhash}{d03c95f5170ed3bac3dce324931fd843}
       \strng{authorfullhashraw}{d03c95f5170ed3bac3dce324931fd843}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
@@ -302,8 +374,8 @@
       \strng{authornamehash}{501ca2e6fffc7a4f1c77cfbfdf9aedaf}
       \strng{authorfullhash}{6ea2e5d8806247c3844ebb15555ba15e}
       \strng{authorfullhashraw}{6ea2e5d8806247c3844ebb15555ba15e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}
@@ -732,8 +804,8 @@
       \strng{authornamehash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
       \strng{authorfullhash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
       \strng{authorfullhashraw}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Astrophysical Journal}

@@ -110,42 +110,63 @@ La natura imprevedibile dei SEP richiede inevitabilmente un approccio probabilis
 
 
 \section{Particelle Energetiche Solari (SEP)}
-Nel 1946 Scott Forbush \cite{PhysRev.70.771} riportò per la prima volta un evento SEP come un improvviso incremento del flusso di particelle energetiche che raggiungevano le camere di ionizzazione a terra. Dieci anni dopo, il \textit{Ground-level enhancment} di Febbraio 1956 \cite{Cliver_2008} venne collegato all'accelerazione da brillamenti solari, rapide esplosioni che si verificano in prossimità della corona solare quando l'energia immagazzinata nei campi magnetici contorti del Sole viene improvvisamente rilasciata. Il quadro più completo fu presentato dagli astronomi Wilde, Smerd e Weiss nel 1963\cite{Wild1963}. Identificarono due processi distinti per l'accelerazione dei SEP: una prima fase che accelerava gli elettroni dando origine a emissioni radio di tipo III mentre questi si propagavano nel mezzo interplanetario, e una seconda fase prodotta da uno shock MHD con emissioni radio di tipo II, che accelerava principalmente protoni ed elettroni a energie più elevate.
-Questo modello a due classi fu successivamente accettato negli anni '80 \cite{Reames1999}, quando misure sull'abbondanza isotopica e stato di carica rafforzarono l'idea.\\ Questa classificazione convenzionale utilizzata ancora oggi distingue i SEP in due categorie:  
+Nel 1946 Scott Forbush \cite{PhysRev.70.771} riportò per la prima volta un evento SEP come un improvviso incremento del flusso di particelle energetiche che raggiungevano le camere di ionizzazione a terra. Dieci anni dopo, il \textit{Ground-level enhancment} di Febbraio 1956 \cite{Cliver_2008} venne collegato all'accelerazione da brillamenti solari, rapide esplosioni che si verificano in prossimità della corona solare quando l'energia immagazzinata nei campi magnetici contorti del Sole viene improvvisamente rilasciata. Il quadro più completo fu presentato dagli astronomi Wilde, Smerd e Weiss nel 1963\cite{Wild1963}. Identificarono due processi distinti per l'accelerazione dei SEP: una prima fase che accelerava gli elettroni dando origine a emissioni radio di tipo III mentre questi si propagavano nel mezzo interplanetario, e una seconda fase prodotta da uno shock MHD con emissioni radio di tipo II, che accelerava i protoni e gli elettroni a energie più elevate.
+Negli anni '80, un susseguirsi di evidenze sperimentali sulla composizione isotopica (1984, Klecker et al) e gli stati di carica  Breneman e Stone (1985) favoriva sempre di più questo \textit{two-picture model}. Infine fu  Don Reames (1993,1999\cite{Reames1999}) a formalizzare questa classificazione largamente utilizzata ancora oggi:
 
-\begin{itemize}
+\begin{table}[h]
+\centering
+\footnotesize
+\begin{tabular}{l c c}
+\hline\hline
+ & Impulsivi & Graduali \\
+\hline
+Origine            & Solar flares          & CMEs \\
+Particelle        & Ricchi in elettroni    & Ricchi in protoni \\
+$^{3}$He/$^{4}$He & $\sim 1$              & $\sim 0.0005$ \\
+Fe/O               & $\sim 1$              & $\sim 0.1$ \\
+H/He               & $\sim 10$             & $\sim 100$ \\
+$Q_{\mathrm{Fe}}$  & $\sim 20$             & $\sim 14$ \\
+Durata             & Ore                    & Giorni \\
+Cono longitudinale & $< 30^\circ$         & $\sim 180^\circ$ \\
+Tipo radio         & III, V (II)            & II, IV \\
+Raggi X            & Impulsivi              & Graduali \\
+Coronografo        & ---                    & CME \\
+Vento solare       & ---                    & Shock IP \\
+Eventi/anno        & $\sim 1000$            & $\sim 10$ \\
+\hline\hline
+\end{tabular}
+\caption{Paradigma a due classi per gli eventi SEP (adattata da Reames, 1999; Cliver, 2009).}
+\label{tab:two_class}
+\end{table}
 
-    \item[-] SEP impulsivi: eventi di breve durate (da minuti a poche ore) caratterizzati da rapidi incrementi del flusso di particelle, tipicamente associati ai \textit{solar flares} e emissioni radio di tipo III. Il plasma intrappolato nelle linee di campo chiuse del Sole viene accelerato verso la superficie e in fine espulso.
-
-    \item[-] SEP graduali: eventi di durata molto maggiore (da alcune ore a giorni) legati alle espulsioni di massa coronale (CMEs). Quando le linee di campo magnetico vengono stirate dal vento solare possono rompersi e il plasma intrappolato viene espluso, le particelle presenti nel tragitto vengono costantemente accellerate da onde d'urto magnetoidrodinamiche e guidate verso lo spazio interplanetario. 
-    \item[] 
-\end{itemize}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/Tipologia_SEP.png}
-\caption{Tipologia di eventi SEP, a sinistra evento impulsivo (\textit{Solar flare}) a destra evento graduale (CMEs). Immagine adattata da "Solar Energetic Particles - Reames" \cite{Solar_Energetic_Particles_Reames}.}
+\caption{Illustrazione semplificata dei due tipi di eventi SEP, a sinistra evento impulsivo (\textit{Solar flare}) a destra evento graduale (CMEs). Immagine adattata da "Solar Energetic Particles - Reames" \cite{Solar_Energetic_Particles_Reames}.}
 \label{fig:tipologia_sep}
-\end{figure} Tale classificazione è supportata da differenze sistematiche: in primo luogo la loro origine, questo è di particolare importanza per i possibili danni alla strumentazione spaziale, come vedremo il tempo di esposizione è un fattore fondamentale per la dose accumulata. Abbiamo poi differenze nella composizione di tali eventi, i SEP graduali hanno una corrispondenza diretta con l'abbondanza isotopica misurabile negli strati della corona solare e bassi rapporti elettroni-protoni. Al contrario i SEP impulsivi hanno invece abbondanze arricchite di elementi pesanti e un sovraarricchimento di $^3$He rispetto a $^4$He, un chiaro segnale di un meccanismo di accelerazione selettivo. Altre differenze riguardano: la distribuzione angolare, dato che le linee di campo magnetico giocano un ruolo fondamentale nel guidare le particelle, l'intensità dei SEP dipende da quanto "bene" è magneticamente connesso il satellite che la misura rispetto alla sorgente. Gli eventi impulsivi sono molto più frequenti di quelli graduali, ma sono anche meno intensi e hanno durate tipicamente più brevi, nell'ordine di qualche ora. Studi sugli ultimi due cicli solari hanno sempre di più sfumato la differenza netta tra i due tipi di eventi, è molto probabile che i SEP siano il risultato di molteplici processi che si sovrappongono tra di loro. 
-
-
+\end{figure} 
+\noindent Osservazioni successive verso l'inizio degli anni 2000 mostrarono che questa distinzione netta impulsivi/graduali è una semplificazione e che in realtà gli eventi SEP si distribuiscono su un "continuo" piuttosto che due categorie separate. (Cane e Tylka e Cliver).
 
 
 
 
 \section{Spettri in energia dei SEP}
-Arriviamo ora alla distinzione più rilevante per questa tesi, ovvero la differenza tra i due eventi SEP in termini di spettri. Lo spettro è definito come la distribuzione del numero di particelle in funzione della loro energia, è la grandezza più importante per estrarre informazioni sulla fisica di questi meccanismi ma sopratutto per le stime della dose. 
+Arriviamo ora alla distinzione più rilevante per questa tesi. Ovvero le differenze tra le due categorie SEP in termini di spettri energetici e fluenza totale. Gli eventi impulsivi, sebbene più frequenti, producono generalmente flussi trascurabili, di breve durata (ore), e con una distribuzione longitudinale ristretta. Gli eventi graduali, più rari, possono durare giorni, coprire grandi distanze longitudinali e hanno fluenze integrali tipicamente superiori. \\
+Lo spettro è definito come la distribuzione del numero di particelle in funzione della loro energia, è la grandezza più importante per estrarre informazioni sulla fisica di questi meccanismi ma sopratutto per le stime della dose. 
 Uno spettro è definito nel seguente modo 
 \begin{equation}
     J(E) = \frac{dN}{dEdAdtd\Omega}
 \end{equation}
 ovvero il numero di particelle $dN$ che attraversa un'area $dA$ in un tempo $dt$ e in un angolo solido $d\Omega$ con energia compresa tra $E$ ed $E+dE$.
-In prima approssimazione lo spettro ci dice quante particelle ci sono a una determinata energia e come cambia questa distribuzione. Le forme funzionali che meglio descrivono lo spettro di un evento SEP sono semplici power law o doppie power law:
+In prima approssimazione lo spettro ci dice quante particelle ci sono a una determinata energia e come cambia questa distribuzione. Le forme funzionali che meglio descrivono lo spettro di un evento SEP sono power law con cut-off esponenziali o doppie power law:
 
 \begin{equation}
     J(E) \propto E^{-\gamma} e^{-E/E_c}
 \end{equation}
-$\gamma$ è l'indice che descrivere la pendenza dello spettro, $E_c$ è l'energia di cut-off che indica dove lo spettro inizia a decadere esponenzialmente.
-I SEP impulsivi come accennato poco fa, sono legati ai \textit{Solar flares}, riconnessioni magnetiche localizzate, tempi di accellerazione rapidi, forte selezione magnetica e quindi spettri più duri, tipicamente $\gamma$ è compreso tra 1.5-3 con cut-off a energie basse. Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e cut-off a energie più alte ($>100$MeV). Questo spettro riflette l'accelerazione continua sulle grandi scale dello spazio interplanetario, dove le particelle vengono accelerate più lentamente e possono raggiungere energie più elevate prima di venire espulse nell'ambiente circostante. Un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza pure con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
+$\gamma$ è l'indice spettrale che descrive la pendenza dello spettro, $E_c$ è l'energia di cut-off che indica dove lo spettro inizia a decadere esponenzialmente.
+I SEP impulsivi tendono ad avere spettri che seguono leggi di potenza semplici, tipicamente $\gamma$ è compreso tra 1.5-3 confinati a basse energie (pochi MeV/nuc). Al contrario i SEP graduali sono noti per i loro spettri più morbidi, con $\gamma$ che può superare 4 e un \textit{roll-over} esponenziale ad alte energie ($>100$MeV), conseguenza del meccanismo di accelerazione da shock.
+
+Un primo tentativo (anni '60-'70) utilizzato per descrivere gli spettri dei SEP è quello di usare leggi di potenza  con l'aggiunta di cut-off esponenziali per spiegare i decadimenti ad alte energie.
 Esistono principalmente due modelli concordati dalla comunità scientifica per descrivere la maggior parte dei SEP, e sono anche i due modelli utilizzati per l'analisi in questo elaborato. 
 La prima forma funzionale è basata modello Ellison-Ramaty (1985) \cite{Ellison-Ramaty},  il quale deriva dalla teoria dell'accelerazione diffusiva da shock, un meccanismo di fermi al primo-ordine che descrive molto bene la fisica dei SEP associati a CME:
 \begin{equation}
