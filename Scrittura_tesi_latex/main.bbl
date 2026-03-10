@@ -417,6 +417,246 @@
       \field{pages}{3}
       \range{pages}{1}
     \endentry
+    \entry{Oldham2003}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5691be409c3a764954d8cd4008472e95}{%
+           family={Oldham},
+           familyi={O\bibinitperiod},
+           given={T.\bibnamedelimi R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=97b2a9d2db76380d6c1fc636d2b06286}{%
+           family={McLean},
+           familyi={M\bibinitperiod},
+           given={F.\bibnamedelimi B.},
+           giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{fullhash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{fullhashraw}{78bcd899b3b336750e734319149c6c6e}
+      \strng{bibnamehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authorbibnamehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authornamehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authorfullhash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authorfullhashraw}{78bcd899b3b336750e734319149c6c6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Trans. Nucl. Sci.}
+      \field{number}{3}
+      \field{title}{Total Ionizing Dose Effects in {MOS} Oxides and Devices}
+      \field{volume}{50}
+      \field{year}{2003}
+      \field{pages}{483\bibrangedash 499}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1109/TNS.2003.812927
+      \endverb
+    \endentry
+    \entry{Poivey2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=dd7b31ad4b30d2fa45db817ad2026ab1}{%
+           family={Poivey},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \strng{fullhash}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \strng{fullhashraw}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \strng{bibnamehash}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \strng{authorbibnamehash}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \strng{authornamehash}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \strng{authorfullhash}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \strng{authorfullhashraw}{dd7b31ad4b30d2fa45db817ad2026ab1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Presentazione, 6th EIROforum School on Instrumentation, ESA/ESTEC}
+      \field{note}{ESA Unclassified - Releasable to the Public}
+      \field{title}{Total Ionizing and Non-Ionizing Dose Radiation Effects in Space Electronics}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://indico.cern.ch/event/777129/contributions/3249529/attachments/1844695/3026130/6th_EIROforum_school_on_instrumentation_cpoivey.pdf
+      \endverb
+      \verb{url}
+      \verb https://indico.cern.ch/event/777129/contributions/3249529/attachments/1844695/3026130/6th_EIROforum_school_on_instrumentation_cpoivey.pdf
+      \endverb
+    \endentry
+    \entry{ECSS_E_10_12}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=6c82ca8277ed7195abc2b1dfc396a07d}{%
+           family={{European Cooperation for Space Standardization}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ESA-ESTEC}%
+      }
+      \strng{namehash}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \strng{fullhash}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \strng{fullhashraw}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \strng{bibnamehash}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \strng{authorbibnamehash}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \strng{authornamehash}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \strng{authorfullhash}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \strng{authorfullhashraw}{6c82ca8277ed7195abc2b1dfc396a07d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{ECSS-E-ST-10-12C}
+      \field{title}{Methods for the Calculation of Radiation Received and Its Effects, and a Policy for Design Margins}
+      \field{type}{techreport}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://ecss.nl/standard/ecss-e-st-10-12c-methods-for-the-calculation-of-radiation-received-and-its-effects-and-a-policy-for-design-margins/
+      \endverb
+      \verb{url}
+      \verb https://ecss.nl/standard/ecss-e-st-10-12c-methods-for-the-calculation-of-radiation-received-and-its-effects-and-a-policy-for-design-margins/
+      \endverb
+    \endentry
+    \entry{HolmesSiedle1993}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=0b5ad3453d783a3aa2f365ab2c8e6aba}{%
+           family={Holmes-Siedle},
+           familyi={H\bibinithyphendelim S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b7329c24d63dae0bcce4350681c77719}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={Len},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{6ff979aff072ec80cb3a124bd884c703}
+      \strng{fullhash}{6ff979aff072ec80cb3a124bd884c703}
+      \strng{fullhashraw}{6ff979aff072ec80cb3a124bd884c703}
+      \strng{bibnamehash}{6ff979aff072ec80cb3a124bd884c703}
+      \strng{authorbibnamehash}{6ff979aff072ec80cb3a124bd884c703}
+      \strng{authornamehash}{6ff979aff072ec80cb3a124bd884c703}
+      \strng{authorfullhash}{6ff979aff072ec80cb3a124bd884c703}
+      \strng{authorfullhashraw}{6ff979aff072ec80cb3a124bd884c703}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of Radiation Effects}
+      \field{year}{1993}
+    \endentry
+    \entry{ESCC22900}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=4f18277bcd4898816e819abb0085effa}{%
+           family={{European Space Components Coordination}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {European Space Agency}%
+      }
+      \strng{namehash}{4f18277bcd4898816e819abb0085effa}
+      \strng{fullhash}{4f18277bcd4898816e819abb0085effa}
+      \strng{fullhashraw}{4f18277bcd4898816e819abb0085effa}
+      \strng{bibnamehash}{4f18277bcd4898816e819abb0085effa}
+      \strng{authorbibnamehash}{4f18277bcd4898816e819abb0085effa}
+      \strng{authornamehash}{4f18277bcd4898816e819abb0085effa}
+      \strng{authorfullhash}{4f18277bcd4898816e819abb0085effa}
+      \strng{authorfullhashraw}{4f18277bcd4898816e819abb0085effa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Issue 5}
+      \field{number}{ESCC Basic Specification No. 22900}
+      \field{title}{Total Dose Steady-State Irradiation Test Method}
+      \field{type}{techreport}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/22900.pdf
+      \endverb
+      \verb{url}
+      \verb https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/22900.pdf
+      \endverb
+    \endentry
+    \entry{MILSTD883}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=a19f0c800b21c59ea99591fbd857028a}{%
+           family={{United States Department of Defense}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Defense}%
+      }
+      \strng{namehash}{a19f0c800b21c59ea99591fbd857028a}
+      \strng{fullhash}{a19f0c800b21c59ea99591fbd857028a}
+      \strng{fullhashraw}{a19f0c800b21c59ea99591fbd857028a}
+      \strng{bibnamehash}{a19f0c800b21c59ea99591fbd857028a}
+      \strng{authorbibnamehash}{a19f0c800b21c59ea99591fbd857028a}
+      \strng{authornamehash}{a19f0c800b21c59ea99591fbd857028a}
+      \strng{authorfullhash}{a19f0c800b21c59ea99591fbd857028a}
+      \strng{authorfullhashraw}{a19f0c800b21c59ea99591fbd857028a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Method 1019.9}
+      \field{number}{MIL-STD-883}
+      \field{title}{Test Method Standard for Microcircuits -- Method 1019: Ionizing Radiation (Total Dose) Test Procedure}
+      \field{type}{techreport}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.doeeet.com/home/-/catalog/document/MIL_STD_883__Method_1019_Environmental_Test_Method_Standard_for_Microcircuits__Ionizing_radiation__total_dose__test_procedure_3?d=2cf15b38-97a7-4085-912b-326d3d7d1612#:~:text=MIL%2DSTD%2D883%2C%20Method%201019%20Environmental%20Test%20Method%20Standard,9%20/
+      \endverb
+      \verb{url}
+      \verb https://www.doeeet.com/home/-/catalog/document/MIL_STD_883__Method_1019_Environmental_Test_Method_Standard_for_Microcircuits__Ionizing_radiation__total_dose__test_procedure_3?d=2cf15b38-97a7-4085-912b-326d3d7d1612#:~:text=MIL%2DSTD%2D883%2C%20Method%201019%20Environmental%20Test%20Method%20Standard,9%20/
+      \endverb
+    \endentry
+    \entry{Badavi2009}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=894b26e8101aa16d9a51ef6b031ddb75}{%
+           family={Badavi},
+           familyi={B\bibinitperiod},
+           given={Francis\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=1e664f84c10c4de748688b6444de61aa}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=fda1e7cae24fc1217dc24e5ca203dbc5}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NASA Langley Research Center}%
+      }
+      \strng{namehash}{4c78304dbf779eebaa067c444f73ed26}
+      \strng{fullhash}{4c78304dbf779eebaa067c444f73ed26}
+      \strng{fullhashraw}{4c78304dbf779eebaa067c444f73ed26}
+      \strng{bibnamehash}{4c78304dbf779eebaa067c444f73ed26}
+      \strng{authorbibnamehash}{4c78304dbf779eebaa067c444f73ed26}
+      \strng{authornamehash}{4c78304dbf779eebaa067c444f73ed26}
+      \strng{authorfullhash}{4c78304dbf779eebaa067c444f73ed26}
+      \strng{authorfullhashraw}{4c78304dbf779eebaa067c444f73ed26}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{NASA/TP-2009-215779}
+      \field{title}{Validity of the Aluminum Equivalent Approximation in Space Radiation Shielding}
+      \field{type}{techreport}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://ntrs.nasa.gov/api/citations/20090026532/downloads/20090026532.pdf
+      \endverb
+      \verb{url}
+      \verb https://ntrs.nasa.gov/api/citations/20090026532/downloads/20090026532.pdf
+      \endverb
+    \endentry
     \entry{Optimal_shielding}{article}{}{}
       \name{author}{5}{}{%
         {{hash=740840a7507193918eefa6f74f0c6de0}{%
@@ -453,8 +693,8 @@
       \strng{authornamehash}{1191085f083e297bd5db4a0817e6147a}
       \strng{authorfullhash}{73f3f4bfe17c1f16f6bb4bc4a9fccfe6}
       \strng{authorfullhashraw}{73f3f4bfe17c1f16f6bb4bc4a9fccfe6}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Space Weather}
@@ -552,8 +792,8 @@
       \strng{authornamehash}{1a89c11aae8cda8464ca30f6fc801c40}
       \strng{authorfullhash}{7098ddd8150b4b9ce1513c2f4073464c}
       \strng{authorfullhashraw}{7098ddd8150b4b9ce1513c2f4073464c}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Statistical Study of Solar Particle Events in Flux and Dose}
@@ -626,8 +866,8 @@
       \strng{authornamehash}{c5d36161378d02e4b48fd61a237ee029}
       \strng{authorfullhash}{bef65533be3bd00e6582bcf68d63c294}
       \strng{authorfullhashraw}{bef65533be3bd00e6582bcf68d63c294}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Space Weather Space Clim.}
@@ -675,8 +915,8 @@
       \strng{authornamehash}{b8a5bbb25ab92bdd78abd81cfa6d9c34}
       \strng{authorfullhash}{0e602d4a8406909e6b3114bcca266793}
       \strng{authorfullhashraw}{0e602d4a8406909e6b3114bcca266793}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Space Weather}
@@ -717,8 +957,8 @@
       \strng{authornamehash}{3577b5e6f13f24c02c80eb6ed8ac183b}
       \strng{authorfullhash}{3577b5e6f13f24c02c80eb6ed8ac183b}
       \strng{authorfullhashraw}{3577b5e6f13f24c02c80eb6ed8ac183b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -773,8 +1013,8 @@
       \strng{authornamehash}{95c93fa0d158b9ae092bc29215d04120}
       \strng{authorfullhash}{3a60c3d838baef15bf13b861f13b8886}
       \strng{authorfullhashraw}{3a60c3d838baef15bf13b861f13b8886}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Molecular Sciences}
@@ -885,8 +1125,8 @@
       \strng{authornamehash}{b504ecf3e1130672804bc0d419eae34c}
       \strng{authorfullhash}{b504ecf3e1130672804bc0d419eae34c}
       \strng{authorfullhashraw}{b504ecf3e1130672804bc0d419eae34c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0273-1177}

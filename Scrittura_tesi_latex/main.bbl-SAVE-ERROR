@@ -417,6 +417,42 @@
       \field{pages}{3}
       \range{pages}{1}
     \endentry
+    \entry{Oldham2003}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5691be409c3a764954d8cd4008472e95}{%
+           family={Oldham},
+           familyi={O\bibinitperiod},
+           given={T.\bibnamedelimi R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=97b2a9d2db76380d6c1fc636d2b06286}{%
+           family={McLean},
+           familyi={M\bibinitperiod},
+           given={F.\bibnamedelimi B.},
+           giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{fullhash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{fullhashraw}{78bcd899b3b336750e734319149c6c6e}
+      \strng{bibnamehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authorbibnamehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authornamehash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authorfullhash}{78bcd899b3b336750e734319149c6c6e}
+      \strng{authorfullhashraw}{78bcd899b3b336750e734319149c6c6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Trans. Nucl. Sci.}
+      \field{number}{3}
+      \field{title}{Total Ionizing Dose Effects in {MOS} Oxides and Devices}
+      \field{volume}{50}
+      \field{year}{2003}
+      \field{pages}{483\bibrangedash 499}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1109/TNS.2003.812927
+      \endverb
+    \endentry
     \entry{Optimal_shielding}{article}{}{}
       \name{author}{5}{}{%
         {{hash=740840a7507193918eefa6f74f0c6de0}{%
@@ -773,8 +809,8 @@
       \strng{authornamehash}{95c93fa0d158b9ae092bc29215d04120}
       \strng{authorfullhash}{3a60c3d838baef15bf13b861f13b8886}
       \strng{authorfullhashraw}{3a60c3d838baef15bf13b861f13b8886}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Molecular Sciences}
