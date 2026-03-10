@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773159092.27473 "main.bcf" "main.bbl" "main" 1773160095.55712 0
-  "bibliography.bib" 1773159092 10031 f992d1057ebda027f031e592dd816011 ""
-  "main.bcf" 1773160095 109798 012fd056f8338bc954d370a10b63d187 "pdflatex"
+["biber main"] 1773164247.79719 "main.bcf" "main.bbl" "main" 1773164352.79456 0
+  "bibliography.bib" 1773163309 13539 beaca178a7f81484be4700800e4b56d1 ""
+  "main.bcf" 1773164352 110411 027dd755f297d8baeb0999629f3b2147 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773160088.67199 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773160095.55801 0
+["pdflatex"] 1773164346.24426 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773164352.79569 0
   "Figures/Electronic_stopping_power_Si_SRIM.png" 1772824583 12104 25bee2065ab17ae333c776d53e236294 ""
   "Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf" 1772827693 56849 bf3b0e124f7b55f8a82fbcdd35db2da5 ""
   "Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png" 1772826335 116233 ea26b01f1fc9f774b6b7145f780f5428 ""
@@ -22,7 +22,6 @@
   "Figures/OCT_2021_multispacecraft_image.png" 1772803164 907617 30335317f84b5786d284ce77c118573d ""
   "Figures/SRNIEL_calcolatore_planare.png" 1772812828 62224 9321d03c2ed326630541b27a12c7a537 ""
   "Figures/Schermatura_sferica.png" 1772823751 692832 3ca20a3d7ab88f412e09b9e44e9890fe ""
-  "Figures/Solar_cycle.png" 1771669442 401107 d68e28e26324cba23a44776af5922711 ""
   "Figures/Solar_storm2003.png" 1772722172 4050332 7bbf2a9ab2c20e02f791d5907943a5c5 ""
   "Figures/Spettri/AUG1972_spectral_fit.pdf" 1772727410 58896 4c365027ea3c3970c89f159ddb0db4f1 ""
   "Figures/Spettri/JAN2005_spectral_fit.pdf" 1772730590 65591 042e78410255a1c4a7444c07e955a12e ""
@@ -38,7 +37,8 @@
   "Figures/fig_a_hohmann_trajectory_1.pdf" 1772979527 24760 b2db8a5249b32d3836891ab8e3abc4a8 ""
   "Figures/parker_spiral_sep_position.png" 1772974463 119771 4f0b9c4aec99ef8599a48d174bd13e20 ""
   "Figures/plot_finale_missioni1.pdf" 1772901772 30175 39694f8055fe6ee1fc6cf217a94bec23 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773160080 100902 4ed0d8d63b98474385d1a7877e036e3e ""
+  "Figures/solar-cycle-sunspot-numb.pdf" 1773161429 142736 2438364bfa9959fd47a13040466d2496 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773164335 101797 17f18846bf25d284395df84be744eb20 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -196,12 +196,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1773160095 29117 336d1ecb3743e9858abd48b7ab9c3b07 "pdflatex"
-  "main.bbl" 1773159095 48867 7dfa26fb682b68eccd5f5583fc7d64d1 "biber main"
-  "main.out" 1773160095 5718 aa620b7d84288a76245c56d963d69f7f "pdflatex"
-  "main.run.xml" 1773160095 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1773160080 100902 4ed0d8d63b98474385d1a7877e036e3e ""
-  "main.toc" 1773160095 2990 b38dbb424ece073d369e983417e2c542 "pdflatex"
+  "main.aux" 1773164352 30418 141d9572d22e4fb16982b485cb005db6 "pdflatex"
+  "main.bbl" 1773164253 62958 0226466ec68c439a422d2ad04abb7a60 "biber main"
+  "main.out" 1773164352 5718 aa620b7d84288a76245c56d963d69f7f "pdflatex"
+  "main.run.xml" 1773164352 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1773164335 101797 17f18846bf25d284395df84be744eb20 ""
+  "main.toc" 1773164352 2991 d7ea6e01d77d3b2010dd06afb011a39e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

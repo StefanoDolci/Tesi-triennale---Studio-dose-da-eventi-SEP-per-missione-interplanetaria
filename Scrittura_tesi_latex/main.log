@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  10 MAR 2026 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  10 MAR 2026 18:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -898,7 +898,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...confronto con misure reali}{53}{chapter.5}
+l.29 ...confronto con misure reali}{54}{chapter.5}
                                                   % [1
 
 ])
@@ -960,18 +960,18 @@ Package pdftex.def Info: figures/MOS_transistor.png  used on input line 190.
 
 [6]
 Capitolo 2.
-<figures/Solar_cycle.png, id=278, 779.01038pt x 302.63063pt>
-File: figures/Solar_cycle.png Graphic file (type png)
-<use figures/Solar_cycle.png>
-Package pdftex.def Info: figures/Solar_cycle.png  used on input line 212.
-(pdftex.def)             Requested size: 429.3521pt x 166.79369pt.
+<figures/solar-cycle-sunspot-numb.pdf, id=280, 903.375pt x 799.06526pt>
+File: figures/solar-cycle-sunspot-numb.pdf Graphic file (type pdf)
+<use figures/solar-cycle-sunspot-numb.pdf>
+Package pdftex.def Info: figures/solar-cycle-sunspot-numb.pdf  used on input line 212.
+(pdftex.def)             Requested size: 429.3521pt x 379.77942pt.
 
 
 [7
 
 ]
 
-[8 <./Figures/Solar_cycle.png>]
+[8 <./Figures/solar-cycle-sunspot-numb.pdf>]
 
 [9]
 
@@ -983,102 +983,105 @@ Overfull \hbox (2.06705pt too wide) in paragraph at lines 308--309
  []
 
 
+
+[12]
+
 Package siunitx Info: Option "scientific-notation = true" has been deprecated
 (siunitx)             in this release.
 (siunitx)             
 (siunitx)             Use "exponent-mode = scientific" as a replacement.
 
-
-
-[12]
-<figures/Spettri/AUG1972_spectral_fit.pdf, id=324, 409.37448pt x 305.06435pt>
+<figures/Spettri/AUG1972_spectral_fit.pdf, id=442, 409.37448pt x 305.06435pt>
 File: figures/Spettri/AUG1972_spectral_fit.pdf Graphic file (type pdf)
 <use figures/Spettri/AUG1972_spectral_fit.pdf>
 Package pdftex.def Info: figures/Spettri/AUG1972_spectral_fit.pdf  used on input line 346.
 (pdftex.def)             Requested size: 386.41426pt x 287.9708pt.
 
 
-[13 <./Figures/Spettri/AUG1972_spectral_fit.pdf>]
+[13]
 <figures/Flussi/OCT1989_fluxes_raw_net_final.pdf, id=451, 380.57382pt x 484.60338pt>
 File: figures/Flussi/OCT1989_fluxes_raw_net_final.pdf Graphic file (type pdf)
 <use figures/Flussi/OCT1989_fluxes_raw_net_final.pdf>
 Package pdftex.def Info: figures/Flussi/OCT1989_fluxes_raw_net_final.pdf  used on input line 360.
 (pdftex.def)             Requested size: 429.3521pt x 546.72289pt.
-<figures/Spettri/OCT1989_spectral_fit_final.pdf, id=453, 408.7714pt x 305.44081pt>
+
+
+[14 <./Figures/Spettri/AUG1972_spectral_fit.pdf>]
+<figures/Spettri/OCT1989_spectral_fit_final.pdf, id=577, 408.7714pt x 305.44081pt>
 File: figures/Spettri/OCT1989_spectral_fit_final.pdf Graphic file (type pdf)
 <use figures/Spettri/OCT1989_spectral_fit_final.pdf>
 Package pdftex.def Info: figures/Spettri/OCT1989_spectral_fit_final.pdf  used on input line 374.
 (pdftex.def)             Requested size: 429.3521pt x 320.83417pt.
-
-
-[14]
-
-[15 <./Figures/Flussi/OCT1989_fluxes_raw_net_final.pdf>]
-
-[16 <./Figures/Spettri/OCT1989_spectral_fit_final.pdf>]
-<figures/Solar_storm2003.png, id=678, 578.16pt x 578.16pt>
+<figures/Solar_storm2003.png, id=579, 578.16pt x 578.16pt>
 File: figures/Solar_storm2003.png Graphic file (type png)
 <use figures/Solar_storm2003.png>
 Package pdftex.def Info: figures/Solar_storm2003.png  used on input line 388.
 (pdftex.def)             Requested size: 257.61388pt x 257.6112pt.
-<figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf, id=681, 607.97139pt x 484.60338pt>
+
+
+[15]
+
+[16 <./Figures/Flussi/OCT1989_fluxes_raw_net_final.pdf>]
+
+[17 <./Figures/Spettri/OCT1989_spectral_fit_final.pdf>]
+<figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf, id=806, 607.97139pt x 484.60338pt>
 File: figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf Graphic file (type pdf)
 <use figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf>
 Package pdftex.def Info: figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf  used on input line 399.
 (pdftex.def)             Requested size: 429.3521pt x 342.22958pt.
 
 
-[17 <./Figures/Solar_storm2003.png>]
-<figures/Spettri/OCT2003_spectral_fit_finale.pdf, id=687, 412.50636pt x 325.8169pt>
+[18 <./Figures/Solar_storm2003.png>]
+<figures/Spettri/OCT2003_spectral_fit_finale.pdf, id=812, 412.50636pt x 325.8169pt>
 File: figures/Spettri/OCT2003_spectral_fit_finale.pdf Graphic file (type pdf)
 <use figures/Spettri/OCT2003_spectral_fit_finale.pdf>
 Package pdftex.def Info: figures/Spettri/OCT2003_spectral_fit_finale.pdf  used on input line 417.
 (pdftex.def)             Requested size: 429.3521pt x 339.12494pt.
 
 
-[18 <./Figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf>]
+[19 <./Figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf>]
 
-[19 <./Figures/Spettri/OCT2003_spectral_fit_finale.pdf>]
-<figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf, id=924, 607.97139pt x 481.15189pt>
+[20 <./Figures/Spettri/OCT2003_spectral_fit_finale.pdf>]
+<figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf, id=1048, 607.97139pt x 481.15189pt>
 File: figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf Graphic file (type pdf)
 <use figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf>
 Package pdftex.def Info: figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf  used on input line 432.
 (pdftex.def)             Requested size: 429.3521pt x 339.79211pt.
 
 
-[20 <./Figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf>]
-<figures/Spettri/JAN2005_spectral_fit.pdf, id=1033, 408.76399pt x 306.40033pt>
+[21 <./Figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf>]
+<figures/Spettri/JAN2005_spectral_fit.pdf, id=1157, 408.76399pt x 306.40033pt>
 File: figures/Spettri/JAN2005_spectral_fit.pdf Graphic file (type pdf)
 <use figures/Spettri/JAN2005_spectral_fit.pdf>
 Package pdftex.def Info: figures/Spettri/JAN2005_spectral_fit.pdf  used on input line 450.
 (pdftex.def)             Requested size: 429.3521pt x 321.84203pt.
 
 
-[21 <./Figures/Spettri/JAN2005_spectral_fit.pdf>]
-<figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf, id=1171, 380.57382pt x 483.55843pt>
+[22 <./Figures/Spettri/JAN2005_spectral_fit.pdf>]
+<figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf, id=1297, 380.57382pt x 483.55843pt>
 File: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf Graphic file (type pdf)
 <use figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf>
 Package pdftex.def Info: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf  used on input line 465.
 (pdftex.def)             Requested size: 429.3521pt x 545.544pt.
 
 
-[22]
+[23]
 
-[23 <./Figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf>]
-<figures/Spettri/JUL2012_spectral_fit.pdf, id=1292, 408.90826pt x 306.40033pt>
+[24 <./Figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf>]
+<figures/Spettri/JUL2012_spectral_fit.pdf, id=1417, 408.90826pt x 306.40033pt>
 File: figures/Spettri/JUL2012_spectral_fit.pdf Graphic file (type pdf)
 <use figures/Spettri/JUL2012_spectral_fit.pdf>
 Package pdftex.def Info: figures/Spettri/JUL2012_spectral_fit.pdf  used on input line 481.
 (pdftex.def)             Requested size: 429.3521pt x 321.71579pt.
 
 
-[24 <./Figures/Spettri/JUL2012_spectral_fit.pdf>]
-<figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf, id=1428, 408.71638pt x 306.40033pt>
+[25 <./Figures/Spettri/JUL2012_spectral_fit.pdf>]
+<figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf, id=1552, 408.71638pt x 306.40033pt>
 File: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf Graphic file (type pdf)
 <use figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>
 Package pdftex.def Info: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf  used on input line 490.
 (pdftex.def)             Requested size: 300.54515pt x 225.32074pt.
-<figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf, id=1429, 380.57382pt x 482.33855pt>
+<figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf, id=1553, 380.57382pt x 482.33855pt>
 File: figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf Graphic file (type pdf)
 <use figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf>
 Package pdftex.def Info: figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf  used on input line 500.
@@ -1090,90 +1093,90 @@ Overfull \hbox (122.66687pt too wide) in paragraph at lines 496--503
 
 
 
-[25
+[26
 
  <./Figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>]
 
-[26 <./Figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf>]
-<figures/Spettri/SEP2017_spectral_fit_final.pdf, id=1599, 409.55183pt x 306.40033pt>
+[27 <./Figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf>]
+<figures/Spettri/SEP2017_spectral_fit_final.pdf, id=1723, 409.55183pt x 306.40033pt>
 File: figures/Spettri/SEP2017_spectral_fit_final.pdf Graphic file (type pdf)
 <use figures/Spettri/SEP2017_spectral_fit_final.pdf>
 Package pdftex.def Info: figures/Spettri/SEP2017_spectral_fit_final.pdf  used on input line 516.
 (pdftex.def)             Requested size: 429.3521pt x 321.2249pt.
 
 
-[27 <./Figures/Spettri/SEP2017_spectral_fit_final.pdf>]
-<figures/OCT_2021_multispacecraft_image.png, id=1740, 1366.8666pt x 680.7834pt>
+[28 <./Figures/Spettri/SEP2017_spectral_fit_final.pdf>]
+<figures/OCT_2021_multispacecraft_image.png, id=1866, 1366.8666pt x 680.7834pt>
 File: figures/OCT_2021_multispacecraft_image.png Graphic file (type png)
 <use figures/OCT_2021_multispacecraft_image.png>
 Package pdftex.def Info: figures/OCT_2021_multispacecraft_image.png  used on input line 527.
 (pdftex.def)             Requested size: 429.3521pt x 213.8454pt.
 
 
-[28
+[29
 
  <./Figures/OCT_2021_multispacecraft_image.png>]
-<figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf, id=1750, 454.83365pt x 483.9133pt>
+<figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf, id=1875, 454.83365pt x 483.9133pt>
 File: figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf Graphic file (type pdf)
 <use figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf>
 Package pdftex.def Info: figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf  used on input line 536.
 (pdftex.def)             Requested size: 429.3521pt x 456.82053pt.
 
 
-[29 <./Figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf>]
-<figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf, id=1849, 408.63297pt x 306.40033pt>
+[30 <./Figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf>]
+<figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf, id=1973, 408.63297pt x 306.40033pt>
 File: figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf Graphic file (type pdf)
 <use figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf>
 Package pdftex.def Info: figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf  used on input line 551.
 (pdftex.def)             Requested size: 429.3521pt x 321.94022pt.
 
 
-[30 <./Figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf>]
-<figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf, id=1962, 454.83365pt x 484.7007pt>
+[31 <./Figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf>]
+<figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf, id=2086, 454.83365pt x 484.7007pt>
 File: figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf Graphic file (type pdf)
 <use figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf>
 Package pdftex.def Info: figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf  used on input line 561.
 (pdftex.def)             Requested size: 429.3521pt x 457.56384pt.
 
 
-[31]
-<figures/Spettri/MAY2024_ER_spectral_fit1.pdf, id=1967, 409.2352pt x 306.40033pt>
+[32]
+<figures/Spettri/MAY2024_ER_spectral_fit1.pdf, id=2091, 409.2352pt x 306.40033pt>
 File: figures/Spettri/MAY2024_ER_spectral_fit1.pdf Graphic file (type pdf)
 <use figures/Spettri/MAY2024_ER_spectral_fit1.pdf>
 Package pdftex.def Info: figures/Spettri/MAY2024_ER_spectral_fit1.pdf  used on input line 574.
 (pdftex.def)             Requested size: 429.3521pt x 321.47269pt.
 
 
-[32 <./Figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf>]
+[33 <./Figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf>]
 
-[33 <./Figures/Spettri/MAY2024_ER_spectral_fit1.pdf>]
+[34 <./Figures/Spettri/MAY2024_ER_spectral_fit1.pdf>]
 
-[34]
+[35]
 Capitolo 3.
 
 
-[35
+[36
 
 ]
-<figures/SRNIEL_calcolatore_planare.png, id=2205, 723.45282pt x 494.59781pt>
+<figures/SRNIEL_calcolatore_planare.png, id=2330, 723.45282pt x 494.59781pt>
 File: figures/SRNIEL_calcolatore_planare.png Graphic file (type png)
 <use figures/SRNIEL_calcolatore_planare.png>
 Package pdftex.def Info: figures/SRNIEL_calcolatore_planare.png  used on input line 641.
 (pdftex.def)             Requested size: 300.54515pt x 205.47311pt.
 
 
-[36]
-<Figures/Schermatura_sferica.png, id=2211, 523.05412pt x 256.5585pt>
+[37]
+<Figures/Schermatura_sferica.png, id=2336, 523.05412pt x 256.5585pt>
 File: Figures/Schermatura_sferica.png Graphic file (type png)
 <use Figures/Schermatura_sferica.png>
 Package pdftex.def Info: Figures/Schermatura_sferica.png  used on input line 656.
 (pdftex.def)             Requested size: 429.3521pt x 210.60248pt.
 
 
-[37 <./Figures/SRNIEL_calcolatore_planare.png>]
+[38 <./Figures/SRNIEL_calcolatore_planare.png>]
 
-[38 <./Figures/Schermatura_sferica.png>]
-<Figures/Electronic_stopping_power_Si_SRIM.png, id=2223, 602.25pt x 451.6875pt>
+[39 <./Figures/Schermatura_sferica.png>]
+<Figures/Electronic_stopping_power_Si_SRIM.png, id=2348, 602.25pt x 451.6875pt>
 File: Figures/Electronic_stopping_power_Si_SRIM.png Graphic file (type png)
 <use Figures/Electronic_stopping_power_Si_SRIM.png>
 Package pdftex.def Info: Figures/Electronic_stopping_power_Si_SRIM.png  used on input line 681.
@@ -1183,133 +1186,135 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 68
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-[39 <./Figures/Electronic_stopping_power_Si_SRIM.png>]
-<Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png, id=2231, 199.34476pt x 150.5625pt>
+[40 <./Figures/Electronic_stopping_power_Si_SRIM.png>]
+<Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png, id=2356, 199.34476pt x 150.5625pt>
 File: Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png Graphic file (type png)
 <use Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png>
 Package pdftex.def Info: Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png  used on input line 713.
 (pdftex.def)             Requested size: 429.3521pt x 324.28427pt.
 
 
-[40]
+[41]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf, id=2242, 410.75945pt x 269.87773pt>
+<Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf, id=2366, 410.75945pt x 269.87773pt>
 File: Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf Graphic file (type pdf)
 <use Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf>
 Package pdftex.def Info: Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf  used on input line 757.
 (pdftex.def)             Requested size: 429.3521pt x 282.09927pt.
 
 
-[41 <./Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png>]
+[42 <./Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png>]
 
-[42]
+[43]
 
-[43 <./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf>]
-<Figures/dose_fluence_transfer_function_finale.pdf, id=2352, 786.02068pt x 574.28322pt>
+[44 <./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf>]
+<Figures/dose_fluence_transfer_function_finale.pdf, id=2476, 786.02068pt x 574.28322pt>
 File: Figures/dose_fluence_transfer_function_finale.pdf Graphic file (type pdf)
 <use Figures/dose_fluence_transfer_function_finale.pdf>
 Package pdftex.def Info: Figures/dose_fluence_transfer_function_finale.pdf  used on input line 790.
 (pdftex.def)             Requested size: 429.3521pt x 313.70108pt.
 
 
-[44]
-<Figures/LOO_cross_validation_errors_finale.pdf, id=2362, 429.2838pt x 375.804pt>
+[45]
+<Figures/LOO_cross_validation_errors_finale.pdf, id=2486, 429.2838pt x 375.804pt>
 File: Figures/LOO_cross_validation_errors_finale.pdf Graphic file (type pdf)
 <use Figures/LOO_cross_validation_errors_finale.pdf>
 Package pdftex.def Info: Figures/LOO_cross_validation_errors_finale.pdf  used on input line 815.
 (pdftex.def)             Requested size: 257.61388pt x 225.51854pt.
 
 
-[45 <./Figures/dose_fluence_transfer_function_finale.pdf>]
+[46 <./Figures/dose_fluence_transfer_function_finale.pdf>]
 
-[46 <./Figures/LOO_cross_validation_errors_finale.pdf>]
+[47 <./Figures/LOO_cross_validation_errors_finale.pdf>]
 
-[47]
+[48]
 Capitolo 4.
 
 
-[48
+[49
 
 ]
 
-[49]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
 [50]
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
 [51]
-<Figures/plot_finale_missioni1.pdf, id=2622, 418.19142pt x 289.37674pt>
+
+[52]
+<Figures/plot_finale_missioni1.pdf, id=2747, 418.19142pt x 289.37674pt>
 File: Figures/plot_finale_missioni1.pdf Graphic file (type pdf)
 <use Figures/plot_finale_missioni1.pdf>
 Package pdftex.def Info: Figures/plot_finale_missioni1.pdf  used on input line 912.
 (pdftex.def)             Requested size: 429.3521pt x 297.09877pt.
 
 
-[52
+[53
 
  <./Figures/plot_finale_missioni1.pdf>]
 Capitolo 5.
 
 
-[53
+[54
 
 ]
-<Figures/parker_spiral_sep_position.png, id=2705, 179.16937pt x 170.73787pt>
+<Figures/parker_spiral_sep_position.png, id=2829, 179.16937pt x 170.73787pt>
 File: Figures/parker_spiral_sep_position.png Graphic file (type png)
 <use Figures/parker_spiral_sep_position.png>
 Package pdftex.def Info: Figures/parker_spiral_sep_position.png  used on input line 969.
 (pdftex.def)             Requested size: 257.61388pt x 245.50801pt.
 
 
-[54]
+[55]
 
-[55 <./Figures/parker_spiral_sep_position.png>]
-<Figures/fig_a_hohmann_trajectory_1.pdf, id=2725, 407.38196pt x 303.77614pt>
+[56 <./Figures/parker_spiral_sep_position.png>]
+<Figures/fig_a_hohmann_trajectory_1.pdf, id=2850, 407.38196pt x 303.77614pt>
 File: Figures/fig_a_hohmann_trajectory_1.pdf Graphic file (type pdf)
 <use Figures/fig_a_hohmann_trajectory_1.pdf>
 Package pdftex.def Info: Figures/fig_a_hohmann_trajectory_1.pdf  used on input line 999.
 (pdftex.def)             Requested size: 257.61388pt x 192.09842pt.
 
 
-[56 <./Figures/fig_a_hohmann_trajectory_1.pdf>]
-
-[57]
+[57 <./Figures/fig_a_hohmann_trajectory_1.pdf>]
 
 [58]
+
+[59]
 Capitolo 6.
 
 
-[59
+[60
 
 ]
-
-[60]
 
 [61]
+
+[62]
 Capitolo 7.
 
-
-[62
-
-]
 
 [63
 
 ]
 
-[64]
+[64
+
+]
 
 [65]
 
 [66]
+
+[67]
+
+[68]
 Appendice A.
 
 Package caption Warning: Unused \captionsetup[sub] on input line 19.
@@ -1317,7 +1322,7 @@ See the caption package documentation for explanation.
 
 
 
-[67
+[69
 
 ] (./main.aux)
  ***********
@@ -1331,18 +1336,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29395 strings out of 475247
- 584996 string characters out of 5768378
- 1425200 words of memory out of 5000000
- 51733 multiletter control sequences out of 15000+600000
+ 29438 strings out of 475247
+ 586709 string characters out of 5768378
+ 1425752 words of memory out of 5000000
+ 51765 multiletter control sequences out of 15000+600000
  612161 words of font info for 146 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  123i,20n,121p,3371b,2706s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (70 pages, 9807831 bytes).
+Output written on main.pdf (72 pages, 9606273 bytes).
 PDF statistics:
- 2974 PDF objects out of 2984 (max. 8388607)
- 1027 compressed objects within 11 object streams
- 207 named destinations out of 1000 (max. 500000)
+ 3119 PDF objects out of 3580 (max. 8388607)
+ 1088 compressed objects within 11 object streams
+ 218 named destinations out of 1000 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
