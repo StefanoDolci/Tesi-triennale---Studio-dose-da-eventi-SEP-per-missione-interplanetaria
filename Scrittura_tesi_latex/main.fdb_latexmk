@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773164247.79719 "main.bcf" "main.bbl" "main" 1773164352.79456 0
-  "bibliography.bib" 1773163309 13539 beaca178a7f81484be4700800e4b56d1 ""
-  "main.bcf" 1773164352 110411 027dd755f297d8baeb0999629f3b2147 "pdflatex"
+["biber main"] 1773173245.03131 "main.bcf" "main.bbl" "main" 1773173313.79296 0
+  "bibliography.bib" 1773173204 15912 b9266146fe298cc929e5310bcbef7543 ""
+  "main.bcf" 1773173313 110831 e9d5695702d6ec0f7bfac939131b72ee "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773164346.24426 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773164352.79569 0
+["pdflatex"] 1773173304.54405 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773173313.79411 0
   "Figures/Electronic_stopping_power_Si_SRIM.png" 1772824583 12104 25bee2065ab17ae333c776d53e236294 ""
   "Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf" 1772827693 56849 bf3b0e124f7b55f8a82fbcdd35db2da5 ""
   "Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png" 1772826335 116233 ea26b01f1fc9f774b6b7145f780f5428 ""
@@ -38,7 +38,7 @@
   "Figures/parker_spiral_sep_position.png" 1772974463 119771 4f0b9c4aec99ef8599a48d174bd13e20 ""
   "Figures/plot_finale_missioni1.pdf" 1772901772 30175 39694f8055fe6ee1fc6cf217a94bec23 ""
   "Figures/solar-cycle-sunspot-numb.pdf" 1773161429 142736 2438364bfa9959fd47a13040466d2496 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773164335 101797 17f18846bf25d284395df84be744eb20 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773173303 101967 252749a86e8237c5ba2a24c69ea1ffd6 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -58,6 +58,7 @@
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1733326856 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1733326856 908 2921f8a10601f252058503cc6570e581 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1733326873 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm" 1733326873 768 2297ad2ac26f37e67f756dad27c77d68 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1733326873 1528 abec98dbc43e172678c11b3b9031252a ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1733326873 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1733326873 1288 655e228510b4c2a1abe905c368440826 ""
@@ -65,6 +66,7 @@
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1733326873 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1735073502 688 37338d6ab346c2f1466b29e195316aa4 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1733326856 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb" 1733326856 26057 4749ebe351ca6b60601cf0ab49d1bf5d ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1733326856 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1733326856 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1733326856 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -196,12 +198,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1773164352 30418 141d9572d22e4fb16982b485cb005db6 "pdflatex"
-  "main.bbl" 1773164253 62958 0226466ec68c439a422d2ad04abb7a60 "biber main"
-  "main.out" 1773164352 5718 aa620b7d84288a76245c56d963d69f7f "pdflatex"
-  "main.run.xml" 1773164352 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1773164335 101797 17f18846bf25d284395df84be744eb20 ""
-  "main.toc" 1773164352 2991 d7ea6e01d77d3b2010dd06afb011a39e "pdflatex"
+  "main.aux" 1773173313 31314 ccf49a537b4d59502701f8e738417cc0 "pdflatex"
+  "main.bbl" 1773173247 71407 0ab00034cf3b4dfeede876c1ed0caa8a "biber main"
+  "main.out" 1773173313 5718 aa620b7d84288a76245c56d963d69f7f "pdflatex"
+  "main.run.xml" 1773173313 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1773173303 101967 252749a86e8237c5ba2a24c69ea1ffd6 ""
+  "main.toc" 1773173313 2991 662e8e733e4d696043c1a01b064dbfde "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

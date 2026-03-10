@@ -793,6 +793,7 @@
       \strng{authornamehash}{2f82810b1fd2c28befd3db796d2de298}
       \strng{authorfullhash}{2f82810b1fd2c28befd3db796d2de298}
       \strng{authorfullhashraw}{2f82810b1fd2c28befd3db796d2de298}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -1116,6 +1117,190 @@
       \verb https://ntrs.nasa.gov/citations/20180006658
       \endverb
     \endentry
+    \entry{Rodriguez2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=2c945c2d3c50db3650719a043d71bfe4}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=462da344598a61d8cd4cdd09bef17309}{%
+           family={Sandberg},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=64096187b228964151cf6bfee7931557}{%
+           family={Mewaldt},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0a34b0f7ac206a6c1b08686937370fc9}{%
+           family={Daglis},
+           familyi={D\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=068830e0f333574368727b88778b9756}{%
+           family={Jiggens},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e06ec9a07dce13c23880312a1d5b24b}
+      \strng{fullhash}{2801d99bf90ce3c17291aaafdae1cc94}
+      \strng{fullhashraw}{2801d99bf90ce3c17291aaafdae1cc94}
+      \strng{bibnamehash}{6e06ec9a07dce13c23880312a1d5b24b}
+      \strng{authorbibnamehash}{6e06ec9a07dce13c23880312a1d5b24b}
+      \strng{authornamehash}{6e06ec9a07dce13c23880312a1d5b24b}
+      \strng{authorfullhash}{2801d99bf90ce3c17291aaafdae1cc94}
+      \strng{authorfullhashraw}{2801d99bf90ce3c17291aaafdae1cc94}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Space Weather}
+      \field{number}{2}
+      \field{title}{Validation of the Effect of Cross-Calibrated {GOES} Solar Proton Effective Energies on Derived Integral Fluxes by Comparison with {STEREO} Observations}
+      \field{volume}{15}
+      \field{year}{2017}
+      \field{pages}{290\bibrangedash 309}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1002/2016SW001533
+      \endverb
+    \endentry
+    \entry{Marquardt1963}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a028cbf46bc69c4cff5800c4c8030f09}{%
+           family={Marquardt},
+           familyi={M\bibinitperiod},
+           given={Donald\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{a028cbf46bc69c4cff5800c4c8030f09}
+      \strng{fullhash}{a028cbf46bc69c4cff5800c4c8030f09}
+      \strng{fullhashraw}{a028cbf46bc69c4cff5800c4c8030f09}
+      \strng{bibnamehash}{a028cbf46bc69c4cff5800c4c8030f09}
+      \strng{authorbibnamehash}{a028cbf46bc69c4cff5800c4c8030f09}
+      \strng{authornamehash}{a028cbf46bc69c4cff5800c4c8030f09}
+      \strng{authorfullhash}{a028cbf46bc69c4cff5800c4c8030f09}
+      \strng{authorfullhashraw}{a028cbf46bc69c4cff5800c4c8030f09}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Society for Industrial and Applied Mathematics}
+      \field{number}{2}
+      \field{title}{An Algorithm for Least-Squares Estimation of Nonlinear Parameters}
+      \field{volume}{11}
+      \field{year}{1963}
+      \field{pages}{431\bibrangedash 441}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1137/0111030
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1137/0111030
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1137/0111030
+      \endverb
+    \endentry
+    \entry{SciPy_curvefit}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7da5bb7fe20097f745b0da35ec77b399}{%
+           family={{SciPy Developers}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7da5bb7fe20097f745b0da35ec77b399}
+      \strng{fullhash}{7da5bb7fe20097f745b0da35ec77b399}
+      \strng{fullhashraw}{7da5bb7fe20097f745b0da35ec77b399}
+      \strng{bibnamehash}{7da5bb7fe20097f745b0da35ec77b399}
+      \strng{authorbibnamehash}{7da5bb7fe20097f745b0da35ec77b399}
+      \strng{authornamehash}{7da5bb7fe20097f745b0da35ec77b399}
+      \strng{authorfullhash}{7da5bb7fe20097f745b0da35ec77b399}
+      \strng{authorfullhashraw}{7da5bb7fe20097f745b0da35ec77b399}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html}}
+      \field{note}{Consultato: Marzo 2025}
+      \field{title}{\texttt{scipy.optimize.curve\_fit} --- {SciPy} Reference Guide}
+      \field{year}{2025}
+    \endentry
+    \entry{NumericalRecipes2007}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=0eab1ccd4d6c57a2ff6794a4724ccafb}{%
+           family={Press},
+           familyi={P\bibinitperiod},
+           given={William\bibnamedelima H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=ff8354846900d7ef6c94cb025f7e938c}{%
+           family={Teukolsky},
+           familyi={T\bibinitperiod},
+           given={Saul\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0bb298496cc38e45b21c576a005078a0}{%
+           family={Vetterling},
+           familyi={V\bibinitperiod},
+           given={William\bibnamedelima T.},
+           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=f40726c661611c8a024d53294b6e0ad0}{%
+           family={Flannery},
+           familyi={F\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{618fa62f030076edf2937faa1b1684fb}
+      \strng{fullhash}{f75c24a04994b574cb620c685a1f8229}
+      \strng{fullhashraw}{f75c24a04994b574cb620c685a1f8229}
+      \strng{bibnamehash}{618fa62f030076edf2937faa1b1684fb}
+      \strng{authorbibnamehash}{618fa62f030076edf2937faa1b1684fb}
+      \strng{authornamehash}{618fa62f030076edf2937faa1b1684fb}
+      \strng{authorfullhash}{f75c24a04994b574cb620c685a1f8229}
+      \strng{authorfullhashraw}{f75c24a04994b574cb620c685a1f8229}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{15.6}
+      \field{edition}{3rd}
+      \field{title}{Numerical Recipes: The Art of Scientific Computing}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://faculty.kfupm.edu.sa/phys/aanaqvi/Numerical%20Recipes-The%20Art%20of%20Scientific%20Computing%203rd%20Edition%20(Press%20et%20al).pdf
+      \endverb
+      \verb{url}
+      \verb https://faculty.kfupm.edu.sa/phys/aanaqvi/Numerical%20Recipes-The%20Art%20of%20Scientific%20Computing%203rd%20Edition%20(Press%20et%20al).pdf
+      \endverb
+    \endentry
+    \entry{NOAA_SWPC_proton}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2f82810b1fd2c28befd3db796d2de298}{%
+           family={{NOAA Space Weather Prediction Center}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f82810b1fd2c28befd3db796d2de298}
+      \strng{fullhash}{2f82810b1fd2c28befd3db796d2de298}
+      \strng{fullhashraw}{2f82810b1fd2c28befd3db796d2de298}
+      \strng{bibnamehash}{2f82810b1fd2c28befd3db796d2de298}
+      \strng{authorbibnamehash}{2f82810b1fd2c28befd3db796d2de298}
+      \strng{authornamehash}{2f82810b1fd2c28befd3db796d2de298}
+      \strng{authorfullhash}{2f82810b1fd2c28befd3db796d2de298}
+      \strng{authorfullhashraw}{2f82810b1fd2c28befd3db796d2de298}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.swpc.noaa.gov/products/goes-proton-flux}}
+      \field{note}{Consultato: Marzo 2025}
+      \field{title}{{GOES} Proton Flux}
+      \field{year}{2025}
+    \endentry
     \entry{AUG_1972_Raukunen}{article}{}{}
       \name{author}{10}{}{%
         {{hash=833f08e62c0a52294af7d34b9b50ee40}{%
@@ -1268,8 +1453,8 @@
       \strng{authornamehash}{3577b5e6f13f24c02c80eb6ed8ac183b}
       \strng{authorfullhash}{3577b5e6f13f24c02c80eb6ed8ac183b}
       \strng{authorfullhashraw}{3577b5e6f13f24c02c80eb6ed8ac183b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -1324,8 +1509,8 @@
       \strng{authornamehash}{95c93fa0d158b9ae092bc29215d04120}
       \strng{authorfullhash}{3a60c3d838baef15bf13b861f13b8886}
       \strng{authorfullhashraw}{3a60c3d838baef15bf13b861f13b8886}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Molecular Sciences}
@@ -1355,8 +1540,8 @@
       \strng{authornamehash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
       \strng{authorfullhash}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
       \strng{authorfullhashraw}{1b8298bb4e7ccf76c3e1a5f988f5cd97}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Astrophysical Journal}
@@ -1395,8 +1580,8 @@
       \strng{authornamehash}{114ad1e53fd8bb3c06191c8dff94dcc3}
       \strng{authorfullhash}{114ad1e53fd8bb3c06191c8dff94dcc3}
       \strng{authorfullhashraw}{114ad1e53fd8bb3c06191c8dff94dcc3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astrophysical Journal}

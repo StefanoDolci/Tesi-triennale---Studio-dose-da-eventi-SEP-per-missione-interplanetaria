@@ -11,27 +11,27 @@
 \contentsline {subsection}{\numberline {2.1.2}Fase 2: Calcolo fluenza}{10}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Fase 3: FIT spettrale}{11}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}Analisi 8 SEP}{12}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Agosto 1972}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Agosto 1972}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Ottobre 1989}{14}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Ottobre 2003}{15}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Gennaio 2005}{21}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Luglio 2012}{23}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Settembre 2017}{26}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Ottobre 2021}{29}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Maggio 2024}{32}{subsection.2.2.8}%
-\contentsline {section}{\numberline {2.3}Tabella riassuntiva: risultati}{34}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Calcolo della dose SR-NIEL}{36}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{40}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{43}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Modello probabilistico SAPPHIRE}{49}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Stime della dose per missione}{50}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Simulazioni}{51}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Discussione e confronto con misure reali}{54}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Scaling factor}{55}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{57}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}SOLPENCO scaling}{58}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{60}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Limiti e miglioramenti}{61}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Ringraziamenti}{63}{chapter.7}%
-\contentsline {chapter}{Bibliografia}{64}{chapter*.44}%
+\contentsline {subsection}{\numberline {2.2.3}Ottobre 2003}{17}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Gennaio 2005}{20}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Luglio 2012}{22}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Settembre 2017}{25}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Ottobre 2021}{28}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Maggio 2024}{31}{subsection.2.2.8}%
+\contentsline {section}{\numberline {2.3}Tabella riassuntiva: risultati}{33}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Calcolo della dose SR-NIEL}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{39}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{42}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Modello probabilistico SAPPHIRE}{48}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Stime della dose per missione}{49}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Simulazioni}{50}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Discussione e confronto con misure reali}{53}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Scaling factor}{54}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{56}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}SOLPENCO scaling}{57}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Limiti e miglioramenti}{60}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{62}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{63}{chapter*.44}%
 \contentsline {chapter}{\numberline {A}Appendice}{69}{appendix.Alph1}%
