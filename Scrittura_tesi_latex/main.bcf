@@ -2409,15 +2409,23 @@
     <bcf:citekey order="35" intorder="1">SciPy_curvefit</bcf:citekey>
     <bcf:citekey order="36" intorder="1">NumericalRecipes2007</bcf:citekey>
     <bcf:citekey order="37" intorder="1">NOAA_SWPC_proton</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">AUG_1972_Raukunen</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">kim2017</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">ramos2023</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">Parker1958</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">Giacalone2000</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">Giacalone2000</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">Aran2006</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">King1974</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Jiggens2014</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Raukunen2018</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Desai2016</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">Lario2001</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">Sauer1993</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Lario2002</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Cane1995</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">sauer1993goes</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">kim2017</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">ramos2023</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">Parker1958</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">Aran2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
