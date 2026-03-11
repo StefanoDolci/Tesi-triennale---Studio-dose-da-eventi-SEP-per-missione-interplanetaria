@@ -2424,14 +2424,20 @@
     <bcf:citekey order="50" intorder="1">Onsager1996</bcf:citekey>
     <bcf:citekey order="51" intorder="1">Gold1998</bcf:citekey>
     <bcf:citekey order="52" intorder="1">Mertens2010</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">kim2017</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">ramos2023</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">Parker1958</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">Giacalone2000</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">Giacalone2000</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">Aran2006</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">Grechnev2008</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">SEPEM</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">mewaldt2005space</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">CarringtonEvent</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">NgwiraSimulation</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Kaiser2008_STEREOA</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">kim2017</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">ramos2023</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">Parker1958</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">Aran2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
