@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  11 MAR 2026 19:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.4)  11 MAR 2026 23:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -110,47 +110,55 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen159
+\enit@toks=\toks24
+\enit@inbox=\box54
+\enit@count@id=\count286
+\enitdp@description=\count287
 ) (c:/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
-\thm@preskip=\skip54
-\thm@postskip=\skip55
-\thm@headsep=\skip56
-\dth@everypar=\toks29
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks30
 ) (c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen159
-\captionmargin=\dimen160
-\caption@leftmargin=\dimen161
-\caption@rightmargin=\dimen162
-\caption@width=\dimen163
-\caption@indent=\dimen164
-\caption@parindent=\dimen165
-\caption@hangindent=\dimen166
+\caption@tempdima=\dimen160
+\captionmargin=\dimen161
+\caption@leftmargin=\dimen162
+\caption@rightmargin=\dimen163
+\caption@width=\dimen164
+\caption@indent=\dimen165
+\caption@parindent=\dimen166
+\caption@hangindent=\dimen167
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count286
-\c@continuedfloat=\count287
+\c@caption@flags=\count288
+\c@continuedfloat=\count289
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count288
+\c@subfigure=\count290
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count289
+\c@subtable=\count291
 ) (c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count290
-\float@exts=\toks30
-\float@box=\box54
-\@float@everytoks=\toks31
-\@floatcapt=\box55
+\c@float@type=\count292
+\float@exts=\toks31
+\float@box=\box55
+\@float@everytoks=\toks32
+\@floatcapt=\box56
 ) (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -171,44 +179,44 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )) (c:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen167
-\lightrulewidth=\dimen168
-\cmidrulewidth=\dimen169
-\belowrulesep=\dimen170
-\belowbottomsep=\dimen171
-\aboverulesep=\dimen172
-\abovetopsep=\dimen173
-\cmidrulesep=\dimen174
-\cmidrulekern=\dimen175
-\defaultaddspace=\dimen176
-\@cmidla=\count291
-\@cmidlb=\count292
-\@aboverulesep=\dimen177
-\@belowrulesep=\dimen178
-\@thisruleclass=\count293
-\@lastruleclass=\count294
-\@thisrulewidth=\dimen179
+\heavyrulewidth=\dimen168
+\lightrulewidth=\dimen169
+\cmidrulewidth=\dimen170
+\belowrulesep=\dimen171
+\belowbottomsep=\dimen172
+\aboverulesep=\dimen173
+\abovetopsep=\dimen174
+\cmidrulesep=\dimen175
+\cmidrulekern=\dimen176
+\defaultaddspace=\dimen177
+\@cmidla=\count293
+\@cmidlb=\count294
+\@aboverulesep=\dimen178
+\@belowrulesep=\dimen179
+\@thisruleclass=\count295
+\@lastruleclass=\count296
+\@thisrulewidth=\dimen180
 ) (c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2024-12-06 v3.4.0 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count295
-\l__siunitx_number_exponent_fixed_int=\count296
-\l__siunitx_number_min_decimal_int=\count297
-\l__siunitx_number_min_integer_int=\count298
-\l__siunitx_number_round_precision_int=\count299
-\l__siunitx_number_lower_threshold_int=\count300
-\l__siunitx_number_upper_threshold_int=\count301
-\l__siunitx_number_group_first_int=\count302
-\l__siunitx_number_group_size_int=\count303
-\l__siunitx_number_group_minimum_int=\count304
-\l__siunitx_angle_tmp_dim=\dimen180
-\l__siunitx_angle_marker_box=\box56
-\l__siunitx_angle_unit_box=\box57
-\l__siunitx_compound_count_int=\count305
+\l__siunitx_number_uncert_offset_int=\count297
+\l__siunitx_number_exponent_fixed_int=\count298
+\l__siunitx_number_min_decimal_int=\count299
+\l__siunitx_number_min_integer_int=\count300
+\l__siunitx_number_round_precision_int=\count301
+\l__siunitx_number_lower_threshold_int=\count302
+\l__siunitx_number_upper_threshold_int=\count303
+\l__siunitx_number_group_first_int=\count304
+\l__siunitx_number_group_size_int=\count305
+\l__siunitx_number_group_minimum_int=\count306
+\l__siunitx_angle_tmp_dim=\dimen181
+\l__siunitx_angle_marker_box=\box57
+\l__siunitx_angle_unit_box=\box58
+\l__siunitx_compound_count_int=\count307
  (c:/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
  (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count306
+\etb@tempcnta=\count308
 ) (c:/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -220,28 +228,28 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-\l__siunitx_table_tmp_box=\box58
-\l__siunitx_table_tmp_dim=\dimen181
-\l__siunitx_table_column_width_dim=\dimen182
-\l__siunitx_table_integer_box=\box59
-\l__siunitx_table_decimal_box=\box60
-\l__siunitx_table_uncert_box=\box61
-\l__siunitx_table_before_box=\box62
-\l__siunitx_table_after_box=\box63
-\l__siunitx_table_before_dim=\dimen183
-\l__siunitx_table_carry_dim=\dimen184
-\l__siunitx_unit_tmp_int=\count307
-\l__siunitx_unit_position_int=\count308
-\l__siunitx_unit_total_int=\count309
+\l__siunitx_table_tmp_box=\box59
+\l__siunitx_table_tmp_dim=\dimen182
+\l__siunitx_table_column_width_dim=\dimen183
+\l__siunitx_table_integer_box=\box60
+\l__siunitx_table_decimal_box=\box61
+\l__siunitx_table_uncert_box=\box62
+\l__siunitx_table_before_box=\box63
+\l__siunitx_table_after_box=\box64
+\l__siunitx_table_before_dim=\dimen184
+\l__siunitx_table_carry_dim=\dimen185
+\l__siunitx_unit_tmp_int=\count309
+\l__siunitx_unit_position_int=\count310
+\l__siunitx_unit_total_int=\count311
  (c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen185
-\ar@mcellbox=\box64
-\extrarowheight=\dimen186
-\NC@list=\toks32
-\extratabsurround=\skip57
-\backup@length=\skip58
-\ar@cellbox=\box65
+\col@sep=\dimen186
+\ar@mcellbox=\box65
+\extrarowheight=\dimen187
+\NC@list=\toks33
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box66
 ))
 
 Package siunitx Info: Option "separate-uncertainty" has been deprecated in
@@ -260,12 +268,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/11/30 v24.14 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
-\babel@savecnt=\count310
-\U@D=\dimen187
+\babel@savecnt=\count312
+\U@D=\dimen188
 \l@unhyphenated=\language7
  (c:/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count311
+\bbl@dirlevel=\count313
  (c:/texlive/2024/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2024/10/10 v.1.5.01 Italian support for the babel system
 
@@ -278,16 +286,16 @@ Package babel Warning: No hyphenation patterns were preloaded for
 
 Package babel Info: Hyphen rules for 'italian' set to \l@english
 (babel)             (\language0). Reported on input line 22.
-\it@lettering=\count312
-\it@doublequoteactive=\count313
-\it@ISOcompliance=\count314
+\it@lettering=\count314
+\it@doublequoteactive=\count315
+\it@ISOcompliance=\count316
 )) (c:/texlive/2024/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
 Package babel Info: Importing font and identification data for italian
 (babel)             from babel-it.ini. Reported on input line 11.
 ) (c:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks33
-\inpenc@posthook=\toks34
+\inpenc@prehook=\toks34
+\inpenc@posthook=\toks35
 ) (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2024/10/24 v3.43 KOMA-Script package (end user interface for scrlayer)
  (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -306,7 +314,7 @@ Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
 Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
 ))
-\footheight=\skip59
+\footheight=\skip60
 Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2182.
 )) (c:/texlive/2024/texmf-dist/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
@@ -362,13 +370,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count315
+\c@section@level=\count317
 ) (c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen188
-\Hy@linkcounter=\count316
-\Hy@pagecounter=\count317
+\@linkdim=\dimen189
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -376,7 +384,7 @@ Now handling font encoding PD1 ...
 ) (c:/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count318
+\Hy@SavedSpaceFactor=\count320
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -389,21 +397,21 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count319
+\c@Hy@tempcnt=\count321
  (c:/texlive/2024/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen189
+\XeTeXLinkMargin=\dimen190
  (c:/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count320
-\Field@Width=\dimen190
-\Fld@charsize=\dimen191
+\Fld@menulength=\count322
+\Field@Width=\dimen191
+\Fld@charsize=\dimen192
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -415,9 +423,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count321
-\c@Item=\count322
-\c@Hfootnote=\count323
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -426,8 +434,8 @@ File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count324
-\c@bookmark@seq@number=\count325
+\Fld@listcount=\count326
+\c@bookmark@seq@number=\count327
  (c:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (c:/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -435,20 +443,20 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip60
+\Hy@SectionHShift=\skip61
 ) (c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen192
-\Gin@req@width=\dimen193
+\Gin@req@height=\dimen193
+\Gin@req@width=\dimen194
 ) (c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count326
-\csq@gtype=\count327
-\csq@glevel=\count328
-\csq@qlevel=\count329
-\csq@maxlvl=\count330
-\csq@tshold=\count331
-\csq@ltx@everypar=\toks35
+\csq@reset=\count328
+\csq@gtype=\count329
+\csq@glevel=\count330
+\csq@qlevel=\count331
+\csq@maxlvl=\count332
+\csq@tshold=\count333
+\csq@ltx@everypar=\toks36
  (c:/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -460,69 +468,69 @@ File: csquotes.cfg
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
  (c:/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count332
+\lrq@indent=\count334
  (c:/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count333
-\c@listtotal=\count334
-\c@listcount=\count335
-\c@liststart=\count336
-\c@liststop=\count337
-\c@citecount=\count338
-\c@citetotal=\count339
-\c@multicitecount=\count340
-\c@multicitetotal=\count341
-\c@instcount=\count342
-\c@maxnames=\count343
-\c@minnames=\count344
-\c@maxitems=\count345
-\c@minitems=\count346
-\c@citecounter=\count347
-\c@maxcitecounter=\count348
-\c@savedcitecounter=\count349
-\c@uniquelist=\count350
-\c@uniquename=\count351
-\c@refsection=\count352
-\c@refsegment=\count353
-\c@maxextratitle=\count354
-\c@maxextratitleyear=\count355
-\c@maxextraname=\count356
-\c@maxextradate=\count357
-\c@maxextraalpha=\count358
-\c@abbrvpenalty=\count359
-\c@highnamepenalty=\count360
-\c@lownamepenalty=\count361
-\c@maxparens=\count362
-\c@parenlevel=\count363
-\blx@tempcnta=\count364
-\blx@tempcntb=\count365
-\blx@tempcntc=\count366
-\c@blx@maxsection=\count367
-\blx@maxsegment@0=\count368
-\blx@notetype=\count369
-\blx@parenlevel@text=\count370
-\blx@parenlevel@foot=\count371
-\blx@sectionciteorder@0=\count372
-\blx@sectionciteorderinternal@0=\count373
-\blx@entrysetcounter=\count374
-\blx@biblioinstance=\count375
-\labelnumberwidth=\skip61
-\labelalphawidth=\skip62
-\biblabelsep=\skip63
-\bibitemsep=\skip64
-\bibnamesep=\skip65
-\bibinitsep=\skip66
-\bibparsep=\skip67
-\bibhang=\skip68
+\c@tabx@nest=\count335
+\c@listtotal=\count336
+\c@listcount=\count337
+\c@liststart=\count338
+\c@liststop=\count339
+\c@citecount=\count340
+\c@citetotal=\count341
+\c@multicitecount=\count342
+\c@multicitetotal=\count343
+\c@instcount=\count344
+\c@maxnames=\count345
+\c@minnames=\count346
+\c@maxitems=\count347
+\c@minitems=\count348
+\c@citecounter=\count349
+\c@maxcitecounter=\count350
+\c@savedcitecounter=\count351
+\c@uniquelist=\count352
+\c@uniquename=\count353
+\c@refsection=\count354
+\c@refsegment=\count355
+\c@maxextratitle=\count356
+\c@maxextratitleyear=\count357
+\c@maxextraname=\count358
+\c@maxextradate=\count359
+\c@maxextraalpha=\count360
+\c@abbrvpenalty=\count361
+\c@highnamepenalty=\count362
+\c@lownamepenalty=\count363
+\c@maxparens=\count364
+\c@parenlevel=\count365
+\blx@tempcnta=\count366
+\blx@tempcntb=\count367
+\blx@tempcntc=\count368
+\c@blx@maxsection=\count369
+\blx@maxsegment@0=\count370
+\blx@notetype=\count371
+\blx@parenlevel@text=\count372
+\blx@parenlevel@foot=\count373
+\blx@sectionciteorder@0=\count374
+\blx@sectionciteorderinternal@0=\count375
+\blx@entrysetcounter=\count376
+\blx@biblioinstance=\count377
+\labelnumberwidth=\skip62
+\labelalphawidth=\skip63
+\biblabelsep=\skip64
+\bibitemsep=\skip65
+\bibnamesep=\skip66
+\bibinitsep=\skip67
+\bibparsep=\skip68
+\bibhang=\skip69
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language8
-\c@mincomprange=\count376
-\c@maxcomprange=\count377
-\c@mincompwidth=\count378
+\c@mincomprange=\count378
+\c@maxcomprange=\count379
+\c@mincompwidth=\count380
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -532,88 +540,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count379
-\c@savedafterword=\count380
-\c@annotator=\count381
-\c@savedannotator=\count382
-\c@author=\count383
-\c@savedauthor=\count384
-\c@bookauthor=\count385
-\c@savedbookauthor=\count386
-\c@commentator=\count387
-\c@savedcommentator=\count388
-\c@editor=\count389
-\c@savededitor=\count390
-\c@editora=\count391
-\c@savededitora=\count392
-\c@editorb=\count393
-\c@savededitorb=\count394
-\c@editorc=\count395
-\c@savededitorc=\count396
-\c@foreword=\count397
-\c@savedforeword=\count398
-\c@holder=\count399
-\c@savedholder=\count400
-\c@introduction=\count401
-\c@savedintroduction=\count402
-\c@namea=\count403
-\c@savednamea=\count404
-\c@nameb=\count405
-\c@savednameb=\count406
-\c@namec=\count407
-\c@savednamec=\count408
-\c@translator=\count409
-\c@savedtranslator=\count410
-\c@shortauthor=\count411
-\c@savedshortauthor=\count412
-\c@shorteditor=\count413
-\c@savedshorteditor=\count414
-\c@labelname=\count415
-\c@savedlabelname=\count416
-\c@institution=\count417
-\c@savedinstitution=\count418
-\c@lista=\count419
-\c@savedlista=\count420
-\c@listb=\count421
-\c@savedlistb=\count422
-\c@listc=\count423
-\c@savedlistc=\count424
-\c@listd=\count425
-\c@savedlistd=\count426
-\c@liste=\count427
-\c@savedliste=\count428
-\c@listf=\count429
-\c@savedlistf=\count430
-\c@location=\count431
-\c@savedlocation=\count432
-\c@organization=\count433
-\c@savedorganization=\count434
-\c@origlocation=\count435
-\c@savedoriglocation=\count436
-\c@origpublisher=\count437
-\c@savedorigpublisher=\count438
-\c@publisher=\count439
-\c@savedpublisher=\count440
-\c@language=\count441
-\c@savedlanguage=\count442
-\c@origlanguage=\count443
-\c@savedoriglanguage=\count444
-\c@pageref=\count445
-\c@savedpageref=\count446
-\shorthandwidth=\skip69
-\shortjournalwidth=\skip70
-\shortserieswidth=\skip71
-\shorttitlewidth=\skip72
-\shortauthorwidth=\skip73
-\shorteditorwidth=\skip74
-\locallabelnumberwidth=\skip75
-\locallabelalphawidth=\skip76
-\localshorthandwidth=\skip77
-\localshortjournalwidth=\skip78
-\localshortserieswidth=\skip79
-\localshorttitlewidth=\skip80
-\localshortauthorwidth=\skip81
-\localshorteditorwidth=\skip82
+\c@afterword=\count381
+\c@savedafterword=\count382
+\c@annotator=\count383
+\c@savedannotator=\count384
+\c@author=\count385
+\c@savedauthor=\count386
+\c@bookauthor=\count387
+\c@savedbookauthor=\count388
+\c@commentator=\count389
+\c@savedcommentator=\count390
+\c@editor=\count391
+\c@savededitor=\count392
+\c@editora=\count393
+\c@savededitora=\count394
+\c@editorb=\count395
+\c@savededitorb=\count396
+\c@editorc=\count397
+\c@savededitorc=\count398
+\c@foreword=\count399
+\c@savedforeword=\count400
+\c@holder=\count401
+\c@savedholder=\count402
+\c@introduction=\count403
+\c@savedintroduction=\count404
+\c@namea=\count405
+\c@savednamea=\count406
+\c@nameb=\count407
+\c@savednameb=\count408
+\c@namec=\count409
+\c@savednamec=\count410
+\c@translator=\count411
+\c@savedtranslator=\count412
+\c@shortauthor=\count413
+\c@savedshortauthor=\count414
+\c@shorteditor=\count415
+\c@savedshorteditor=\count416
+\c@labelname=\count417
+\c@savedlabelname=\count418
+\c@institution=\count419
+\c@savedinstitution=\count420
+\c@lista=\count421
+\c@savedlista=\count422
+\c@listb=\count423
+\c@savedlistb=\count424
+\c@listc=\count425
+\c@savedlistc=\count426
+\c@listd=\count427
+\c@savedlistd=\count428
+\c@liste=\count429
+\c@savedliste=\count430
+\c@listf=\count431
+\c@savedlistf=\count432
+\c@location=\count433
+\c@savedlocation=\count434
+\c@organization=\count435
+\c@savedorganization=\count436
+\c@origlocation=\count437
+\c@savedoriglocation=\count438
+\c@origpublisher=\count439
+\c@savedorigpublisher=\count440
+\c@publisher=\count441
+\c@savedpublisher=\count442
+\c@language=\count443
+\c@savedlanguage=\count444
+\c@origlanguage=\count445
+\c@savedoriglanguage=\count446
+\c@pageref=\count447
+\c@savedpageref=\count448
+\shorthandwidth=\skip70
+\shortjournalwidth=\skip71
+\shortserieswidth=\skip72
+\shorttitlewidth=\skip73
+\shortauthorwidth=\skip74
+\shorteditorwidth=\skip75
+\locallabelnumberwidth=\skip76
+\locallabelalphawidth=\skip77
+\localshorthandwidth=\skip78
+\localshortjournalwidth=\skip79
+\localshortserieswidth=\skip80
+\localshorttitlewidth=\skip81
+\localshortauthorwidth=\skip82
+\localshorteditorwidth=\skip83
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -623,19 +631,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count447
-\c@textcitetotal=\count448
-\c@textcitemaxnames=\count449
-\c@biburlbigbreakpenalty=\count450
-\c@biburlbreakpenalty=\count451
-\c@biburlnumpenalty=\count452
-\c@biburlucpenalty=\count453
-\c@biburllcpenalty=\count454
+\c@textcitecount=\count449
+\c@textcitetotal=\count450
+\c@textcitemaxnames=\count451
+\c@biburlbigbreakpenalty=\count452
+\c@biburlbreakpenalty=\count453
+\c@biburlnumpenalty=\count454
+\c@biburlucpenalty=\count455
+\c@biburllcpenalty=\count456
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count455
+\c@smartand=\count457
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -645,8 +653,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count456
-\c@bbx:relatedtotal=\count457
+\c@bbx:relatedcount=\count458
+\c@bbx:relatedtotal=\count459
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -675,8 +683,8 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2024-11-02 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count458
-\l__pdf_internal_box=\box66
+\l__color_backend_stack_int=\count460
+\l__pdf_internal_box=\box67
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-11-02 L3 programming layer (loader) 
@@ -688,35 +696,35 @@ Package: xparse 2024-08-16 L3 Experimental document command parser
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 )) (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box67
-\beforetitleunit=\skip83
-\aftertitleunit=\skip84
-\ttl@plus=\dimen194
-\ttl@minus=\dimen195
-\ttl@toksa=\toks36
-\titlewidth=\dimen196
-\titlewidthlast=\dimen197
-\titlewidthfirst=\dimen198
+\ttl@box=\box68
+\beforetitleunit=\skip84
+\aftertitleunit=\skip85
+\ttl@plus=\dimen195
+\ttl@minus=\dimen196
+\ttl@toksa=\toks37
+\titlewidth=\dimen197
+\titlewidthlast=\dimen198
+\titlewidthfirst=\dimen199
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count459
-\lst@gtempboxa=\box68
-\lst@token=\toks37
-\lst@length=\count460
-\lst@currlwidth=\dimen199
-\lst@column=\count461
-\lst@pos=\count462
-\lst@lostspace=\dimen256
-\lst@width=\dimen257
-\lst@newlines=\count463
-\lst@lineno=\count464
-\lst@maxwidth=\dimen258
+\lst@mode=\count461
+\lst@gtempboxa=\box69
+\lst@token=\toks38
+\lst@length=\count462
+\lst@currlwidth=\dimen256
+\lst@column=\count463
+\lst@pos=\count464
+\lst@lostspace=\dimen257
+\lst@width=\dimen258
+\lst@newlines=\count465
+\lst@lineno=\count466
+\lst@maxwidth=\dimen259
  (c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count465
-\lst@skipnumbers=\count466
-\lst@framebox=\box69
+\c@lstnumber=\count467
+\lst@skipnumbers=\count468
+\lst@framebox=\box70
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
@@ -742,30 +750,30 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 64.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 65.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -810,26 +818,26 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count467
-\scratchdimen=\dimen259
-\scratchbox=\box70
-\nofMPsegments=\count468
-\nofMParguments=\count469
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count470
-\MPscratchDim=\dimen260
-\MPnumerator=\count471
-\makeMPintoPDFobject=\count472
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count469
+\scratchdimen=\dimen260
+\scratchbox=\box71
+\nofMPsegments=\count470
+\nofMParguments=\count471
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count472
+\MPscratchDim=\dimen261
+\MPnumerator=\count473
+\makeMPintoPDFobject=\count474
+\everyMPtoPDFconversion=\toks40
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 64.
-LaTeX Info: Redefining \it@ocap on input line 64.
-LaTeX Info: Redefining \it@ccap on input line 64.
+Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 65.
+LaTeX Info: Redefining \it@ocap on input line 65.
+LaTeX Info: Redefining \it@ccap on input line 65.
 
 
 File italian.ldf warning: 
@@ -837,9 +845,9 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting
-italian.ldf    on input line 64.
+italian.ldf    on input line 65.
 
-Package hyperref Info: Link coloring OFF on input line 64.
+Package hyperref Info: Link coloring OFF on input line 65.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -857,13 +865,13 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 64.
-Package biblatex Info: Reference segment=0 on input line 64.
-\c@lstlisting=\count473
+Package biblatex Info: Reference section=0 on input line 65.
+Package biblatex Info: Reference segment=0 on input line 65.
+\c@lstlisting=\count475
 <logo.png, id=144, 609.27625pt x 602.25pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 78.
+Package pdftex.def Info: logo.png  used on input line 79.
 (pdftex.def)             Requested size: 171.7382pt x 169.75916pt.
 
 
@@ -898,7 +906,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...confronto con misure reali}{53}{chapter.5}
+l.29 ...confronto con misure reali}{51}{chapter.5}
                                                   % [1
 
 ])
@@ -910,18 +918,18 @@ l.29 ...confronto con misure reali}{53}{chapter.5}
 [2]
 Capitolo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 125.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 126.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146 \end{table}
+l.147 \end{table}
                   [1
 
 
@@ -930,7 +938,7 @@ l.146 \end{table}
 <figures/Tipologia_SEP.png, id=215, 562.20038pt x 227.34938pt>
 File: figures/Tipologia_SEP.png Graphic file (type png)
 <use figures/Tipologia_SEP.png>
-Package pdftex.def Info: figures/Tipologia_SEP.png  used on input line 150.
+Package pdftex.def Info: figures/Tipologia_SEP.png  used on input line 151.
 (pdftex.def)             Requested size: 343.48299pt x 138.90146pt.
 
 
@@ -938,9 +946,9 @@ Package pdftex.def Info: figures/Tipologia_SEP.png  used on input line 150.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.161 \begin{equation}
+l.162 \begin{equation}
                        [2 <./Figures/Tipologia_SEP.png>]
-Overfull \hbox (0.86714pt too wide) in paragraph at lines 170--174
+Overfull \hbox (0.86714pt too wide) in paragraph at lines 171--175
 \OT1/ptm/m/n/12 Deriva dal-la teo-ria del-l'ac-cel-er-azione dif-fu-si-va da shock, un mec-ca-n-is-mo di fer-mi al primo-
  []
 
@@ -950,7 +958,7 @@ Overfull \hbox (0.86714pt too wide) in paragraph at lines 170--174
 <figures/MOS_transistor.png, id=242, 526.06537pt x 239.39438pt>
 File: figures/MOS_transistor.png Graphic file (type png)
 <use figures/MOS_transistor.png>
-Package pdftex.def Info: figures/MOS_transistor.png  used on input line 196.
+Package pdftex.def Info: figures/MOS_transistor.png  used on input line 197.
 (pdftex.def)             Requested size: 343.48299pt x 156.30583pt.
 
 
@@ -963,7 +971,7 @@ Capitolo 2.
 <figures/solar-cycle-sunspot-numb.pdf, id=280, 903.375pt x 799.06526pt>
 File: figures/solar-cycle-sunspot-numb.pdf Graphic file (type pdf)
 <use figures/solar-cycle-sunspot-numb.pdf>
-Package pdftex.def Info: figures/solar-cycle-sunspot-numb.pdf  used on input line 218.
+Package pdftex.def Info: figures/solar-cycle-sunspot-numb.pdf  used on input line 219.
 (pdftex.def)             Requested size: 429.3521pt x 379.77942pt.
 
 
@@ -978,7 +986,7 @@ Package pdftex.def Info: figures/solar-cycle-sunspot-numb.pdf  used on input lin
 [10]
 
 [11]
-Overfull \hbox (12.7997pt too wide) in paragraph at lines 320--322
+Overfull \hbox (12.7997pt too wide) in paragraph at lines 321--323
 \OT1/ptm/m/n/12 Le soglie en-er-getiche tipi-ca-mente uti-liz-zate nel-la fisi-ca dei SEP sono $\OML/ztmcm/m/it/12 E[] \OT1/ztmcm/m/n/12 = []$
  []
 
@@ -994,7 +1002,7 @@ Package siunitx Info: Option "scientific-notation = true" has been deprecated
 <figures/Spettri/AUG1972_spectral_fit.pdf, id=461, 409.37448pt x 305.06435pt>
 File: figures/Spettri/AUG1972_spectral_fit.pdf Graphic file (type pdf)
 <use figures/Spettri/AUG1972_spectral_fit.pdf>
-Package pdftex.def Info: figures/Spettri/AUG1972_spectral_fit.pdf  used on input line 365.
+Package pdftex.def Info: figures/Spettri/AUG1972_spectral_fit.pdf  used on input line 366.
 (pdftex.def)             Requested size: 386.41426pt x 287.9708pt.
 
 
@@ -1002,7 +1010,7 @@ Package pdftex.def Info: figures/Spettri/AUG1972_spectral_fit.pdf  used on input
 <figures/Flussi/OCT1989_fluxes_raw_net_final.pdf, id=478, 380.57382pt x 484.60338pt>
 File: figures/Flussi/OCT1989_fluxes_raw_net_final.pdf Graphic file (type pdf)
 <use figures/Flussi/OCT1989_fluxes_raw_net_final.pdf>
-Package pdftex.def Info: figures/Flussi/OCT1989_fluxes_raw_net_final.pdf  used on input line 379.
+Package pdftex.def Info: figures/Flussi/OCT1989_fluxes_raw_net_final.pdf  used on input line 380.
 (pdftex.def)             Requested size: 429.3521pt x 546.72289pt.
 
 
@@ -1012,12 +1020,12 @@ Package pdftex.def Info: figures/Flussi/OCT1989_fluxes_raw_net_final.pdf  used o
 <figures/Spettri/OCT1989_spectral_fit_final.pdf, id=700, 408.7714pt x 305.44081pt>
 File: figures/Spettri/OCT1989_spectral_fit_final.pdf Graphic file (type pdf)
 <use figures/Spettri/OCT1989_spectral_fit_final.pdf>
-Package pdftex.def Info: figures/Spettri/OCT1989_spectral_fit_final.pdf  used on input line 389.
+Package pdftex.def Info: figures/Spettri/OCT1989_spectral_fit_final.pdf  used on input line 390.
 (pdftex.def)             Requested size: 429.3521pt x 320.83417pt.
 <figures/Solar_storm2003.png, id=705, 578.16pt x 578.16pt>
 File: figures/Solar_storm2003.png Graphic file (type png)
 <use figures/Solar_storm2003.png>
-Package pdftex.def Info: figures/Solar_storm2003.png  used on input line 400.
+Package pdftex.def Info: figures/Solar_storm2003.png  used on input line 401.
 (pdftex.def)             Requested size: 257.61388pt x 257.6112pt.
 
 
@@ -1025,7 +1033,7 @@ Package pdftex.def Info: figures/Solar_storm2003.png  used on input line 400.
 <figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf, id=838, 607.97139pt x 484.60338pt>
 File: figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf Graphic file (type pdf)
 <use figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf>
-Package pdftex.def Info: figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf  used on input line 411.
+Package pdftex.def Info: figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf  used on input line 412.
 (pdftex.def)             Requested size: 429.3521pt x 342.22958pt.
 
 
@@ -1033,12 +1041,12 @@ Package pdftex.def Info: figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf  
 <figures/Spettri/OCT2003_spectral_fit_finale.pdf, id=849, 412.50636pt x 325.8169pt>
 File: figures/Spettri/OCT2003_spectral_fit_finale.pdf Graphic file (type pdf)
 <use figures/Spettri/OCT2003_spectral_fit_finale.pdf>
-Package pdftex.def Info: figures/Spettri/OCT2003_spectral_fit_finale.pdf  used on input line 418.
+Package pdftex.def Info: figures/Spettri/OCT2003_spectral_fit_finale.pdf  used on input line 419.
 (pdftex.def)             Requested size: 429.3521pt x 339.12494pt.
 
 
 [18 <./Figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 426--429
+Underfull \hbox (badness 10000) in paragraph at lines 427--430
 
  []
 
@@ -1048,267 +1056,250 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--429
 <figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf, id=1088, 607.97139pt x 481.15189pt>
 File: figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf Graphic file (type pdf)
 <use figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf>
-Package pdftex.def Info: figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf  used on input line 433.
+Package pdftex.def Info: figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf  used on input line 434.
 (pdftex.def)             Requested size: 429.3521pt x 339.79211pt.
 <figures/Spettri/JAN2005_spectral_fit.pdf, id=1089, 408.76399pt x 306.40033pt>
 File: figures/Spettri/JAN2005_spectral_fit.pdf Graphic file (type pdf)
 <use figures/Spettri/JAN2005_spectral_fit.pdf>
-Package pdftex.def Info: figures/Spettri/JAN2005_spectral_fit.pdf  used on input line 441.
+Package pdftex.def Info: figures/Spettri/JAN2005_spectral_fit.pdf  used on input line 442.
 (pdftex.def)             Requested size: 429.3521pt x 321.84203pt.
 
 
 [20 <./Figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf>]
 
 [21 <./Figures/Spettri/JAN2005_spectral_fit.pdf>]
-<figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf, id=1342, 380.57382pt x 483.55843pt>
+<figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf, id=1343, 380.57382pt x 483.55843pt>
 File: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf Graphic file (type pdf)
 <use figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf>
-Package pdftex.def Info: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf  used on input line 453.
+Package pdftex.def Info: figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf  used on input line 454.
 (pdftex.def)             Requested size: 429.3521pt x 545.544pt.
 
 
 [22]
 
 [23 <./Figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf>]
-<figures/Spettri/JUL2012_spectral_fit.pdf, id=1467, 408.90826pt x 306.40033pt>
+<figures/Spettri/JUL2012_spectral_fit.pdf, id=1469, 408.90826pt x 306.40033pt>
 File: figures/Spettri/JUL2012_spectral_fit.pdf Graphic file (type pdf)
 <use figures/Spettri/JUL2012_spectral_fit.pdf>
-Package pdftex.def Info: figures/Spettri/JUL2012_spectral_fit.pdf  used on input line 469.
+Package pdftex.def Info: figures/Spettri/JUL2012_spectral_fit.pdf  used on input line 462.
 (pdftex.def)             Requested size: 429.3521pt x 321.71579pt.
+<figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf, id=1473, 408.71638pt x 306.40033pt>
+File: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf Graphic file (type pdf)
+<use figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>
+Package pdftex.def Info: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf  used on input line 470.
+(pdftex.def)             Requested size: 300.54515pt x 225.32074pt.
 
 
 [24 <./Figures/Spettri/JUL2012_spectral_fit.pdf>]
-<figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf, id=1602, 408.71638pt x 306.40033pt>
-File: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf Graphic file (type pdf)
-<use figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>
-Package pdftex.def Info: figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf  used on input line 478.
-(pdftex.def)             Requested size: 300.54515pt x 225.32074pt.
-<figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf, id=1603, 380.57382pt x 482.33855pt>
+<figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf, id=1614, 380.57382pt x 482.33855pt>
 File: figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf Graphic file (type pdf)
 <use figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf>
-Package pdftex.def Info: figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf  used on input line 488.
+Package pdftex.def Info: figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf  used on input line 479.
 (pdftex.def)             Requested size: 429.3521pt x 544.16776pt.
 
-Overfull \hbox (122.66687pt too wide) in paragraph at lines 484--491
-\OT1/ptm/m/n/12 classe X9.3, il pi[]u in-ten-so da 10 an-ni.(cite:https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018SW002085
- []
 
-
-
-[25
-
- <./Figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>]
+[25 <./Figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf>]
 
 [26 <./Figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf>]
-<figures/Spettri/SEP2017_spectral_fit_final.pdf, id=1774, 409.55183pt x 306.40033pt>
+<figures/Spettri/SEP2017_spectral_fit_final.pdf, id=1788, 409.55183pt x 306.40033pt>
 File: figures/Spettri/SEP2017_spectral_fit_final.pdf Graphic file (type pdf)
 <use figures/Spettri/SEP2017_spectral_fit_final.pdf>
-Package pdftex.def Info: figures/Spettri/SEP2017_spectral_fit_final.pdf  used on input line 504.
+Package pdftex.def Info: figures/Spettri/SEP2017_spectral_fit_final.pdf  used on input line 487.
 (pdftex.def)             Requested size: 429.3521pt x 321.2249pt.
 
 
 [27 <./Figures/Spettri/SEP2017_spectral_fit_final.pdf>]
-<figures/OCT_2021_multispacecraft_image.png, id=1915, 1366.8666pt x 680.7834pt>
+<figures/OCT_2021_multispacecraft_image.png, id=1932, 1366.8666pt x 680.7834pt>
 File: figures/OCT_2021_multispacecraft_image.png Graphic file (type png)
 <use figures/OCT_2021_multispacecraft_image.png>
-Package pdftex.def Info: figures/OCT_2021_multispacecraft_image.png  used on input line 515.
+Package pdftex.def Info: figures/OCT_2021_multispacecraft_image.png  used on input line 498.
 (pdftex.def)             Requested size: 429.3521pt x 213.8454pt.
-
-
-[28
-
- <./Figures/OCT_2021_multispacecraft_image.png>]
-<figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf, id=1925, 454.83365pt x 483.9133pt>
+<figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf, id=1937, 454.83365pt x 483.9133pt>
 File: figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf Graphic file (type pdf)
 <use figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf>
-Package pdftex.def Info: figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf  used on input line 524.
+Package pdftex.def Info: figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf  used on input line 507.
 (pdftex.def)             Requested size: 429.3521pt x 456.82053pt.
 
 
-[29 <./Figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf>]
-<figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf, id=2023, 408.63297pt x 306.40033pt>
+[28 <./Figures/OCT_2021_multispacecraft_image.png>]
+<figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf, id=1948, 408.63297pt x 306.40033pt>
 File: figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf Graphic file (type pdf)
 <use figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf>
-Package pdftex.def Info: figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf  used on input line 539.
+Package pdftex.def Info: figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf  used on input line 514.
 (pdftex.def)             Requested size: 429.3521pt x 321.94022pt.
 
 
+[29 <./Figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf>]
+
 [30 <./Figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf>]
-<figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf, id=2136, 454.83365pt x 484.7007pt>
+<figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf, id=2165, 454.83365pt x 484.7007pt>
 File: figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf Graphic file (type pdf)
 <use figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf>
-Package pdftex.def Info: figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf  used on input line 549.
+Package pdftex.def Info: figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf  used on input line 524.
 (pdftex.def)             Requested size: 429.3521pt x 457.56384pt.
-
-
-[31]
-<figures/Spettri/MAY2024_ER_spectral_fit1.pdf, id=2141, 409.2352pt x 306.40033pt>
+<figures/Spettri/MAY2024_ER_spectral_fit1.pdf, id=2166, 409.2352pt x 306.40033pt>
 File: figures/Spettri/MAY2024_ER_spectral_fit1.pdf Graphic file (type pdf)
 <use figures/Spettri/MAY2024_ER_spectral_fit1.pdf>
-Package pdftex.def Info: figures/Spettri/MAY2024_ER_spectral_fit1.pdf  used on input line 562.
+Package pdftex.def Info: figures/Spettri/MAY2024_ER_spectral_fit1.pdf  used on input line 534.
 (pdftex.def)             Requested size: 429.3521pt x 321.47269pt.
 
 
-[32 <./Figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf>]
+[31 <./Figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf>]
 
-[33 <./Figures/Spettri/MAY2024_ER_spectral_fit1.pdf>]
+[32 <./Figures/Spettri/MAY2024_ER_spectral_fit1.pdf>]
 
-[34]
+[33]
 Capitolo 3.
 
 
-[35
+[34
 
 ]
-<figures/SRNIEL_calcolatore_planare.png, id=2380, 723.45282pt x 494.59781pt>
+<figures/SRNIEL_calcolatore_planare.png, id=2417, 723.45282pt x 494.59781pt>
 File: figures/SRNIEL_calcolatore_planare.png Graphic file (type png)
 <use figures/SRNIEL_calcolatore_planare.png>
-Package pdftex.def Info: figures/SRNIEL_calcolatore_planare.png  used on input line 629.
+Package pdftex.def Info: figures/SRNIEL_calcolatore_planare.png  used on input line 598.
 (pdftex.def)             Requested size: 300.54515pt x 205.47311pt.
 
 
-[36]
-<Figures/Schermatura_sferica.png, id=2386, 523.05412pt x 256.5585pt>
+[35]
+<Figures/Schermatura_sferica.png, id=2427, 523.05412pt x 256.5585pt>
 File: Figures/Schermatura_sferica.png Graphic file (type png)
 <use Figures/Schermatura_sferica.png>
-Package pdftex.def Info: Figures/Schermatura_sferica.png  used on input line 644.
+Package pdftex.def Info: Figures/Schermatura_sferica.png  used on input line 613.
 (pdftex.def)             Requested size: 429.3521pt x 210.60248pt.
 
 
-[37 <./Figures/SRNIEL_calcolatore_planare.png>]
-
-[38 <./Figures/Schermatura_sferica.png>]
-<Figures/Electronic_stopping_power_Si_SRIM.png, id=2398, 602.25pt x 451.6875pt>
+[36 <./Figures/SRNIEL_calcolatore_planare.png>]
+<Figures/Electronic_stopping_power_Si_SRIM.png, id=2435, 602.25pt x 451.6875pt>
 File: Figures/Electronic_stopping_power_Si_SRIM.png Graphic file (type png)
 <use Figures/Electronic_stopping_power_Si_SRIM.png>
-Package pdftex.def Info: Figures/Electronic_stopping_power_Si_SRIM.png  used on input line 669.
+Package pdftex.def Info: Figures/Electronic_stopping_power_Si_SRIM.png  used on input line 638.
 (pdftex.def)             Requested size: 429.3521pt x 322.02367pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 676.
- (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
 
-[39 <./Figures/Electronic_stopping_power_Si_SRIM.png>]
-<Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png, id=2405, 199.34476pt x 150.5625pt>
+
+[37 <./Figures/Schermatura_sferica.png>]
+
+[38 <./Figures/Electronic_stopping_power_Si_SRIM.png>]
+<Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png, id=2450, 199.34476pt x 150.5625pt>
 File: Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png Graphic file (type png)
 <use Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png>
-Package pdftex.def Info: Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png  used on input line 701.
+Package pdftex.def Info: Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png  used on input line 670.
 (pdftex.def)             Requested size: 429.3521pt x 324.28427pt.
+
+
+[39 <./Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png>]
+<Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf, id=2462, 410.75945pt x 269.87773pt>
+File: Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf Graphic file (type pdf)
+<use Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf>
+Package pdftex.def Info: Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf  used on input line 714.
+(pdftex.def)             Requested size: 429.3521pt x 282.09927pt.
 
 
 [40]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf, id=2416, 410.75945pt x 269.87773pt>
-File: Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf Graphic file (type pdf)
-<use Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf>
-Package pdftex.def Info: Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf  used on input line 745.
-(pdftex.def)             Requested size: 429.3521pt x 282.09927pt.
-
-
-[41 <./Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png>]
-
-[42]
-
-[43 <./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf>]
-<Figures/dose_fluence_transfer_function_finale.pdf, id=2527, 786.02068pt x 574.28322pt>
+[41 <./Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf>]
+<Figures/dose_fluence_transfer_function_finale.pdf, id=2567, 786.02068pt x 574.28322pt>
 File: Figures/dose_fluence_transfer_function_finale.pdf Graphic file (type pdf)
 <use Figures/dose_fluence_transfer_function_finale.pdf>
-Package pdftex.def Info: Figures/dose_fluence_transfer_function_finale.pdf  used on input line 778.
+Package pdftex.def Info: Figures/dose_fluence_transfer_function_finale.pdf  used on input line 747.
 (pdftex.def)             Requested size: 429.3521pt x 313.70108pt.
 
 
-[44]
-<Figures/LOO_cross_validation_errors_finale.pdf, id=2537, 429.2838pt x 375.804pt>
+[42]
+<Figures/LOO_cross_validation_errors_finale.pdf, id=2581, 429.2838pt x 375.804pt>
 File: Figures/LOO_cross_validation_errors_finale.pdf Graphic file (type pdf)
 <use Figures/LOO_cross_validation_errors_finale.pdf>
-Package pdftex.def Info: Figures/LOO_cross_validation_errors_finale.pdf  used on input line 803.
+Package pdftex.def Info: Figures/LOO_cross_validation_errors_finale.pdf  used on input line 772.
 (pdftex.def)             Requested size: 257.61388pt x 225.51854pt.
 
 
-[45 <./Figures/dose_fluence_transfer_function_finale.pdf>]
+[43 <./Figures/dose_fluence_transfer_function_finale.pdf>]
 
-[46 <./Figures/LOO_cross_validation_errors_finale.pdf>]
+[44 <./Figures/LOO_cross_validation_errors_finale.pdf>]
 
-[47]
+[45]
 Capitolo 4.
 
 
-[48
+[46
 
 ]
 
+[47]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[48]
+
 [49]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[50]
-
-[51]
-<Figures/plot_finale_missioni1.pdf, id=2796, 418.19142pt x 289.37674pt>
+<Figures/plot_finale_missioni1.pdf, id=2844, 418.19142pt x 289.37674pt>
 File: Figures/plot_finale_missioni1.pdf Graphic file (type pdf)
 <use Figures/plot_finale_missioni1.pdf>
-Package pdftex.def Info: Figures/plot_finale_missioni1.pdf  used on input line 900.
+Package pdftex.def Info: Figures/plot_finale_missioni1.pdf  used on input line 869.
 (pdftex.def)             Requested size: 429.3521pt x 297.09877pt.
 
 
-[52
+[50
 
  <./Figures/plot_finale_missioni1.pdf>]
 Capitolo 5.
 
 
-[53
+[51
 
 ]
-<Figures/parker_spiral_sep_position.png, id=2880, 179.16937pt x 170.73787pt>
+<Figures/parker_spiral_sep_position.png, id=2926, 179.16937pt x 170.73787pt>
 File: Figures/parker_spiral_sep_position.png Graphic file (type png)
 <use Figures/parker_spiral_sep_position.png>
-Package pdftex.def Info: Figures/parker_spiral_sep_position.png  used on input line 957.
+Package pdftex.def Info: Figures/parker_spiral_sep_position.png  used on input line 926.
 (pdftex.def)             Requested size: 257.61388pt x 245.50801pt.
 
 
-[54]
+[52]
 
-[55 <./Figures/parker_spiral_sep_position.png>]
-<Figures/fig_a_hohmann_trajectory_1.pdf, id=2900, 407.38196pt x 303.77614pt>
+[53 <./Figures/parker_spiral_sep_position.png>]
+<Figures/fig_a_hohmann_trajectory_1.pdf, id=2947, 407.38196pt x 303.77614pt>
 File: Figures/fig_a_hohmann_trajectory_1.pdf Graphic file (type pdf)
 <use Figures/fig_a_hohmann_trajectory_1.pdf>
-Package pdftex.def Info: Figures/fig_a_hohmann_trajectory_1.pdf  used on input line 987.
+Package pdftex.def Info: Figures/fig_a_hohmann_trajectory_1.pdf  used on input line 956.
 (pdftex.def)             Requested size: 257.61388pt x 192.09842pt.
 
 
-[56 <./Figures/fig_a_hohmann_trajectory_1.pdf>]
+[54 <./Figures/fig_a_hohmann_trajectory_1.pdf>]
 
-[57]
+[55]
 
-[58]
+[56]
 Capitolo 6.
 
 
-[59
+[57
 
 ]
 
-[60]
+[58]
 
-[61]
+[59]
 Capitolo 7.
 
 
-[62
+[60
 
 ]
 
-[63
+[61
 
 ]
+
+[62]
+
+[63]
 
 [64]
 
@@ -1323,14 +1314,16 @@ Capitolo 7.
 [69]
 
 [70]
+
+[71]
 Appendice A.
 
-Package caption Warning: Unused \captionsetup[sub] on input line 19.
+Package caption Warning: Unused \captionsetup[sub] on input line 20.
 See the caption package documentation for explanation.
 
 
 
-[71
+[72
 
 ] (./main.aux)
  ***********
@@ -1344,18 +1337,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29553 strings out of 475247
- 590940 string characters out of 5768378
- 1427254 words of memory out of 5000000
- 51851 multiletter control sequences out of 15000+600000
- 611222 words of font info for 146 fonts, out of 8000000 for 9000
+ 29948 strings out of 475247
+ 600218 string characters out of 5768378
+ 1438324 words of memory out of 5000000
+ 52224 multiletter control sequences out of 15000+600000
+ 610908 words of font info for 145 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  123i,20n,121p,3371b,2706s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (74 pages, 9624368 bytes).
+Output written on main.pdf (75 pages, 9635298 bytes).
 PDF statistics:
- 3233 PDF objects out of 3580 (max. 8388607)
- 1197 compressed objects within 12 object streams
- 247 named destinations out of 1000 (max. 500000)
+ 3342 PDF objects out of 3580 (max. 8388607)
+ 1303 compressed objects within 14 object streams
+ 269 named destinations out of 1000 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

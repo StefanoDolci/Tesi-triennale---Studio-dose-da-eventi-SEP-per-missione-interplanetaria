@@ -28,6 +28,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
@@ -522,11 +524,6 @@ INPUT ./Figures/Electronic_stopping_power_Si_SRIM.png
 INPUT ./Figures/Electronic_stopping_power_Si_SRIM.png
 INPUT ./Figures/Electronic_stopping_power_Si_SRIM.png
 INPUT ./Figures/Electronic_stopping_power_Si_SRIM.png
-INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT ./Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png
 INPUT ./Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png
 INPUT ./Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png
