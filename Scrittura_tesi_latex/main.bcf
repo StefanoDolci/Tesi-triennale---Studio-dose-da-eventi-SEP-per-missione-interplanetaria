@@ -2418,14 +2418,20 @@
     <bcf:citekey order="44" intorder="1">Lario2002</bcf:citekey>
     <bcf:citekey order="45" intorder="1">Cane1995</bcf:citekey>
     <bcf:citekey order="46" intorder="1">sauer1993goes</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">kim2017</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">ramos2023</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">Parker1958</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">Giacalone2000</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">Giacalone2000</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">Aran2006</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">noaa_halloween_storm_2003</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">soho_hotshots_2003</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">Rosenqvist2005</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">Onsager1996</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">Gold1998</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">Mertens2010</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">kim2017</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">ramos2023</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">Parker1958</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Aran2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
