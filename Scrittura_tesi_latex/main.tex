@@ -15,12 +15,14 @@
 \usepackage{amsmath}
 \usepackage{enumitem}
 \usepackage{amsthm}
+\usepackage{needspace}
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{caption}
 \usepackage{pdflscape} 
 \usepackage{subcaption}
 \usepackage{booktabs}
+\usepackage[font=small, labelfont=bf]{caption}
 \usepackage{caption}
 \usepackage{siunitx}
 \sisetup{separate-uncertainty=true}
@@ -66,6 +68,7 @@
 \setlength{\belowcaptionskip}{0pt}
 \setlength{\abovedisplayskip}{8pt plus 2pt minus 2pt}
 \setlength{\belowdisplayskip}{8pt plus 2pt minus 2pt}
+
 
 
 \setlength\bibitemsep{0pt}
@@ -179,14 +182,12 @@ Eventi/anno        & $\sim 1000$            & $\sim 10$ \\
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/Tipologia_SEP.png}
+\includegraphics[width=1\textwidth]{figures/Tipologia_SEP.png}
 \caption{Illustrazione semplificata dei due tipi di eventi SEP, a sinistra evento impulsivo (\textit{Solar flare}) a destra evento graduale (CMEs). Immagine adattata da "Solar Energetic Particles - Reames" \cite{Solar_Energetic_Particles_Reames}.}
 \label{fig:tipologia_sep}
 \end{figure} 
 \noindent Osservazioni successive verso l'inizio degli anni 2000, mostrarono che questa distinzione netta impulsivi/graduali è una semplificazione e che in realtà gli eventi SEP si distribuiscono su un "continuo" piuttosto che due categorie separate \cite{Cane2002}.
-
-
-
+\clearpage
 
 \section{Spettri in energia dei SEP}
 Arriviamo ora alla distinzione più rilevante per questa tesi. Ovvero le differenze tra le due categorie SEP in termini di spettri energetici e fluenza totale. Lo spettro è definito come la distribuzione del flusso di particelle in funzione della loro energia. E' la grandezza più importante per estrarre informazioni sulla fisica dei meccanismi di accelerazione e trasporto. Uno spettro è definito nel seguente modo:
@@ -233,11 +234,48 @@ $$ \text{TID} = \frac{E_{dep}}{m} \qquad [1\text{Gy} = 1 \text{J/Kg}]$$
 In ambiente interplanetario, i \textit{dose-rate} tipici sono dell'ordine di $10^{-5}$--$10^{-2}$ mGy/s \cite{HolmesSiedle1993}. I dispositivi elettronici destinati a missioni spaziali vengono progettati per resistere a dosi molto superiori tipicamente $0.1$--$3000$ mGy/s, secondo gli standard ESA (SCC 22900 \cite{ESCC22900}) e NASA (MIL-STD-883 \cite{MILSTD883}).
 L'approccio standard è quello di schermare le componenti più sensibili con materiali che riducono la fluenza delle particelle incidenti. Storicamente l'alluminio è il materiale più utilizzato per le schermature delle sonde \cite{Badavi2009}, dove peso e costi dettano le scelte progettuali. Lo spessore della schermatura viene espresso in unità di g/cm$^2$ (densità superficiale di massa), ottenuto moltiplicando lo spessore geometrico per la densità del materiale. Questa convenzione permette di confrontare il potere schermate di materiali diversi su una scala comune:  ad esempio, 1~cm di alluminio ($\rho = 2.7$~g/cm$^3$) corrisponde a uno spessore equivalente di 2.7 g/cm$^2$. Per missioni interplanetarie spessori di alluminio da 5 a 10 g/cm$^2$ sono spesso sufficienti a schermare la maggior parte dei protoni da eventi SEP. In uno studio del 2021 Dobynde et al. \cite{Optimal_shielding} hanno dimostrato che esiste un minimo locale nella dose efficace per schermature di alluminio, superare 30 g/cm$^2$ porta ad un aumento della dose accumulata a causa della produzione di particelle secondarie. Quando particelle energetiche interagiscono con materiali ad alto numero atomico Z possono produrre particelle altamente penetranti \cite{Gudowska2002}, come i neutroni, aumentando cosi il rischio di danni alle componenti.
 
-
+\clearpage
 \section{Strumenti computazionali}
 Il calcolo della \textit{Total ionizing dose} (TID) presentato in questo elaborato si basa su due strumenti principali: la piattaforma SR-NIEL e il modello probabilistico SAPPHIRE.\\
-SR-NIEL (\textit{Screened Relativistic Nuclear and Ionizing Energy Loss}) \cite{sr_niel_calculator} è una piattaforma web sviluppata nel framework ASIF (ASI Supported Irradiation Facilities), con significativi contributi dell'Università di Milano-Bicocca. Mette a disposizione diversi calcolatori per la propagazione di spettri di particelle cariche attraverso materiali schermanti, basandosi sull'approssimazione CSDA (\textit{Continuous Slowing-Down Approximation}) e sulle tabelle di \textit{stopping power} di SRIM~2013 \cite{srim_tutorials}. In questo lavoro SR-NIEL è stato impiegato per calcolare la fluenza spettrale residua di protoni dopo l'attraversamento di uno spessore equivalente di 10~g/cm$^2$ di alluminio, e per ricavare lo stopping power elettronico in silicio necessario al calcolo della TID.\\
-SAPPHIRE (\textit{Solar Accumulated and Peak Proton and Heavy Ion Radiation Environment}) \cite{SAPPHIRE_paperJIggens} è un modello probabilistico sviluppato nel contesto del progetto ESA SEPEM \cite{SEPEM}. Si basa sul Reference DataSet RDSv2, che raccoglie dati cross-calibrati di 266 eventi SEP dal 1974 al 2016. Attraverso un approccio Monte Carlo basato su \textit{virtual timelines}, SAPPHIRE genera distribuzioni statistiche della fluenza cumulativa attesa per una missione di durata e fase solare assegnate, restituendo i risultati in funzione del livello di confidenza scelto. In questo elaborato il modello è stato utilizzato tramite la piattaforma SPENVIS--ESA \cite{spenvis_web} per stimare le fluenze cumulative attese dai soli eventi SEP a 1~AU.
+\subsection{SR-NIEL}
+
+
+SR-NIEL (\textit{Screened Relativistic Nuclear and Ionizing Energy Loss}) \cite{sr_niel_calculator} è una piattaforma web sviluppata nel framework ASIF (ASI -- Agenzia Spaziale Italiana -- Supported Irradiation Facilities), con significativi contributi dell'Università di Milano-Bicocca. Mette a disposizione diversi calcolatori per la propagazione di spettri di particelle cariche attraverso materiali schermanti. Lo scopo di questo elaborato è quello di calcolare la \textit{Total Ionizing Dose} (TID) in silicio dietro uno spessore di alluminio, un modello semplificato per la schermatura di una sonda interplanetaria.\\
+Quando una particella carica attraversa un materiale, perde la sua energia cinetica principalmente attraverso interazioni elettromagnetiche anelastiche con gli elettroni atomici. La quantità di energia $dE$ persa per unità di percorso $dx$ prende il nome di \textit{stopping power elettronico} \cite{Leroy_principles_of_radiation}:
+\begin{equation}
+    S(E) = -\frac{dE}{dx}    
+\end{equation}
+Una prima espressione della perdita di energia fu derivata da Bohr (1913). Usando un approccio puramente classico si considera una particella incidente con carica $Z_1e$, massa m, velocità v che interagisce con potenziale coulombiano con un elettrone. L'energia trasferita a ciascun elettrone dipende dal parametro d'impatto b, ovvero la distanza minima tra la traiettoria della particella e l'elettrone bersaglio. Integrando su tutti i parametri d'impatto possibili si ottiene la seguente espressione: 
+
+\begin{equation}
+    \frac{dE}{dx} = \frac{4\pi Z_2 e^4}{mv^2}Z_1^2 \ln(\frac{mv^3}{Z_1 e^2 \omega})
+\end{equation}
+Dove $Z_2$ è il numero atomico degli atomi del bersaglio e $\omega$ è la frequenza di rotazione dell'elettrone $b_{max} = \frac{v}{\omega}$.
+Successivamente, Bethe (1930) \cite{Bethe} e poi Bloch (1933) migliorarono questa espressione, rifacendo il calcolo incorporando la meccanica quantistica ricavarono la seguente formula, nota come \textit{formula di Bethe-Bloch} \cite{Leroy_principles_of_radiation}:
+\begin{equation}
+    \frac{dE}{dx} = 2\pi N_a r_e^2 m_e c^2 \rho \frac{Z z^2}{A \beta} \left(\ln\left(\frac{2m_e\gamma^2v^2W_m}{I^2}\right)-2\beta^2\right)
+\end{equation}
+Dove $N_a$ è il numero di Avogadro, $r_e$ è il raggio classico dell'elettrone, $m_e$ la sua massa, $\rho$ la densità del materiale, $Z$ e $A$ sono rispettivamente il numero atomico e il peso atomico del materiale, $z$ è la carica della particella incidente, $\beta$ è la velocità della particella incidente in unità di c, $\gamma$ è il fattore di Lorentz, $W_m$ è l'energia massima trasferibile per una particella con massa $m >> m_e$ e $I$ è il potenziale di ionizzazione del materiale. Ad oggi la formula di Bethe-Bloch è stata ulteriormente modificata, aggiungendo termini di correzione \cite{Leroy_principles_of_radiation}:
+
+\begin{equation}
+    -\frac{dE}{dx} = \frac{0.1535 \, \rho \, z^2 Z}{A \, \beta^2} \left[ \ln\!\left(\frac{2m v^2 W_m}{I^2(1-\beta^2)}\right) - 2\beta^2 - \delta - U \right] \quad [\text{MeV/cm}]
+    \label{eq:bethe_bloch}
+\end{equation}
+Dove $\delta$ è la correzione di densità e $U=2\frac{C}{Z}$ è il termine di shell correction. Il calcolatore SR-NIEL per il calcolo dello stopping power usa le tabelle sperimentali messe a disposizione da SRIM 2013 \cite{srim_tutorials} fino a 5 GeV/amu, ma a basse energie si basa proprio sulla Bethe-Bloch \ref{eq:bethe_bloch}. SR-NIEL adotta l'approssimazione CSDA \cite{nist_star_appendix} (\textit{Continuos Slowing Down Approximation}) per propagare lo spettro attraverso la schermatura: viene suddiviso lo spessore totale in N step e si propaga lo spettro iterativamente. Questi codici considerano solo la perdita di energia elettronica e non tengono conto della produzione di particelle secondarie (neutroni, frammenti nucleari e protoni secondari) che tipicamente si verificano attraverso processi di interazione nucleare.
+
+\subsection{SAPPHIRE}
+
+Come già accennato in precedenza, una componente critica nel \textit{mission design process}, consiste nel quantificare i livelli di radiazione a cui vengono esposti gli strumenti a bordo delle sonde \cite{daly1996space}. Per missioni al di fuori dell'orbita terrestre bassa (LEO), i SEP possono avere un ruolo dominante nella dose da radiazione. Gli eventi SEP hanno una natura altamente stocastica, per questo motivo notevoli sforzi sono rivolti a stimare l'intensità e l'ocorrenza di questi eventi con modelli probabilistici. Tra i più noti troviamo: il modello di King (1974) \cite{King1974} che rappresenta lo standard storico, il modello JPL (Feynman 1993) \cite{JPLFeynmann} raccomandato per il \textit{mission planning} e i modelli ESP (Xapos 1999) \cite{ESPXapos}. Tutti questi modelli si focalizzano sulla fluenza cumulativa dell'ambiente SEP. I risultati di tali modelli sono espressi in funzione della probabilità (livello di confidenza) che una specifica fluenza \textit{non} venga superata. Il modello utilizzato in questo elaborato si chiama SAPPHIRE (\textit{Solar Accumulated and Peak Proton and Heavy Ion Radiation Environment}), sviluppato da Jiggens et al.(2018)\cite{SAPPHIRE_paperJIggens} nel contesto del progetto ESA per la realizzazione di SEPEM \textit{Solar Energetic Particle Environmet Modelling} \cite{SEPEM}. Il modello SAPPHIRE si basa sul SEPEM Reference DataSet (RDSv2), che include i dati cross-calibrati \cite{Rodriguez2017} di GOES/SEM e IMP-8/GME per 266 eventi SEP dal 1974 al 2016. SAPPHIRE fornisce le seguenti stime probabilistiche: fluenza cumulativa integrata sull'intera durata della missione, fluenza del \textit{worst-case event} e il flusso di picco dei SEP. Il modello definisce un periodo di attività solare massima di 7 anni, all'interno di ciascuno dei cicli solari standard di 11 anni (distribuiti 2.5 anni prima e 4.5 anni dopo il picco massimo del numero di macchie solari) \cite{Feynman1990}.
+\textbf{Step 1. Ogni quanto avviene un SEP?} SAPPHIRE utilizza il metodo delle \textit{virtual timelines}, un approcio Monte Carlo che genera sequenze simulate di eventi tenendo conto della loro durata effettiva. Vengono generati i tempi di attesa tra eventi successivi, una distribuzione di Lévy viene usata per il massimo solare e una Poisson per il minimo (troppi pochi eventi nel minimo per fittare una Lévy).
+\textbf{Step 2. Quanto dura ogni evento?} SAPPHIRE assegna a ciascun evento una durata finita, basata su una regressione lineare dei dati dal catalogo RDSv2, questo perchè eventi lunghi possono sovrapporsi
+\textbf{Step 3. Quanto è intenso ogni evento?} L'intensità viene calcolata dalla distribuzione cumulativa della fluenza, modellata con una \textit{Exponential cut-off power law} \cite{SAPPHIRE_paperJIggens}.
+\begin{equation}
+F(\phi) = \frac{\phi^{\gamma}}{\exp\!\left(\phi/\phi_{\mathrm{lim}}\right)} \cdot \frac{\exp\!\left(\phi_{\mathrm{min}}/\phi_{\mathrm{lim}}\right)}{\phi_{\mathrm{min}}^{-\gamma}}
+\end{equation}
+Dove $F(\phi)$ è la probabilità che un evento superi una certa fluenza $\phi$. $\phi_{min}$ è la fluenza minima e $\phi_{lim}$ è il parametro di cut-off che descrive la deviazione da una power-law per le alte fluenze. 
+\textbf{Step 4. Virtual timelines} SAPPHIRE genera 100.000 timeline virtuali per ogni canale energetico e per l'intera durata della missione. Da ciascuna timeline estrae la fluenza cumulativa totale. Le fluenze cumulative ordinate vengono usate per ricavare la probabilità di superamento con un confidence level (e.g. 90\% di probabilità che la fluenza non superi il valore indicato).
+\textbf{Step 5. Fit spettrale} I risultati di ogni canale energetico vengono combinati in un unico spettro e fittati con una Band Function. Da questo fit si ricava lo spettro da 0.1MeV/nuc a 1GeV/nuc.
+
 
 \section{Obiettivi e schema di lavoro}
 L'obiettivo principale di questo elaborato è stimare la \textit{Total ionizing dose} (TID) che una sonda accumulerebbe durante un transito interplanetario verso Marte, considerando il solo contributo dei protoni SEP. La catena di lavoro può essere schematizzata nei seguenti passaggi:
@@ -251,7 +289,6 @@ L'obiettivo principale di questo elaborato è stimare la \textit{Total ionizing 
     \item Estrazione delle fluenze cumulative dal modello probabilistico SAPPHIRE per diversi scenari di missione, da usare come input nella funzione $D(J)$ per stimare la dose attesa (Capitolo~\ref{cap:SAPPHIRE}).
     \item Applicazione di fattori di \textit{scaling} radiale, sia con approccio analitico kepleriano sia tramite il modello SOLPENCO2, per tenere conto della posizione della sonda lungo l'orbita di trasferimento verso Marte (Sezione~\ref{sec:scaling_factor}).
 \end{enumerate}
-
 
 \chapter{Analisi spettrale}\label{cap:analisi_spettrale}
 
@@ -320,7 +357,9 @@ Dopo aver calcolato la fluenza differenziale si costruisce uno spettro combinato
 \chi^2_\nu = \frac{1}{N - n_p}\sum_{k=1}^{N} \left(\frac{\log_{10}F_k - \log_{10}F(E_k; \mathbf{p})}{\sigma_{\log,k}}\right)^2
 \label{eq:chi2}
 \end{equation}
-Dove $N$ è il numero di punti spettrali, $n_p$ il numero di parametri liberi, e $\mathbf{p}$ è il vettore dei parametri del modello. Si utilizza un algoritmo di Levenberg-Marquardt \cite{Marquardt1963,} implementato nella funzione \texttt{curve\_fit} della libreria SciPy \cite{SciPy_curvefit}.
+Dove $N$ è il numero di punti spettrali, $n_p$ il numero di parametri liberi, e $\mathbf{p}$ è il vettore dei parametri del modello. 
+\clearpage 
+\noindent Si utilizza un algoritmo di Levenberg-Marquardt \cite{Marquardt1963,} implementato nella funzione \texttt{curve\_fit} della libreria SciPy \cite{SciPy_curvefit}.
 Gli errori in spazio logaritmico sono:
 \begin{equation}
     \sigma_{\log,k} = \frac{\sigma_{F_k}}{F_k \cdot \ln(10)} 
@@ -360,7 +399,7 @@ Le soglie energetiche tipicamente utilizzate nella fisica dei SEP sono $E_0 = {1
 Nel seguente capitolo vengono presentati i risultati dell'analisi spettrale appena descritta per ciascuno degli otto eventi SEP selezionati, infine viene presentata una tabella riassuntiva dei risultati ottenuti.
 
 \subsection{Agosto 1972}
-L'evento SEP del 4 Agosto 1972 (GLE 24) è il prototipo del \textit{Worst-case scenario} per le missioni spaziali. Nello studio di King (1974) \cite{King1974} viene mostrato come questo evento sia estremamente anomalo rispetto agli altri avvenuti nel ciclo solare 20, rimanendo ancora ad oggi tra i più intensi mai registrati. Vari studi \cite{Jiggens2014} riportano incompletezza nei dati, probabilmente a causa di saturazione dei sensori. Per questo motivo, a differenza degli altri eventi, i parametri dello spettro sono stati ricavati dall'analisi di Raukunen (2018)\cite{Raukunen2018}. Questi parametri sono stati ricavati con un fit usando la Band function sui dati dal satellite IMP-5 e da \textit{neutron monitors} a terra, per avere un range energetico più ampio possibile:
+L'evento SEP del 4 Agosto 1972 (GLE 24) è il prototipo del \textit{Worst-case scenario} per le missioni spaziali. Nello studio di King (1974) \cite{King1974} viene mostrato come questo evento sia estremamente anomalo rispetto agli altri avvenuti nel ciclo solare 20, rimanendo ancora ad oggi tra i più intensi mai registrati. Vari studi \cite{Jiggens2014} riportano incompletezza nei dati, probabilmente a causa di saturazione dei sensori. Per questo motivo, a differenza degli altri eventi, i parametri dello spettro sono stati ricavati dall'analisi di Raukunen (2018) \cite{Raukunen2018}. Questi parametri sono stati ricavati con un fit usando la Band function sui dati dal satellite IMP-5 e da \textit{neutron monitors} a terra, per avere un range energetico più ampio possibile:
 
 \begin{table}[H]
 \centering
@@ -395,7 +434,7 @@ Dove $m$ rappresenta la massa del protone. Per ricostruire lo spettro differenzi
 \begin{equation}
     \frac{dJ}{dE} = -\frac{dJ}{dR} \cdot \frac{dR}{dE} 
 \end{equation}
-In questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale e $\frac{dR}{dE}$ è la derivata della formula di conversione tra rigidità ed energia. Con questi dati è stato ricostruito lo spettro differenziale riportato in figura \ref{fig:aug_1972_spettro}.
+In questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale e $\frac{dR}{dE}$ è la derivata della formula di conversione tra rigidità ed energia. 
 
 \begin{figure}[H]
 \centering
@@ -408,27 +447,35 @@ In questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale 
 \subsection{Ottobre 1989}
 Durante la seconda metà del 1989 il sole era particolarmente attivo. L'evento del 20 Ottobre 1989 è quello con il massimo valore di intensità registrato dallo strumento IMP-8 durante il ciclo solare 22 \cite{Lario2001}, con aumenti di intensità fino a $>500$ MeV \cite{Sauer1993}. A questo evento è associato un flare di classe X13 con un massimo attorno alle 12:59 UT \cite{Lario2002} e l'arrivo di protoni in orbita terrestre due giorni dopo \cite{Cane1995}, suggerendo che in concomitanza del solar flare sia partira una CME. \\
 I dati scaricati per questo evento provengono dal satellite GOES-07 (SEPEM RDSv3), equipaggiato con il detector EPS \cite{sauer1993goes} (canali energetici da $4.2-500$ MeV).
-\begin{figure}[tbp]
+
+\begin{figure}[t]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/Flussi/OCT1989_fluxes_raw_net_final.pdf}
 \caption{Dati dei flussi differenziali protonici da GOES-07 (EPS) per l'evento di OCT 1989: a) Flussi differenziali scaricati da SEPEM RDSv3, b) Flussi ripuliti con tecnica discussa capitolo precedente.}
 \label{fig:oct_1989_goes_fluxes}
 \end{figure}
+
+
 \noindent Per il calcolo della fluenza differenziale sono stati utilizzati i dati ripuliti mostrati in Figura~\ref{fig:oct_1989_goes_fluxes}. 
 Il periodo di background considerato è 09/10/1989--17/10/1989, mentre l'intervallo di integrazione è 19/10/1989--01/11/1989. 
-Per i dati GOES-07 (EPS) è stato assunto un errore sistematico del 25\%.
+Per i dati GOES-07 (EPS) è stato assunto un errore sistematico del 25\%. Come si nota dalla figura \ref{fig:oct_1989_goes_fluxes} l'evento di Ottobre 1989 è in realtà una sequenza di più eventi ravvicinati, lo scopo di questo elaborato è quello stimare la fluenza cumulativa degli eventi, per questo si è scelto di integrare su tutto il periodo dal 19 Ottobre fino al 01 Novembre.\\
 
-\begin{figure}[H]
+\begin{figure}[t]
 \centering
-\includegraphics[width=\textwidth]{figures/Spettri/OCT1989_spectral_fit_final.pdf}
+\includegraphics[width=1\textwidth]{figures/Spettri/OCT1989_spectral_fit_final.pdf}
 \caption{Spettro fluenza differenziale per l'evento di Ottobre 1989, con dati da GOES-07 (EPS) e bande di confidenza.}
 \label{fig:oct_1989_spettro}
 \end{figure}
-\noindent Come si nota dalla figura \ref{fig:oct_1989_goes_fluxes} l'evento di Ottobre 1989 è in realtà una sequenza di più eventi ravvicinati, lo scopo di questo elaborato è quello stimare la fluenza cumulativa degli eventi, per questo si è scelto di integrare su tutto il periodo dal 19 Ottobre fino al 01 Novembre. La Band function descrive bene lo spettro di questo evento con un $\chi_{\nu}^2 = 1.2$. Il risultato cumulativo di tutti questi eventi produce uno spettro con indice spettrale molto duro $\gamma_a = 1.2$ e un $E_{break}= 44$ MeV piuttosto alto. Questo è coerente con un evento intenso come quello di AUG 1972, dove il flusso di particelle rimane alto fino a centinaia di MeV. Avendo scelto solo lo strumento EPS per i punti di questo fit, il range energetico selezionato in questo caso va da $1-1000$ MeV. Da notare infatti che ulteriori estrapolazioni sotto o sopra questi valori producono bande di confidenza più larghe.
 
+\needspace{6cm}
+
+\noindent La Band function descrive bene lo spettro di questo evento con un $\chi_{\nu}^2 = 1.2$. Il risultato cumulativo di tutti questi eventi produce uno spettro con indice spettrale molto duro $\gamma_a = 1.2$ e un $E_{break}= 44$ MeV piuttosto alto. Questo è coerente con un evento intenso come quello di AUG 1972, dove il flusso di particelle rimane alto fino a centinaia di MeV. 
+\noindent Avendo scelto solo lo strumento EPS per i punti di questo fit, il range energetico selezionato in questo caso va da $1-1000$ MeV. Da notare infatti che ulteriori estrapolazioni sotto o sopra questi valori producono bande di confidenza più larghe.
+\clearpage
 \subsection{Ottobre 2003}
 
 L'evento di Ottobre 2003, noto anche come \textit{Halloween storm}, è forse l'evento SEP più famoso e studiato in letteratura. Tre gruppi di macchie solari, tra cui la più grande misurava circa 13 volte la Terra \cite{noaa_halloween_storm_2003}, sono comparse sul Sole verso la fine di Ottobre 2003. Successivamente una serie di tempeste solari hanno colpito la Terra fino all'inizio di Novembre. Il picco è avvenuto alle 11:00UT del 28 Ottobre, quando un flare di classe X17 ha accelerato enormi quantità di gas nell'atmosfera solare. Poco dopo alle 20:50UT del 29 Ottobre è stato registrato un secondo flare di classe X10. Questi improvvisi rilasci di energia hanno generato due delle più grandi CME misurate dalla sonda SOHO \cite{soho_hotshots_2003}. Il vento solare viaggiava oltre 2000 km/s e il transito dal Sole alla Terra è stato meno di 20 ore \cite{Rosenqvist2005}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{figures/Solar_storm2003.png}
@@ -436,23 +483,25 @@ L'evento di Ottobre 2003, noto anche come \textit{Halloween storm}, è forse l'e
 \label{fig:halloween storm}
 \end{figure}
 \noindent I dati utilizzati per l'analisi di questo evento provengono dal satellite GOES-11 (EPS/HEPAD) \cite{Onsager1996}, per le alte energie ($4-700$ MeV) e da ACE (EPAM/LEMS120) \cite{Gold1998} per le basse energie ($0.068-4.80$ MeV). Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: il periodi di background 07/10/2003 -- 21/10/2003, mentre il periodo di integrazione per l'evento 26/10/2003 12:00 UT -- 09/11/2003 00:00UT. Per entrambi gli strumenti si assume un errore sistematico del 25\%. Il canale ACE P1p ($0.047, 0.068$) MeV è stato rimosso poichè troppo rumoroso, probabilmente a causa di contaminazione da elettroni o saturazione.
+\clearpage
 
-\begin{figure}[!]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf}
+\includegraphics[width=0.7\textwidth]{figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf}
 \caption{Dati dei flussi differenziali protonici da GOES-11 (EPS+HEPAD) per l'evento di Ottobreb 2003: (a) flussi raw da SEPEM RDS v3.0, (b) flussi ripuliti. Le linee verticali rosse tratteggiate indicano i brillamenti solari associati.}
 \label{fig:oct_2003_goes_fluxes}
 \end{figure}
 
 
-\begin{figure}[!t]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{figures/Spettri/OCT2003_spectral_fit_finale.pdf}
+\includegraphics[width=0.7\textwidth]{figures/Spettri/OCT2003_spectral_fit_finale.pdf}
 \caption{Spettro fluenza differenziale per l'evento di Ottobre 2003, con dati da GOES-11 (EPS+HEPAD), ACE (LEMS120) e bande di confidenza.}
 \label{fig:oct_2003_spectral_fit}
 \end{figure}
-\noindent La Band function cattura bene l'andamento globale dello spettro, il chi-quadro ridotto ($\chi_{\nu}^2 =2.20$) indica la presenza di lievi deviazioni, dovute principalmente alla combinazione di dati da strumenti diversi. Nonostante ciò le bande di confidenza sono molto strette, indicando che i parametri sono ben vincolati. Questo evento a differenza degli altri ha uno spettro piuttosto piatto (duro) alle basse energie $\gamma_a = 1.01\pm0.06$. Questo indica un'ampia popolazione di particelle a bassa energia. Attorno all'energia di taglio $43$ MeV, lo spettro crolla moderatamente con un indice $\gamma_b= 3.7\pm0.11$, questo significa che ci si aspetta una dose alta dietro anche le schermature più spesse. Questi valori sono in ottimo accordo con quelli riportati da Mertens et al. (2010) \cite{Mertens2010}.
+\clearpage
 
+\noindent La Band function cattura bene l'andamento globale dello spettro, il chi-quadro ridotto ($\chi_{\nu}^2 =2.20$) indica la presenza di lievi deviazioni, dovute principalmente alla combinazione di dati da strumenti diversi. Nonostante ciò le bande di confidenza sono molto strette, indicando che i parametri sono ben vincolati. Questo evento a differenza degli altri ha uno spettro piuttosto piatto (duro) alle basse energie $\gamma_a = 1.01\pm0.06$. Questo indica un'ampia popolazione di particelle a bassa energia. Attorno all'energia di taglio $43$ MeV, lo spettro crolla moderatamente con un indice $\gamma_b= 3.7\pm0.11$, questo significa che ci si aspetta una dose alta dietro anche le schermature più spesse. Questi valori sono in ottimo accordo con quelli riportati da Mertens et al. (2010) \cite{Mertens2010}.
 
 \subsection{Gennaio 2005}
 L'evento di Gennaio 2005 è stato l'altro grande evento record del ciclo solare 23. E' particolare sopratutto perché si è verificato verso la fine del massimo solare, quando l'attività stava diminuendo. Il 20 Gennaio 2005 il flusso di protoni ha registrato un picco senza precedenti: 650 pfu (\textit{particle flux unit}) per protoni con $E>100$ MeV \cite{Grechnev2008}. Prima di questo solamente 5 altri eventi avevano superato i 100 pfu. 
@@ -471,15 +520,16 @@ Per l'analisi spettrale di questo evento sono stati scaricati i dati dal satelli
 \caption{Spettro fluenza differenziale per l'evento di Gennaio 2005, con dati da GOES-11 (EPS+HEPAD), ACE (LEMS120) e bande di confidenza.}
 \label{fig:jan_2005_spectral_fit}
 \end{figure}
+
 \noindent Anche in questo caso lo spettro è ben descritto dalla Band Function. Un chi-quadro ridotto $\chi_{\nu}^2 = 1.6$ suggerisce un ottimo raccordo tra i punti sperimentali dei diversi strumenti. L'indice $\gamma_b = 2.74\pm0.10$ indica che lo spettro decade lentamente alle alte energie, suggerendo una fluenza di particelle particolarmente alta e uno spettro altamente penetrante. Questi valori sono in accordo con lo spettro riportato nel SEPEM RDSv3 \cite{SEPEM} e l'indice spettrale ($\gamma = 2.2$) trovato da Mewaldt et al. (2005) \cite{mewaldt2005space}.
 
-
+\clearpage
 \subsection{Luglio 2012}
 L'evento del 23 Luglio 2012 è associato alla più intensa CME del ciclo solare 24. Viene classificato come \textit{Carrington - class event}, ovvero un evento di intesità paragonabile a quello di Carrington del 1859 \cite{CarringtonEvent}, la tempesta geomagnetica più intensa mai registrata nella storia. Questo evento piuttosto eccezionale ha \textit{mancato} la Terra di soli 9 giorni, passando a circa $\sim1.5$ milioni di km \cite{LIOU201432}. Se la CME associata fosse stata diretta verso la Terra avrebbe avuto conseguenze devastanti per gran parte della nostra tecnologia, come mostrato nelle simulazioni di Ngwira et al. \cite{NgwiraSimulation}. Lungo la traiettoria della CME alle 0208 UT del 23 Luglio c'era però un satellite, STEREO-A \cite{Kaiser2008_STEREOA}, che è riuscito a sopravvivere parzialmente alla tempesta e registrare dati. I dati riportati in questa analisi vengono proprio dai detector a bordo di STEREO-A: LET(Low Energy Telescope) per le basse energie ($1.8-15.0$ MeV) e HET (High Energy Telescope) per le alte energie ($13.0-100$ MeV).
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf}
+\includegraphics[width=0.65\textwidth]{figures/Flussi/JUL2012_fluxes_raw_net_finale.pdf}
 \caption{Dati dei flussi differenziali protonici per l'evento di Luglio 2012: (a) flussi raw da STEREO-A (HET), (b) flussi ripuliti.}
 \label{fig:jul_2012_stereo_fluxes}
 \end{figure}
@@ -491,20 +541,14 @@ L'evento del 23 Luglio 2012 è associato alla più intensa CME del ciclo solare 
 \caption{Spettro fluenza differenziale per l'evento di Luglio 2012, con dati da STEREO-A (HET+LET) e bande di confidenza.}
 \label{fig:jul_2012_spectral_fit}
 \end{figure}
-\noindent Anche per questo evento il fit è stato eseguito con il modello \textit{Band function}, con un chi-quadro ridotto $\chi_{\nu}^2 = 0.97$. L'indice spettrale $\gamma_a = 0.90$ indica uno spettro quasi piatto nella regione a basse energie, questa è la firma tipica dell'accelerazione dello shock da CME. I dati disponibili da STEREO-A HET arrivano solo fino a 100 MeV, per questo motivo la parte ad alta energia dello spettro ha bande di confidenza più larghe. Questo evento era comunque troppo importante per venire tralasciato ed è stato aggiunto comunque, estrapolando lo spettro fino a 1000 MeV. Le fluenze e i parametri dello spettro sono stati convalidati con quelli riportati da Joyce et al. (2015) \cite{Joyce2015}. Riportato in figura \ref{fig:jul_2012_ams_vs_stereo} c'è un rapido confronto tra le fluenze misurate da "di fronte" alla CME da STEREO-A e quelle misurate a Terra da AMS-02 \cite{ams02_publications}.
-
-\begin{figure}[htp]
-\centering
-\includegraphics[width=0.7\textwidth]{figures/Spettri/JUL2012_AMS02_vs_STEREO.pdf}
-\caption{Fluenza differenziale misurata da STEREO-A(LET+HET) e da AMS-02 a Terra dal 23 al 24 luglio 2012.}
-\label{fig:jul_2012_ams_vs_stereo}
-\end{figure}
+\noindent Anche per questo evento il fit è stato eseguito con il modello \textit{Band function}, con un chi-quadro ridotto $\chi_{\nu}^2 = 0.97$. L'indice spettrale $\gamma_a = 0.90$ indica uno spettro quasi piatto nella regione a basse energie, questa è la firma tipica dell'accelerazione dello shock da CME. I dati disponibili da STEREO-A HET arrivano solo fino a 100 MeV, per questo motivo la parte ad alta energia dello spettro ha bande di confidenza più larghe. Questo evento era comunque troppo importante per venire tralasciato ed è stato aggiunto comunque, estrapolando lo spettro fino a 1000 MeV. Le fluenze e i parametri dello spettro sono stati convalidati con quelli riportati da Joyce et al. (2015) \cite{Joyce2015}. 
+\clearpage
 
 \subsection{Settembre 2017}
 Tra il 4 e il 10 Settembre 2017 una successione di intense eruzioni solari è stata registrata da vari detector in orbita terrestre. Tra questi, alle 12:02 UT del 6 Settembre è stato misurato un flare di classe X9.3 \cite{Bruno2019}, il più grande \textit{soft X-ray flare} da più di 10 anni \cite{Adriani2011}. A queste esplosioni viene associata una \textit{Earth-directed CME} con una velocità nel piano celeste stimata a $\sim1571$ km/s, riportata dal catalogo CDAW\cite{gopalswamy2025soholascocmecatalog}. Per questo evento sono stati scaricati i i dati dal satellite ACE \cite{ACE_data} (energie da 0.047-4.8 MeV) e GOES-13 \cite{GOES_SEM} (EPEAD/HEPAD con energie da 4.2-700 MeV). 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf}
+\includegraphics[width=0.75\textwidth]{figures/Flussi/SEP2017_GOES13_fluxes_raw_net_final.pdf}
 \caption{Dati dei flussi differenziali protonici per l'evento di Settembre 2017: (a) flussi raw da GOES-13 (EPEAD/HEPAD), (b) flussi ripuliti.}
 \label{fig:sep_2017_goes13_fluxes}
 \end{figure}
@@ -527,29 +571,33 @@ Il primo \textit{Ground-level enhancement} (GLE73) del ciclo solare 25 è stato 
 \caption{Vista del piano equatoriale solare con la posizione di vari satelliti e i flussi da loro registrati il 28 Ottobre 2021. Immagine adattata da \href{https://arxiv.org/html/2401.05991v1}{link.}}
 \label{fig:oct_2021_multispacecraft}
 \end{figure}
-\noindent I risultati suggeriscono che STEREO-A era ben connesso alla CME e i flussi misurati erano dominati dall'accelerazione e iniezione da parte dello shock primario. Al contrario i flussi misurati dal satellite GOES, più vicino alla Terra, provengono da un shock secondario \cite{Ko2024}. Un primo fit è stato eseguito con i dati da STEREO-A (LET/HET) tuttavia il range energetico ristretto da 1.2-100 MeV non ha permesso di vincolare bene il break energetico di un evento così intenso. Dunque per questa analisi sono stati scaricati idati da GOES-16 (SGPS) \cite{GOES_SEM}, con copertura energetica $1.02$--$400$ MeV, più adatta per le stime di questo elaborato.
+\noindent I risultati suggeriscono che STEREO-A era ben connesso alla CME e i flussi misurati erano dominati dall'accelerazione e iniezione da parte dello shock primario. Al contrario i flussi misurati dal satellite GOES, più vicino alla Terra, provengono da un shock secondario \cite{Ko2024}. Un primo fit è stato eseguito con i dati da STEREO-A (LET/HET) tuttavia il range energetico ristretto da 1.2-100 MeV non ha permesso di vincolare bene il break energetico di un evento così intenso. \\
 
-
+\noindent Dunque per questa analisi sono stati scaricati idati da GOES-16 (SGPS) \cite{GOES_SEM}, con copertura energetica $1.02$--$400$ MeV, più adatta per le stime di questo elaborato.
+\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: per il periodo di \textit{background} l'intervallo dal 12/10/2021 fino al 25/10/2021, per il periodo di integrazione l'intervallo dal 28/10/2021 10:00 UT fino al 03/11/2021 18:00 UT. Per i dati da GOES-16 (SGPS) è stato assunto un errore sistematico del 25\%. 
+\clearpage
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf}
+\includegraphics[width=0.65\textwidth]{figures/Flussi/OCT2021_GOES16_fluxes_raw_net_finale.pdf}
 \caption{Dati dei flussi differenziali protonici per l'evento di Ottobre 2021: (a) flussi raw da GOES-16 (SGPS), (b) flussi ripuliti.}
 \label{fig:oct_2021_goes16_fluxes}
 \end{figure}
-\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: per il periodo di \textit{background} l'intervallo dal 12/10/2021 fino al 25/10/2021, per il periodo di integrazione l'intervallo dal 28/10/2021 10:00 UT fino al 03/11/2021 18:00 UT. Per i dati da GOES-16 (SGPS) è stato assunto un errore sistematico del 25\%. 
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf}
+\includegraphics[width=0.65\textwidth]{figures/Spettri/OCT2021_ER_spectral_fit_finale1.pdf}
 \caption{Spettro fluenza differenziale per l'evento di Ottobre 2021, con dati da GOES-16 (SGPS) e bande di confidenza.}
 \label{fig:oct_2021_spectral_fit}
 \end{figure}
+\clearpage
 \noindent Per questo evento il fit è stato eseguito con il modello funzionale E-R \cite{Ellison-Ramaty} con un chi-quadro ridotto $\chi_{\nu}^2 = 1.7$. L'indice spettrale $\gamma = 1.97\pm0.7$ indica uno spettro piatto, coerente con i risultati trovati da Kouloumvakos et al. (2024) \cite{Ko2024}. L'energia di cutoff $E_{R} = 232.7\pm72.5$ MeV è particolarmente alta. Questo significa che lo shock della CME ha accelerato i protoni fino a centinaia di MeV prima che il cut-off intervenisse, il che conferma che le particelle ad alta energia erano molto più abbondanti rispetto a quella a bassa energia.
+
 \subsection{Maggio 2024}
 Arriviamo ora all'ultimo evento SEP selezionato per il ciclo solare 25. Noto anche come \textit{Mother's day storm}, questo evento è stato registrato a partire dal 7 Maggio 2024, quando almeno sette CME in sequenza hanno colpito i \textit{neutron monitors} a Terra, classificando questo evento come un \textit{Ground level enhancement} (GLE) \cite{mishev2025spectra}. A queste CME sono associati una serie di flare di classe X1.0 dall'8 al 10 Maggio \cite{mishev2025spectra}. Per questo evento sono stati selezionati i dati da GOES-18 (SGPS) \cite{GOES_SEM} con copertura energetica da $1.0$--$390.0$ MeV. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf}
+\includegraphics[width=0.65\textwidth]{figures/Flussi/MAY2024_GOES18_fluxes_raw_net_finale1.pdf}
 \caption{Dati dei flussi differenziali protonici per l'evento di Maggio 2024: (a) flussi raw da GOES-18 (SGPS), (b) flussi ripuliti.}
 \label{fig:may_2024_goes18_fluxes}
 \end{figure}
@@ -557,14 +605,14 @@ Arriviamo ora all'ultimo evento SEP selezionato per il ciclo solare 25. Noto anc
 
 \noindent Per il calcolo della fluenza sono stati selezionati i seguenti parametri: l'intervallo per il calcolo del \textit{background} va dal 04/05/2024 al 08/05/2024, mentre il periodo di integrazione scelto per l'evento va dal 10/05/2024 al 18/05/2024. Per i dati dallo strumento SGPS si assume un errore sistematico del 20\%.
 
-\begin{figure}[H]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\textwidth]{figures/Spettri/MAY2024_ER_spectral_fit1.pdf}
 \caption{Spettro fluenza differenziale per l'evento di Maggio 2024, con dati da GOES-18 (SGPS) e bande di confidenza.}
 \label{fig:may_2024_spectral_fit}
 \end{figure}
 \noindent Anche per questo evento il fit è stato eseguito con il modello funzionale E-R \cite{Ellison-Ramaty}, riportando un chi-quadro ridotto $\chi_{\nu}^2 = 2.0$. L'indice spettrale $\gamma = 2.67\pm0.06$ è significativamente più ripido di quello misurato per gli altri eventi. L'energia del "crollo" esponenziale è pari a $\sim400$ MeV. Questo è coerente con quanto riportato da Mishev et al. (2025) \cite{mishev2025spectra} lo spettro mostra un \textit{roll-over} alle alte energie.
-
+\clearpage
 
 \section{Tabella riassuntiva: risultati}
 Nella seguente sezione vengono riportati i risultati ottenuti per tutti gli otto  eventi SEP analizzati. Oltre ai valori degli indici spettrali, la grandezza più importante per confrontarli è la fluenza integrale omnidirezionale sopra soglia $J(>E_0)$ calcolata secondo l'equazione \ref{eq: fluenza integrale}.
@@ -596,6 +644,10 @@ OCT 2021 & $7.06 \times 10^{7}$  & $1.93 \times 10^{7}$  & $7.41 \times 10^{6}$ 
 \caption{Fluenze integrali omnidirezionali per gli otto eventi SEP analizzati, ordinate per $J(>10\,\mathrm{MeV})$ decrescente. Le fluenze sono espresse in \unit{\per\cm\squared}.}
 \label{tab:fluenze_integrali}
 \end{table}
+
+\noindent Dall'insieme di queste analisi spettrali emerge una caratteristica comune tra gli eventi SEP intensi come quelli di questo campione: gli indici spettrali a bassa energia $\gamma_a$ variano tra $\sim 0.9-1.3$, una firma caratteristica dei processi di accelerazione da shock associati a CME, questa è particolarmente efficiente alle basse energie \cite{Desai2016spectral}. L'energia di break varia da $\sim 30$~MeV (JAN 2005) a $\sim 127$~MeV (AUG 1972): valori più alti implicano una maggiore penetrazione attraverso le schermature e quindi un contributo più significativo alla dose ad alte energie. Un aspetto rilevante è l'assenza di una correlazione tra fluenza totale e durezza dello spettro. Ad esempio, JUL 2012 presenta una fluenza $J(>100~\text{MeV})$ superiore a quella di OCT 2003, nonostante una fluenza $J(>10~\text{MeV})$ inferiore di un fattore due. Questo è dovuto al diverso indice spettrale ad alta energia ($\gamma_b = 3.20$ contro $3.71$) e conferma che la sola fluenza integrale a bassa soglia non cattura adeguatamente le differenze nella deposizione di energia dietro schermatura, anticipando quanto verrà discusso nel Capitolo~\ref{sec:funzione_dose_fluenza}.
+
+
 
 \chapter{Calcolo della dose SR-NIEL}\label{cap:calcolo_dose}
 Nel seguente capitolo vengono riportati i risultati ottenuti per il calcolo della dose da ionizzazione totale (TID). Per queste simulazioni è stata utilizzata la piattaforma web SR-NIEL \cite{sr_niel_calculator}, sviluppata nel framework ASIF (ASI -- Agenzia Spaziale Italiana -- Supported Irradiation Facilities) con notevoli contributi dall'università di Milano-Bicocca. Lo scopo di questo elaborato è quello di calcolare la \textit{Total Ionizing Dose} (TID) in silicio dietro uno spessore di alluminio, un modello semplificato per la schermatura di una sonda interplanetaria.
@@ -1048,7 +1100,6 @@ la loro fluenza un predittore intrinsecamente meno accurato. Questa soglia dipen
 \section{Limiti e miglioramenti}
 L'analisi svolta in questo elaborato ha inevitabilmente alcuni limiti. Innanzitutto il modello di schermatura e detector semplificato: la TID è stata calcolata assumendo uno spessore omogeneo di alluminio posto davanti ad un sottile strato di silicio. Nella realtà le sonde spaziali hanno schermature molto più complesse con materiali diversi e spessori variabili. Per migliorare questo aspetto sarebbe interessante simulare come cambia la TID usando schermature diverse, materiali più leggeri come il polietilene e schermature a più strati offrono protezioni notevoli contro i protoni SEP e le particelle secondarie. Le particelle secondarie sono un altro dei limiti delle stime trovate in questo elaborato. Tutta l'analisi considera solo l'effetto dei protoni SEP, in quanto rappresentano circa $\sim80-90\%$ del flusso totale. Tuttavia durante eventi SEP estremi, la componente di ioni pesanti e particelle secondarie generate dalle interazioni nucleari con gli atomi della schermatura possono influire il risultato della dose, varrebbe la pena stimare il loro contributo rispetto a quello dei soli protoni. Un altro limite da tenere conto riguarda la funzione di trasferimento D(J). E' stata calibrata su un campione statisticamente limitato di soli 8 eventi SEP storici. Sebbene questi siano stati scelti come \textit{Worst-case scenario} su 5 cicli solari, aggiungere ulteriori eventi SEP aiuterebbe a sondare i limiti di questa relazione. Infine, per quanto riguarda il modello SAPPHIRE, è importante ricordare che si tratta di un modello statistico basato su dati storici. La sua capacità di prevedere eventi futuri dipende del dataset di riferimento e dalla stabilità delle condizioni solari. Eventi SEP estremi o anomalie solari potrebbero non essere ben rappresentati nel modello. Le evoluzioni naturali per uno studio successivo potrebbero essere: sostituire il calcolo della dose con SR-NIEL con codici di simulazione più completi come FLUKA o GEANT4; includere il contributo di ioni pesanti; calcolare i \textit{Single Event Effects} (SEE) durante la missione;  considerare l'effetto di geometrie più complesse utilizzando ad esempio modelli CAD per la struttura reale di una sonda spaziale.
 
-\chapter{Ringraziamenti}
 
 
 %---------------------------------------------------------------
@@ -1061,9 +1112,10 @@ L'analisi svolta in questo elaborato ha inevitabilmente alcuni limiti. Innanzitu
 \end{multicols}
 
 
-%---------------------------------------------------------------
-% APPENDICE
-%---------------------------------------------------------------
+\chapter{Ringraziamenti}
+
+
+-
 
 \end{document}
 
