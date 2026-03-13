@@ -931,6 +931,203 @@
       \verb 10.1029/2021SW002749
       \endverb
     \endentry
+    \entry{Gudowska2002}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=03854bfd194f9491668603086b3c8b66}{%
+           family={Gudowska},
+           familyi={G\bibinitperiod},
+           given={Irena},
+           giveni={I\bibinitperiod}}}%
+        {{hash=26ff44e8a4187f5b15eb4d7bbff89437}{%
+           family={Andreo},
+           familyi={A\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9b0c3df6450d6e59a5ce384662bdd215}{%
+           family={Sobolevsky},
+           familyi={S\bibinitperiod},
+           given={Nikolai},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{dee34f25b00b533ca2f6706c7047e87f}
+      \strng{fullhash}{dee34f25b00b533ca2f6706c7047e87f}
+      \strng{fullhashraw}{dee34f25b00b533ca2f6706c7047e87f}
+      \strng{bibnamehash}{dee34f25b00b533ca2f6706c7047e87f}
+      \strng{authorbibnamehash}{dee34f25b00b533ca2f6706c7047e87f}
+      \strng{authornamehash}{dee34f25b00b533ca2f6706c7047e87f}
+      \strng{authorfullhash}{dee34f25b00b533ca2f6706c7047e87f}
+      \strng{authorfullhashraw}{dee34f25b00b533ca2f6706c7047e87f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Radiation Research}
+      \field{number}{Suppl}
+      \field{title}{Secondary particle production in tissue-like and shielding materials for light and heavy ions calculated with the {Monte-Carlo} code {SHIELD-HIT}}
+      \field{volume}{43}
+      \field{year}{2002}
+      \field{pages}{S93\bibrangedash S97}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1269/jrr.43.s93
+      \endverb
+    \endentry
+    \entry{sr_niel_calculator}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=fc9d02799620f27ca406873185bfe0fe}{%
+           family={Boschini},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=02e93c64a40ad0cbfd18b2f018fd5b48}{%
+           family={Rancoita},
+           familyi={R\bibinitperiod},
+           given={P.\bibnamedelimi G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=21620c50a40eea4994d376193abccd75}{%
+           family={Tacconi},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e16cf731cabe6a3030d07fa5a423837d}
+      \strng{fullhash}{e16cf731cabe6a3030d07fa5a423837d}
+      \strng{fullhashraw}{e16cf731cabe6a3030d07fa5a423837d}
+      \strng{bibnamehash}{e16cf731cabe6a3030d07fa5a423837d}
+      \strng{authorbibnamehash}{e16cf731cabe6a3030d07fa5a423837d}
+      \strng{authornamehash}{e16cf731cabe6a3030d07fa5a423837d}
+      \strng{authorfullhash}{e16cf731cabe6a3030d07fa5a423837d}
+      \strng{authorfullhashraw}{e16cf731cabe6a3030d07fa5a423837d}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.sr-niel.org/}}
+      \field{note}{Accesso effettuato a marzo 2026}
+      \field{title}{{SR-NIEL-7} Calculator: Screened Relativistic ({SR}) Treatment for {NIEL} Dose, Nuclear and Electronic Stopping Power Calculator (version 11.0)}
+      \field{year}{2014}
+    \endentry
+    \entry{srim_tutorials}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=02fcb1875bee6a43de13e427c6f33116}{%
+           family={Ziegler},
+           familyi={Z\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{02fcb1875bee6a43de13e427c6f33116}
+      \strng{fullhash}{02fcb1875bee6a43de13e427c6f33116}
+      \strng{fullhashraw}{02fcb1875bee6a43de13e427c6f33116}
+      \strng{bibnamehash}{02fcb1875bee6a43de13e427c6f33116}
+      \strng{authorbibnamehash}{02fcb1875bee6a43de13e427c6f33116}
+      \strng{authornamehash}{02fcb1875bee6a43de13e427c6f33116}
+      \strng{authorfullhash}{02fcb1875bee6a43de13e427c6f33116}
+      \strng{authorfullhashraw}{02fcb1875bee6a43de13e427c6f33116}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.srim.org/SRIM/Tutorials/Tutorials.htm}}
+      \field{note}{Accesso effettuato a marzo 2026}
+      \field{title}{{SRIM} Tutorials}
+    \endentry
+    \entry{SAPPHIRE_paperJIggens}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=be7e08b44b88471f1264f371343e80b7}{%
+           family={{Jiggens, Piers}},
+           familyi={J\bibinitperiod}}}%
+        {{hash=75217b58f82c6675af24fbb5eecec0a0}{%
+           family={{Heynderickx, Daniel}},
+           familyi={H\bibinitperiod}}}%
+        {{hash=7f16c05473f296a99e9144f1403217f6}{%
+           family={{Sandberg, Ingmar}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=d95268b3fa74bc2e0f63e546e5fe3637}{%
+           family={{Truscott, Pete}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=ddaa8cf04812178f10522ef3caca9022}{%
+           family={{Raukunen, Osku}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=f551208652ca9be5a747ec01fa7e8888}{%
+           family={{Vainio, Rami}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f65f79e1364651ef2410dd3254d7133}
+      \strng{fullhash}{d57173b0bbc0460d5b2ff089e1a61b69}
+      \strng{fullhashraw}{d57173b0bbc0460d5b2ff089e1a61b69}
+      \strng{bibnamehash}{2f65f79e1364651ef2410dd3254d7133}
+      \strng{authorbibnamehash}{2f65f79e1364651ef2410dd3254d7133}
+      \strng{authornamehash}{2f65f79e1364651ef2410dd3254d7133}
+      \strng{authorfullhash}{d57173b0bbc0460d5b2ff089e1a61b69}
+      \strng{authorfullhashraw}{d57173b0bbc0460d5b2ff089e1a61b69}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Space Weather Space Clim.}
+      \field{title}{Updated Model of the Solar Energetic Proton Environment in Space}
+      \field{volume}{8}
+      \field{year}{2018}
+      \field{pages}{A31}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1051/swsc/2018010
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1051/swsc/2018010
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1051/swsc/2018010
+      \endverb
+    \endentry
+    \entry{SEPEM}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f71b100224fb1b54ae14e751c4b40fa}{%
+           family={{European Space Agency}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{fullhash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{fullhashraw}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{bibnamehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{authorbibnamehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{authornamehash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{authorfullhash}{1f71b100224fb1b54ae14e751c4b40fa}
+      \strng{authorfullhashraw}{1f71b100224fb1b54ae14e751c4b40fa}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://sepem.eu/}}
+      \field{note}{Reference Proton Dataset v3. Consultato: Marzo 2025}
+      \field{title}{{SEPEM} -- Solar Energetic Particle Environment Modelling Application Server}
+      \field{year}{2025}
+    \endentry
+    \entry{spenvis_web}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0671ae5972c91db78f464eefcf02945f}{%
+           family={{Royal Belgian Institute for Space Aeronomy (BIRA-IASB)}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0671ae5972c91db78f464eefcf02945f}
+      \strng{fullhash}{0671ae5972c91db78f464eefcf02945f}
+      \strng{fullhashraw}{0671ae5972c91db78f464eefcf02945f}
+      \strng{bibnamehash}{0671ae5972c91db78f464eefcf02945f}
+      \strng{authorbibnamehash}{0671ae5972c91db78f464eefcf02945f}
+      \strng{authornamehash}{0671ae5972c91db78f464eefcf02945f}
+      \strng{authorfullhash}{0671ae5972c91db78f464eefcf02945f}
+      \strng{authorfullhashraw}{0671ae5972c91db78f464eefcf02945f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.spenvis.oma.be/intro.php}}
+      \field{note}{Sviluppato per conto della European Space Agency (ESA). Accesso effettuato a marzo 2026}
+      \field{title}{{SPENVIS}: Space Environment Information System}
+      \field{year}{2026}
+    \endentry
     \entry{SEPEMRDSv3_Jiggens}{inproceedings}{}{}
       \name{author}{10}{}{%
         {{hash=ceea11cbfc16e2714fd6c483477cf400}{%
@@ -1108,9 +1305,9 @@
       \strng{authornamehash}{2f65f79e1364651ef2410dd3254d7133}
       \strng{authorfullhash}{6535c53acb5c59859bb866e2abe3a783}
       \strng{authorfullhashraw}{6535c53acb5c59859bb866e2abe3a783}
-      \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Space Weather Space Clim.}
@@ -1143,8 +1340,8 @@
       \strng{authornamehash}{224ef7e17e2f51a29d715d4d5bdd2e93}
       \strng{authorfullhash}{224ef7e17e2f51a29d715d4d5bdd2e93}
       \strng{authorfullhashraw}{224ef7e17e2f51a29d715d4d5bdd2e93}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.ngdc.noaa.gov/stp/satellite/goes/}}
@@ -1166,8 +1363,8 @@
       \strng{authornamehash}{bd43185af9f6cf83bb372c743c43ea36}
       \strng{authorfullhash}{bd43185af9f6cf83bb372c743c43ea36}
       \strng{authorfullhashraw}{bd43185af9f6cf83bb372c743c43ea36}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://cmr.earthdata.nasa.gov/search/concepts/C1214614978-SCIOPS.html}}
@@ -1189,8 +1386,8 @@
       \strng{authornamehash}{beccfc9460414de25887ac2d800a5dd3}
       \strng{authorfullhash}{beccfc9460414de25887ac2d800a5dd3}
       \strng{authorfullhashraw}{beccfc9460414de25887ac2d800a5dd3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://izw1.caltech.edu/ACE/ASC/level2/}}
@@ -1212,36 +1409,13 @@
       \strng{authornamehash}{9505a2599bcebad6f26b2f430457fcde}
       \strng{authorfullhash}{9505a2599bcebad6f26b2f430457fcde}
       \strng{authorfullhashraw}{9505a2599bcebad6f26b2f430457fcde}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://stereo-ssc.nascom.nasa.gov/data.shtml}}
       \field{note}{NASA Goddard Space Flight Center. Consultato: Marzo 2025}
       \field{title}{{STEREO} Data}
-      \field{year}{2025}
-    \endentry
-    \entry{SEPEM}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=1f71b100224fb1b54ae14e751c4b40fa}{%
-           family={{European Space Agency}},
-           familyi={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{1f71b100224fb1b54ae14e751c4b40fa}
-      \strng{fullhash}{1f71b100224fb1b54ae14e751c4b40fa}
-      \strng{fullhashraw}{1f71b100224fb1b54ae14e751c4b40fa}
-      \strng{bibnamehash}{1f71b100224fb1b54ae14e751c4b40fa}
-      \strng{authorbibnamehash}{1f71b100224fb1b54ae14e751c4b40fa}
-      \strng{authornamehash}{1f71b100224fb1b54ae14e751c4b40fa}
-      \strng{authorfullhash}{1f71b100224fb1b54ae14e751c4b40fa}
-      \strng{authorfullhashraw}{1f71b100224fb1b54ae14e751c4b40fa}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://sepem.eu/}}
-      \field{note}{Reference Proton Dataset v3. Consultato: Marzo 2025}
-      \field{title}{{SEPEM} -- Solar Energetic Particle Environment Modelling Application Server}
       \field{year}{2025}
     \endentry
     \entry{WhitmanSEP}{article}{}{}
@@ -1445,8 +1619,8 @@
       \strng{authornamehash}{7da5bb7fe20097f745b0da35ec77b399}
       \strng{authorfullhash}{7da5bb7fe20097f745b0da35ec77b399}
       \strng{authorfullhashraw}{7da5bb7fe20097f745b0da35ec77b399}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html}}
@@ -1488,8 +1662,8 @@
       \strng{authornamehash}{618fa62f030076edf2937faa1b1684fb}
       \strng{authorfullhash}{f75c24a04994b574cb620c685a1f8229}
       \strng{authorfullhashraw}{f75c24a04994b574cb620c685a1f8229}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{chapter}{15.6}
@@ -1518,8 +1692,8 @@
       \strng{authorfullhash}{2f82810b1fd2c28befd3db796d2de298}
       \strng{authorfullhashraw}{2f82810b1fd2c28befd3db796d2de298}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.swpc.noaa.gov/products/goes-proton-flux}}
@@ -1543,8 +1717,8 @@
       \strng{authornamehash}{e8ed811ea41f3816506ce9be69325620}
       \strng{authorfullhash}{e8ed811ea41f3816506ce9be69325620}
       \strng{authorfullhashraw}{e8ed811ea41f3816506ce9be69325620}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Spacecraft and Rockets}
@@ -1605,8 +1779,8 @@
       \strng{authornamehash}{387ea21b66f37b6b19ad6ed8c60017a4}
       \strng{authorfullhash}{cfb06cddfebea70a277097bf208aef3f}
       \strng{authorfullhashraw}{cfb06cddfebea70a277097bf208aef3f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Space Weather Space Clim.}
@@ -1801,8 +1975,8 @@
       \strng{authornamehash}{f800cb62384eb8283ce824b5aee01840}
       \strng{authorfullhash}{f800cb62384eb8283ce824b5aee01840}
       \strng{authorfullhashraw}{f800cb62384eb8283ce824b5aee01840}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Geophysical Research: Space Physics}
@@ -1839,8 +2013,8 @@
       \strng{authorfullhash}{bd76ac0d32df23e7c1e085bd1dc3ddfb}
       \strng{authorfullhashraw}{bd76ac0d32df23e7c1e085bd1dc3ddfb}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{23rd International Cosmic Ray Conference, Vol. 3, held 19-30 July, 1993 at University of Calgary, Alberta, Canada. Edited by DA Leahy, RB Hicks, and D. Venkatesan. Invited, Rapporteur, and Highlight Papers. Singapore: World Scientific, 1993., p. 250}
@@ -1870,8 +2044,8 @@
       \strng{authornamehash}{0a1baf366546e8efbbcbebabc88bad57}
       \strng{authorfullhash}{0a1baf366546e8efbbcbebabc88bad57}
       \strng{authorfullhashraw}{0a1baf366546e8efbbcbebabc88bad57}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.ncei.noaa.gov/news/great-halloween-solar-storm-2003}}
@@ -1893,8 +2067,8 @@
       \strng{authornamehash}{714faf8f14e6cf09afcd28413d9c3d44}
       \strng{authorfullhash}{714faf8f14e6cf09afcd28413d9c3d44}
       \strng{authorfullhashraw}{714faf8f14e6cf09afcd28413d9c3d44}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://soho.nascom.nasa.gov/hotshots/2003_10_28/}}
@@ -1944,8 +2118,8 @@
       \strng{authornamehash}{0042c8d422d8a6ae4706cd982854d933}
       \strng{authorfullhash}{bbe31ef93527e01804e7b06576101444}
       \strng{authorfullhashraw}{bbe31ef93527e01804e7b06576101444}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Geophysical Research: Space Physics}
@@ -2028,8 +2202,8 @@
       \strng{editornamehash}{212912f34dda61909c320e2631df2b4f}
       \strng{editorfullhash}{212912f34dda61909c320e2631df2b4f}
       \strng{editorfullhashraw}{212912f34dda61909c320e2631df2b4f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{GOES-8 and Beyond}
@@ -2372,8 +2546,8 @@
       \strng{authorfullhash}{29c58ad3accc53ab4393163fbdde2796}
       \strng{authorfullhashraw}{29c58ad3accc53ab4393163fbdde2796}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{AGU Spring Meeting Abstracts}
@@ -2405,8 +2579,8 @@
       \strng{authornamehash}{b59146178dd61edd83cac7876f4fa980}
       \strng{authorfullhash}{b59146178dd61edd83cac7876f4fa980}
       \strng{authorfullhashraw}{b59146178dd61edd83cac7876f4fa980}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0035-8711}
@@ -2484,8 +2658,8 @@
       \strng{authornamehash}{d2a88a4b4c9492a46a3b814060c7da6a}
       \strng{authorfullhash}{423c2b368f7378b206052fbe425eeb8e}
       \strng{authorfullhashraw}{423c2b368f7378b206052fbe425eeb8e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1364-6826}
@@ -2569,8 +2743,8 @@
       \strng{authornamehash}{7c5541415c5ee888ce88b26c9b560e5d}
       \strng{authorfullhash}{81667177a7f9039c46c57b00d8eff96c}
       \strng{authorfullhashraw}{81667177a7f9039c46c57b00d8eff96c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Space Weather}
@@ -2625,8 +2799,8 @@
       \strng{authornamehash}{bb8dd8ee5290360082bea03a0b0dc87a}
       \strng{authorfullhash}{29869128802b33881f2219c1d43122d8}
       \strng{authorfullhashraw}{29869128802b33881f2219c1d43122d8}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Space Science Reviews}
@@ -2719,8 +2893,8 @@
       \strng{authornamehash}{90d35e9f1734240d3934df28a5480f10}
       \strng{authorfullhash}{917fca865e5cd13a396a59185a67abc8}
       \strng{authorfullhashraw}{917fca865e5cd13a396a59185a67abc8}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Space Weather}
@@ -3317,8 +3491,8 @@
       \strng{authornamehash}{8a1e1823c76350bacd978fc0b39e8c17}
       \strng{authorfullhash}{b016dd1dd8d5c7e4e42603ce0a0c35bb}
       \strng{authorfullhashraw}{b016dd1dd8d5c7e4e42603ce0a0c35bb}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1432-0746}
@@ -3376,8 +3550,8 @@
       \strng{authornamehash}{875f82ae661fff684239fc4238e55917}
       \strng{authorfullhash}{7f1613c3a22efa0d6a087f2078de8727}
       \strng{authorfullhashraw}{7f1613c3a22efa0d6a087f2078de8727}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Astronomy \& Astrophysics}
@@ -3461,8 +3635,8 @@
       \strng{authornamehash}{ce442cea9d2a91e72052b3855999a9a8}
       \strng{authorfullhash}{01eab42faa095573f084a9bb1aec93c4}
       \strng{authorfullhashraw}{01eab42faa095573f084a9bb1aec93c4}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Astronomy \& Astrophysics}
@@ -3529,42 +3703,6 @@
       \verb https://pos.sissa.it/501/1335/
       \endverb
     \endentry
-    \entry{sr_niel_calculator}{misc}{}{}
-      \name{author}{3}{}{%
-        {{hash=fc9d02799620f27ca406873185bfe0fe}{%
-           family={Boschini},
-           familyi={B\bibinitperiod},
-           given={M.\bibnamedelimi J.},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=02e93c64a40ad0cbfd18b2f018fd5b48}{%
-           family={Rancoita},
-           familyi={R\bibinitperiod},
-           given={P.\bibnamedelimi G.},
-           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=21620c50a40eea4994d376193abccd75}{%
-           family={Tacconi},
-           familyi={T\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{e16cf731cabe6a3030d07fa5a423837d}
-      \strng{fullhash}{e16cf731cabe6a3030d07fa5a423837d}
-      \strng{fullhashraw}{e16cf731cabe6a3030d07fa5a423837d}
-      \strng{bibnamehash}{e16cf731cabe6a3030d07fa5a423837d}
-      \strng{authorbibnamehash}{e16cf731cabe6a3030d07fa5a423837d}
-      \strng{authornamehash}{e16cf731cabe6a3030d07fa5a423837d}
-      \strng{authorfullhash}{e16cf731cabe6a3030d07fa5a423837d}
-      \strng{authorfullhashraw}{e16cf731cabe6a3030d07fa5a423837d}
-      \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.sr-niel.org/}}
-      \field{note}{Accesso effettuato a marzo 2026}
-      \field{title}{{SR-NIEL-7} Calculator: Screened Relativistic ({SR}) Treatment for {NIEL} Dose, Nuclear and Electronic Stopping Power Calculator (version 11.0)}
-      \field{year}{2014}
-    \endentry
     \entry{Leroy_principles_of_radiation}{book}{}{}
       \name{author}{2}{}{%
         {{hash=a1e1c392666b9ecc0eb71846902cde29}{%
@@ -3589,8 +3727,8 @@
       \strng{authornamehash}{9e199f92e7659ce62443ac6154834476}
       \strng{authorfullhash}{9e199f92e7659ce62443ac6154834476}
       \strng{authorfullhashraw}{9e199f92e7659ce62443ac6154834476}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4th}
@@ -3649,30 +3787,6 @@
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19303970303
       \endverb
     \endentry
-    \entry{srim_tutorials}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=02fcb1875bee6a43de13e427c6f33116}{%
-           family={Ziegler},
-           familyi={Z\bibinitperiod},
-           given={James\bibnamedelima F.},
-           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \strng{namehash}{02fcb1875bee6a43de13e427c6f33116}
-      \strng{fullhash}{02fcb1875bee6a43de13e427c6f33116}
-      \strng{fullhashraw}{02fcb1875bee6a43de13e427c6f33116}
-      \strng{bibnamehash}{02fcb1875bee6a43de13e427c6f33116}
-      \strng{authorbibnamehash}{02fcb1875bee6a43de13e427c6f33116}
-      \strng{authornamehash}{02fcb1875bee6a43de13e427c6f33116}
-      \strng{authorfullhash}{02fcb1875bee6a43de13e427c6f33116}
-      \strng{authorfullhashraw}{02fcb1875bee6a43de13e427c6f33116}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://www.srim.org/SRIM/Tutorials/Tutorials.htm}}
-      \field{note}{Accesso effettuato a marzo 2026}
-      \field{title}{{SRIM} Tutorials}
-    \endentry
     \entry{nist_star_appendix}{misc}{}{}
       \name{author}{4}{}{%
         {{hash=00b1a7d674f6b696681df62ee4078dc7}{%
@@ -3704,8 +3818,8 @@
       \strng{authornamehash}{823389005f82aa3557bb28409e5c6dfe}
       \strng{authorfullhash}{329e7ef8f2ae779242137b66c7f4ac1c}
       \strng{authorfullhashraw}{329e7ef8f2ae779242137b66c7f4ac1c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Star/Text/appendix.html}}
@@ -3740,8 +3854,8 @@
       \strng{authorfullhash}{e16cf731cabe6a3030d07fa5a423837d}
       \strng{authorfullhashraw}{e16cf731cabe6a3030d07fa5a423837d}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.sr-niel.org/index.php/sr-niel-web-calculators/web-calculator-for-determine-the-residual-spectral-fluence-for-a-particles-traversing-a-shielding-material}}
@@ -3775,8 +3889,8 @@
       \strng{authorfullhash}{e16cf731cabe6a3030d07fa5a423837d}
       \strng{authorfullhashraw}{e16cf731cabe6a3030d07fa5a423837d}
       \field{extraname}{3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.sr-niel.org/index.php/sr-niel-web-calculators/web-calculator-for-determine-the-residual-spectral-fluence-3d}}
@@ -3810,8 +3924,8 @@
       \strng{authorfullhash}{e16cf731cabe6a3030d07fa5a423837d}
       \strng{authorfullhashraw}{e16cf731cabe6a3030d07fa5a423837d}
       \field{extraname}{4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.sr-niel.org/index.php/sr-niel-web-calculators/electronic-stopping-power-ionizing-dose-calculator-for-protons-and-ions}}
@@ -4002,8 +4116,8 @@
       \strng{authornamehash}{f252038edd7f112d75da3bf0c1edecbc}
       \strng{authorfullhash}{f4d4224f91ef4d8d76d558cb0e17b500}
       \strng{authorfullhashraw}{f4d4224f91ef4d8d76d558cb0e17b500}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Methods}
@@ -4209,56 +4323,6 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1364682602001189
       \endverb
     \endentry
-    \entry{SAPPHIRE_paperJIggens}{article}{}{}
-      \name{author}{6}{}{%
-        {{hash=be7e08b44b88471f1264f371343e80b7}{%
-           family={{Jiggens, Piers}},
-           familyi={J\bibinitperiod}}}%
-        {{hash=75217b58f82c6675af24fbb5eecec0a0}{%
-           family={{Heynderickx, Daniel}},
-           familyi={H\bibinitperiod}}}%
-        {{hash=7f16c05473f296a99e9144f1403217f6}{%
-           family={{Sandberg, Ingmar}},
-           familyi={S\bibinitperiod}}}%
-        {{hash=d95268b3fa74bc2e0f63e546e5fe3637}{%
-           family={{Truscott, Pete}},
-           familyi={T\bibinitperiod}}}%
-        {{hash=ddaa8cf04812178f10522ef3caca9022}{%
-           family={{Raukunen, Osku}},
-           familyi={R\bibinitperiod}}}%
-        {{hash=f551208652ca9be5a747ec01fa7e8888}{%
-           family={{Vainio, Rami}},
-           familyi={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{2f65f79e1364651ef2410dd3254d7133}
-      \strng{fullhash}{d57173b0bbc0460d5b2ff089e1a61b69}
-      \strng{fullhashraw}{d57173b0bbc0460d5b2ff089e1a61b69}
-      \strng{bibnamehash}{2f65f79e1364651ef2410dd3254d7133}
-      \strng{authorbibnamehash}{2f65f79e1364651ef2410dd3254d7133}
-      \strng{authornamehash}{2f65f79e1364651ef2410dd3254d7133}
-      \strng{authorfullhash}{d57173b0bbc0460d5b2ff089e1a61b69}
-      \strng{authorfullhashraw}{d57173b0bbc0460d5b2ff089e1a61b69}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Space Weather Space Clim.}
-      \field{title}{Updated Model of the Solar Energetic Proton Environment in Space}
-      \field{volume}{8}
-      \field{year}{2018}
-      \field{pages}{A31}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1051/swsc/2018010
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/swsc/2018010
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/swsc/2018010
-      \endverb
-    \endentry
     \entry{Feynman1990}{article}{}{}
       \name{author}{4}{}{%
         {{hash=452dd817ec857da2d6412ac13e28f894}{%
@@ -4310,29 +4374,6 @@
       \verb{url}
       \verb https://doi.org/10.2514/3.26157
       \endverb
-    \endentry
-    \entry{spenvis_web}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=0671ae5972c91db78f464eefcf02945f}{%
-           family={{Royal Belgian Institute for Space Aeronomy (BIRA-IASB)}},
-           familyi={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{0671ae5972c91db78f464eefcf02945f}
-      \strng{fullhash}{0671ae5972c91db78f464eefcf02945f}
-      \strng{fullhashraw}{0671ae5972c91db78f464eefcf02945f}
-      \strng{bibnamehash}{0671ae5972c91db78f464eefcf02945f}
-      \strng{authorbibnamehash}{0671ae5972c91db78f464eefcf02945f}
-      \strng{authornamehash}{0671ae5972c91db78f464eefcf02945f}
-      \strng{authorfullhash}{0671ae5972c91db78f464eefcf02945f}
-      \strng{authorfullhashraw}{0671ae5972c91db78f464eefcf02945f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.spenvis.oma.be/intro.php}}
-      \field{note}{Sviluppato per conto della European Space Agency (ESA). Accesso effettuato a marzo 2026}
-      \field{title}{{SPENVIS}: Space Environment Information System}
-      \field{year}{2026}
     \endentry
     \entry{esa_nom_sapre}{misc}{}{}
       \name{author}{2}{}{%

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773339174.1414 "main.bcf" "main.bbl" "main" 1773340173.54073 0
-  "bibliography.bib" 1773316342 48095 8069c0b97987ba33642f2c1c141eee1b ""
-  "main.bcf" 1773340172 116878 dccbab79a9d25bc2849b4bf1c620b451 "pdflatex"
+["biber main"] 1773417878.115 "main.bcf" "main.bbl" "main" 1773420405.26434 0
+  "bibliography.bib" 1773415900 48572 e5637ebc3399c1fe05a2dbeafd86fe43 ""
+  "main.bcf" 1773420404 117301 60b5ac3dfd5544c528e4eda9c314b03e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773340143.17456 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773340173.54272 0
+["pdflatex"] 1773420396.48601 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773420405.26522 0
   "Figures/Electronic_stopping_power_Si_SRIM.png" 1772824583 12104 25bee2065ab17ae333c776d53e236294 ""
   "Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf" 1772827693 56849 bf3b0e124f7b55f8a82fbcdd35db2da5 ""
   "Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png" 1772826335 116233 ea26b01f1fc9f774b6b7145f780f5428 ""
@@ -37,8 +37,8 @@
   "Figures/fig_a_hohmann_trajectory_1.pdf" 1772979527 24760 b2db8a5249b32d3836891ab8e3abc4a8 ""
   "Figures/parker_spiral_sep_position.png" 1772974463 119771 4f0b9c4aec99ef8599a48d174bd13e20 ""
   "Figures/plot_finale_missioni1.pdf" 1772901772 30175 39694f8055fe6ee1fc6cf217a94bec23 ""
-  "Figures/solar-cycle-sunspot-numb.pdf" 1773161429 142736 2438364bfa9959fd47a13040466d2496 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773340140 102340 88a62ad14870931bc488392f5816e1fe ""
+  "Figures/solar-cycle-sunspot-numb (4).png" 1773419926 153377 82ac6fb2ae349ae52f11ae6a6ba4e0c3 ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773420394 104697 9f3527df67cbf41c2fb0d4b848df8d9d ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -196,12 +196,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1773340172 42199 713ed06979e384777f11d848c789a0c2 "pdflatex"
-  "main.bbl" 1773339179 217567 e39dcd213b58dfbbf77d853c1ab3071c "biber main"
-  "main.out" 1773340172 5723 1bf8aabd71896803c3ee8e762af48e7b "pdflatex"
-  "main.run.xml" 1773340172 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1773340140 102340 88a62ad14870931bc488392f5816e1fe ""
-  "main.toc" 1773340172 2992 38b67932b9c1f7f9a22a3f6225f31ca6 "pdflatex"
+  "main.aux" 1773420404 43357 a001d9928a8860888ba634ca4c1bd31a "pdflatex"
+  "main.bbl" 1773417881 219336 9e1e72aaa9e7c8a06da550c764b5c431 "biber main"
+  "main.out" 1773420404 5883 12cd286e3df3ee30760d8f78d693b87e "pdflatex"
+  "main.run.xml" 1773420404 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1773420394 104697 9f3527df67cbf41c2fb0d4b848df8d9d ""
+  "main.toc" 1773420404 3046 63d811fbf146118d6cd731f6f7f48e4a "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
