@@ -3,10 +3,13 @@
 \documentclass[12pt]{report}
 
 % Margini
-\usepackage[top=2.5cm, bottom=2.5cm, left=4cm, right=2.5cm, centering, head=21.75 pt]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, centering, head=21.75 pt]{geometry}
+
+\usepackage{multicol}
 
 % Interlinea
-\linespread{1.5}
+\usepackage{setspace}
+\onehalfspacing
 
 % Librerie utili
 \usepackage{amsmath}
@@ -61,6 +64,14 @@
 \setlength{\intextsep}{10pt}
 \setlength{\abovecaptionskip}{5pt}
 \setlength{\belowcaptionskip}{0pt}
+\setlength{\abovedisplayskip}{8pt plus 2pt minus 2pt}
+\setlength{\belowdisplayskip}{8pt plus 2pt minus 2pt}
+
+
+\setlength\bibitemsep{0pt}
+\setlength\bibnamesep{0pt}
+\setlength\bibinitsep{0pt}
+
 
 \begin{document}
 
@@ -397,7 +408,7 @@ In questa formula $-\frac{dJ}{dR}$ è la derivata della Band function integrale 
 \subsection{Ottobre 1989}
 Durante la seconda metà del 1989 il sole era particolarmente attivo. L'evento del 20 Ottobre 1989 è quello con il massimo valore di intensità registrato dallo strumento IMP-8 durante il ciclo solare 22 \cite{Lario2001}, con aumenti di intensità fino a $>500$ MeV \cite{Sauer1993}. A questo evento è associato un flare di classe X13 con un massimo attorno alle 12:59 UT \cite{Lario2002} e l'arrivo di protoni in orbita terrestre due giorni dopo \cite{Cane1995}, suggerendo che in concomitanza del solar flare sia partira una CME. \\
 I dati scaricati per questo evento provengono dal satellite GOES-07 (SEPEM RDSv3), equipaggiato con il detector EPS \cite{sauer1993goes} (canali energetici da $4.2-500$ MeV).
-\begin{figure}[H]
+\begin{figure}[tbp]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/Flussi/OCT1989_fluxes_raw_net_final.pdf}
 \caption{Dati dei flussi differenziali protonici da GOES-07 (EPS) per l'evento di OCT 1989: a) Flussi differenziali scaricati da SEPEM RDSv3, b) Flussi ripuliti con tecnica discussa capitolo precedente.}
@@ -417,28 +428,26 @@ Per i dati GOES-07 (EPS) è stato assunto un errore sistematico del 25\%.
 
 \subsection{Ottobre 2003}
 
-L'evento di Ottobre 2003, noto anche come \textit{Halloween storm}, è forse l'evento SEP più famoso e studiato in letteratura. Tre gruppi di macchie solari, tra cui la più grande misurava circa 13 volte la Terra \cite{noaa_halloween_storm_2003}, sono comparse sul Sole verso la fine di Ottobre 2003. Successivamente una serie di tempeste solari hanno colpito la terra fino all'inizio di Novembre. Il picco è avvenuto alle 1100UT del 28 Ottobre, quando un X17 \textit{flare} ha accelerato enormi quantità di gas nell'atmosfera solare. Poco dopo alle 2050UT del 29 Ottobre è stato registrato un secondo \textit{flare} di classe X10. Questi improvvisi rilasci di energia hanno generato due delle più grandi CME misurate dalla sonda SOHO \cite{soho_hotshots_2003}. Il vento solare viaggiava oltre 2000 km/s e il transito dal Sole alla Terra è stato meno di 20 ore \cite{Rosenqvist2005}.
+L'evento di Ottobre 2003, noto anche come \textit{Halloween storm}, è forse l'evento SEP più famoso e studiato in letteratura. Tre gruppi di macchie solari, tra cui la più grande misurava circa 13 volte la Terra \cite{noaa_halloween_storm_2003}, sono comparse sul Sole verso la fine di Ottobre 2003. Successivamente una serie di tempeste solari hanno colpito la Terra fino all'inizio di Novembre. Il picco è avvenuto alle 11:00UT del 28 Ottobre, quando un flare di classe X17 ha accelerato enormi quantità di gas nell'atmosfera solare. Poco dopo alle 20:50UT del 29 Ottobre è stato registrato un secondo flare di classe X10. Questi improvvisi rilasci di energia hanno generato due delle più grandi CME misurate dalla sonda SOHO \cite{soho_hotshots_2003}. Il vento solare viaggiava oltre 2000 km/s e il transito dal Sole alla Terra è stato meno di 20 ore \cite{Rosenqvist2005}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{figures/Solar_storm2003.png}
-\caption{Immagine del solar flare del 28 Ottobre 2003, catturata dal satellite SOHO, \href{https://soho.nascom.nasa.gov/hotshots/2003_10_28/}{(link)}.}
+\caption{Immagine del solar flare del 28 Ottobre 2003, catturata dal satellite SOHO \cite{SOHO_hotshot_oct2003}.}
 \label{fig:halloween storm}
 \end{figure}
-\noindent I dati utilizzati per l'analisi di questo evento provengono dal satellite GOES-11 (EPS/HEPAD) \cite{Onsager1996}, per le alte energie ($4-700$ MeV) e da ACE (EPAM/LEMS120) \cite{Gold1998} per le basse energie ($0.068-4.80$ MeV).
+\noindent I dati utilizzati per l'analisi di questo evento provengono dal satellite GOES-11 (EPS/HEPAD) \cite{Onsager1996}, per le alte energie ($4-700$ MeV) e da ACE (EPAM/LEMS120) \cite{Gold1998} per le basse energie ($0.068-4.80$ MeV). Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: il periodi di background 07/10/2003 -- 21/10/2003, mentre il periodo di integrazione per l'evento 26/10/2003 12:00 UT -- 09/11/2003 00:00UT. Per entrambi gli strumenti si assume un errore sistematico del 25\%. Il canale ACE P1p ($0.047, 0.068$) MeV è stato rimosso poichè troppo rumoroso, probabilmente a causa di contaminazione da elettroni o saturazione.
 
-
-
-
-\begin{figure}[H]
+\begin{figure}[!]
 \centering
-\includegraphics[width=\textwidth]{figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf}
-\caption{Dati dei flussi differenziali protonici da GOES-11 (EPS+HEPAD) per l'evento di Ottobre 2003: (a) flussi raw da SEPEM RDS v3.0, (b) flussi ripuliti. Le linee verticali rosse tratteggiate indicano i brillamenti solari associati.}
+\includegraphics[width=0.75\textwidth]{figures/Flussi/OCT2003_fluxes_raw_net_final_11111.pdf}
+\caption{Dati dei flussi differenziali protonici da GOES-11 (EPS+HEPAD) per l'evento di Ottobreb 2003: (a) flussi raw da SEPEM RDS v3.0, (b) flussi ripuliti. Le linee verticali rosse tratteggiate indicano i brillamenti solari associati.}
 \label{fig:oct_2003_goes_fluxes}
 \end{figure}
-\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: il periodi di background 07/10/2003 -- 21/10/2003, mentre il periodo di integrazione per l'evento 26/10/2003 12:00 UT -- 09/11/2003 00:00UT. Per entrambi gli strumenti si assume un errore sistematico del 25\%. Il canale ACE P1p ($0.047, 0.068$) MeV è stato rimosso poichè troppo rumoroso, probabilmente a causa di contaminazione da elettroni o saturazione.
-\begin{figure}[H]
+
+
+\begin{figure}[!t]
 \centering
-\includegraphics[width=\textwidth]{figures/Spettri/OCT2003_spectral_fit_finale.pdf}
+\includegraphics[width=0.75\textwidth]{figures/Spettri/OCT2003_spectral_fit_finale.pdf}
 \caption{Spettro fluenza differenziale per l'evento di Ottobre 2003, con dati da GOES-11 (EPS+HEPAD), ACE (LEMS120) e bande di confidenza.}
 \label{fig:oct_2003_spectral_fit}
 \end{figure}
@@ -447,20 +456,18 @@ L'evento di Ottobre 2003, noto anche come \textit{Halloween storm}, è forse l'e
 
 \subsection{Gennaio 2005}
 L'evento di Gennaio 2005 è stato l'altro grande evento record del ciclo solare 23. E' particolare sopratutto perché si è verificato verso la fine del massimo solare, quando l'attività stava diminuendo. Il 20 Gennaio 2005 il flusso di protoni ha registrato un picco senza precedenti: 650 pfu (\textit{particle flux unit}) per protoni con $E>100$ MeV \cite{Grechnev2008}. Prima di questo solamente 5 altri eventi avevano superato i 100 pfu. 
-Per l'analisi spettrale di questo evento sono stati scaricati i dati dal satellite GOES-11 (EPS/HEPAD) e ACE(EPAM/LEMS120), analogamente a quanto fatto per l'evento di OCT 2003. \\
-
-
-\begin{figure}[H]
+Per l'analisi spettrale di questo evento sono stati scaricati i dati dal satellite GOES-11 (EPS/HEPAD) e ACE (EPAM/LEMS120), analogamente a quanto fatto per l'evento di OCT 2003. 
+\begin{figure}[!b]
 \centering
-\includegraphics[width=\textwidth]{figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf}
+\includegraphics[width=0.75\textwidth]{figures/Flussi/JAN2005_fluxes_raw_net_finaleee.pdf}
 \caption{Dati dei flussi differenziali protonici per l'evento di Gennaio 2005: (a) flussi raw da GOES-11 (EPS+HEPAD), (b) flussi ripuliti.}
 \label{fig:jan_2005_goes_fluxes}
 \end{figure}
 
-\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: il periodo di \textit{background} è stato selezionato tra il 05/01/2005 e il 14/01/2005, mentre il periodo di integrazione corrisponde all'intervallo 15/01/200 -- 25/01/2005. Per entrambi gli strumenti ACE e GOES è stato applicato un errore sistematico del 25\%. Il canale GOES EPS-P7 ($165.0, 500$) MeV è stato rimosso poichè spesso soggetto a rumore. Per ancorare i dati alle alte energie si usano i canali di HEPAD. Analogamente a quanto fatto per OCT 2003 anche il canale ACE P1p ($0.047, 0.068$) MeV è stato rimosso.
-\begin{figure}[H]
+\noindent Per il calcolo della fluenza differenziale sono stati selezionati i seguenti parametri: il periodo di \textit{background} è stato selezionato tra il 05/01/2005 e il 14/01/2005, mentre il periodo di integrazione corrisponde all'intervallo 15/01/200 -- 25/01/2005. Per entrambi gli strumenti ACE e GOES è stato applicato un errore sistematico del 25\%. Il canale GOES EPS-P7 ($165.0, 500$) MeV è stato rimosso poichè spesso soggetto a rumore. Per ancorare i dati alle alte energie si usano i canali di HEPAD. Analogamente a quanto fatto per OCT 2003 anche il canale ACE P1p ($0.047, 0.068$) MeV è stato rimosso.\\
+\begin{figure}[!t]
 \centering
-\includegraphics[width=\textwidth]{figures/Spettri/JAN2005_spectral_fit.pdf}
+\includegraphics[width=0.75\textwidth]{figures/Spettri/JAN2005_spectral_fit.pdf}
 \caption{Spettro fluenza differenziale per l'evento di Gennaio 2005, con dati da GOES-11 (EPS+HEPAD), ACE (LEMS120) e bande di confidenza.}
 \label{fig:jan_2005_spectral_fit}
 \end{figure}
@@ -1047,14 +1054,16 @@ L'analisi svolta in questo elaborato ha inevitabilmente alcuni limiti. Innanzitu
 %---------------------------------------------------------------
 % BIBLIOGRAFIA
 %---------------------------------------------------------------
+\begin{multicols}{2}
+\footnotesize
+
 \printbibliography[heading=bibintoc, title={Bibliografia}]
+\end{multicols}
+
 
 %---------------------------------------------------------------
 % APPENDICE
 %---------------------------------------------------------------
-\appendix
-\chapter{Appendice}
-Materiale aggiuntivo, formule, grafici supplementari.
 
 \end{document}
 
