@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773436474.01185 "main.bcf" "main.bbl" "main" 1773436511.29921 0
-  "bibliography.bib" 1773435659 49389 530e06fa553044a812c5ffe3065dc525 ""
-  "main.bcf" 1773436510 118265 f6a45c59b0eb7a92a99c1fc0f0115b16 "pdflatex"
+["biber main"] 1773484822.26211 "main.bcf" "main.bbl" "main" 1773484844.19179 0
+  "bibliography.bib" 1773484816 45578 50bc0f54bb14f85028a0796f7c92af96 ""
+  "main.bcf" 1773484843 117378 e51b83fec386bb3bf7e5d3a0e4eb338b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773436498.12712 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773436511.30072 0
+["pdflatex"] 1773484834.24136 "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" "main.pdf" "main" 1773484844.19366 0
   "Figures/Electronic_stopping_power_Si_SRIM.png" 1772824583 12104 25bee2065ab17ae333c776d53e236294 ""
   "Figures/Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf" 1772827693 56849 bf3b0e124f7b55f8a82fbcdd35db2da5 ""
   "Figures/Esempio_fluenza_spettrale_redisual_SRNIEL_OCT2003.png" 1772826335 116233 ea26b01f1fc9f774b6b7145f780f5428 ""
@@ -37,7 +37,7 @@
   "Figures/parker_spiral_sep_position.png" 1772974463 119771 4f0b9c4aec99ef8599a48d174bd13e20 ""
   "Figures/plot_finale_missioni1.pdf" 1772901772 30175 39694f8055fe6ee1fc6cf217a94bec23 ""
   "Figures/solar-cycle-sunspot-numb (4).png" 1773419926 153377 82ac6fb2ae349ae52f11ae6a6ba4e0c3 ""
-  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773436452 111888 2483d15008bfe682a2d64f8990cbe8ed ""
+  "c:/Users/stefa/OneDrive/Desktop/Tesi/Scrittura_tesi_latex/main.tex" 1773483879 104267 b43b77bf83c4efe09c577f6dadc76632 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1733326879 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1733326970 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/psyro.tfm" 1735074010 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -183,6 +183,7 @@
   "c:/texlive/2024/texmf-dist/tex/latex/psnfss/omxztmcm.fd" 1733326965 329 c8cddcc90b6f567b28408eb374773c9c ""
   "c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1733326965 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd" 1733326965 329 aee7226812ba4138ac67a018466b488d ""
+  "c:/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty" 1735073418 10085 3dececaeed388e31285c366e124c0c4e ""
   "c:/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty" 1733326967 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "c:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1733326968 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "c:/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty" 1735073585 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
@@ -198,12 +199,12 @@
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733327022 1968855 6fbbb8c0a32d8bcd7273fde20b027cf1 ""
   "c:/texlive/2024/texmf.cnf" 1733326991 713 e69b156964470283e0530f5060668171 ""
   "logo.png" 1771504707 62261 8a64909e1df2cd267a0ac323e0462785 ""
-  "main.aux" 1773436510 44171 138e911c3fd6f25b80285b7d27f3d80b "pdflatex"
-  "main.bbl" 1773436482 224925 f2d70d6ec0320e053280d64a50c4567d "biber main"
-  "main.out" 1773436510 5988 47395c591bdb0e7990a96ffae73a7ac9 "pdflatex"
-  "main.run.xml" 1773436510 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
-  "main.tex" 1773436452 111888 2483d15008bfe682a2d64f8990cbe8ed ""
-  "main.toc" 1773436510 3132 6ca4c5ac45e9f87d16d2a747214a702a "pdflatex"
+  "main.aux" 1773484843 43097 6f767050bb4fdcbb21ad8fbc8a39c387 "pdflatex"
+  "main.bbl" 1773484825 219004 f78bd0adb1696586feea6dae8baf23b4 "biber main"
+  "main.out" 1773484843 5545 154670628004ee28b16bcaaac4b12d18 "pdflatex"
+  "main.run.xml" 1773484843 2307 3a074e04ed293895fa41bf436c991121 "pdflatex"
+  "main.tex" 1773483879 104267 b43b77bf83c4efe09c577f6dadc76632 ""
+  "main.toc" 1773484843 3008 6b78e856e03b2aee5d3a69054d99419d "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

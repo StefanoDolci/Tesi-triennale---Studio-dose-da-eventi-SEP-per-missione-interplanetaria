@@ -24,16 +24,15 @@
 \contentsline {subsection}{\numberline {2.4.8}Maggio 2024}{28}{subsection.2.4.8}%
 \contentsline {section}{\numberline {2.5}Tabella riassuntiva: risultati}{30}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Calcolo della dose SR-NIEL}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{34}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{37}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Modello probabilistico SAPPHIRE}{43}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Stime della dose per missione}{44}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Simulazioni}{44}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Discussione e confronto con misure reali}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Scaling factor}{49}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{50}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}SOLPENCO2 scaling}{52}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{53}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Limiti e miglioramenti}{54}{section.6.1}%
-\contentsline {chapter}{Bibliografia}{55}{chapter*.42}%
-\contentsline {chapter}{\numberline {7}Ringraziamenti}{66}{chapter.7}%
+\contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{33}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{35}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Simulazioni con SAPPHIRE}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Risultati}{40}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Discussione risultati}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Scaling factor}{44}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{45}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}SOLPENCO2 scaling}{47}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Limiti}{48}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{49}{chapter.6}%
+\contentsline {chapter}{Bibliografia}{51}{chapter*.42}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{61}{chapter.7}%

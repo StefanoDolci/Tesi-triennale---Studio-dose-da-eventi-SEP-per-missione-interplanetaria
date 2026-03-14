@@ -44,6 +44,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty

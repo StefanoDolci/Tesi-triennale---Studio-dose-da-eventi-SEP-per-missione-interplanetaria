@@ -115,12 +115,6 @@
       \verb{doi}
       \verb 10.1103/PhysRev.70.771
       \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRev.70.771
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRev.70.771
-      \endverb
     \endentry
     \entry{Cliver_2008}{article}{}{}
       \name{author}{1}{}{%
@@ -353,12 +347,6 @@
       \verb{doi}
       \verb https://doi.org/10.1029/2001JA000320
       \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2001JA000320
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2001JA000320
-      \endverb
     \endentry
     \entry{NeuntronMonitors2020}{article}{}{}
       \name{author}{2}{}{%
@@ -389,12 +377,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1051/swsc/2020020
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/swsc/2020020
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/swsc/2020020
       \endverb
     \endentry
     \entry{Ellison-Ramaty}{article}{}{}
@@ -606,12 +588,6 @@
       \verb{doi}
       \verb https://doi.org/10.1029/2005JA011038
       \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2005JA011038
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2005JA011038
-      \endverb
     \endentry
     \entry{MOS_transistor}{book}{}{}
       \name{author}{1}{}{%
@@ -699,7 +675,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Presentazione, 6th EIROforum School on Instrumentation, ESA/ESTEC}
-      \field{note}{ESA Unclassified - Releasable to the Public}
       \field{title}{Total Ionizing and Non-Ionizing Dose Radiation Effects in Space Electronics}
       \field{year}{2019}
       \verb{urlraw}
@@ -1004,7 +979,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.sr-niel.org/}}
-      \field{note}{Accesso effettuato a marzo 2026}
       \field{title}{{SR-NIEL-7} Calculator: Screened Relativistic ({SR}) Treatment for {NIEL} Dose, Nuclear and Electronic Stopping Power Calculator (version 11.0)}
       \field{year}{2014}
     \endentry
@@ -1041,9 +1015,6 @@
       \field{year}{2016}
       \verb{doi}
       \verb 10.1142/9167
-      \endverb
-      \verb{eprint}
-      \verb https://www.worldscientific.com/doi/pdf/10.1142/9167
       \endverb
       \verb{urlraw}
       \verb https://www.worldscientific.com/doi/abs/10.1142/9167
@@ -1082,15 +1053,6 @@
       \verb{doi}
       \verb https://doi.org/10.1002/andp.19303970303
       \endverb
-      \verb{eprint}
-      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19303970303
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19303970303
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19303970303
-      \endverb
     \endentry
     \entry{srim_tutorials}{misc}{}{}
       \name{author}{1}{}{%
@@ -1113,7 +1075,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{http://www.srim.org/SRIM/Tutorials/Tutorials.htm}}
-      \field{note}{Accesso effettuato a marzo 2026}
       \field{title}{{SRIM} Tutorials}
     \endentry
     \entry{nist_star_appendix}{misc}{}{}
@@ -1152,7 +1113,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://physics.nist.gov/PhysRefData/Star/Text/appendix.html}}
-      \field{note}{National Institute of Standards and Technology, Gaithersburg, MD. Accedido en marzo de 2026}
       \field{title}{{ESTAR, PSTAR, and ASTAR}: Computer Programs for Calculating Stopping-Power and Range Tables for Electrons, Protons, and Helium Ions (Appendix)}
       \field{year}{2005}
     \endentry
@@ -1234,12 +1194,6 @@
       \verb{doi}
       \verb 10.2514/3.62088
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.2514/3.62088
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.2514/3.62088
-      \endverb
     \endentry
     \entry{JPLFeynmann}{article}{}{}
       \name{author}{3}{}{%
@@ -1271,9 +1225,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1364-6826}
       \field{journaltitle}{Journal of Atmospheric and Solar-Terrestrial Physics}
-      \field{note}{Space Weather Effects on Technological Systems}
       \field{number}{16}
       \field{title}{The JPL proton fluence model: an update}
       \field{volume}{64}
@@ -1282,12 +1234,6 @@
       \range{pages}{8}
       \verb{doi}
       \verb https://doi.org/10.1016/S1364-6826(02)00118-9
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S1364682602001189
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S1364682602001189
       \endverb
     \endentry
     \entry{ESPXapos}{article}{}{}
@@ -1383,12 +1329,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1051/swsc/2018010
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/swsc/2018010
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/swsc/2018010
       \endverb
     \endentry
     \entry{SEPEM}{misc}{}{}
@@ -1510,12 +1450,6 @@
       \verb{doi}
       \verb 10.2514/3.26157
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.2514/3.26157
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.2514/3.26157
-      \endverb
     \endentry
     \entry{SEPEMRDSv3_Jiggens}{inproceedings}{}{}
       \name{author}{10}{}{%
@@ -1610,7 +1544,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.swpc.noaa.gov/products/solar-cycle-progression}}
-      \field{note}{Consultato: Marzo 2025}
       \field{title}{Solar Cycle Progression}
       \field{year}{2025}
     \endentry
@@ -1657,13 +1590,6 @@
       \verb{doi}
       \verb https://doi.org/10.1029/2011GL049328
       \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2011GL049328
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2011GL049328
-      \endverb
-      \keyw{Maunder Minimum,energetic particles,heliospheric magnetic field,solar cycle}
     \endentry
     \entry{Jiggens2014}{article}{}{}
       \name{author}{6}{}{%
@@ -1708,12 +1634,6 @@
       \verb{doi}
       \verb 10.1051/swsc/2014017
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/swsc/2014017
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/swsc/2014017
-      \endverb
     \endentry
     \entry{GOES_SEM}{misc}{}{}
       \name{author}{1}{}{%
@@ -1734,7 +1654,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.ngdc.noaa.gov/stp/satellite/goes/}}
-      \field{note}{Consultato: Marzo 2025}
       \field{title}{{GOES} Space Environment Monitor ({SEM}) Data}
       \field{year}{2025}
     \endentry
@@ -1757,7 +1676,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://cmr.earthdata.nasa.gov/search/concepts/C1214614978-SCIOPS.html}}
-      \field{note}{NASA Earthdata, Common Metadata Repository. Consultato: Marzo 2025}
+      \field{note}{NASA Earthdata, Common Metadata Repository.}
       \field{title}{{IMP-8} Goddard Medium Energy ({GME}) Experiment Data}
       \field{year}{2025}
     \endentry
@@ -1780,7 +1699,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://izw1.caltech.edu/ACE/ASC/level2/}}
-      \field{note}{California Institute of Technology. Consultato: Marzo 2025}
+      \field{note}{California Institute of Technology.}
       \field{title}{{ACE} Level 2 Data}
       \field{year}{2025}
     \endentry
@@ -1803,7 +1722,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://stereo-ssc.nascom.nasa.gov/data.shtml}}
-      \field{note}{NASA Goddard Space Flight Center. Consultato: Marzo 2025}
+      \field{note}{NASA Goddard Space Flight Center.}
       \field{title}{{STEREO} Data}
       \field{year}{2025}
     \endentry
@@ -1962,7 +1881,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html}}
-      \field{note}{Consultato: Marzo 2025}
       \field{title}{\texttt{scipy.optimize.curve\_fit} --- {SciPy} Reference Guide}
       \field{year}{2025}
     \endentry
@@ -2035,7 +1953,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.swpc.noaa.gov/products/goes-proton-flux}}
-      \field{note}{Consultato: Marzo 2025}
       \field{title}{{GOES} Proton Flux}
       \field{year}{2025}
     \endentry
@@ -2092,12 +2009,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1051/swsc/2017031
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/swsc/2017031
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/swsc/2017031
       \endverb
     \endentry
     \entry{Desai2016}{article}{}{}
@@ -2248,12 +2159,6 @@
       \verb{doi}
       \verb https://doi.org/10.1029/2001gl014017
       \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2001gl014017
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2001gl014017
-      \endverb
     \endentry
     \entry{Cane1995}{article}{}{}
       \name{author}{2}{}{%
@@ -2289,12 +2194,6 @@
       \range{pages}{8}
       \verb{doi}
       \verb https://doi.org/10.1029/94JA03073
-      \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/94JA03073
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/94JA03073
       \endverb
     \endentry
     \entry{sauer1993goes}{inproceedings}{}{}
@@ -2350,7 +2249,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.ncei.noaa.gov/news/great-halloween-solar-storm-2003}}
-      \field{note}{Consultato marzo 2026}
       \field{title}{Remembering the Great Halloween Solar Storms}
       \field{year}{2023}
     \endentry
@@ -2374,7 +2272,6 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://soho.nascom.nasa.gov/hotshots/2003_10_28/}}
       \field{month}{10}
-      \field{note}{Accesso effettuato il 11 marzo 2026}
       \field{title}{SOHO Hotshots: October 28, 2003}
       \field{year}{2003}
     \endentry
@@ -2431,12 +2328,6 @@
       \verb{doi}
       \verb https://doi.org/10.1029/2004JA010927
       \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2004JA010927
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2004JA010927
-      \endverb
       \keyw{magnetospheric compression,substorm triggering,space weather,magnetic storms,Halloween storm,solar wind pressure}
     \endentry
     \entry{SOHO_hotshot_oct2003}{misc}{}{}
@@ -2458,7 +2349,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://soho.nascom.nasa.gov/hotshots/2003_10_28/}}
-      \field{note}{Consultato: marzo 2026}
       \field{title}{Hot Shots -- {October 28, 2003}: Halloween Solar Storms}
       \field{year}{2003}
     \endentry
@@ -2538,12 +2428,6 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1117/12.254075
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1117/12.254075
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1117/12.254075
       \endverb
     \endentry
     \entry{Gold1998}{inbook}{}{}
@@ -2634,19 +2518,12 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Advanced Composition Explorer Mission}
-      \field{isbn}{978-94-011-4762-0}
       \field{title}{Electron, Proton, and Alpha Monitor on the Advanced Composition Explorer Spacecraft}
       \field{year}{1998}
       \field{pages}{541\bibrangedash 562}
       \range{pages}{22}
       \verb{doi}
       \verb 10.1007/978-94-011-4762-0_19
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/978-94-011-4762-0_19
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/978-94-011-4762-0_19
       \endverb
     \endentry
     \entry{Mertens2010}{article}{}{}
@@ -2787,7 +2664,6 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1573-093X}
       \field{journaltitle}{Solar Physics}
       \field{month}{8}
       \field{number}{1}
@@ -2798,12 +2674,6 @@
       \range{pages}{29}
       \verb{doi}
       \verb 10.1007/s11207-008-9245-1
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1007/s11207-008-9245-1
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1007/s11207-008-9245-1
       \endverb
     \endentry
     \entry{mewaldt2005space}{inproceedings}{}{}
@@ -2907,7 +2777,6 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0035-8711}
       \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
       \field{month}{11}
       \field{number}{1}
@@ -2918,12 +2787,6 @@
       \range{pages}{3}
       \verb{doi}
       \verb 10.1093/mnras/20.1.13
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1093/mnras/20.1.13
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1093/mnras/20.1.13
       \endverb
     \endentry
     \entry{LIOU201432}{article}{}{}
@@ -2986,7 +2849,6 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1364-6826}
       \field{journaltitle}{Journal of Atmospheric and Solar-Terrestrial Physics}
       \field{title}{Global simulation of extremely fast coronal mass ejection on 23 July 2012}
       \field{volume}{121}
@@ -2995,12 +2857,6 @@
       \range{pages}{10}
       \verb{doi}
       \verb https://doi.org/10.1016/j.jastp.2014.09.013
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S1364682614002247
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S1364682614002247
       \endverb
     \endentry
     \entry{NgwiraSimulation}{article}{}{}
@@ -3137,12 +2993,6 @@
       \verb{doi}
       \verb 10.1007/s11214-007-9277-0
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s11214-007-9277-0
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s11214-007-9277-0
-      \endverb
     \endentry
     \entry{Joyce2015}{article}{}{}
       \name{author}{12}{}{%
@@ -3231,12 +3081,6 @@
       \verb{doi}
       \verb https://doi.org/10.1002/2015SW001208
       \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015SW001208
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015SW001208
-      \endverb
       \keyw{Radiation,Modeling,ICME}
     \endentry
     \entry{Bruno2019}{article}{}{}
@@ -3290,12 +3134,6 @@
       \range{pages}{19}
       \verb{doi}
       \verb https://doi.org/10.1029/2018SW002085
-      \endverb
-      \verb{urlraw}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018SW002085
-      \endverb
-      \verb{url}
-      \verb https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018SW002085
       \endverb
       \keyw{solar energetic particles,ground-level enhancements,coronal mass ejections,solar flares,interplanetary transport}
     \endentry
@@ -3652,12 +3490,6 @@
       \verb{doi}
       \verb 10.1088/0004-637X/742/2/102
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1088/0004-637X/742/2/102
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1088/0004-637X/742/2/102
-      \endverb
     \endentry
     \entry{gopalswamy2025soholascocmecatalog}{misc}{}{}
       \name{author}{7}{}{%
@@ -3710,13 +3542,8 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprintclass}{astro-ph.SR}
-      \field{eprinttype}{arXiv}
       \field{title}{The SOHO LASCO CME Catalog -- Version 2}
       \field{year}{2025}
-      \verb{eprint}
-      \verb 2407.04165
-      \endverb
       \verb{urlraw}
       \verb https://arxiv.org/abs/2407.04165
       \endverb
@@ -3797,7 +3624,6 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1432-0746}
       \field{journaltitle}{Astronomy \& Astrophysics}
       \field{title}{The first ground-level enhancement of solar cycle 25 on 28 October 2021}
       \field{volume}{660}
@@ -3806,12 +3632,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1051/0004-6361/202142855
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1051/0004-6361/202142855
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1051/0004-6361/202142855
       \endverb
     \endentry
     \entry{Klein2022}{article}{}{}
@@ -3864,12 +3684,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1051/0004-6361/202243903
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/0004-6361/202243903
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/0004-6361/202243903
       \endverb
     \endentry
     \entry{Ko2024}{article}{}{}
@@ -3949,12 +3763,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1051/0004-6361/202346045
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/0004-6361/202346045
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/0004-6361/202346045
       \endverb
     \endentry
     \entry{mishev2025spectra}{inproceedings}{}{}
@@ -4453,7 +4261,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://scikit-learn.org/stable/modules/cross_validation.html}}
-      \field{note}{Accesso effettuato a marzo 2026}
       \field{title}{Cross-validation: evaluating estimator performance}
       \field{year}{2026}
     \endentry
@@ -4476,7 +4283,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.mathworks.com/help/ident/ug/what-is-residual-analysis.html}}
-      \field{note}{Accesso effettuato a marzo 2026}
       \field{title}{What Is Residual Analysis?}
       \field{year}{2026}
     \endentry
@@ -4499,7 +4305,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.spenvis.oma.be/intro.php}}
-      \field{note}{Sviluppato per conto della European Space Agency (ESA). Accesso effettuato a marzo 2026}
       \field{title}{{SPENVIS}: Space Environment Information System}
       \field{year}{2026}
     \endentry
@@ -4525,7 +4330,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://nom.esa.int/models/sapre}}
-      \field{note}{ESA Network of Models (NoM). Accesso effettuato a marzo 2026}
       \field{title}{{SAPRE}: Orbit Generator Model}
       \field{year}{2026}
     \endentry
@@ -4548,7 +4352,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://marspedia.org/Hohmann_transfer}}
-      \field{note}{Accesso effettuato a marzo 2026}
       \field{title}{Hohmann transfer}
       \field{year}{2026}
     \endentry
@@ -4571,7 +4374,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://science.nasa.gov/mission/msl-curiosity/}}
-      \field{note}{Accesso effettuato a marzo 2026}
       \field{title}{Mars Science Laboratory - Curiosity Rover}
       \field{year}{2026}
     \endentry
@@ -4630,16 +4432,8 @@
       \field{title}{Effect of the Weakened Heliosphere in Solar Cycle 24 on the Properties of Coronal Mass Ejections}
       \field{volume}{1620}
       \field{year}{2020}
-      \field{pages}{012005}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1088/1742-6596/1620/1/012005
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1088/1742-6596/1620/1/012005
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1088/1742-6596/1620/1/012005
       \endverb
     \endentry
     \entry{HASSLER20171}{article}{}{}
@@ -4672,7 +4466,6 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{2214-5524}
       \field{journaltitle}{Life Sciences in Space Research}
       \field{title}{Mars science laboratory radiation assessment detector (MSL/RAD) modeling workshop proceedings}
       \field{volume}{14}
@@ -4681,12 +4474,6 @@
       \range{pages}{2}
       \verb{doi}
       \verb https://doi.org/10.1016/j.lssr.2017.06.004
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S2214552417300494
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S2214552417300494
       \endverb
     \endentry
     \entry{Zeitlin2013}{article}{}{}
@@ -5135,7 +4922,6 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0273-1177}
       \field{journaltitle}{Advances in Space Research}
       \field{number}{6}
       \field{title}{SOLPENCO: A solar particle engineering code}
@@ -5189,12 +4975,6 @@
       \verb{doi}
       \verb 10.1051/swsc/2015015
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1051/swsc/2015015
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1051/swsc/2015015
-      \endverb
     \endentry
     \entry{sepem_solpenco2}{misc}{}{}
       \name{author}{1}{}{%
@@ -5215,12 +4995,59 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{http://sepem.eu/help/solpenco2_intro.html}}
-      \field{note}{Solar Energetic Particle Environment Modelling Application Server. Accesso effettuato a marzo 2026}
       \field{title}{{SOLPENCO2} Introduction and Help}
       \field{year}{2026}
     \endentry
+    \entry{Helios2_2023}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=bcf8abc71713cd5aaadbe4b006944060}{%
+           family={{Sorriso-Valvo, L.}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=099ca088e594e06480a2b35a6781137c}{%
+           family={{Marino, R.}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=d39d301799dd4868174acc3f638f0a39}{%
+           family={{Foldes, R.}},
+           familyi={F\bibinitperiod}}}%
+        {{hash=daa5cb8d2a6f1ef4b4b5a19694d1b12c}{%
+           family={{Lévêque, E.}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=11286a73885c00dab7bf203aec9e0ba9}{%
+           family={{D\'{}Amicis, R.}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=9ac6ea9dd2c0a2c850e6bd1d5476a876}{%
+           family={{Bruno, R.}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=21a32cf6867f3630e1313ea00d7bd2bc}{%
+           family={{Telloni, D.}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=bdb716701afc4de91858f1a73370168a}{%
+           family={{Yordanova, E.}},
+           familyi={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8877b8431bf5709dffb008ba0f4b002c}
+      \strng{fullhash}{a18709d959fa0b053e733ac4c6dfb0ea}
+      \strng{fullhashraw}{a18709d959fa0b053e733ac4c6dfb0ea}
+      \strng{bibnamehash}{8877b8431bf5709dffb008ba0f4b002c}
+      \strng{authorbibnamehash}{8877b8431bf5709dffb008ba0f4b002c}
+      \strng{authornamehash}{8877b8431bf5709dffb008ba0f4b002c}
+      \strng{authorfullhash}{a18709d959fa0b053e733ac4c6dfb0ea}
+      \strng{authorfullhashraw}{a18709d959fa0b053e733ac4c6dfb0ea}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{A\&A}
+      \field{title}{Helios 2 observations of solar wind turbulence decay in the inner heliosphere}
+      \field{volume}{672}
+      \field{year}{2023}
+      \field{pages}{A13}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1051/0004-6361/202244889
+      \endverb
+    \endentry
   \enddatalist
-  \missing{ESPXapo}
 \endrefsection
 \endinput
 
