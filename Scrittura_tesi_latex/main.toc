@@ -9,30 +9,30 @@
 \contentsline {subsection}{\numberline {1.4.1}SR-NIEL}{6}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}SAPPHIRE}{7}{subsection.1.4.2}%
 \contentsline {section}{\numberline {1.5}Obiettivi e schema di lavoro}{8}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Analisi spettrale}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Fase 1: Raccolta dati e preprocessing}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Fase 2: Calcolo fluenza}{12}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Fase 3: FIT spettrale}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Analisi 8 SEP}{14}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Agosto 1972}{14}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Ottobre 1989}{15}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Ottobre 2003}{18}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Gennaio 2005}{20}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Luglio 2012}{22}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Settembre 2017}{24}{subsection.2.4.6}%
-\contentsline {subsection}{\numberline {2.4.7}Ottobre 2021}{26}{subsection.2.4.7}%
-\contentsline {subsection}{\numberline {2.4.8}Maggio 2024}{28}{subsection.2.4.8}%
-\contentsline {section}{\numberline {2.5}Tabella riassuntiva: risultati}{30}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Calcolo della dose SR-NIEL}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{33}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{35}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Simulazioni con SAPPHIRE}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Risultati}{40}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Discussione risultati}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Scaling factor}{44}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{45}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}SOLPENCO2 scaling}{47}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Limiti}{48}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{49}{chapter.6}%
-\contentsline {chapter}{Bibliografia}{51}{chapter*.42}%
-\contentsline {chapter}{\numberline {7}Ringraziamenti}{61}{chapter.7}%
+\contentsline {chapter}{\numberline {2}Analisi spettrale}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Fase 1: Raccolta dati e preprocessing}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Fase 2: Calcolo della fluenza}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Fase 3: FIT spettrale}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Analisi 8 SEP}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Agosto 1972}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Ottobre 1989}{14}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Ottobre 2003}{17}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Gennaio 2005}{19}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Luglio 2012}{21}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Settembre 2017}{23}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Ottobre 2021}{25}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.4.8}Maggio 2024}{27}{subsection.2.4.8}%
+\contentsline {section}{\numberline {2.5}Tabella riassuntiva: risultati}{29}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Calcolo della dose SR-NIEL}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{34}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Simulazioni con SAPPHIRE}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Risultati}{39}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Discussione risultati}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Scaling factor}{43}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{44}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}SOLPENCO2 scaling}{46}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Limiti}{47}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{48}{chapter.6}%
+\contentsline {chapter}{Bibliografia}{50}{chapter*.42}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{60}{chapter.7}%
