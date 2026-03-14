@@ -33,6 +33,6 @@
 \contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{44}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}SOLPENCO2 scaling}{46}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}Limiti del lavoro}{46}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{48}{chapter.6}%
-\contentsline {chapter}{Bibliografia}{49}{chapter*.42}%
-\contentsline {chapter}{\numberline {7}Ringraziamenti}{59}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{47}{chapter.6}%
+\contentsline {chapter}{Bibliografia}{48}{chapter*.42}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{58}{chapter.7}%
