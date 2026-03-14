@@ -25,14 +25,14 @@
 \contentsline {section}{\numberline {2.5}Tabella riassuntiva: risultati}{29}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Calcolo della dose SR-NIEL}{30}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Risultati simulazioni SR-NIEL}{32}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(F)}{34}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Funzione dose-fluenza D(J)}{34}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Simulazioni con SAPPHIRE}{39}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Risultati}{39}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Discussione risultati}{42}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Scaling factor}{43}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Scaling geometrico medio}{44}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}SOLPENCO2 scaling}{46}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Limiti}{47}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Limiti del lavoro}{46}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusioni}{48}{chapter.6}%
-\contentsline {chapter}{Bibliografia}{50}{chapter*.42}%
-\contentsline {chapter}{\numberline {7}Ringraziamenti}{60}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{49}{chapter*.42}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{59}{chapter.7}%
