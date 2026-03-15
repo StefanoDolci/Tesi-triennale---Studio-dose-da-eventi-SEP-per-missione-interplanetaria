@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                    							
+%% 	LaTeX Style File for typesetting TEI-Pel thesis presentations
+%% 	Created by John Liaperdos, October 2014 - April 2015 
+%%	[ioannis.liaperdos@gmail.com]
+%%   
+%%  version 1.0 (English)
+%%
+%%  Last update: 22/06/2017
+%%
+%%  Modified: Solar color theme for SEP thesis presentation
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%
+% Disclaimer: Use at your own risk
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{TeiPel_En_Beamer_Layout}[22/06/2017 TeiPel Beamer Layout Package (English version)]
+
+\usepackage{xstring}
+\usepackage{calculator}
+
+\edef\teilogoeps{logo.png}
+\edef\teilogopng{logo.png}
+
+\newcommand{\setTeipelLayout}[1]{
+	% choose Beamer theme
+		\usetheme{Antibes}
+    
+    % Use new Logo (and colors)
+    \IfSubStr{#1}{newlogo}%
+    	{%
+        	% --- COLORE TERRACOTTA SPAZIALE ---
+        	\definecolor{teipel_red}{RGB}{175, 85, 35}
+            \edef\teilogoeps{logo.png}
+			\edef\teilogopng{logo.png}
+        }%
+        {%
+        	\definecolor{teipel_red}{RGB}{190,65,65}
+			\edef\teilogoeps{teikal_logo.eps}
+			\edef\teilogopng{teikal_logo.png}            
+        }        
+	% set colors
+		
+		\setbeamercolor{alerted text}{fg=red}
+		\setbeamercolor{background canvas}{bg=white}
+		\setbeamercolor{block body alerted}{bg=white, fg=red}
+		\setbeamercolor{block body}{bg=teipel_red!25}
+		\setbeamercolor{block body example}{fg=teipel_red!60!black, bg=gray!30}
+		\setbeamercolor{block title alerted}{fg=white, bg=red}
+		\setbeamercolor{block title}{bg=teipel_red}
+		\setbeamercolor{block title example}{bg=teipel_red!70!black,fg=white}
+		\setbeamercolor{fine separation line}{}
+		\setbeamercolor{frametitle}{fg=white}
+		\setbeamercolor{item projected}{fg=white}
+		\setbeamercolor{normal text}{bg=teipel_red!60,fg=teipel_red!60!black}
+		\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
+		\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
+		\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
+		\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
+		\setbeamercolor{section in sidebar}{fg=teipel_red!40!black}
+		\setbeamercolor{section in sidebar shaded}{fg=gray}
+		\setbeamercolor{section in toc}{fg=normal text.fg, bg=normal text.bg}
+		\setbeamercolor{separation line}{}
+		\setbeamercolor{sidebar}{bg=teipel_red}
+		\setbeamercolor{sidebar}{parent=palette primary}
+		\setbeamercolor{structure}{bg=teipel_red, fg=teipel_red}
+		\setbeamercolor{subsection in sidebar}{fg=teipel_red!40!black}
+		\setbeamercolor{subsection in sidebar shaded}{fg=gray}
+		\setbeamercolor{subsection in toc}{fg=normal text.fg, bg=normal text.bg}
+		\setbeamercolor{title}{fg=white}
+		\setbeamercolor{titlelike}{fg=teipel_red!50!black}
+		\setbeamercolor{itemize item}{fg=teipel_red}
+		%\setbeamercolor*{bibliography entry title}{fg=black}
+		%\setbeamercolor*{bibliography entry author}{fg=black}
+		\setbeamercolor*{bibliography entry location}{fg=teipel_red}
+		\setbeamercolor*{bibliography entry note}{fg=black}
+	% remove beamer's navigation bar	
+		\setbeamertemplate{navigation symbols}{}
+        % --- FRAMETITLE: più stretto, con logo a destra ---
+        \setbeamertemplate{frametitle}{%
+            \nointerlineskip%
+            \begin{beamercolorbox}[wd=\paperwidth, ht=0.8em, dp=0.2em, leftskip=0.8em, rightskip=0.5em]{frametitle}%
+                \usebeamerfont{frametitle}\insertframetitle%
+                \hfill%
+                \raisebox{-0.2em}{\includegraphics[height=1.0em,keepaspectratio]{logo1.png}}%
+                \hspace{3em}%
+            \end{beamercolorbox}%
+        }
+        % --- FOOTER ---
+        \setbeamertemplate{footline}{%
+            \leavevmode%
+            \hbox{%
+                \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.ex,dp=0.8ex,leftskip=1em]{footline}%
+                    {\tiny Dolci Stefano}%
+                \end{beamercolorbox}%
+                \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.5ex,dp=1ex,center]{footline}%
+                    {\tiny Tesi Triennale in Fisica}%
+                \end{beamercolorbox}%
+                \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.5ex,dp=1ex,rightskip=1em,right]{footline}%
+                    {\tiny \insertframenumber\,/\,\inserttotalframenumber}%
+                \end{beamercolorbox}%
+            }%
+        }
+\setbeamercolor{footline}{fg=teipel_red!60!black, bg=}
+        
+	% Comment to completely cover next transparencies %%
+		\setbeamercovered{transparent=30}
+	% Table of contents before each Section
+		\AtBeginSubsection[]{
+		  \frame<beamer>{ 
+		    \frametitle{Indice}   
+		    \tableofcontents[currentsection,currentsubsection] 
+		  }
+		}
+    % Add draft watermark
+    \IfSubStr{#1}{draft}%
+    	{%
+        	\usepackage{tikz}%
+    		\setbeamertemplate{background}{%
+            	\begin{tikzpicture}[remember picture, overlay]
+        			\node[rotate=90, anchor=west, xshift=45pt, yshift=-10pt] at (current page.south west){\textcolor{gray!60}{\emph{BOZZA}}};%
+            	\end{tikzpicture}%
+            }%
+        }{}
+}
+
+\newcommand{\supervisor}[3]{
+	\subtitle{\textsc{Prova Finale -- Laurea Triennale in Fisica}}
+	
+	\institute{\textsc{Universit\`a degli Studi di Milano-Bicocca}\\{Dipartimento di Fisica ``G.~Occhialini''}\\[5pt]{\includegraphics[height=1.5cm,keepaspectratio]{\teilogoeps}}\\[5pt] \scalebox{0.9}{#1: #2} \\ \scalebox{0.9}{#3}}
+}
+
+\newcommand{\presentationDate}[1]{
+	\date{\tiny{#1}}
+}
+
+\newcommand{\typesetFrontSlides}{
+	\begin{frame}[plain]
+	  \titlepage
+	\end{frame}
+	\begin{frame}[plain]{Indice}
+	  \tableofcontents
+	\end{frame}
+}
+
+
+% format multiple author names in title page
+\makeatletter
+	\long\def\beamer@author[#1]#2{%
+  	\def\insertauthor{\def\inst{\beamer@insttitle}%
+    \def\and{\beamer@andtitle}%
+	\noexpandarg\StrCount{#2}{\and}[\numberofauthorsminusone]%
+	\ADD{1}{\numberofauthorsminusone}{\numberofauthors}%
+	\DIVIDE{1}{\numberofauthors}{\columnwidthfactor}%
+	\renewcommand\and{\column{\columnwidthfactor\textwidth}\centering}%
+	\begin{columns}[t,onlytextwidth]%
+		\column{\columnwidthfactor\textwidth}\centering%
+		#2%
+	\end{columns}%
+    }%
+  	\def\beamer@shortauthor{#1}%
+  	\ifbeamer@autopdfinfo%
+    	\def\beamer@andstripped{}%
+    	\beamer@stripands#1 \and\relax
+    	{\let\inst=\@gobble\let\thanks=\@gobble%
+        \def\and{, }\hypersetup{pdfauthor={\beamer@andstripped}}}
+  	\fi%
+}
+\makeatother
+
+\endinput
