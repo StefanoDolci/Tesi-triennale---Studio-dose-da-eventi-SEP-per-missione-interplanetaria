@@ -8,7 +8,7 @@
 %%
 %%  Last update: 22/06/2017
 %%
-%%  Modified: Solar color theme for SEP thesis presentation
+%%  Modified: Dark theme for SEP thesis presentation
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%
@@ -33,8 +33,8 @@
     	{%
         	% --- COLORE TERRACOTTA SPAZIALE ---
         	\definecolor{teipel_red}{RGB}{175, 85, 35}
-            \edef\teilogoeps{logo.png}
-			\edef\teilogopng{logo.png}
+            \edef\teilogoeps{logo1.png}
+			\edef\teilogopng{logo1.png}
         }%
         {%
         	\definecolor{teipel_red}{RGB}{190,65,65}
@@ -44,38 +44,38 @@
 	% set colors
 		
 		\setbeamercolor{alerted text}{fg=red}
-		\setbeamercolor{background canvas}{bg=white}
-		\setbeamercolor{block body alerted}{bg=white, fg=red}
-		\setbeamercolor{block body}{bg=teipel_red!25}
-		\setbeamercolor{block body example}{fg=teipel_red!60!black, bg=gray!30}
+		\setbeamercolor{background canvas}{bg=gray!15!black}
+		\setbeamercolor{block body alerted}{bg=gray!15!black, fg=red}
+		\setbeamercolor{block body}{bg=teipel_red!25!black, fg=white}
+		\setbeamercolor{block body example}{fg=gray!80, bg=gray!15!black}
 		\setbeamercolor{block title alerted}{fg=white, bg=red}
-		\setbeamercolor{block title}{bg=teipel_red}
+		\setbeamercolor{block title}{bg=teipel_red, fg=white}
 		\setbeamercolor{block title example}{bg=teipel_red!70!black,fg=white}
 		\setbeamercolor{fine separation line}{}
 		\setbeamercolor{frametitle}{fg=white}
 		\setbeamercolor{item projected}{fg=white}
-		\setbeamercolor{normal text}{bg=teipel_red!60,fg=teipel_red!60!black}
+		\setbeamercolor{normal text}{fg=white, bg=gray!15!black}
 		\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
 		\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
 		\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
 		\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
-		\setbeamercolor{section in sidebar}{fg=teipel_red!40!black}
-		\setbeamercolor{section in sidebar shaded}{fg=gray}
-		\setbeamercolor{section in toc}{fg=normal text.fg, bg=normal text.bg}
+		\setbeamercolor{section in sidebar}{fg=teipel_red!60}
+		\setbeamercolor{section in sidebar shaded}{fg=gray!50}
+		\setbeamercolor{section in toc}{fg=white, bg=black}
 		\setbeamercolor{separation line}{}
 		\setbeamercolor{sidebar}{bg=teipel_red}
 		\setbeamercolor{sidebar}{parent=palette primary}
 		\setbeamercolor{structure}{bg=teipel_red, fg=teipel_red}
-		\setbeamercolor{subsection in sidebar}{fg=teipel_red!40!black}
-		\setbeamercolor{subsection in sidebar shaded}{fg=gray}
-		\setbeamercolor{subsection in toc}{fg=normal text.fg, bg=normal text.bg}
+		\setbeamercolor{subsection in sidebar}{fg=teipel_red!60}
+		\setbeamercolor{subsection in sidebar shaded}{fg=gray!50}
+		\setbeamercolor{subsection in toc}{fg=white, bg=black}
 		\setbeamercolor{title}{fg=white}
-		\setbeamercolor{titlelike}{fg=teipel_red!50!black}
+		\setbeamercolor{titlelike}{fg=teipel_red!70}
 		\setbeamercolor{itemize item}{fg=teipel_red}
-		%\setbeamercolor*{bibliography entry title}{fg=black}
-		%\setbeamercolor*{bibliography entry author}{fg=black}
-		\setbeamercolor*{bibliography entry location}{fg=teipel_red}
-		\setbeamercolor*{bibliography entry note}{fg=black}
+		%\setbeamercolor*{bibliography entry title}{fg=white}
+		%\setbeamercolor*{bibliography entry author}{fg=white}
+		\setbeamercolor*{bibliography entry location}{fg=teipel_red!70}
+		\setbeamercolor*{bibliography entry note}{fg=gray!80}
 	% remove beamer's navigation bar	
 		\setbeamertemplate{navigation symbols}{}
         % --- FRAMETITLE: più stretto, con logo a destra ---
@@ -103,7 +103,7 @@
                 \end{beamercolorbox}%
             }%
         }
-\setbeamercolor{footline}{fg=teipel_red!60!black, bg=}
+\setbeamercolor{footline}{fg=gray!70, bg=}
         
 	% Comment to completely cover next transparencies %%
 		\setbeamercovered{transparent=30}

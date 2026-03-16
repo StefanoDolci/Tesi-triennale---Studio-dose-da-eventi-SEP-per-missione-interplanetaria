@@ -35,4 +35,4 @@
 \contentsline {section}{\numberline {5.2}Limiti del lavoro}{46}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusioni}{47}{chapter.6}%
 \contentsline {chapter}{Bibliografia}{48}{chapter*.42}%
-\contentsline {chapter}{\numberline {7}Ringraziamenti}{58}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Ringraziamenti}{57}{chapter.7}%

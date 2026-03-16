@@ -71,8 +71,11 @@
                 \end{itemize}
                 \item Protoni ed elettroni (energie keV-GeV)
                 \item Natura stocastica $\Rightarrow$ approccio probabilistico
-                \item \textbf{Obiettivo}: stimare la dose da protoni SEP che una sonda accumulerebbe per un transito Terra--Marte
             \end{itemize}
+            \vspace{0.5em}
+            \begin{block}{Obiettivo}
+                Stimare la dose da protoni SEP che una sonda accumulerebbe per un transito Terra--Marte.
+            \end{block}
         \end{column}
         \begin{column}{0.38\textwidth}
             \centering
@@ -81,8 +84,60 @@
         \end{column}
     \end{columns}
 \end{frame}
+\begin{frame}{Come si simula la dose da SEP?}
+    \begin{columns}[T]
+        \begin{column}{0.30\textwidth}
+            \uncover<1->{%
+            \begin{block}{\centering 1. Dati}
+                \centering
+                {\small GOES, ACE, STEREO\\Flussi differenziali}
+            \end{block}}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \uncover<2->{%
+            \begin{block}{\centering 2. Flussi}
+                \centering
+                {\small Preprocessing:\\background, ricampionamento}
+            \end{block}}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \uncover<3->{%
+            \begin{block}{\centering 3. Fit spettrale}
+                \centering
+                {\small Band / Ellison-Ramaty\\$\chi^2$ + Monte Carlo}
+            \end{block}}
+        \end{column}
+    \end{columns}
 
-\begin{frame}{Effetti della radiazione sull'elettronica}
+    \vspace{0.5em}
+
+    \begin{columns}[T]
+        \begin{column}{0.30\textwidth}
+            \uncover<4->{%
+            \begin{block}{\centering 4. SR-NIEL}
+                \centering
+                {\small Trasporto in Al\\Dose in Si (TID)}
+            \end{block}}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \uncover<5->{%
+            \begin{block}{\centering 5. $D(J)$}
+                \centering
+                {\small $D = 10^a \cdot J(>E_0)^b$\\Funzione di trasferimento}
+            \end{block}}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \uncover<6->{%
+            \begin{block}{\centering 6. SAPPHIRE}
+                \centering
+                {\small Modello probabilistico\\100\,000 timeline virtuali}
+            \end{block}}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}{Come si simula la dose da SEP?}
 	\begin{itemize}
 		\item Effetti \textbf{cumulativi}: TID e Displacement Damage Dose (DDD)
 		\begin{itemize}
