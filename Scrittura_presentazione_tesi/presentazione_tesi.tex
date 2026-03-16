@@ -6,6 +6,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+\usepackage{tikz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{color}
@@ -106,9 +107,9 @@
             \includegraphics[height=2cm,keepaspectratio]{OCT1989_raw_only.pdf}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 3. Fit spettrale}
+            \begin{block}{\centering \small 3. Spettro energia}
                 \centering
-                {\scriptsize Band / Ellison-Ramaty}
+                {\scriptsize Fit leggi di potenza}
             \end{block}
             \vspace{1pt}
             \centering
@@ -161,7 +162,7 @@
                     \item OCT 2021, MAY 2024
                 \end{itemize}
                 \item Strumenti: GOES, ACE, IMP-8, STEREO-A
-                \item Preprocessing: ricampionamento 30~min e selezione evento.
+                \item Preprocessing: $\Delta t = 30$~min.
             \end{itemize}
 			\vspace{0.3em}
             \begin{block}{Soglia e sottrazione background}
@@ -243,7 +244,7 @@
             {\small \textbf{Geometria planare}}
             \\[1pt]
             {\scriptsize Flusso unidirezionale\\
-			Slab planare $t = 3.7cm$ Al}
+			Slab planare $t = 3.7$ cm Al}
         \end{column}
         \begin{column}{0.5\textwidth}
             \centering
@@ -252,7 +253,7 @@
             {\small \textbf{Geometria sferica}}
             \\[1pt]
             {\scriptsize Flusso isotropo\\
-			Guscio sferico $R = 50cm$ $t = 3.7cm$ Al}
+			Guscio sferico $R = 50$ cm $t = 3.7$ cm Al}
         \end{column}
     \end{columns}
     
@@ -260,7 +261,7 @@
     
     \begin{block}{}
         \begin{equation*}
-            \text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \, \frac{S_{S_i}(E)}{\rho_{S_i}} \, dE \cdot C
+            \text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \, \frac{S_{S_i}(E)}{\rho_{S_i}} \, dE 
         \end{equation*}
         \vspace{-0.5em}
     \end{block}
@@ -297,11 +298,22 @@
     {\small $D(J) = 10^a \cdot J(>E_0)^b$}
     
     \vspace{0.2em}
-    
-    \includegraphics[width=1.0\textwidth,height=6.5cm,keepaspectratio]{dose_fluence_transfer_function_finale.pdf}
-    
-    \vspace{0.1em}
-
+	\begin{columns}[c]
+        \begin{column}{0.09\textwidth}
+            \raggedleft
+            {\small\hspace{10em} \textbf{Fluenza}\,$\Longrightarrow$}\\[-3pt]
+            {\scriptsize $J(>E_0)$\hspace{0.5em}}
+        \end{column}
+        \begin{column}{0.80\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,height=7.3cm,keepaspectratio]{dose_fluence_transfer_function_finale.pdf}
+        \end{column}
+        \begin{column}{0.09\textwidth}
+            \raggedright
+            {\small\hspace{-2em}$\Longrightarrow$\,\textbf{Dose}}\\[-3pt]
+            {\scriptsize\hspace{-2em}TID (mGy)}
+        \end{column}
+    \end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Funzione di trasferimento dose-fluenza}
@@ -340,7 +352,7 @@
         \begin{column}{0.46\textwidth}
             \centering
             \includegraphics[width=\textwidth,keepaspectratio]{LOO_cross_validation_errors_finale.pdf}
-            \\[3pt]
+            \\
             {\tiny Validazione LOO-CV sugli 8 eventi SEP}
         \end{column}
     \end{columns}
@@ -353,8 +365,8 @@
     \begin{columns}
         \begin{column}{0.55\textwidth}
             \begin{itemize}
-                \item \textbf{SAPPHIRE} (ESA/SEPEM): modello probabilistico
-                \item Distribuzione cumulative delle fluenze attese.
+                \item \textbf{SAPPHIRE} (ESA/SEPEM)
+                \item Distribuzione cumulativa delle fluenze attese
                 \item Parametri della simulazione:
                 \begin{itemize}
                     \item Durata missione: 0.5, 0.7, 1.0~yr
@@ -368,7 +380,7 @@
             \centering
             \vspace{-0.1em}
             \includegraphics[width=\textwidth,keepaspectratio]{cuflmodel_H_max_Ch6prob_journ.png}
-            \\[2pt]
+            \\
             {\tiny Output SAPPHIRE: fluenze cumulative}
         \end{column}
     \end{columns}
@@ -396,7 +408,7 @@
     \resizebox{0.65\textwidth}{!}{%
     \begin{tabular}{lccc}
         \hline\hline
-        \multicolumn{4}{c}{0.7~yr, 90\% CL, geometria sferica, 1~AU} \\
+        \multicolumn{4}{c}{0.7~yr, 90\% CL, 1~AU, geometria sferica} \\
         \hline
         Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
         \hline
@@ -481,27 +493,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BACKUP SLIDES (non contano nella numerazione)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix
-
 \begin{frame}{What's next?}
-    \begin{itemize}
-        \item Trasporto Monte Carlo (FLUKA, GEANT4): particelle secondarie
-        \item Estensione a nuclei di elio e ioni pesanti
-        \item Calcolo dei Single Event Effects (SEE)
-        \item Geometrie di schermatura realistiche da modelli CAD
-    \end{itemize}
+	
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+			\vspace{-9em}
+            \begin{itemize}
+                \item Trasporto Monte Carlo (FLUKA, GEANT4): particelle secondarie
+                \item Estensione a nuclei di elio e ioni pesanti
+                \item Calcolo dei Single Event Effects (SEE)
+                \item Geometrie sonde realistiche da modelli CAD
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.42\textwidth}
+			\vspace{-7em}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{Europa_Clipper_spacecraft_model.png}
+        \end{column}
+    \end{columns}
     
-    \vspace{1.5em}
-    \centering
+    \vspace{1em}
+   
+    
+    % Sole che spunta dal basso
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=south, inner sep=0pt, opacity=0.7, yshift=-10cm] at (current page.south){%
+            \includegraphics[width=\paperwidth]{sun_transparent.png}%
+        };
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+	\centering
     \Large Grazie per l'attenzione!
-\end{frame}
-
-\begin{frame}{Backup: parametri fit completi}
-	% >>> INSERIRE: tabella riassuntiva parametri spettrali 8 eventi
-\end{frame}
-
-\begin{frame}{Backup: validazione LOO-CV}
-	% >>> INSERIRE: Fig. 3.7 (prediction error per le 4 configurazioni)
 \end{frame}
 
 
