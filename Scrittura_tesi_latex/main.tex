@@ -209,7 +209,7 @@ Le particelle energetiche in ambiente interplanetario possono avere un impatto s
 \end{itemize}
 
 \subsection{Total Ionizing Dose}
-Alla base della maggior parte dei componenti elettronici si trova il transistor MOS (\textit{Metal-Oxide-Semiconductor}). Si tratta di dispositivi che sfruttano la fisica dei semiconduttori \cite{Oldham2003}: applicando piccole tensioni è possibile controllare il flusso di corrente tra il \textit{source} e il \textit{drain}, come mostrato in Figura \ref{fig:MOS_transistor}.
+Alla base della maggior parte dei componenti elettronici si trova il transistor MOS (\textit{Metal-Oxide-Semiconductor}) \cite{Oldham2003}. Applicando piccole tensioni è possibile controllare il flusso di corrente tra il \textit{source} e il \textit{drain}, come mostrato in Figura \ref{fig:MOS_transistor}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{figures/MOS_transistor.png}
@@ -221,11 +221,12 @@ Alla base della maggior parte dei componenti elettronici si trova il transistor 
 \noindent Questo accumulo di cariche positive porta a una deriva progressiva dei parametri elettrici del dispositivo, ad esempio la tensione di soglia del transistor e le correnti di dispersione \cite{Poivey2019}\cite{ECSS_E_10_12}. Si tratta quindi di un effetto cumulativo, dovuto all'accumulo progressivo dell'energia depositata da milioni di particelle incidenti sul dispositivo.\\
 La TID è definita \cite{Poivey2019} come la quantità di energia per unità di massa, depositata in un materiale da radiazione ionizzante. Nel SI ha come unità di misura il Gray (Gy):
 \begin{equation}
-     \text{TID} = \frac{E_{\text{dep}}}{m} \qquad [1,\text{Gy} = 1\,\text{J/kg}]
+     \text{TID} = \frac{E_{\text{dep}}}{m} \qquad [1\text{Gy} = 1\,\text{J/kg}]
 \end{equation}
+\noindent dove $E_{\text{dep}}$ è l'energia depositata dalla radiazione ionizzante e $m$ la massa del volume di materiale bersaglio.
 In ambiente interplanetario i \textit{dose-rate} sono dell'ordine di $10^{-5}$--$10^{-2}$ mGy/s \cite{HolmesSiedle1993}. I dispositivi elettronici destinati a missioni spaziali vengono progettati per resistere a dosi molto superiori, tipicamente $0.1$--$3000$ mGy/s, secondo gli standard ESA (SCC 22900 \cite{ESCC22900}) e NASA (MIL-STD-883 \cite{MILSTD883}).
 L'approccio standard consiste nello schermare le componenti più sensibili con materiali che riducono la fluenza delle particelle incidenti. Storicamente l'alluminio è il materiale più utilizzato per le schermature delle sonde \cite{Badavi2009}, dove peso e costi dettano le scelte progettuali.\\
-Lo spessore della schermatura viene espresso in g/cm$^2$ (densità superficiale di massa), ottenuto moltiplicando lo spessore geometrico per la densità del materiale. Questa convenzione permette di confrontare il potere schermante di materiali diversi indipendentemente dalla loro densità: ad esempio, 1~cm di alluminio ($\rho = 2.7$~g/cm$^3$) corrisponde a uno spessore equivalente di 2.7 g/cm$^2$. Per missioni interplanetarie, spessori di alluminio da 5 a 10 g/cm$^2$ sono generalmente sufficienti a schermare la maggior parte dei protoni SEP. In uno studio del 2021, Dobynde et al.\ \cite{Optimal_shielding} hanno dimostrato che esiste un minimo locale nella dose efficace per schermature di alluminio: oltre 30 g/cm$^2$ si osserva un aumento della dose accumulata a causa della produzione di particelle secondarie. Quando particelle energetiche interagiscono con materiali ad alto numero atomico $Z$, possono produrre particelle altamente penetranti \cite{Gudowska2002}, come i neutroni, aumentando così il rischio di danni ai componenti.
+Lo spessore della schermatura viene espresso in g/cm$^2$ (densità superficiale di massa), ottenuto moltiplicando lo spessore geometrico per la densità del materiale. Questa convenzione permette di confrontare il potere schermante di materiali diversi indipendentemente dalla loro densità. Per missioni interplanetarie, spessori di alluminio da 5 a 10 g/cm$^2$ sono generalmente sufficienti a schermare la maggior parte dei protoni SEP. In uno studio del 2021, Dobynde et al.\ \cite{Optimal_shielding} hanno dimostrato che esiste un minimo locale nella dose efficace per schermature di alluminio: oltre 30 g/cm$^2$ si osserva un aumento della dose accumulata a causa della produzione di particelle secondarie. Quando particelle energetiche interagiscono con materiali ad alto numero atomico $Z$, possono produrre particelle altamente penetranti \cite{Gudowska2002}, come i neutroni, aumentando così il rischio di danni ai componenti.
 
 \clearpage
 \section{Strumenti computazionali}
@@ -253,7 +254,7 @@ dove $N_a$ è il numero di Avogadro, $r_e$ il raggio classico dell'elettrone, $m
     -\frac{dE}{dx} = \frac{0.1535 \, \rho \, z^2 Z}{A \, \beta^2} \left[ \ln\!\left(\frac{2m v^2 W_m}{I^2(1-\beta^2)}\right) - 2\beta^2 - \delta - U \right] \quad [\text{MeV/cm}]
     \label{eq:bethe_bloch}
 \end{equation}
-dove $\delta$ è la correzione di densità e $U=2C/Z$ è il termine di \textit{shell correction}. Il calcolatore SR-NIEL per il calcolo dello \textit{stopping power} usa le tabelle sperimentali di SRIM 2013 \cite{srim_tutorials} fino a 5 GeV/amu. SR-NIEL adotta l'approssimazione CSDA \cite{nist_star_appendix} (\textit{Continuous Slowing-Down Approximation}) per propagare lo spettro attraverso la schermatura: lo spessore totale viene suddiviso in $N$ step e lo spettro è propagato iterativamente. Questi codici considerano esclusivamente la perdita di energia elettronica e non tengono conto della produzione di particelle secondarie (neutroni, frammenti nucleari e protoni secondari), che tipicamente si generano attraverso processi di interazione nucleare.
+dove $\delta$ è la correzione di densità e $U=2C/Z$ è il termine di \textit{shell correction}. Il calcolatore SR-NIEL per il calcolo dello \textit{stopping power} usa le tabelle sperimentali di SRIM 2013 \cite{srim_tutorials} fino a 5 GeV/amu, a basse energie invece, diverge dalla Bethe Bloch, poichè introduce correzioni specifiche basate su dati sperimentali. SR-NIEL adotta l'approssimazione CSDA \cite{nist_star_appendix} (\textit{Continuous Slowing-Down Approximation}) per propagare lo spettro attraverso la schermatura: lo spessore totale viene suddiviso in $N$ step e lo spettro è propagato iterativamente. Questi codici considerano esclusivamente la perdita di energia elettronica e non tengono conto della produzione di particelle secondarie (neutroni, frammenti nucleari e protoni secondari), che tipicamente si generano attraverso processi di interazione nucleare.
 \vspace{-10pt}
 \subsection{SAPPHIRE}
 \enlargethispage{1.25\baselineskip}
@@ -645,12 +646,14 @@ OCT 2021 & $7.06 \times 10^{7}$  & $1.93 \times 10^{7}$  & $7.41 \times 10^{6}$ 
 \chapter{Calcolo della dose SR-NIEL}\label{cap:calcolo_dose}
 Nel seguente capitolo vengono riportati i risultati ottenuti per il calcolo della dose da ionizzazione totale (TID).
 I codici SR-NIEL utilizzati per questi calcoli sono tre. Il primo, \textit{Web Calculator for residual spectral fluences for unidirectional protons and ions traversing a shielding material} \cite{sr_niel_residual_fluence}, è un calcolatore che permette di ottenere la fluenza spettrale residua per un flusso di particelle uniforme e unidirezionale che incide perpendicolarmente su un assorbitore planare, come schematizzato in Figura \ref{fig:SRNIEL_calcolatore_planare}.  
+\vspace{-5pt}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.75\textwidth]{figures/SRNIEL_calcolatore_planare.png}
 \caption{Schema del flusso di particelle incidenti per il calcolatore SR-NIEL di fluenza residua in geometria planare.}
 \label{fig:SRNIEL_calcolatore_planare}
 \end{figure}
+\vspace{-5pt}
 \noindent I parametri di input utilizzati per questa configurazione sono i seguenti:
 \vspace{5pt}
 \begin{itemize}[nosep]
@@ -736,7 +739,8 @@ questi tre spettri vengono quindi passati in input ai calcolatori SR-NIEL citati
 \end{equation}
 In questa formula $S_{\text{Si}}(E)/\rho_{\text{Si}}$ è il \textit{mass electronic stopping power}, ricavato dai calcoli SRIM in unità $[\mathrm{MeV \cdot cm^2 \cdot g^{-1}}]$. La costante $C = 1.602\times 10^{-10}$ è il fattore di conversione da $\mathrm{MeV/g}$ a $\mathrm{Gy}$.\\
 
-\noindent Le incertezze spettrali vengono quindi propagate alla TID passando i tre spettri in input a SR-NIEL. A queste viene sommata in quadratura un'incertezza del $\pm5\%$ sullo \textit{stopping power} di SRIM, per tenere conto dell'incertezza intrinseca del modello SRIM. Di seguito -- Tabella \ref{tab:sep_events} -- vengono riportati i risultati ottenuti per tutti gli otto eventi SEP.
+\noindent La conversione dallo \textit{stopping power} alla dose è possibile assumendo che l'energia persa dalle particelle incidenti sia completamente assorbita dal materiale bersaglio. Si assume quindi che lo spessore del materiale sia sufficientemente grande da assorbire eventuali raggi $\delta$ generati. Inoltre si assume che l'energia delle particelle incidenti sia quasi costante durante l'attraversamento del materiale \cite{sr_niel_calculator}.\\
+Le incertezze spettrali vengono quindi propagate alla TID passando i tre spettri in input a SR-NIEL. A queste viene sommata in quadratura un'incertezza del $\pm5\%$ sullo \textit{stopping power} di SRIM, per tenere conto dell'incertezza intrinseca del modello SRIM. Di seguito -- Tabella \ref{tab:sep_events} -- vengono riportati i risultati ottenuti per tutti gli otto eventi SEP.
 \begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{%

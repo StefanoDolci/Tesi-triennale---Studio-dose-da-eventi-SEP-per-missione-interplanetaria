@@ -78,13 +78,14 @@
 		\setbeamercolor*{bibliography entry note}{fg=gray!80}
 	% remove beamer's navigation bar	
 		\setbeamertemplate{navigation symbols}{}
+		\setbeamertemplate{headline}{}
         % --- FRAMETITLE: più stretto, con logo a destra ---
         \setbeamertemplate{frametitle}{%
             \nointerlineskip%
-            \begin{beamercolorbox}[wd=\paperwidth, ht=0.8em, dp=0.2em, leftskip=0.8em, rightskip=0.5em]{frametitle}%
+            \begin{beamercolorbox}[wd=\paperwidth, ht=1.0em, dp=0.2em, leftskip=0.8em, rightskip=0.5em]{frametitle}%
                 \usebeamerfont{frametitle}\insertframetitle%
                 \hfill%
-                \raisebox{-0.2em}{\includegraphics[height=1.0em,keepaspectratio]{logo1.png}}%
+                \raisebox{-0.1em}{\includegraphics[height=1.0em,keepaspectratio]{logo1.png}}%
                 \hspace{3em}%
             \end{beamercolorbox}%
         }
@@ -92,13 +93,10 @@
         \setbeamertemplate{footline}{%
             \leavevmode%
             \hbox{%
-                \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.ex,dp=0.8ex,leftskip=1em]{footline}%
+                \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.ex,dp=0.8ex,leftskip=1em]{footline}%
                     {\tiny Dolci Stefano}%
                 \end{beamercolorbox}%
-                \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.5ex,dp=1ex,center]{footline}%
-                    {\tiny Tesi Triennale in Fisica}%
-                \end{beamercolorbox}%
-                \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.5ex,dp=1ex,rightskip=1em,right]{footline}%
+                \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.5ex,dp=1ex,rightskip=3em,right]{footline}%
                     {\tiny \insertframenumber\,/\,\inserttotalframenumber}%
                 \end{beamercolorbox}%
             }%

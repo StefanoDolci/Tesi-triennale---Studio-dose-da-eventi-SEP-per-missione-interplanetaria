@@ -2485,36 +2485,37 @@
     <bcf:citekey order="111" intorder="1">sr_niel_residual_fluence</bcf:citekey>
     <bcf:citekey order="112" intorder="1">sr_niel_residual_fluence_3d</bcf:citekey>
     <bcf:citekey order="113" intorder="1">sr_niel_stopping_power</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">sr_niel_stopping_power</bcf:citekey>
-    <bcf:citekey order="115" intorder="1">2020SciPy-NMeth</bcf:citekey>
-    <bcf:citekey order="116" intorder="1">kim2017</bcf:citekey>
-    <bcf:citekey order="117" intorder="1">sklearn_cross_validation</bcf:citekey>
-    <bcf:citekey order="118" intorder="1">mathworks_residual_analysis</bcf:citekey>
-    <bcf:citekey order="119" intorder="1">spenvis_web</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">esa_nom_sapre</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">marspedia_hohmann</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">SAPPHIRE_paperJIggens</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">nasa_msl_curiosity</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">Gopalswamy_2020</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">HASSLER20171</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">Zeitlin2013</bcf:citekey>
-    <bcf:citekey order="127" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">ramos2023</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">ferrari2005fluka</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">Badwar2020</bcf:citekey>
-    <bcf:citekey order="131" intorder="1">zeitlin2013</bcf:citekey>
-    <bcf:citekey order="132" intorder="1">Simonsen2020</bcf:citekey>
-    <bcf:citekey order="133" intorder="1">Parker1958</bcf:citekey>
-    <bcf:citekey order="134" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">sr_niel_calculator</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">sr_niel_stopping_power</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">2020SciPy-NMeth</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">kim2017</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">sklearn_cross_validation</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">mathworks_residual_analysis</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">spenvis_web</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">esa_nom_sapre</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">marspedia_hohmann</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">SAPPHIRE_paperJIggens</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">nasa_msl_curiosity</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">Gopalswamy_2020</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">HASSLER20171</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">Zeitlin2013</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">ramos2023</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">ferrari2005fluka</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">Badwar2020</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">zeitlin2013</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">Simonsen2020</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">Parker1958</bcf:citekey>
     <bcf:citekey order="135" intorder="1">Giacalone2000</bcf:citekey>
-    <bcf:citekey order="136" intorder="1">Aran2006</bcf:citekey>
-    <bcf:citekey order="137" intorder="1">SOLPENCO2</bcf:citekey>
-    <bcf:citekey order="138" intorder="1">SEPEM</bcf:citekey>
-    <bcf:citekey order="139" intorder="1">sepem_solpenco2</bcf:citekey>
-    <bcf:citekey order="140" intorder="1">Reames1999</bcf:citekey>
-    <bcf:citekey order="141" intorder="1">Helios2_2023</bcf:citekey>
-    <bcf:citekey order="142" intorder="1">Zeitlin2013</bcf:citekey>
-    <bcf:citekey order="143" intorder="1">ferrari2005fluka</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">Giacalone2000</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">Aran2006</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">SOLPENCO2</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">SEPEM</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">sepem_solpenco2</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">Reames1999</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">Helios2_2023</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">Zeitlin2013</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">ferrari2005fluka</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

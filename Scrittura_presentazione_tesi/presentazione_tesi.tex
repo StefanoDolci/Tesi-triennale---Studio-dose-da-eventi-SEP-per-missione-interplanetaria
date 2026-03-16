@@ -13,11 +13,12 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
+\usepackage{colortbl}
 \usepackage{siunitx}
 
 \usepackage{epstopdf}
 \usepackage{graphicx}
-\graphicspath{{./images/}}
+\graphicspath{{./Images/}}
 
 % load layout
 \usepackage{TeiPel_En_Beamer_Layout}
@@ -87,202 +88,394 @@
 \begin{frame}{Come si simula la dose da SEP?}
     \begin{columns}[T]
         \begin{column}{0.30\textwidth}
-            \uncover<1->{%
-            \begin{block}{\centering 1. Dati}
+            \begin{block}{\centering \small 1. Dati}
                 \centering
-                {\small GOES, ACE, STEREO\\Flussi differenziali}
-            \end{block}}
+                {\scriptsize GOES, IMP, ACE, STEREO-A}
+            \end{block}
+            \vspace{1pt}
+            \centering
+            \includegraphics[height=2cm,keepaspectratio]{hso_image1.png}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \uncover<2->{%
-            \begin{block}{\centering 2. Flussi}
+            \begin{block}{\centering \small 2. Flussi differenziali}
                 \centering
-                {\small Preprocessing:\\background, ricampionamento}
-            \end{block}}
+                {\scriptsize Preprocessing}
+            \end{block}
+            \vspace{1pt}
+            \centering
+            \includegraphics[height=2cm,keepaspectratio]{OCT1989_raw_only.pdf}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \uncover<3->{%
-            \begin{block}{\centering 3. Fit spettrale}
+            \begin{block}{\centering \small 3. Fit spettrale}
                 \centering
-                {\small Band / Ellison-Ramaty\\$\chi^2$ + Monte Carlo}
-            \end{block}}
+                {\scriptsize Band / Ellison-Ramaty}
+            \end{block}
+            \vspace{1pt}
+            \centering
+            \includegraphics[height=2cm,keepaspectratio]{JAN2005_spectral_fit.pdf}
         \end{column}
     \end{columns}
 
-    \vspace{0.5em}
+    \vspace{0.3em}
 
     \begin{columns}[T]
         \begin{column}{0.30\textwidth}
-            \uncover<4->{%
-            \begin{block}{\centering 4. SR-NIEL}
+            \begin{block}{\centering \small 4. SR-NIEL}
                 \centering
-                {\small Trasporto in Al\\Dose in Si (TID)}
-            \end{block}}
+                {\scriptsize TID in Si dietro schermatura Al}
+            \end{block}
+            \vspace{1pt}
+            \centering
+            \includegraphics[height=2cm,keepaspectratio]{Spherical_SRNIEL_calculator_scheme.png}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \uncover<5->{%
-            \begin{block}{\centering 5. $D(J)$}
+            \begin{block}{\centering \small 5. Relazione dose-fluenza}
                 \centering
-                {\small $D = 10^a \cdot J(>E_0)^b$\\Funzione di trasferimento}
-            \end{block}}
+                {\scriptsize $D = 10^a \cdot J(>E_0)^b$}
+            \end{block}
+            \vspace{1pt}
+            \centering
+            \includegraphics[height=2.0cm,keepaspectratio]{5c2e5c6a-1.png}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \uncover<6->{%
-            \begin{block}{\centering 6. SAPPHIRE}
+            \begin{block}{\centering \small 6. SAPPHIRE}
                 \centering
-                {\small Modello probabilistico\\100\,000 timeline virtuali}
-            \end{block}}
+                {\scriptsize Modello probabilistico per missione}
+            \end{block}
+            \vspace{1pt}
+            \centering
+            \includegraphics[height=2cm,keepaspectratio]{parker_spiral_sep_position.png}
+        \end{column}
+    \end{columns}
+\end{frame}
+\section{Analisi spettrale}
+\begin{frame}{Dataset eventi SEP storici}
+    \begin{columns}
+        \begin{column}{0.58\textwidth}
+            \begin{itemize}
+                \item 8 eventi SEP dal 1972--2024: 
+                \begin{itemize}
+                    \item AUG 1972, OCT 1989 
+                    \item OCT 2003, JAN 2005
+                    \item JUL 2012, SEP 2017
+                    \item OCT 2021, MAY 2024
+                \end{itemize}
+                \item Strumenti: GOES, ACE, IMP-8, STEREO-A
+                \item Preprocessing: ricampionamento 30~min e selezione evento.
+            \end{itemize}
+			\vspace{0.3em}
+            \begin{block}{Soglia e sottrazione background}
+                \vspace{-0.5em}
+                \begin{equation*}
+                    \Phi_{\text{thr}} = \mu + 3\sigma
+                \end{equation*}
+                \vspace{-1em}
+                \begin{equation*}
+                    \Phi_{\text{net}}(t) = 
+                    \begin{cases}
+                        \Phi_{\text{raw}}(t) - \mu & \text{se } \Phi_{\text{raw}}(t) \geq \Phi_{\text{thr}} \\
+                        0 \; (\text{NaN}) & \text{altrimenti}
+                    \end{cases}
+                \end{equation*}
+                \vspace{-0.5em}
+            \end{block}
+        \end{column}
+		\begin{column}{0.38\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{SEP2017_GOES13_fluxes_raw_net_final.pdf}
+        \end{column}
+    \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Fit spettro}
+    \begin{columns}
+        \begin{column}{0.52\textwidth}
+            \begin{block}{Fluenza differenziale}
+                \vspace{-0.3em}
+                \begin{equation*}
+                    F(E) = \int_{t_1}^{t_2} \Phi(E) \, dt
+                \end{equation*}
+                \vspace{-0.8em}
+            \end{block}
+            \vspace{0.2em}
+            \begin{block}{Modelli spettrali}
+                \vspace{-0.2em}
+                {\small \textbf{Ellison-Ramaty}:}
+                \vspace{-0.5em}
+                \begin{equation*}
+                    \Phi_{E\text{-}R}(E) = A \, E^{-\gamma} \, e^{-E/E_r}
+                \end{equation*}
+                \vspace{-0.8em}
+                {\small \textbf{Band function}:}
+                \vspace{-0.3em}
+                \begin{gather*}
+                    \small
+                    \Phi_{\text{Band}}(E) = 
+                    \begin{cases}
+                        A E^{-\gamma_a} e^{-E/E_0} \\[4pt]
+                        A E^{-\gamma_b} [(\gamma_b\!-\!\gamma_a)E_0]^{(\gamma_b-\gamma_a)} e^{(\gamma_a-\gamma_b)}
+                    \end{cases}
+                \end{gather*}
+                \vspace{-1em}
+            \end{block}
+        \end{column}
+        \begin{column}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{JAN2005_spectral_fit.pdf}
+            \\[2pt]
+            {\tiny Esempio: fit per lo spettro di gennaio 2005}
+        \end{column}
+    \end{columns}
+\end{frame}
+\begin{frame}{Calcolo TID con SR-NIEL}
+    \centering
+    {\small Spettro residuo protoni dietro 10~g/cm$^2$ di alluminio, TID depositata in silicio}
+    
+    \vspace{0.3em}
+    
+    \begin{columns}[c]
+        \begin{column}{0.45\textwidth}
+            \centering
+            \includegraphics[width=0.7\textwidth,keepaspectratio]{SRNIEL_calcolatore_planare.png}
+            \\[2pt]
+            {\small \textbf{Geometria planare}}
+            \\[1pt]
+            {\scriptsize Flusso unidirezionale\\
+			Slab planare $t = 3.7cm$ Al}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.7\textwidth,keepaspectratio]{Spherical_SRNIEL_calculator_scheme.png}
+            \\[2pt]
+            {\small \textbf{Geometria sferica}}
+            \\[1pt]
+            {\scriptsize Flusso isotropo\\
+			Guscio sferico $R = 50cm$ $t = 3.7cm$ Al}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.4em}
+    
+    \begin{block}{}
+        \begin{equation*}
+            \text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \, \frac{S_{S_i}(E)}{\rho_{S_i}} \, dE \cdot C
+        \end{equation*}
+        \vspace{-0.5em}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Risultati: fluenze e dosi per gli 8 eventi}
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lcccccc}
+        \hline\hline
+        Evento 
+        & $J(>30)$ 
+        & $J(>60)$ 
+        & $J(>100)$ 
+        & $D_\mathrm{plan}$ [mGy] 
+        & $D_\mathrm{sfer}$ [mGy] \\
+        \hline
+        AUG 1972 & $7.85 \times 10^{9}$ & $1.38 \times 10^{9}$ & $2.57 \times 10^{8}$ & $187.1^{+37.1}_{-33.7}$ & $255.4^{+52.1}_{-47.3}$ \\
+        OCT 1989 & $2.42 \times 10^{9}$ & $5.84 \times 10^{8}$ & $2.02 \times 10^{8}$ & $99.1^{+22.7}_{-18.5}$  & $181.6^{+45.7}_{-37.2}$ \\
+        JUL 2012 & $1.98 \times 10^{9}$ & $4.89 \times 10^{8}$ & $1.58 \times 10^{8}$ & $79.7^{+25.3}_{-14.8}$  & $167.1^{+66.4}_{-37.8}$ \\
+        OCT 2003 & $2.27 \times 10^{9}$ & $3.62 \times 10^{8}$ & $9.07 \times 10^{7}$ & $51.9^{+9.5}_{-8.3}$    & $83.9^{+14.8}_{-13.1}$  \\
+        JAN 2005 & $7.01 \times 10^{8}$ & $2.08 \times 10^{8}$ & $8.45 \times 10^{7}$ & $35.6^{+6.8}_{-6.4}$    & $69.9^{+13.2}_{-12.6}$  \\
+        SEP 2017 & $4.07 \times 10^{8}$ & $8.12 \times 10^{7}$ & $2.45 \times 10^{7}$ & $12.6^{+2.1}_{-1.9}$    & $25.8^{+4.2}_{-3.9}$    \\
+        MAY 2024 & $3.72 \times 10^{7}$ & $1.01 \times 10^{7}$ & $3.62 \times 10^{6}$ & $1.7^{+0.3}_{-0.3}$     & $3.7^{+0.6}_{-0.7}$     \\
+        OCT 2021 & $1.93 \times 10^{7}$ & $7.41 \times 10^{6}$ & $3.26 \times 10^{6}$ & $1.4^{+0.2}_{-0.3}$     & $2.7^{+0.6}_{-0.5}$     \\
+        \hline\hline
+    \end{tabular}%
+    }
+    \vspace{0.3em}
+    {\scriptsize Fluenze in cm$^{-2}$, dosi in mGy (Si dietro 10~g/cm$^2$ Al). Ordine per dose decrescente.}
+\end{frame}
+\begin{frame}{Funzione di trasferimento}
+    \centering
+    {\small $D(J) = 10^a \cdot J(>E_0)^b$}
+    
+    \vspace{0.2em}
+    
+    \includegraphics[width=1.0\textwidth,height=6.5cm,keepaspectratio]{dose_fluence_transfer_function_finale.pdf}
+    
+    \vspace{0.1em}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Funzione di trasferimento dose-fluenza}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Validazione funzione di trasferimento}
+    \begin{columns}[c]
+        \begin{column}{0.52\textwidth}
+            \centering
+            {\small \textbf{Parametri best fit}}
+            \vspace{0.3em}
+            
+            \resizebox{\textwidth}{!}{%
+			\begin{tabular}{lcccccc}
+				\hline\hline
+				Geom. & $E_{0}$ & $a$ & $b$ & $R^2$ & $\chi^2_\nu$ & $\sigma_{\rm spec}$ \\
+				\hline
+				\rowcolor{teipel_red!25!black}
+				Plan. & $60$  & $-6.475$ & $0.960$ & $0.998$ & $0.20$ & $\pm 7.7\%$  \\
+				\rowcolor{teipel_red!25!black}
+				Sfer. & $100$ & $-6.005$ & $0.998$ & $0.997$ & $0.31$ & $\pm 9.9\%$ \\
+				\hline
+				Plan. & $30$  & $-6.161$ & $0.855$ & $0.980$ & $2.30$ & $\pm 27.5\%$  \\
+				Sfer. & $30$  & $-5.429$ & $0.801$ & $0.967$ & $2.88$ & $\pm 35\%$ \\
+				\hline\hline
+			\end{tabular}%
+			}
+            \vspace{0.5em}
+            
+            \begin{itemize}
+                \item {\scriptsize Soglie ottimali: $J(>60)$ planare, $J(>100)$ sferica}
+                \item {\scriptsize Scatter da $\pm 35\%$ $\Longrightarrow$ $ \pm10\%$}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.46\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{LOO_cross_validation_errors_finale.pdf}
+            \\[3pt]
+            {\tiny Validazione LOO-CV sugli 8 eventi SEP}
         \end{column}
     \end{columns}
 \end{frame}
 
-
-\begin{frame}{Come si simula la dose da SEP?}
-	\begin{itemize}
-		\item Effetti \textbf{cumulativi}: TID e Displacement Damage Dose (DDD)
-		\begin{itemize}
-			\item Accumulo di carica nell'ossido di gate $\Rightarrow$ deriva dei parametri elettrici
-		\end{itemize}
-		\item Effetti \textbf{singoli}: Single Event Effects (SEE)
-		\item Schermatura standard: alluminio, tipicamente 5--10~g/cm$^2$
-		\item Dose misurata in Gray: $\text{TID} = E_{\text{dep}}/m$ \quad [1~Gy = 1~J/kg]
-	\end{itemize}
-	% >>> INSERIRE: figura transistor MOS pre/post irradiazione (Fig. 1.2)
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Analisi spettrale}
+\section{Simulazioni SAPPHIRE}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Dataset: 8 eventi SEP (1972--2024)}
-	\begin{itemize}
-		\item Selezionati i due eventi pi\`u intensi per ciclo solare (cicli 20--25)
-		\item Dati da: GOES (EPS/HEPAD), ACE (EPAM), IMP-8, STEREO-A (LET/HET)
-		\item Preprocessing: ricampionamento 30~min, sottrazione background ($\mu + 3\sigma$)
-	\end{itemize}
-	\vspace{0.5em}
-	% >>> INSERIRE: tabella 8 eventi (date, rivelatori, note)
-\end{frame}
-
-\begin{frame}{Modelli spettrali}
-	% >>> INSERIRE: formule Band function e Ellison-Ramaty
-	\begin{itemize}
-		\item \textbf{Band function}: doppia legge di potenza --- 4 parametri ($A$, $\gamma_a$, $\gamma_b$, $E_0$)
-		\item \textbf{Ellison-Ramaty}: legge di potenza con cutoff esponenziale --- 3 parametri ($K$, $\gamma$, $E_R$)
-		\item Fit in \textbf{spazio logaritmico} con $\chi^2$ ridotto (Levenberg--Marquardt)
-		\item Propagazione errori: \textbf{Monte Carlo parametrico} ($N_{\text{MC}} = 1000$) dalla matrice di covarianza
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Esempio fit: Ottobre 2003 (Halloween Storm)}
-	% >>> INSERIRE: plot spettro Oct 2003 (Fig. 2.7)
-	\begin{itemize}
-		\item Flare X17 + X10, CME $>$~2000~km/s
-		\item Dati: ACE/EPAM + GOES-11 (EPS+HEPAD)
-		\item $\chi^2_\nu = 2.20$, \; $\gamma_a = 1.01\pm0.06$, \; $\gamma_b = 3.71\pm0.11$
-		\item $E_{\text{break}} = 43$~MeV --- spettro duro, dose significativa dietro schermature spesse
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Risultati: fluenze integrali}
-	% >>> INSERIRE: Tabella 2.2 (fluenze integrali omnidirezionali)
-	\begin{itemize}
-		\item Quasi 3 ordini di grandezza in $J(> 10~\text{MeV})$: da $5.3\times10^{10}$ a $7.1\times10^{7}$~cm$^{-2}$
-		\item $\gamma_a \sim 0.9$--$1.3$: firma dell'accelerazione da shock/CME
-		\item Nessuna correlazione semplice tra fluenza totale e durezza spettrale
-	\end{itemize}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Calcolo della dose}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Calcolo TID con SR-NIEL}
-	\begin{itemize}
-		\item Piattaforma SR-NIEL: propagazione CSDA dello spettro attraverso schermatura
-		\item Configurazione: protoni su Al (10~g/cm$^2$), dose in Si
-		\item Due geometrie:
-		\begin{itemize}
-			\item Planare ($\pi$~sr) --- flusso unidirezionale su superficie piana
-			\item Sferica ($4\pi$~sr) --- flusso isotropo su guscio sferico
-		\end{itemize}
-		\item Incertezze: bande MC (16\%--84\%) $\oplus$ 5\% stopping power SRIM
-	\end{itemize}
-	% >>> INSERIRE: schema geometria planare/sferica (Fig. 3.1 / 3.2)
-\end{frame}
-
-\begin{frame}{Funzione di trasferimento $D(J)$}
-	% >>> INSERIRE: formula D = 10^a * J^b e plot D vs J (Fig. 3.6)
-	\begin{itemize}
-		\item Relazione empirica: $D(J) = 10^a \cdot J(> E_0)^b$
-		\item Soglia ottimale: $J(>100)$~MeV (sferica), $J(>60)$~MeV (planare)
-		\item Da $J(>30)$ a soglia ottimale: scatter da $\pm35\%$ a $\pm10\%$
-		\item Validazione LOO-CV: RMSE $\pm 9.8\%$ (planare), $\pm 13.6\%$ (sferica)
-	\end{itemize}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Risultati}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}{Stime TID con SAPPHIRE}
-	% >>> INSERIRE: Tabella 4.1 (versione ridotta) e/o Fig. 4.1
-	\begin{itemize}
-		\item SAPPHIRE (ESA/SEPEM): modello probabilistico, 100\,000 timeline virtuali
-		\item Scenario di riferimento (sferica, 0.7~yr, max solare, 90\% CL):
-		\begin{itemize}
-			\item $D_{\text{sfer}} = 62.1 \pm 6.2$~mGy
-		\end{itemize}
-		\item Range completo: da 2.3~mGy (min solare) a 137~mGy (1~yr, 95\% CL)
-		\item Fattore dominante: \textbf{fase del ciclo solare} ($\sim$2 ordini di grandezza)
-	\end{itemize}
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+            \begin{itemize}
+                \item \textbf{SAPPHIRE} (ESA/SEPEM): modello probabilistico
+                \item Distribuzione cumulative delle fluenze attese.
+                \item Parametri della simulazione:
+                \begin{itemize}
+                    \item Durata missione: 0.5, 0.7, 1.0~yr
+                    \item Fase solare: massimo / minimo
+                    \item Confidence level: 90\%, 95\%
+                    \item Geometria: planare / sferica
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.42\textwidth}
+            \centering
+            \vspace{-0.1em}
+            \includegraphics[width=\textwidth,keepaspectratio]{cuflmodel_H_max_Ch6prob_journ.png}
+            \\[2pt]
+            {\tiny Output SAPPHIRE: fluenze cumulative}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.3em}
+    
+    \centering
+    \begin{minipage}{0.65\textwidth}
+        \begin{block}{}
+            \vspace{-0.5em}
+            \begin{equation*}
+                \small TID = 10^a \cdot \bigl[J_{\text{SAPPHIRE}}(T_{\text{miss}},\,\text{CL},\,\text{fase solare})\bigr]^b
+            \end{equation*}
+            \vspace{-0.8em}
+        \end{block}
+    \end{minipage}
 \end{frame}
 
-\begin{frame}{Confronto SEP/GCR e validazione MSL/RAD}
-	% >>> INSERIRE: Tabella 5.1 (SEP vs GCR)
-	\begin{itemize}
-		\item MSL/RAD (transito 253~gg, ciclo 24 debole): 24.7~mGy da 5 eventi SEP
-		\item Rapporto SEP/GCR (0.7~yr, 90\% CL):
-		\begin{itemize}
-			\item Massimo solare: $\sim 1.6$ --- \textbf{SEP dominano}
-			\item Minimo solare: $\sim 0.07$ --- GCR dominano
-		\end{itemize}
-		\item Risultati compatibili con misure in-situ
-	\end{itemize}
+\begin{frame}{Risultati SAPPHIRE}
+    \centering
+    \includegraphics[width=0.9\textwidth,height=5.5cm,keepaspectratio]{plot_finale_missioni1.pdf}
+    
+    \vspace{0.2em}
+    
+    \resizebox{0.65\textwidth}{!}{%
+    \begin{tabular}{lccc}
+        \hline\hline
+        \multicolumn{4}{c}{0.7~yr, 90\% CL, geometria sferica, 1~AU} \\
+        \hline
+        Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
+        \hline
+        \rowcolor{teipel_red!25!black}
+        Massimo & $38.8$ & $62.1 \pm 6.2$ & $\sim 1.6$ \\
+        Minimo  & $77.7$ & $5.1 \pm 0.5$  & $\sim 0.07$ \\
+        \hline\hline
+    \end{tabular}%
+    }
 \end{frame}
-
 \begin{frame}{Scaling radiale: orbita di Hohmann}
-	% >>> INSERIRE: plot traiettoria r(t) (Fig. 5.2) e/o Tabella 5.3
-	\begin{itemize}
-		\item Orbita di trasferimento: $r$ varia da 1.0 a 1.52~AU in 259~giorni
-		\item Due approcci:
-		\begin{itemize}
-			\item Scaling geometrico ($J \propto r^{-\alpha}$): riduzione 30--50\%
-			\item SOLPENCO2 (trasporto MHD): riduzione $\sim 20\%$
-		\end{itemize}
-		\item Con SOLPENCO2: $D_{\text{plan}} \approx 30$~mGy --- compatibile con MSL/RAD ($\sim$24.7~mGy)
-	\end{itemize}
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+            \begin{itemize}
+                \item Orbita di trasferimento Terra--Marte:
+                \begin{itemize}
+                    \item $1.0 \Longrightarrow 1.52$~AU
+                    \item Durata: 259~giorni
+                \end{itemize}
+                \item Due approcci di scaling:
+                \begin{itemize}
+                    \item Geometrico ($J \propto r^{-\alpha}$): $\sim 30$--$50\% \downarrow$
+                    \item SOLPENCO2 (trasporto MHD): $\sim 20\% \downarrow$
+                \end{itemize}
+            \end{itemize}
+            \vspace{0.3em}
+            \begin{block}{Validazione con MSL/RAD}
+                \vspace{-0.2em}
+                {\small Con SOLPENCO2: $29.6 \pm2.3$~mGy}\\
+                {\small Misure MSL/RAD (253~gg): $ 24.7$~mGy}
+                \vspace{0.1em}
+            \end{block}
+        \end{column}
+        \begin{column}{0.42\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{hohmann_transfer.png}
+            \\[3pt]
+            {\tiny Traiettoria di Hohmann $r(t)$}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusioni}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Conclusioni}
-	\begin{enumerate}
-		\item Analisi spettrale di \textbf{8 eventi SEP} (1972--2024) con Band e Ellison-Ramaty
-		\item Funzione $D(J)$ ottimizzata: TID stimabile con $\sim$10\% dalla sola fluenza integrale
-		\item TID per transito Terra--Marte (0.7~yr, max solare, 90\% CL):
-		\begin{itemize}
-			\item 62.1$\pm$6.2~mGy (sferica), \; 37.3$\pm$2.9~mGy (planare) a 1~AU
-			\item Con SOLPENCO2: $\sim$46--30~mGy
-		\end{itemize}
-		\item SEP dominano durante massimo solare (SEP/GCR $\sim 1.6$)
-		\item Soglia energetica ottimale: risultato chiave per mission planning
-	\end{enumerate}
-	\vspace{1em}
-	\centering
-	\Large Grazie per l'attenzione!
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+            \begin{enumerate}
+                \item $D(J)$: stime della dose $\pm10\%$ con costo computazionale ridotto 
+                \item SEP/GCR $\sim 1.6$ al massimo solare
+                \item Scaling: $\downarrow\,20\%$ lungo orbita trasferimento
+                \item Coerente con MSL/RAD
+            \end{enumerate}
+            
+            \vspace{0.3em}
+            
+            \begin{minipage}{\textwidth}
+                \begin{block}{\centering \small Scenario nominale missione verso Marte}
+                    \vspace{-0.8em}
+                    \begin{equation*}
+                        \small D_{\text{Si}} = 62.1 \pm 6.2 \;\text{mGy} \quad \xrightarrow{\text{Hohmann}} \quad \sim 49 \pm 4.9 \;\text{mGy}
+                    \end{equation*}
+                    \vspace{-1.0em}
+                \end{block}
+            \end{minipage}
+            
+            \vspace{0.3em}
+            
+            
+        \end{column}
+        \begin{column}{0.42\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,keepaspectratio]{2006-1107flare.jpg}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.5em}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -290,8 +483,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 
-\begin{frame}{Backup: dosi per tutti gli eventi}
-	% >>> INSERIRE: Tabella 3.1 completa (fluenze + TID planare/sferica)
+\begin{frame}{What's next?}
+    \begin{itemize}
+        \item Trasporto Monte Carlo (FLUKA, GEANT4): particelle secondarie
+        \item Estensione a nuclei di elio e ioni pesanti
+        \item Calcolo dei Single Event Effects (SEE)
+        \item Geometrie di schermatura realistiche da modelli CAD
+    \end{itemize}
+    
+    \vspace{1.5em}
+    \centering
+    \Large Grazie per l'attenzione!
 \end{frame}
 
 \begin{frame}{Backup: parametri fit completi}
