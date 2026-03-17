@@ -44,76 +44,79 @@
 \end{frame}
 }
 
-% --- Indice con immagine a fianco ---
-\begin{frame}{Indice}
-    \begin{columns}
-        \begin{column}{0.55\textwidth}
-            \linespread{1.5}\selectfont
-            \tableofcontents
-        \end{column}
-        \begin{column}{0.4\textwidth}
-            \centering
-            \includegraphics[width=\textwidth,keepaspectratio]{Solar_Orbiter_s_widest_high-res_view_of_the_Sun.jpg}
-        \end{column}
-    \end{columns}
-\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduzione}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}{Contesto}
-    \begin{columns}
-        \begin{column}{0.58\textwidth}
-            \begin{itemize}
-                \item Radiazione ionizzante:
+    \begin{columns}[T]
+        \begin{column}{0.45\textwidth}
+            \begin{block}{Radiazione ionizzante}
                 \begin{itemize}
-                    \item \textbf{GCR}: Galactic Cosmic Rays
-                    \item \textbf{SEP}: Solar Energetic Particles
+                    \item \textbf{GCR}: sempre presenti, energie $> $GeV
+                    \item \textbf{SEP}: sporadici, intensi, keV--MeV
                 \end{itemize}
-                \item Protoni ed elettroni (energie keV-GeV)
-                \item Natura stocastica $\Rightarrow$ approccio probabilistico
-            \end{itemize}
-            \vspace{0.5em}
-            \begin{block}{Obiettivo}
-                Stimare la dose da protoni SEP che una sonda accumulerebbe per un transito Terra--Marte.
             \end{block}
-        \end{column}
-        \begin{column}{0.38\textwidth}
+            \vspace{0.3em}
             \centering
-            \includegraphics[width=\textwidth,keepaspectratio]{sep_fig2 (1).jpg}
-            {\tiny Fonte: ESA/SEPEM \cite{sepem_intro}}
+            \includegraphics[width=0.9\textwidth,keepaspectratio]{Spettro_Solar_galaxy.png}\\[2pt]
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth,keepaspectratio]{particella_che_integragisce_2.png}\\[2pt]
+
+            \vspace{0.3em}
+            \begin{block}{Danno da radiazione}
+                \begin{itemize}\itemsep0.7em
+                    \item \textit{Total Ionizing Dose} (TID)
+                
+                    
+                    \item Particelle ionizzanti $\Rightarrow$ accumulo di carica $\Rightarrow$ degrado elettronica
+                    
+                \end{itemize}
+            \end{block}
         \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}{Come si simula la dose da SEP?}
+\begin{frame}{}
+    \vspace{-0.3em}
+    \centering
+     \begin{minipage}{0.85\textwidth}
+        {
+        \begin{block}{\centering \small Obiettivo}
+            \vspace{-0.5em}
+            \centering
+            {\scriptsize Stimare la dose da protoni SEP che una sonda accumulerebbe per un transito Terra--Marte}
+            \vspace{-0.5em}
+        \end{block}
+        }
+    \end{minipage}
+    
+    \vspace{0.3em}
     \begin{columns}[T]
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 1. Dati}
-                \centering
-                {\scriptsize GOES, IMP, ACE, STEREO-A}
+            \begin{block}{\centering \small 1. Dataset}
             \end{block}
-            \vspace{1pt}
+            \vspace{-0.3em}
             \centering
-            \includegraphics[height=2cm,keepaspectratio]{hso_image1.png}
+            \includegraphics[height=3cm,keepaspectratio]{Progetto senza titolo (1).png}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 2. Flussi differenziali}
-                \centering
-                {\scriptsize Preprocessing}
+            \begin{block}{\centering \small 2. Scaricare flussi differenziali}
+                
             \end{block}
-            \vspace{1pt}
+            \vspace{-0.3em}
             \centering
-            \includegraphics[height=2cm,keepaspectratio]{OCT1989_raw_only.pdf}
+            \includegraphics[height=2.9cm,keepaspectratio]{OCT1989_raw_only_dark.pdf}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 3. Spettro energia}
-                \centering
-                {\scriptsize Fit leggi di potenza}
+            \begin{block}{\centering \small 3. Calcolare spettro energia}
+                
             \end{block}
-            \vspace{1pt}
+            \vspace{-0.3em}
             \centering
-            \includegraphics[height=2cm,keepaspectratio]{JAN2005_spectral_fit.pdf}
+            \includegraphics[height=3cm,keepaspectratio]{JAN2005_spectral_fit_dark1.pdf}
         \end{column}
     \end{columns}
 
@@ -121,31 +124,29 @@
 
     \begin{columns}[T]
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 4. SR-NIEL}
-                \centering
-                {\scriptsize TID in Si dietro schermatura Al}
+            \begin{block}{\centering \small 4. Stimare dose in Si}
+               
             \end{block}
-            \vspace{1pt}
+            \vspace{-0.3em}
             \centering
-            \includegraphics[height=2cm,keepaspectratio]{Spherical_SRNIEL_calculator_scheme.png}
+            \includegraphics[height=3cm,keepaspectratio]{image (1).png}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 5. Relazione dose-fluenza}
-                \centering
-                {\scriptsize $D = 10^a \cdot J(>E_0)^b$}
+            \begin{block}{\centering \small 5. Relazione Dose-Fluenza}
+            
             \end{block}
-            \vspace{1pt}
+            \vspace{-0.3em}
             \centering
-            \includegraphics[height=2.0cm,keepaspectratio]{5c2e5c6a-1.png}
+            \includegraphics[height=3.1cm,keepaspectratio]{dose_fluence_transfer_function_finale1.png}
+
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 6. SAPPHIRE}
-                \centering
-                {\scriptsize Modello probabilistico per missione}
+            \begin{block}{\centering \small 6. Modello SAPPHIRE}
+
             \end{block}
-            \vspace{1pt}
+            \vspace{-0.3em}
             \centering
-            \includegraphics[height=2cm,keepaspectratio]{parker_spiral_sep_position.png}
+            \includegraphics[height=3cm,keepaspectratio]{image.png}
         \end{column}
     \end{columns}
 \end{frame}
@@ -154,9 +155,8 @@
     \begin{columns}
         \begin{column}{0.58\textwidth}
             \begin{itemize}
-                \item 8 eventi SEP dal 1972--2024: 
-                \begin{itemize}
-                    \item AUG 1972, OCT 1989 
+                \item 8 eventi dal 1972--2024: 
+                \begin{itemize}                    \item AUG 1972, OCT 1989 
                     \item OCT 2003, JAN 2005
                     \item JUL 2012, SEP 2017
                     \item OCT 2021, MAY 2024
@@ -165,21 +165,20 @@
                 \item Preprocessing: $\Delta t = 30$~min.
             \end{itemize}
 			\vspace{0.3em}
-            \begin{block}{Soglia e sottrazione background}
-                \vspace{-0.5em}
-                \begin{equation*}
-                    \Phi_{\text{thr}} = \mu + 3\sigma
-                \end{equation*}
-                \vspace{-1em}
-                \begin{equation*}
+                \begin{block}{Soglia e sottrazione background}
+                \vspace{-1.5em}
+                \begin{flalign*}
+                    \Phi_{\text{thr}} = \mu + 3\sigma &&
+                \end{flalign*}
+                \vspace{-1.5em}
+                \begin{flalign*}
                     \Phi_{\text{net}}(t) = 
                     \begin{cases}
                         \Phi_{\text{raw}}(t) - \mu & \text{se } \Phi_{\text{raw}}(t) \geq \Phi_{\text{thr}} \\
                         0 \; (\text{NaN}) & \text{altrimenti}
-                    \end{cases}
-                \end{equation*}
-                \vspace{-0.5em}
-            \end{block}
+                    \end{cases} &&
+                \end{flalign*}
+                \end{block}
         \end{column}
 		\begin{column}{0.38\textwidth}
             \centering
