@@ -151,21 +151,26 @@
     \end{columns}
 \end{frame}
 \section{Analisi spettrale}
-\begin{frame}{Dataset eventi SEP storici}
+\begin{frame}{1. Dataset eventi SEP}
     \begin{columns}
         \begin{column}{0.58\textwidth}
+               
             \begin{itemize}
                 \item 8 eventi dal 1972--2024: 
-                \begin{itemize}                    \item AUG 1972, OCT 1989 
+                
+                \begin{itemize}
+                    \item AUG 1972, OCT 1989 
                     \item OCT 2003, JAN 2005
                     \item JUL 2012, SEP 2017
                     \item OCT 2021, MAY 2024
                 \end{itemize}
+                
                 \item Strumenti: GOES, ACE, IMP-8, STEREO-A
-                \item Preprocessing: $\Delta t = 30$~min.
             \end{itemize}
-			\vspace{0.3em}
-                \begin{block}{Soglia e sottrazione background}
+           
+            
+            \begin{minipage}{0.95\textwidth}
+                \begin{block}{2. Flussi differenziali \small $\Delta t = 30\text{min avg.}$}
                 \vspace{-1.5em}
                 \begin{flalign*}
                     \Phi_{\text{thr}} = \mu + 3\sigma &&
@@ -179,8 +184,9 @@
                     \end{cases} &&
                 \end{flalign*}
                 \end{block}
+            \end{minipage}
         \end{column}
-		\begin{column}{0.38\textwidth}
+        \begin{column}{0.38\textwidth}
             \centering
             \includegraphics[width=\textwidth,keepaspectratio]{SEP2017_GOES13_fluxes_raw_net_final.pdf}
         \end{column}
