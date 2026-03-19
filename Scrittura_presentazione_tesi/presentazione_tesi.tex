@@ -364,75 +364,20 @@
 \end{frame}
 
 
-\begin{frame}{5. Relazione dose--fluenza}
-    \centering
-    
-    \begin{block}{}
-        \centering\small
-        8 coppie $(J_i, D_i)$ dagli eventi SEP $\;\longrightarrow\;$ 
-        $D(J) = 10^{\textcolor{teipel_red}{a}} \cdot J(>E_0)^{\textcolor{teipel_red}{b}}$
-        
-    \end{block}
-    
-    \vspace{0.2em}
-    \begin{columns}[c]
-        \begin{column}{0.12\textwidth}
-            \centering
-            \parbox{2.2cm}{\centering\scriptsize Fluenza di un\\nuovo SEP\\[3pt]
-            $J(>E_0)$\\[2pt]
-            $\Longrightarrow$}
-        \end{column}
-        \begin{column}{0.6\textwidth}
-            \centering
-            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (2).png}
-        \end{column}
-        \begin{column}{0.12\textwidth}
-            \centering
-            \parbox{2.2cm}{\centering\scriptsize $\Longrightarrow$\\[2pt]
-            Stima dose\\con incertezza\\[3pt]
-            TID $\pm\,\sigma_{\text{spec}}$}
-        \end{column}
-    \end{columns}
-    
-    \vspace{0.1em}
-    {\tiny (a): geom.\ sferica \quad (b): geom.\ planare}
-\end{frame}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}{Validazione funzione di trasferimento}
+\begin{frame}{5. Validazione funzione di trasferimento}
     \begin{columns}[c]
-        \begin{column}{0.52\textwidth}
+        \begin{column}{0.5\textwidth}
             \centering
-            {\small \textbf{Parametri best fit}}
-            \vspace{0.3em}
-            
-            \resizebox{\textwidth}{!}{%
-			\begin{tabular}{lcccccc}
-				\hline\hline
-				Geom. & $E_{0}$ & $a$ & $b$ & $R^2$ & $\chi^2_\nu$ & $\sigma_{\rm spec}$ \\
-				\hline
-				\rowcolor{teipel_red!25!black}
-				Plan. & $60$  & $-6.475$ & $0.960$ & $0.998$ & $0.20$ & $\pm 7.7\%$  \\
-				\rowcolor{teipel_red!25!black}
-				Sfer. & $100$ & $-6.005$ & $0.998$ & $0.997$ & $0.31$ & $\pm 9.9\%$ \\
-				\hline
-				Plan. & $30$  & $-6.161$ & $0.855$ & $0.980$ & $2.30$ & $\pm 27.5\%$  \\
-				Sfer. & $30$  & $-5.429$ & $0.801$ & $0.967$ & $2.88$ & $\pm 35\%$ \\
-				\hline\hline
-			\end{tabular}%
-			}
-            \vspace{0.5em}
-            
-            \begin{itemize}
-                \item {\scriptsize Soglie ottimali: $J(>60)$ planare, $J(>100)$ sferica}
-                \item {\scriptsize Scatter da $\pm 35\%$ $\Longrightarrow$ $ \pm10\%$}
-            \end{itemize}
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (2).png}\\
+              {\tiny Soglie $J(>E_0)$ ottimali}
         \end{column}
-        \begin{column}{0.46\textwidth}
+        \begin{column}{0.4\textwidth}
             \centering
             \includegraphics[width=\textwidth,keepaspectratio]{LOO_cross_validation_errors_finale.pdf}
             \\
@@ -442,96 +387,113 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Simulazioni SAPPHIRE}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Stime TID con SAPPHIRE}
-    \begin{columns}
-        \begin{column}{0.55\textwidth}
+
+\begin{frame}{6. Stime TID con SAPPHIRE}
+\vspace{-0.3em}
+\begin{columns}[c]
+    \begin{column}{0.50\textwidth}
+        \begin{itemize}
+            \item \textbf{SAPPHIRE} (ESA/SEPEM)
             \begin{itemize}
-                \item \textbf{SAPPHIRE} (ESA/SEPEM)
                 \item Distribuzione cumulativa delle fluenze attese
-                \item Parametri della simulazione:
-                \begin{itemize}
-                    \item Durata missione: 0.5, 0.7, 1.0~yr
-                    \item Fase solare: massimo / minimo
-                    \item Confidence level: 90\%, 95\%
-                    \item Geometria: planare / sferica
-                \end{itemize}
             \end{itemize}
-        \end{column}
-        \begin{column}{0.42\textwidth}
-            \centering
-            \vspace{-0.1em}
-            \includegraphics[width=\textwidth,keepaspectratio]{cuflmodel_H_max_Ch6prob_journ.png}
-            \\
-            {\tiny Output SAPPHIRE: fluenze cumulative}
-        \end{column}
-    \end{columns}
+            \item Parametri della simulazione:
+            \begin{itemize}
+                \item Durata missione: 0.5, 0.7, 1.0\,yr
+                \item Fase solare: \textcolor{red!50!orange}{Massimo} /\textcolor{blue!50!white}{Minimo}
+                \item Confidence level: 90\%, 95\%
+                \item Geometria: (a) sferica (b) planare
+            \end{itemize}
+            \item {\small $\textit{TID} = 10^a \cdot \big[J_{\text{SAPPHIRE}}(T_{\text{miss}},\,\text{CL},\,\text{fase solare})\big]^b$}
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+        \vspace{0.2em}
+        \includegraphics[width=\textwidth,keepaspectratio]{plot_finale_missioni1.pdf}
+    \end{column}
+\end{columns}
+
+\vspace{0.1em}
+
+\centering
+\begin{block}{\centering\small SEP vs GCR}
+\vspace{-0.1em}
+\centering\small
+\begin{tabular}{lccc}
     
-    \vspace{0.3em}
-    
-    \centering
-    \begin{minipage}{0.65\textwidth}
-        \begin{block}{}
-            \vspace{-0.5em}
-            \begin{equation*}
-                \small TID = 10^a \cdot \bigl[J_{\text{SAPPHIRE}}(T_{\text{miss}},\,\text{CL},\,\text{fase solare})\bigr]^b
-            \end{equation*}
-            \vspace{-0.8em}
-        \end{block}
-    \end{minipage}
+    \multicolumn{4}{c}{\scriptsize 0.7~yr, 90\% CL, 1~AU, geometria sferica} \\
+    \hline
+    Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
+    \hline
+    \rowcolor{teipel_red!25!black}
+    Massimo & $38.8$ & $62.1 \pm 6.2$ & $\sim 1.6$ \\
+    Minimo  & $77.7$ & $5.1 \pm 0.5$  & $\sim 0.07$ \\
+    \hline\hline
+\end{tabular}
+\end{block}
 \end{frame}
 
-\begin{frame}{Risultati SAPPHIRE}
-    \centering
-    \includegraphics[width=0.9\textwidth,height=5.5cm,keepaspectratio]{plot_finale_missioni1.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%
+\begin{frame}{6. Scaling radiale: orbita verso Marte}
+\vspace{-0.5em}
+\hspace{10em}{
+$J(r) \propto r^{-\alpha}$}
+\vspace{0.2em}
+
+\begin{columns}[c]
+    \begin{column}{0.52\textwidth}
+       
+        \vspace{0.2em}
+        
+        \begin{block}{\scriptsize i. Scaling geometrico}
+            \small
+            \vspace{-0.6em}
+            \begin{equation*}
+                \langle f \rangle = \frac{1}{\pi\,a^{\alpha}} \int_0^{\pi} (1 - e\cos E)^{1-\alpha}\,dE
+            \end{equation*}
+            \vspace{-0.8em}
+            \hfill{\tiny $\alpha = 2$--$3$: riduzione $\sim 30$--$50\%$}
+            \vspace{-0.3em}
+        \end{block}
+        
+        \vspace{0.2em}
+        
+        \begin{block}{\scriptsize ii. SOLPENCO2 (trasporto MHD)}
+            \small
+            \vspace{-0.6em}
+            \begin{equation*}
+                f = \frac{J_{\text{orbit}}(>E_0)}{J_{1\,\text{AU}}(>E_0)} = 0.795
+            \end{equation*}
+            \vspace{-0.8em}
+            \hfill{\tiny 90\% CL: riduzione $\sim 20\%$}
+            \vspace{-0.3em}
+        \end{block}
+        
+        \vspace{0.2em}
+        
+        \begin{block}{\scriptsize Validazione MSL/RAD}
+           
+            \small
+            \begin{tabular}{lc}
+                SOLPENCO2 (plan. | 90\% CL) & $29.6 \pm 2.3$\,mGy \\
+                \rowcolor{teipel_red!25!black}
+                Sonda MSL/RAD (253\,giorni) & $\sim 24.7$\,mGy \\
+            \end{tabular}
+            
+        \end{block}
+    \end{column}
     
-    \vspace{0.2em}
-    
-    \resizebox{0.65\textwidth}{!}{%
-    \begin{tabular}{lccc}
-        \hline\hline
-        \multicolumn{4}{c}{0.7~yr, 90\% CL, 1~AU, geometria sferica} \\
-        \hline
-        Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
-        \hline
-        \rowcolor{teipel_red!25!black}
-        Massimo & $38.8$ & $62.1 \pm 6.2$ & $\sim 1.6$ \\
-        Minimo  & $77.7$ & $5.1 \pm 0.5$  & $\sim 0.07$ \\
-        \hline\hline
-    \end{tabular}%
-    }
-\end{frame}
-\begin{frame}{Scaling radiale: orbita di Hohmann}
-    \begin{columns}
-        \begin{column}{0.55\textwidth}
-            \begin{itemize}
-                \item Orbita di trasferimento Terra--Marte:
-                \begin{itemize}
-                    \item $1.0 \Longrightarrow 1.52$~AU
-                    \item Durata: 259~giorni
-                \end{itemize}
-                \item Due approcci di scaling:
-                \begin{itemize}
-                    \item Geometrico ($J \propto r^{-\alpha}$): $\sim 30$--$50\% \downarrow$
-                    \item SOLPENCO2 (trasporto MHD): $\sim 20\% \downarrow$
-                \end{itemize}
-            \end{itemize}
-            \vspace{0.3em}
-            \begin{block}{Validazione con MSL/RAD}
-                \vspace{-0.2em}
-                {\small Con SOLPENCO2: $29.6 \pm2.3$~mGy}\\
-                {\small Misure MSL/RAD (253~gg): $ 24.7$~mGy}
-                \vspace{0.1em}
-            \end{block}
-        \end{column}
-        \begin{column}{0.42\textwidth}
-            \centering
-            \includegraphics[width=\textwidth,keepaspectratio]{hohmann_transfer.png}
-            \\[3pt]
-            {\tiny Traiettoria di Hohmann $r(t)$}
-        \end{column}
-    \end{columns}
+    \begin{column}{0.45\textwidth}
+        \centering
+        {\scriptsize Orbita Terra--Marte: $1.0 \Longrightarrow 1.52$\,AU $\sim 259$\ giorni}
+        \includegraphics[width=0.85\textwidth,keepaspectratio]{hohmann_transfer.png}\\[2pt]
+        {\scriptsize Traiettoria di Hohmann $r(t)$}
+    \end{column}
+\end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -542,16 +504,16 @@
     \begin{columns}
         \begin{column}{0.55\textwidth}
             \begin{enumerate}
-                \item $D(J)$: stime della dose $\pm10\%$ con costo computazionale ridotto 
-                \item SEP/GCR $\sim 1.6$ al massimo solare
+                \item SEP/GCR $\sim 1.6 \rightarrow$ Dominano al massimo solare
+                \item $D(J)$: prevede TID $\pm10\%$ con costo computazionale ridotto 
                 \item Scaling: $\downarrow\,20\%$ lungo orbita trasferimento
-                \item Coerente con MSL/RAD
+                \item Coerente con misure \textit{in-situ} MSL/RAD
             \end{enumerate}
             
             \vspace{0.3em}
             
             \begin{minipage}{\textwidth}
-                \begin{block}{\centering \small Scenario nominale missione verso Marte}
+                \begin{block}{\centering \small Scenario nominale missione verso Marte 90\% CL}
                     \vspace{-0.8em}
                     \begin{equation*}
                         \small D_{\text{Si}} = 62.1 \pm 6.2 \;\text{mGy} \quad \xrightarrow{\text{Hohmann}} \quad \sim 49 \pm 4.9 \;\text{mGy}
@@ -564,7 +526,8 @@
             
             
         \end{column}
-        \begin{column}{0.42\textwidth}
+        \hspace{2.0em}
+        \begin{column}{0.35\textwidth}
             \centering
             \includegraphics[width=\textwidth,keepaspectratio]{2006-1107flare.jpg}
         \end{column}
@@ -643,7 +606,35 @@
     }
     \vspace{0.3em}
     {\scriptsize Fluenze in cm$^{-2}$, dosi in mGy (Si dietro 10~g/cm$^2$ Al). Ordine per dose decrescente.}
+
+
+    
 \end{frame}
+
+
+
+\begin{frame}{Risultati: funzione di trasferimento dose--fluenza}
+    \centering
+            {\small \textbf{Parametri best fit}}
+            \vspace{0.3em}
+            
+            \resizebox{\textwidth}{!}{%
+			\begin{tabular}{lcccccc}
+				\hline\hline
+				Geom. & $E_{0}$ & $a$ & $b$ & $R^2$ & $\chi^2_\nu$ & $\sigma_{\rm spec}$ \\
+				\hline
+				\rowcolor{teipel_red!25!black}
+				Plan. & $60$  & $-6.475$ & $0.960$ & $0.998$ & $0.20$ & $\pm 7.7\%$  \\
+				\rowcolor{teipel_red!25!black}
+				Sfer. & $100$ & $-6.005$ & $0.998$ & $0.997$ & $0.31$ & $\pm 9.9\%$ \\
+				\hline
+				Plan. & $30$  & $-6.161$ & $0.855$ & $0.980$ & $2.30$ & $\pm 27.5\%$  \\
+				Sfer. & $30$  & $-5.429$ & $0.801$ & $0.967$ & $2.88$ & $\pm 35\%$ \\
+				\hline\hline
+			\end{tabular}%
+			}    
+\end{frame}
+
 
 
 \end{document}
