@@ -108,7 +108,7 @@
             \end{block}
             \vspace{-0.3em}
             \centering
-            \includegraphics[height=2.9cm,keepaspectratio]{OCT1989_raw_only_dark.pdf}
+            \includegraphics[height=3.1cm,keepaspectratio]{OCT1989_raw_only_antra.pdf}
         \end{column}
         \begin{column}{0.30\textwidth}
             \begin{block}{\centering \small 3. Calcolare spettro energia}
@@ -116,7 +116,7 @@
             \end{block}
             \vspace{-0.3em}
             \centering
-            \includegraphics[height=3cm,keepaspectratio]{JAN2005_spectral_fit_dark1.pdf}
+            \includegraphics[height=3cm,keepaspectratio]{JAN2005_spectral_fit_antra.pdf}
         \end{column}
     \end{columns}
 
@@ -129,7 +129,7 @@
             \end{block}
             \vspace{-0.3em}
             \centering
-            \includegraphics[height=3cm,keepaspectratio]{image (1).png}
+            \includegraphics[height=3cm,keepaspectratio]{image_1_antracite.png}
         \end{column}
         \begin{column}{0.30\textwidth}
             \begin{block}{\centering \small 5. Relazione Dose-Fluenza}
@@ -137,7 +137,7 @@
             \end{block}
             \vspace{-0.3em}
             \centering
-            \includegraphics[height=3.1cm,keepaspectratio]{dose_fluence_transfer_function_finale1.png}
+            \includegraphics[height=3.3cm,keepaspectratio]{dose_fluence_transfer_function_finale_antra.png}
 
         \end{column}
         \begin{column}{0.30\textwidth}
@@ -146,7 +146,7 @@
             \end{block}
             \vspace{-0.3em}
             \centering
-            \includegraphics[height=3cm,keepaspectratio]{image.png}
+            \includegraphics[height=3cm,keepaspectratio]{parker_spiral_antracite.png}
         \end{column}
     \end{columns}
 \end{frame}
@@ -169,8 +169,8 @@
         \tikz[remember picture] \node[inner sep=0pt] (catalogo) {%
             \begin{minipage}{0.92\textwidth}
             \begin{block}{i. Flussi differenziali}
-                \small Catalogo SEPEM RDSv3\\
-                0.5--700\,MeV, GOES, ACE, IMP, STEREO-A
+                \small Catalogo SEPEM RDSv3 (0.5--700 MeV)\\
+                 GOES, ACE, IMP, STEREO-A
                 \hfill{\tiny\cite{SEPEMRDSv3_Jiggens}}
             \end{block}
             \end{minipage}%
@@ -223,7 +223,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{3. Fit spettro}
+\begin{frame}{3. Fit spettro energia}
 \begin{columns}
     \begin{column}{0.55\textwidth}
         \begin{block}{Fluenza differenziale}
@@ -236,7 +236,7 @@
         \vspace{0.2em}
         \begin{block}{Modello spettrale: Band function}
             \small
-            \vspace{-0.8em}
+            \vspace{-1.5em}
             \begin{equation*}
                 \Phi_{\text{Band}}(E) = 
                 \begin{cases}
@@ -248,13 +248,14 @@
                     e^{(\textcolor{teipel_red}{\gamma_a}-\textcolor{teipel_red}{\gamma_b})}
                 \end{cases}
             \end{equation*}
+        \vspace{-1.0em}
         \end{block}
-        {\tiny 4 parametri liberi: \textcolor{teipel_red}{$A,\;\gamma_a,\;\gamma_b,\;E_0$} \quad|\quad Incertezze: MC parametrico, CL 68\% }
+        {\footnotesize 4 parametri liberi: \textcolor{teipel_red}{$A,\;\gamma_a,\;\gamma_b,\;E_0$} \\ Incertezze: MC parametrico, CL 68\% }
     \end{column}
     
     \begin{column}{0.42\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Images/JAN2005_spectral_fit_dark1.pdf}\\[0.2em]
+        \includegraphics[width=\textwidth]{Images/JAN2005_spectral_fit_antra.pdf}\\[0.2em]
         {\tiny Esempio: fit JAN 2005}
     \end{column}
 \end{columns}
@@ -349,7 +350,7 @@
         \end{column}
         \begin{column}{0.6\textwidth}
             \centering
-            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{dose_fluence_transfer_function_finale.pdf}
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{dose_fluence_transfer_function_finale_antra_full.pdf}
         \end{column}
         \begin{column}{0.12\textwidth}
             \centering
@@ -374,12 +375,12 @@
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (2).png}\\
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (3).png}\\
               {\tiny Soglie $J(>E_0)$ ottimali}
         \end{column}
         \begin{column}{0.4\textwidth}
             \centering
-            \includegraphics[width=\textwidth,keepaspectratio]{LOO_cross_validation_errors_finale.pdf}
+            \includegraphics[width=\textwidth,keepaspectratio]{LOO_cross_validation_errors_finale_dark.pdf}
             \\
             {\tiny Validazione LOO-CV sugli 8 eventi SEP}
         \end{column}
@@ -410,7 +411,7 @@
     \end{column}
     \begin{column}{0.48\textwidth}
         \vspace{0.2em}
-        \includegraphics[width=\textwidth,keepaspectratio]{plot_finale_missioni1.pdf}
+        \includegraphics[width=\textwidth,keepaspectratio]{plot_finale_missioni1_dark1.pdf}
     \end{column}
 \end{columns}
 
@@ -491,7 +492,7 @@ $J(r) \propto r^{-\alpha}$}
     \begin{column}{0.45\textwidth}
         \centering
         {\scriptsize Orbita Terra--Marte: $1.0 \Longrightarrow 1.52$\,AU $\sim 259$\ giorni}\\[1pt]
-        \includegraphics[width=0.85\textwidth,keepaspectratio]{hohmann_transfer.png}\\[2pt]
+        \includegraphics[width=0.85\textwidth,keepaspectratio]{hohmann_transfer_dark_upscaled.png}\\[2pt]
         {\scriptsize Traiettoria di Hohmann $r(t)$}
     \end{column}
 \end{columns}
@@ -503,7 +504,7 @@ $J(r) \propto r^{-\alpha}$}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Conclusioni}
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio]{sep_vs_gcr_2panel1.pdf}
+    \includegraphics[width=\textwidth,keepaspectratio]{sep_vs_gcr_2panel1_antra.pdf}
     
     \vspace{0.3em}
      \begin{minipage}{0.75\textwidth}
