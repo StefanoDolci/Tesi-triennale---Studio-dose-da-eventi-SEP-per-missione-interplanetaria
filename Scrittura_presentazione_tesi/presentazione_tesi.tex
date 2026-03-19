@@ -206,7 +206,7 @@
     \begin{column}{0.40\textwidth}
         \centering
         \tikz[remember picture] \node[inner sep=0pt] (plot) {%
-            \includegraphics[width=\textwidth]{Images/SEP2017_GOES13_fluxes_raw_net_final.pdf}%
+            \includegraphics[width=\textwidth]{Images/SEP2017_GOES13_fluxes_raw_net_final_antra.pdf}%
         };
     \end{column}
 \end{columns}
@@ -449,27 +449,27 @@ $J(r) \propto r^{-\alpha}$}
        
         \vspace{0.2em}
         
-        \begin{block}{\scriptsize i. Scaling geometrico}
+        \begin{block}{\scriptsize i. SCALING GEOMETRICO \hfill{\footnotesize riduzione \textcolor{yellow!90!white} {$\sim 30$--$50\%$}}}
             \small
             \vspace{-0.6em}
             \begin{equation*}
                 \langle f \rangle = \frac{1}{\pi\,a^{\alpha}} \int_0^{\pi} (1 - e\cos E)^{1-\alpha}\,dE
             \end{equation*}
             \vspace{-0.8em}
-            \hfill{\tiny $\alpha = 2$--$3$: riduzione $\sim 30$--$50\%$}
+
             \vspace{-0.3em}
         \end{block}
         
         \vspace{0.2em}
         
-        \begin{block}{\scriptsize ii. SOLPENCO2 (trasporto MHD)}
+        \begin{block}{\scriptsize ii. SOLPENCO2 (MHD) \hfill{\footnotesize  riduzione \textcolor{yellow!80!white}{$\sim 20\%$}}}
             \small
             \vspace{-0.6em}
             \begin{equation*}
                 f = \frac{J_{\text{orbit}}(>E_0)}{J_{1\,\text{AU}}(>E_0)} = 0.795
             \end{equation*}
             \vspace{-0.8em}
-            \hfill{\tiny 90\% CL: riduzione $\sim 20\%$}
+            
             \vspace{-0.3em}
         \end{block}
         
@@ -479,9 +479,10 @@ $J(r) \propto r^{-\alpha}$}
            
             \small
             \begin{tabular}{lc}
-                SOLPENCO2 (plan. | 90\% CL) & $29.6 \pm 2.3$\,mGy \\
+                \vspace{0.2em}
+                SOLPENCO2 (90\% CL) & $29.6 \pm 2.3$\,mGy \\[0.3em]
                 \rowcolor{teipel_red!25!black}
-                Sonda MSL/RAD (253\,giorni) & $\sim 24.7$\,mGy \\
+                Sonda MSL/RAD (253\,giorni) & $24.7$\,mGy \\
             \end{tabular}
             
         \end{block}
@@ -489,7 +490,7 @@ $J(r) \propto r^{-\alpha}$}
     
     \begin{column}{0.45\textwidth}
         \centering
-        {\scriptsize Orbita Terra--Marte: $1.0 \Longrightarrow 1.52$\,AU $\sim 259$\ giorni}
+        {\scriptsize Orbita Terra--Marte: $1.0 \Longrightarrow 1.52$\,AU $\sim 259$\ giorni}\\[1pt]
         \includegraphics[width=0.85\textwidth,keepaspectratio]{hohmann_transfer.png}\\[2pt]
         {\scriptsize Traiettoria di Hohmann $r(t)$}
     \end{column}
@@ -501,40 +502,19 @@ $J(r) \propto r^{-\alpha}$}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Conclusioni}
-    \begin{columns}
-        \begin{column}{0.55\textwidth}
-            \begin{enumerate}
-                \item SEP/GCR $\sim 1.6 \rightarrow$ Dominano al massimo solare
-                \item $D(J)$: prevede TID $\pm10\%$ con costo computazionale ridotto 
-                \item Scaling: $\downarrow\,20\%$ lungo orbita trasferimento
-                \item Coerente con misure \textit{in-situ} MSL/RAD
-            \end{enumerate}
-            
-            \vspace{0.3em}
-            
-            \begin{minipage}{\textwidth}
-                \begin{block}{\centering \small Scenario nominale missione verso Marte 90\% CL}
-                    \vspace{-0.8em}
-                    \begin{equation*}
-                        \small D_{\text{Si}} = 62.1 \pm 6.2 \;\text{mGy} \quad \xrightarrow{\text{Hohmann}} \quad \sim 49 \pm 4.9 \;\text{mGy}
-                    \end{equation*}
-                    \vspace{-1.0em}
-                \end{block}
-            \end{minipage}
-            
-            \vspace{0.3em}
-            
-            
-        \end{column}
-        \hspace{2.0em}
-        \begin{column}{0.35\textwidth}
-            \centering
-            \includegraphics[width=\textwidth,keepaspectratio]{2006-1107flare.jpg}
-        \end{column}
-    \end{columns}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{sep_vs_gcr_2panel1.pdf}
     
-    \vspace{0.5em}
+    \vspace{0.3em}
+     \begin{minipage}{0.75\textwidth}
+        \begin{itemize}\setlength{\itemsep}{2pt}
+            \item $D(J)$ prevede TID con $\sigma_{\text{spec}} \pm 10\%$
+            \item Scaling SOLPENCO2: Fluenza--Dose $\downarrow\,20\%$ lungo orbita
+            \item Procedura coerente con misure \textit{in-situ} MSL/RAD 
+        \end{itemize}
+    \end{minipage}
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BACKUP SLIDES (non contano nella numerazione)
@@ -543,10 +523,11 @@ $J(r) \propto r^{-\alpha}$}
 	
     \begin{columns}
         \begin{column}{0.55\textwidth}
-			\vspace{-9em}
+			\vspace{-7em}
             \begin{itemize}
                 \item Trasporto Monte Carlo (FLUKA, GEANT4): particelle secondarie
                 \item Estensione a nuclei di elio e ioni pesanti
+                \item Aggiungere eventi SEP al campione per $D(J)$
                 \item Calcolo dei Single Event Effects (SEE)
                 \item Geometrie sonde realistiche da modelli CAD
             \end{itemize}
@@ -563,7 +544,7 @@ $J(r) \propto r^{-\alpha}$}
     
     % Sole che spunta dal basso
     \begin{tikzpicture}[remember picture, overlay]
-        \node[anchor=south, inner sep=0pt, opacity=0.7, yshift=-10cm] at (current page.south){%
+        \node[anchor=south, inner sep=0pt, opacity=0.7, yshift=-11cm] at (current page.south){%
             \includegraphics[width=\paperwidth]{sun_transparent.png}%
         };
     \end{tikzpicture}
