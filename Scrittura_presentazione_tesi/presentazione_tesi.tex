@@ -5,7 +5,6 @@
 %%% FONT SELECTION %%%%%%%%%%%%%%%%%
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-
 \usepackage{tikz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -25,6 +24,7 @@
 \usepackage{TeiPel_En_Beamer_Layout}
 \setTeipelLayout{newlogo}
 
+\usetikzlibrary{calc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Thesis Info
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,177 +152,255 @@
 \end{frame}
 \section{Analisi spettrale}
 \begin{frame}{1. Dataset eventi SEP}
-    \begin{columns}
-        \begin{column}{0.58\textwidth}
-               
+\begin{columns}
+    \begin{column}{0.55\textwidth}
+        \vspace{-1.5em}
+        \begin{itemize}
+            \item 8 eventi \textcolor{teipel_red}{\textit{worst-case}} SC20--25
             \begin{itemize}
-                \item 8 eventi dal 1972--2024: 
-                
-                \begin{itemize}
-                    \item AUG 1972, OCT 1989 
-                    \item OCT 2003, JAN 2005
-                    \item JUL 2012, SEP 2017
-                    \item OCT 2021, MAY 2024
-                \end{itemize}
-                
-                \item Strumenti: GOES, ACE, IMP-8, STEREO-A
+                \item AUG 1972, OCT 1989
+                \item OCT 2003, JAN 2005
+                \item JUL 2012, SEP 2017
+                \item OCT 2021, MAY 2024
             \end{itemize}
-           
-            
-            \begin{minipage}{0.95\textwidth}
-                \begin{block}{2. Flussi differenziali \small $\Delta t = 30\text{min avg.}$}
-                \vspace{-1.5em}
-                \begin{flalign*}
-                    \Phi_{\text{thr}} = \mu + 3\sigma &&
-                \end{flalign*}
-                \vspace{-1.5em}
-                \begin{flalign*}
-                    \Phi_{\text{net}}(t) = 
-                    \begin{cases}
-                        \Phi_{\text{raw}}(t) - \mu & \text{se } \Phi_{\text{raw}}(t) \geq \Phi_{\text{thr}} \\
-                        0 \; (\text{NaN}) & \text{altrimenti}
-                    \end{cases} &&
-                \end{flalign*}
-                \end{block}
-            \end{minipage}
-        \end{column}
-        \begin{column}{0.38\textwidth}
-            \centering
-            \includegraphics[width=\textwidth,keepaspectratio]{SEP2017_GOES13_fluxes_raw_net_final.pdf}
-        \end{column}
-    \end{columns}
+        \end{itemize}
+        \vspace{0.3em}
+        
+        \tikz[remember picture] \node[inner sep=0pt] (catalogo) {%
+            \begin{minipage}{0.92\textwidth}
+            \begin{block}{i. Flussi differenziali}
+                \small Catalogo SEPEM RDSv3\\
+                0.5--700\,MeV, GOES, ACE, IMP, STEREO-A
+                \hfill{\tiny\cite{SEPEMRDSv3_Jiggens}}
+            \end{block}
+            \end{minipage}%
+        };
+        
+        \vspace{0.3em}
+        
+        \tikz[remember picture] \node[inner sep=0pt] (preproc) {%
+            \begin{minipage}{0.92\textwidth}
+            \begin{block}{ii. Preprocessing}
+            \small
+            \vspace{-2.0em}
+            \begin{flalign*}
+                & \Delta t = 30\,\text{min avg.} &&\\[-0.3em]
+                & \Phi_{\text{thr}} = \mu + 3\sigma &&\\[-0.3em]
+                & \Phi_{\text{net}}(t) = 
+                \begin{cases}
+                    \Phi_{\text{raw}}(t) - \mu & \text{se } \Phi_{\text{raw}}(t) \geq \Phi_{\text{thr}} \\
+                    0 & \text{altrimenti}
+                \end{cases} &&
+            \end{flalign*}%
+            \vspace{-1.2em}%
+            \begin{flushright}%
+                \vspace{-0.5em}%
+                \tiny\cite{WhitmanSEP}%
+            \end{flushright}%
+            \vspace{-1.0em}%
+        \end{block}
+            \end{minipage}%
+        };
+    \end{column}
+    
+    \begin{column}{0.40\textwidth}
+        \centering
+        \tikz[remember picture] \node[inner sep=0pt] (plot) {%
+            \includegraphics[width=\textwidth]{Images/SEP2017_GOES13_fluxes_raw_net_final.pdf}%
+        };
+    \end{column}
+\end{columns}
+
+% --- FRECCE ---
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[->, teipel_red, thick] 
+        (catalogo.east) -- ++(0.3,0) |- ([yshift=0.25\textheight]plot.west);
+    \draw[->, teipel_red, thick] 
+        (preproc.east) -- ++(0.3,0) |- ([yshift=-0.25\textheight]plot.west);
+\end{tikzpicture}
 \end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Fit spettro}
-    \begin{columns}
-        \begin{column}{0.52\textwidth}
-            \begin{block}{Fluenza differenziale}
-                \vspace{-0.3em}
-                \begin{equation*}
-                    F(E) = \int_{t_1}^{t_2} \Phi(E) \, dt
-                \end{equation*}
-                \vspace{-0.8em}
-            \end{block}
-            \vspace{0.2em}
-            \begin{block}{Modelli spettrali}
-                \vspace{-0.2em}
-                {\small \textbf{Ellison-Ramaty}:}
-                \vspace{-0.5em}
-                \begin{equation*}
-                    \Phi_{E\text{-}R}(E) = A \, E^{-\gamma} \, e^{-E/E_r}
-                \end{equation*}
-                \vspace{-0.8em}
-                {\small \textbf{Band function}:}
-                \vspace{-0.3em}
-                \begin{gather*}
-                    \small
-                    \Phi_{\text{Band}}(E) = 
-                    \begin{cases}
-                        A E^{-\gamma_a} e^{-E/E_0} \\[4pt]
-                        A E^{-\gamma_b} [(\gamma_b\!-\!\gamma_a)E_0]^{(\gamma_b-\gamma_a)} e^{(\gamma_a-\gamma_b)}
-                    \end{cases}
-                \end{gather*}
-                \vspace{-1em}
-            \end{block}
-        \end{column}
-        \begin{column}{0.45\textwidth}
-            \centering
-            \includegraphics[width=\textwidth,keepaspectratio]{JAN2005_spectral_fit.pdf}
-            \\[2pt]
-            {\tiny Esempio: fit per lo spettro di gennaio 2005}
-        \end{column}
-    \end{columns}
-\end{frame}
-\begin{frame}{Calcolo TID con SR-NIEL}
-    \centering
-    {\small Spettro residuo protoni dietro 10~g/cm$^2$ di alluminio, TID depositata in silicio}
+\begin{frame}{3. Fit spettro}
+\begin{columns}
+    \begin{column}{0.55\textwidth}
+        \begin{block}{Fluenza differenziale}
+            \vspace{-0.5em}
+            \begin{equation*}
+                F(E) = \int_{t_1}^{t_2} \Phi(E)\,dt
+            \end{equation*}
+            \vspace{-1.0em}
+        \end{block}
+        \vspace{0.2em}
+        \begin{block}{Modello spettrale: Band function}
+            \small
+            \vspace{-0.8em}
+            \begin{equation*}
+                \Phi_{\text{Band}}(E) = 
+                \begin{cases}
+                    \textcolor{teipel_red}{A}\,E^{-\textcolor{teipel_red}{\gamma_a}}\,
+                    e^{-E/\textcolor{teipel_red}{E_0}} 
+                    \\[0.3em]
+                    \textcolor{teipel_red}{A}\,E^{-\textcolor{teipel_red}{\gamma_b}}\,
+                    [(\textcolor{teipel_red}{\gamma_b}\!-\!\textcolor{teipel_red}{\gamma_a})\textcolor{teipel_red}{E_0}]^{(\textcolor{teipel_red}{\gamma_b}-\textcolor{teipel_red}{\gamma_a})}\,
+                    e^{(\textcolor{teipel_red}{\gamma_a}-\textcolor{teipel_red}{\gamma_b})}
+                \end{cases}
+            \end{equation*}
+        \end{block}
+        {\tiny 4 parametri liberi: \textcolor{teipel_red}{$A,\;\gamma_a,\;\gamma_b,\;E_0$} \quad|\quad Incertezze: MC parametrico, CL 68\% }
+    \end{column}
     
-    \vspace{0.3em}
+    \begin{column}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Images/JAN2005_spectral_fit_dark1.pdf}\\[0.2em]
+        {\tiny Esempio: fit JAN 2005}
+    \end{column}
+\end{columns}
+\end{frame}
+%%%%%%
+%%%%%%
+\begin{frame}{4. Calcolo dose SR-NIEL}
+    \centering
+    
+    % --- Blocchetto spettro input ---
+    \tikz[remember picture] \node[inner sep=0pt] (spettro) {%
+        \begin{minipage}{0.65\textwidth}
+        \begin{block}{\centering \small Input}
+            \centering\small
+            Spettri fit $\Phi_{\text{med}}(E)\,\Phi_{16}(E)\,\Phi_{84}(E)$  (0.05--1000\,MeV)
+        \end{block}
+        \end{minipage}%
+    };
+    
+    \vspace{0.6cm}
     
     \begin{columns}[c]
-        \begin{column}{0.45\textwidth}
+        \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=0.7\textwidth,keepaspectratio]{SRNIEL_calcolatore_planare.png}
-            \\[2pt]
-            {\small \textbf{Geometria planare}}
-            \\[1pt]
-            {\scriptsize Flusso unidirezionale\\
-			Slab planare $t = 3.7$ cm Al}
+            \tikz[remember picture] \node[inner sep=0pt] (planare) {%
+                \includegraphics[width=0.6\textwidth,keepaspectratio]{t = 3.7cm (1).png}%
+            };
+           
         \end{column}
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=0.7\textwidth,keepaspectratio]{Spherical_SRNIEL_calculator_scheme.png}
-            \\[2pt]
-            {\small \textbf{Geometria sferica}}
-            \\[1pt]
-            {\scriptsize Flusso isotropo\\
-			Guscio sferico $R = 50$ cm $t = 3.7$ cm Al}
+            \tikz[remember picture] \node[inner sep=0pt] (sferica) {%
+                \includegraphics[width=0.75\textwidth,keepaspectratio]{Guscio sferico Al.png}%
+            };
+            
         \end{column}
     \end{columns}
     
-    \vspace{0.4em}
+    \vspace{0.5em}
     
-    \begin{block}{}
-        \begin{equation*}
-            \text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \, \frac{S_{S_i}(E)}{\rho_{S_i}} \, dE 
-        \end{equation*}
-        \vspace{-0.5em}
-    \end{block}
+    \tikz[remember picture] \node[inner sep=0pt] (tid) {%
+        \begin{minipage}{0.60\textwidth}
+        \begin{block}{\centering \small Output}
+            \small
+            \vspace{-1.0em}
+            \begin{equation*}
+                \text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE 
+            \end{equation*}
+            \vspace{-1.0em}
+        \end{block}
+        \end{minipage}%
+    };\\[-0.3em]
+   
+% --- FRECCE ---
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[->, teipel_red, thick] 
+        ([xshift=-1.5cm]spettro.south) -- (planare.north);
+    \draw[->, teipel_red, thick] 
+        ([xshift=1.5cm]spettro.south) -- (sferica.north);
+    \draw[->, teipel_red, thick] 
+        (planare.south) -- ([xshift=-1.5cm]tid.north);
+    \draw[->, teipel_red, thick] 
+        (sferica.south) -- ([xshift=1.5cm]tid.north);
+    \node at ($(planare.east)!0.5!(sferica.west)$) 
+        {\small{10\,g/cm$^2$ Al}};
+    
+\end{tikzpicture}
 \end{frame}
 
-\begin{frame}{Risultati: fluenze e dosi per gli 8 eventi}
+%%%%
+%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{5. Relazione dose--fluenza}
     \centering
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{lcccccc}
-        \hline\hline
-        Evento 
-        & $J(>30)$ 
-        & $J(>60)$ 
-        & $J(>100)$ 
-        & $D_\mathrm{plan}$ [mGy] 
-        & $D_\mathrm{sfer}$ [mGy] \\
-        \hline
-        AUG 1972 & $7.85 \times 10^{9}$ & $1.38 \times 10^{9}$ & $2.57 \times 10^{8}$ & $187.1^{+37.1}_{-33.7}$ & $255.4^{+52.1}_{-47.3}$ \\
-        OCT 1989 & $2.42 \times 10^{9}$ & $5.84 \times 10^{8}$ & $2.02 \times 10^{8}$ & $99.1^{+22.7}_{-18.5}$  & $181.6^{+45.7}_{-37.2}$ \\
-        JUL 2012 & $1.98 \times 10^{9}$ & $4.89 \times 10^{8}$ & $1.58 \times 10^{8}$ & $79.7^{+25.3}_{-14.8}$  & $167.1^{+66.4}_{-37.8}$ \\
-        OCT 2003 & $2.27 \times 10^{9}$ & $3.62 \times 10^{8}$ & $9.07 \times 10^{7}$ & $51.9^{+9.5}_{-8.3}$    & $83.9^{+14.8}_{-13.1}$  \\
-        JAN 2005 & $7.01 \times 10^{8}$ & $2.08 \times 10^{8}$ & $8.45 \times 10^{7}$ & $35.6^{+6.8}_{-6.4}$    & $69.9^{+13.2}_{-12.6}$  \\
-        SEP 2017 & $4.07 \times 10^{8}$ & $8.12 \times 10^{7}$ & $2.45 \times 10^{7}$ & $12.6^{+2.1}_{-1.9}$    & $25.8^{+4.2}_{-3.9}$    \\
-        MAY 2024 & $3.72 \times 10^{7}$ & $1.01 \times 10^{7}$ & $3.62 \times 10^{6}$ & $1.7^{+0.3}_{-0.3}$     & $3.7^{+0.6}_{-0.7}$     \\
-        OCT 2021 & $1.93 \times 10^{7}$ & $7.41 \times 10^{6}$ & $3.26 \times 10^{6}$ & $1.4^{+0.2}_{-0.3}$     & $2.7^{+0.6}_{-0.5}$     \\
-        \hline\hline
-    \end{tabular}%
-    }
-    \vspace{0.3em}
-    {\scriptsize Fluenze in cm$^{-2}$, dosi in mGy (Si dietro 10~g/cm$^2$ Al). Ordine per dose decrescente.}
-\end{frame}
-\begin{frame}{Funzione di trasferimento}
-    \centering
-    {\small $D(J) = 10^a \cdot J(>E_0)^b$}
+    
+    \begin{block}{}
+        \centering\small
+        8 coppie $(J_i, D_i)$ dagli eventi SEP $\;\longrightarrow\;$ 
+        $D(J) = 10^{\textcolor{teipel_red}{a}} \cdot J(>E_0)^{\textcolor{teipel_red}{b}}$
+        
+    \end{block}
     
     \vspace{0.2em}
-	\begin{columns}[c]
-        \begin{column}{0.09\textwidth}
-            \raggedleft
-            {\small\hspace{10em} \textbf{Fluenza}\,$\Longrightarrow$}\\[-3pt]
-            {\scriptsize $J(>E_0)$\hspace{0.5em}}
-        \end{column}
-        \begin{column}{0.80\textwidth}
+    \begin{columns}[c]
+        \begin{column}{0.12\textwidth}
             \centering
-            \includegraphics[width=\textwidth,height=7.3cm,keepaspectratio]{dose_fluence_transfer_function_finale.pdf}
+            \parbox{2.2cm}{\centering\scriptsize Fluenza di un\\nuovo SEP\\[3pt]
+            $J(>E_0)$\\[2pt]
+            $\Longrightarrow$}
         \end{column}
-        \begin{column}{0.09\textwidth}
-            \raggedright
-            {\small\hspace{-2em}$\Longrightarrow$\,\textbf{Dose}}\\[-3pt]
-            {\scriptsize\hspace{-2em}TID (mGy)}
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{dose_fluence_transfer_function_finale.pdf}
+        \end{column}
+        \begin{column}{0.12\textwidth}
+            \centering
+            \parbox{2.2cm}{\centering\scriptsize $\Longrightarrow$\\[2pt]
+            Stima dose\\con incertezza\\[3pt]
+            TID $\pm\,\sigma_{\text{spec}}$}
         \end{column}
     \end{columns}
+    
+    \vspace{0.1em}
+    {\tiny (a): geom.\ sferica \quad (b): geom.\ planare}
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Funzione di trasferimento dose-fluenza}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{5. Relazione dose--fluenza}
+    \centering
+    
+    \begin{block}{}
+        \centering\small
+        8 coppie $(J_i, D_i)$ dagli eventi SEP $\;\longrightarrow\;$ 
+        $D(J) = 10^{\textcolor{teipel_red}{a}} \cdot J(>E_0)^{\textcolor{teipel_red}{b}}$
+        
+    \end{block}
+    
+    \vspace{0.2em}
+    \begin{columns}[c]
+        \begin{column}{0.12\textwidth}
+            \centering
+            \parbox{2.2cm}{\centering\scriptsize Fluenza di un\\nuovo SEP\\[3pt]
+            $J(>E_0)$\\[2pt]
+            $\Longrightarrow$}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (2).png}
+        \end{column}
+        \begin{column}{0.12\textwidth}
+            \centering
+            \parbox{2.2cm}{\centering\scriptsize $\Longrightarrow$\\[2pt]
+            Stima dose\\con incertezza\\[3pt]
+            TID $\pm\,\sigma_{\text{spec}}$}
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.1em}
+    {\tiny (a): geom.\ sferica \quad (b): geom.\ planare}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{frame}{Validazione funzione di trasferimento}
@@ -538,5 +616,34 @@
     \bibliographystyle{plain}
     \bibliography{bibliography}
 \end{frame}
+
+
+\begin{frame}{Risultati: fluenze e dosi per gli 8 eventi}
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lcccccc}
+        \hline\hline
+        Evento 
+        & $J(>30)$ 
+        & $J(>60)$ 
+        & $J(>100)$ 
+        & $D_\mathrm{plan}$ [mGy] 
+        & $D_\mathrm{sfer}$ [mGy] \\
+        \hline
+        AUG 1972 & $7.85 \times 10^{9}$ & $1.38 \times 10^{9}$ & $2.57 \times 10^{8}$ & $187.1^{+37.1}_{-33.7}$ & $255.4^{+52.1}_{-47.3}$ \\
+        OCT 1989 & $2.42 \times 10^{9}$ & $5.84 \times 10^{8}$ & $2.02 \times 10^{8}$ & $99.1^{+22.7}_{-18.5}$  & $181.6^{+45.7}_{-37.2}$ \\
+        JUL 2012 & $1.98 \times 10^{9}$ & $4.89 \times 10^{8}$ & $1.58 \times 10^{8}$ & $79.7^{+25.3}_{-14.8}$  & $167.1^{+66.4}_{-37.8}$ \\
+        OCT 2003 & $2.27 \times 10^{9}$ & $3.62 \times 10^{8}$ & $9.07 \times 10^{7}$ & $51.9^{+9.5}_{-8.3}$    & $83.9^{+14.8}_{-13.1}$  \\
+        JAN 2005 & $7.01 \times 10^{8}$ & $2.08 \times 10^{8}$ & $8.45 \times 10^{7}$ & $35.6^{+6.8}_{-6.4}$    & $69.9^{+13.2}_{-12.6}$  \\
+        SEP 2017 & $4.07 \times 10^{8}$ & $8.12 \times 10^{7}$ & $2.45 \times 10^{7}$ & $12.6^{+2.1}_{-1.9}$    & $25.8^{+4.2}_{-3.9}$    \\
+        MAY 2024 & $3.72 \times 10^{7}$ & $1.01 \times 10^{7}$ & $3.62 \times 10^{6}$ & $1.7^{+0.3}_{-0.3}$     & $3.7^{+0.6}_{-0.7}$     \\
+        OCT 2021 & $1.93 \times 10^{7}$ & $7.41 \times 10^{6}$ & $3.26 \times 10^{6}$ & $1.4^{+0.2}_{-0.3}$     & $2.7^{+0.6}_{-0.5}$     \\
+        \hline\hline
+    \end{tabular}%
+    }
+    \vspace{0.3em}
+    {\scriptsize Fluenze in cm$^{-2}$, dosi in mGy (Si dietro 10~g/cm$^2$ Al). Ordine per dose decrescente.}
+\end{frame}
+
 
 \end{document}
