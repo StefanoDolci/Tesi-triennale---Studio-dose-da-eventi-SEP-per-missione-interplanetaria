@@ -223,13 +223,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%
+
 \begin{frame}{3. Fit spettro energia}
 \begin{columns}
     \begin{column}{0.55\textwidth}
         \begin{block}{Fluenza differenziale}
             \vspace{-0.5em}
             \begin{equation*}
-                F(E) = \int_{t_1}^{t_2} \Phi(E)\,dt
+               \hspace{-2em} F(E) = \int_{t_1}^{t_2} \Phi(E)\,dt
+               \qquad \small t_1,\,t_2 = \text{durata evento}
             \end{equation*}
             \vspace{-1.0em}
         \end{block}
@@ -238,57 +241,80 @@
             \small
             \vspace{-1.5em}
             \begin{equation*}
-                \Phi_{\text{Band}}(E) = 
+                F_{\text{Band}}(E) = 
                 \begin{cases}
-                    \textcolor{teipel_red}{A}\,E^{-\textcolor{teipel_red}{\gamma_a}}\,
-                    e^{-E/\textcolor{teipel_red}{E_0}} 
+                    \textcolor{teipel_red!70}{A}\,E^{-\textcolor{teipel_red!70}{\gamma_a}}\,
+                    e^{-E/\textcolor{teipel_red!70}{E_0}} 
                     \\[0.3em]
-                    \textcolor{teipel_red}{A}\,E^{-\textcolor{teipel_red}{\gamma_b}}\,
-                    [(\textcolor{teipel_red}{\gamma_b}\!-\!\textcolor{teipel_red}{\gamma_a})\textcolor{teipel_red}{E_0}]^{(\textcolor{teipel_red}{\gamma_b}-\textcolor{teipel_red}{\gamma_a})}\,
-                    e^{(\textcolor{teipel_red}{\gamma_a}-\textcolor{teipel_red}{\gamma_b})}
+                    \textcolor{teipel_red!70}{A}\,E^{-\textcolor{teipel_red!70}{\gamma_b}}\,
+                    [(\textcolor{teipel_red!70}{\gamma_b}\!-\!\textcolor{teipel_red!70}{\gamma_a})\textcolor{teipel_red!70}{E_0}]^{(\textcolor{teipel_red!70}{\gamma_b}-\textcolor{teipel_red!70}{\gamma_a})}\,
+                    e^{(\textcolor{teipel_red!70}{\gamma_a}-\textcolor{teipel_red!70}{\gamma_b})}
                 \end{cases}
             \end{equation*}
         \vspace{-1.0em}
         \end{block}
-        {\footnotesize 4 parametri liberi: \textcolor{teipel_red}{$A,\;\gamma_a,\;\gamma_b,\;E_0$} \\ Incertezze: MC parametrico, CL 68\% }
+        \vspace{0.2em}
+        \begin{block}{Incertezze}
+            \small
+            \begin{flushleft}
+            \vspace{0.2em}
+            $\sigma_{\text{tot}} = \sqrt{\sigma_{\text{sys}}^2 + \sigma_{\text{stat}}^2}
+            \;\Longrightarrow$ Montecarlo parametrico\\[0.3em]
+            \hspace*{0pt}$\mathcal{N}(\hat{\mathbf{p}},\, \mathbf{C}_{\text{stab}})
+            \;\Longrightarrow\;
+            \textcolor{violet!30}{F_{\text{med}}(E)} \;\pm\;\textcolor{violet!80}{[F_{16},\, F_{84}]}$\; 68\% CL
+            \vspace{-0.3em}
+            \end{flushleft}
+        \end{block}
     \end{column}
     
-    \begin{column}{0.42\textwidth}
+    \begin{column}{0.43\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Images/JAN2005_spectral_fit_antra.pdf}\\[0.2em]
         {\tiny Esempio: fit JAN 2005}
     \end{column}
 \end{columns}
 \end{frame}
-%%%%%%
+
 %%%%%%
 \begin{frame}{4. Calcolo dose SR-NIEL}
+    \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east] at ([xshift=-1.0cm, yshift=0.2cm]current page.north east) {%
+        \includegraphics[height=0.7cm]{SRNIEL_logo-removebg-preview.png}%
+    };
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east] at ([xshift=-2.3cm, yshift=0.14cm]current page.north east) {%
+        \includegraphics[height=0.6cm]{asif_left-removebg-preview.png}%
+    };
+    \end{tikzpicture}
     \centering
-    
+    \vspace{-0.5em}
     % --- Blocchetto spettro input ---
     \tikz[remember picture] \node[inner sep=0pt] (spettro) {%
         \begin{minipage}{0.65\textwidth}
         \begin{block}{\centering \small Input}
             \centering\small
-            Spettri fit $\Phi_{\text{med}}(E)\,\Phi_{16}(E)\,\Phi_{84}(E)$  (0.05--1000\,MeV)
+            \textcolor{violet!30}{$F_{\text{med}}(E)$}
+            $\pm$\textcolor{violet!80}{$F_{16/84}(E)$}
         \end{block}
         \end{minipage}%
     };
     
-    \vspace{0.6cm}
+    \vspace{0.4cm}
     
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
             \centering
             \tikz[remember picture] \node[inner sep=0pt] (planare) {%
-                \includegraphics[width=0.6\textwidth,keepaspectratio]{t = 3.7cm (1).png}%
+                \includegraphics[width=0.75\textwidth,keepaspectratio]{Slab Planare Al.png}%
             };
            
         \end{column}
         \begin{column}{0.5\textwidth}
             \centering
             \tikz[remember picture] \node[inner sep=0pt] (sferica) {%
-                \includegraphics[width=0.75\textwidth,keepaspectratio]{Guscio sferico Al.png}%
+               \hspace{0.5em} \includegraphics[width=0.9\textwidth,keepaspectratio]{Guscio Sferico Al (1).png}%
             };
             
         \end{column}
@@ -298,11 +324,11 @@
     
     \tikz[remember picture] \node[inner sep=0pt] (tid) {%
         \begin{minipage}{0.60\textwidth}
-        \begin{block}{\centering \small Output}
+        \begin{block}{\centering \footnotesize Output}
             \small
             \vspace{-1.0em}
             \begin{equation*}
-                \text{TID} = \int_{E_{\min}}^{E_{\max}} \Phi_{\text{res}}(E) \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE 
+                \text{TID} = \int_{E_{\min}}^{E_{\max}} F_{\text{res}}(E) \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE 
             \end{equation*}
             \vspace{-1.0em}
         \end{block}
@@ -319,8 +345,10 @@
         (planare.south) -- ([xshift=-1.5cm]tid.north);
     \draw[->, teipel_red, thick] 
         (sferica.south) -- ([xshift=1.5cm]tid.north);
-    \node at ($(planare.east)!0.5!(sferica.west)$) 
-        {\small{10\,g/cm$^2$ Al}};
+    \node[align=center] at ($(planare.east)!0.5!(sferica.west)$) 
+        {\small 10\,g/cm$^2$ Al \\
+        \footnotesize$0.05\text{--}1000\;\text{MeV}$};
+       
     
 \end{tikzpicture}
 \end{frame}
