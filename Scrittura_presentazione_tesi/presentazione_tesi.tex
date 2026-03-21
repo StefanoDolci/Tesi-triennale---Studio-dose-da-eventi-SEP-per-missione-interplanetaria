@@ -169,7 +169,7 @@
         \tikz[remember picture] \node[inner sep=0pt] (catalogo) {%
             \begin{minipage}{0.92\textwidth}
             \begin{block}{i. Flussi differenziali}
-                \small Catalogo SEPEM RDSv3 (0.5--700 MeV)\\
+                \small Catalogo \textcolor{teipel_red}{SEPEM} RDSv3 (0.5--700 MeV)\\
                  GOES, ACE, IMP, STEREO-A
                 \hfill{\tiny\cite{SEPEMRDSv3_Jiggens}}
             \end{block}
@@ -304,15 +304,17 @@
     \vspace{0.4cm}
     
     \begin{columns}[c]
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.48\textwidth}
             \centering
+            \hspace{-1.5cm}
             \tikz[remember picture] \node[inner sep=0pt] (planare) {%
-                \includegraphics[width=0.75\textwidth,keepaspectratio]{Slab Planare Al.png}%
+                \includegraphics[width=0.75\textwidth,keepaspectratio]{Slab Planare Al (1).png}%
             };
            
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.48\textwidth}
             \centering
+            \hspace{1cm}
             \tikz[remember picture] \node[inner sep=0pt] (sferica) {%
                \hspace{0.5em} \includegraphics[width=0.9\textwidth,keepaspectratio]{Guscio Sferico Al (1).png}%
             };
@@ -328,12 +330,12 @@
             \small
             \vspace{-1.0em}
             \begin{equation*}
-                \text{TID} = \int_{E_{\min}}^{E_{\max}} F_{\text{res}}(E) \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE 
+                \text{TID} = \int_{E_{\min}}^{E_{\max}} \textcolor{teipel_red}{F_{\text{res}}(E)} \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE 
             \end{equation*}
             \vspace{-1.0em}
         \end{block}
         \end{minipage}%
-    };\\[-0.3em]
+    };
    
 % --- FRECCE ---
 \begin{tikzpicture}[remember picture, overlay]
@@ -345,12 +347,11 @@
         (planare.south) -- ([xshift=-1.5cm]tid.north);
     \draw[->, teipel_red, thick] 
         (sferica.south) -- ([xshift=1.5cm]tid.north);
-    \node[align=center] at ($(planare.east)!0.5!(sferica.west)$) 
+    \node[align=center] at ($(planare.east)!0.5!(sferica.west)$)
         {\small 10\,g/cm$^2$ Al \\
         \footnotesize$0.05\text{--}1000\;\text{MeV}$};
-       
-    
 \end{tikzpicture}
+
 \end{frame}
 
 %%%%
@@ -363,8 +364,8 @@
     
     \begin{block}{}
         \centering\small
-        8 coppie $(J_i, D_i)$ dagli eventi SEP $\;\longrightarrow\;$ 
-        $D(J) = 10^{\textcolor{teipel_red}{a}} \cdot J(>E_0)^{\textcolor{teipel_red}{b}}$
+        8 coppie (\textcolor{teipel_red}{$J_i$},\textcolor{white}{$D_i$}) dagli eventi \textcolor{yellow}{SEP} $\;\longrightarrow\;$ 
+        \textcolor{white}{$D$}(\textcolor{teipel_red}{$J$}) = $10^{a} \cdot \textcolor{teipel_red}{J(>E_0)}^{b}$
         
     \end{block}
     
@@ -373,7 +374,7 @@
         \begin{column}{0.12\textwidth}
             \centering
             \parbox{2.2cm}{\centering\scriptsize Fluenza di un\\nuovo SEP\\[3pt]
-            $J(>E_0)$\\[2pt]
+            $\textcolor{teipel_red}{J(>E_0)}$\\[2pt]
             $\Longrightarrow$}
         \end{column}
         \begin{column}{0.6\textwidth}
@@ -389,7 +390,7 @@
     \end{columns}
     
     \vspace{0.1em}
-    {\tiny (a): geom.\ sferica \quad (b): geom.\ planare}
+    {\tiny (a) geom.\ sferica \quad (b) geom.\ planare}
 \end{frame}
 
 
@@ -403,7 +404,7 @@
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{usaquesta_dose_cornici_rosse.png}\\
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (4).png}\\
               {\tiny Soglie $J(>E_0)$ ottimali}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -423,9 +424,10 @@
 \begin{columns}[c]
     \begin{column}{0.50\textwidth}
         \begin{itemize}
-            \item \textbf{SAPPHIRE} (ESA/SEPEM)
+            \item \textbf{\textcolor{teipel_red}{SAPPHIRE}} (ESA/SEPEM) 
             \begin{itemize}
-                \item Distribuzione cumulativa delle fluenze attese
+                \item Distribuzione cumulativa delle fluenze\\[0.3em]
+                attese \tiny{\cite{SAPPHIRE_paperJIggens}}
             \end{itemize}
             \item Parametri della simulazione:
             \begin{itemize}
@@ -434,7 +436,7 @@
                 \item Confidence level: 90\%, 95\%
                 \item Geometria: (a) sferica (b) planare
             \end{itemize}
-            \item {\small $\textit{TID} = 10^a \cdot \big[J_{\text{SAPPHIRE}}(T_{\text{miss}},\,\text{CL},\,\text{fase solare})\big]^b$}
+            \item {\small $\textit{TID} = 10^a \cdot \big[\textcolor{teipel_red}{J_{\text{SAPPHIRE}}}(T_{\text{miss}},\,\text{CL},\,\text{fase solare})\big]^b$}
         \end{itemize}
     \end{column}
     \begin{column}{0.48\textwidth}
@@ -451,7 +453,7 @@
 \centering\small
 \begin{tabular}{lccc}
     
-    \multicolumn{4}{c}{\scriptsize 0.7~yr, 90\% CL, 1~AU, geometria sferica} \\
+    \multicolumn{4}{c}{\scriptsize 0.7~yr | 90\% CL | 1~AU | geom sferica} \\
     \hline
     Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
     \hline
@@ -482,7 +484,7 @@ $J(r) \propto r^{-\alpha}$}
             \small
             \vspace{-0.6em}
             \begin{equation*}
-                \langle f \rangle = \frac{1}{\pi\,a^{\alpha}} \int_0^{\pi} (1 - e\cos E)^{1-\alpha}\,dE
+                \langle f_{\text{scal}} \rangle = \frac{1}{T} \int_0^{T} r(t)^{-\alpha}\,dt
             \end{equation*}
             \vspace{-0.8em}
 
@@ -495,7 +497,7 @@ $J(r) \propto r^{-\alpha}$}
             \small
             \vspace{-0.6em}
             \begin{equation*}
-                f = \frac{J_{\text{orbit}}(>E_0)}{J_{1\,\text{AU}}(>E_0)} = 0.795
+                f_{\text{scal}} = \frac{J_{\text{orbit}}(>E_0)}{J_{1\,\text{AU}}(>E_0)} = 0.795
             \end{equation*}
             \vspace{-0.8em}
             
@@ -554,11 +556,11 @@ $J(r) \propto r^{-\alpha}$}
         \begin{column}{0.55\textwidth}
 			\vspace{-7em}
             \begin{itemize}
-                \item Trasporto Monte Carlo (FLUKA, GEANT4): particelle secondarie
-                \item Estensione a nuclei di elio e ioni pesanti
-                \item Aggiungere eventi SEP al campione per $D(J)$
-                \item Calcolo dei Single Event Effects (SEE)
-                \item Geometrie sonde realistiche da modelli CAD
+                \item Trasporto \textcolor{teipel_red!80}{Monte Carlo} (FLUKA, GEANT4): particelle secondarie
+                \item Estensione a \textcolor{teipel_red!80}{nuclei di elio} e \textcolor{teipel_red!80}{ioni pesanti}
+                \item Aggiungere \textcolor{teipel_red!80}{eventi SEP} al campione per $D(J)$
+                \item Calcolo dei \textcolor{teipel_red!80}{Single Event Effects} (SEE)
+                \item Geometrie \textcolor{teipel_red!80}{sonde realistiche} da modelli CAD
             \end{itemize}
         \end{column}
         \begin{column}{0.42\textwidth}
@@ -581,7 +583,7 @@ $J(r) \propto r^{-\alpha}$}
 
 \begin{frame}
 	\centering
-    \Large Grazie per l'attenzione!
+    \Large Grazie per l'attenzione
 \end{frame}
 
 
@@ -645,6 +647,21 @@ $J(r) \propto r^{-\alpha}$}
 			}    
 \end{frame}
 
+
+
+
+\begin{frame}{Calcolatore SR-NIEL}
+    \centering
+    \begin{itemize}
+        \item Stopping power elettronico: $S(E) = -\frac{dE}{dx}$
+        \item Bethe-Bloch fino a 5GeV/amu, correzioni SRIM a basse energie
+        \item \textit{Continuosly Slowing Down Approximation} (CSDA) per propagare spettro
+        \item Energia depositata: costante e completamente assorbita dal materiale
+        \item No particelle secondarie no raggi $\delta$
+    \end{itemize}
+
+    
+\end{frame}
 
 
 \end{document}
