@@ -279,13 +279,13 @@
 %%%%%%
 \begin{frame}{4. Calcolo dose SR-NIEL}
     \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=north east] at ([xshift=-1.0cm, yshift=0.2cm]current page.north east) {%
-        \includegraphics[height=0.7cm]{SRNIEL_logo-removebg-preview.png}%
+    \node[anchor=north east] at ([xshift=-1.0cm, yshift=0.12cm]current page.north east) {%
+        \includegraphics[height=0.55cm]{SRNIEL_logo.jpg}%
     };
     \end{tikzpicture}
     \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=north east] at ([xshift=-2.3cm, yshift=0.14cm]current page.north east) {%
-        \includegraphics[height=0.6cm]{asif_left-removebg-preview.png}%
+    \node[anchor=north east] at ([xshift=-2.0cm, yshift=0.14cm]current page.north east) {%
+        \includegraphics[height=0.6cm]{asif_left.png}%
     };
     \end{tikzpicture}
     \centering
@@ -593,6 +593,35 @@ $J(r) \propto r^{-\alpha}$}
 \end{frame}
 
 
+
+\begin{frame}{Calcolatore SR-NIEL}
+    \begin{columns}[T]
+        \column{0.60\textwidth}
+        \begin{itemize}
+            \item Stopping power elettronico: $S(E) = -\frac{dE}{dx}$
+            \item Bethe-Bloch fino a 5GeV/amu, correzioni SRIM a basse energie\\
+            $-\frac{dE}{dx} = \frac{0.1535 \, \rho \, z^2 Z}{A \, \beta^2} \left[ \ln\!\left(\frac{2m v^2 W_m}{I^2(1-\beta^2)}\right) - 2\beta^2 - \delta - U \right]$
+            \item \textit{Continuously Slowing Down Approximation} (CSDA) per propagare spettro
+            \item Energia depositata: costante e completamente assorbita dal materiale
+            \item No particelle secondarie, no raggi $\delta$
+            \item $\Phi_{\text{plan}}(E) =\Phi_{\text{dir}}(E) \int_{2\pi} \cos(\theta) \, d\Omega = \textcolor{teipel_red!80}{\pi} \, \Phi_{\mathrm{dir}}$
+            \item $\Phi_{\mathrm{sfer}}(E) = \Phi_{\mathrm{dir}}(E) \int_{4\pi} d\Omega = \textcolor{teipel_red!80}{4\pi} \, \Phi_{\mathrm{dir}}(E)$
+             
+        \end{itemize}
+
+        \column{0.48\textwidth}
+        \centering
+        \vspace{-10pt}
+        
+        \includegraphics[width=5.5cm]{image__4_-removebg-preview.png}\\
+
+        \vspace{1pt}
+       
+        \includegraphics[width=5.5cm]{image__5_-removebg-preview.png}\\
+        
+    \end{columns}
+\end{frame}
+
 \begin{frame}{Risultati: fluenze e dosi per gli 8 eventi}
     \centering
     \resizebox{\textwidth}{!}{%
@@ -625,6 +654,38 @@ $J(r) \propto r^{-\alpha}$}
 
 
 
+
+
+\begin{frame}{Risultati: funzione di trasferimento dose--fluenza}
+    \begin{columns}[T]
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item La TID dipende dall'intera forma dello spettro
+            \item Spettro: $ \Phi(E) = A E^{-\gamma} $
+            \item Fluenza: $ J(>E_0) = \int_{E_0}^{\infty} A E^{-\gamma} \, dE = \frac{AE_0^{1-\gamma}}{\gamma-1}$
+            \item Dose: $D = \int A E^{-\gamma}\cdot S(E) \, dE$
+            \item Entrambe $\propto A$ $\Rightarrow$ $D \propto J(>E_0)^{b}$
+            \item Individuando la soglia energetica ottimale è possibile condensare le differenze spettrali in una relazione lineare $R^2 = 0.998$, permettendo di stimare la TID con un errore dell'ordine del 10\%
+            \vspace{5pt}
+            $$
+                \log(D) = a + b \cdot \log(J(>E_0)) \qquad \sigma_{\log D} = \frac{\Delta D}{D\cdot \ln(10)}
+            $$
+            
+            
+             
+        \end{itemize}
+
+        \column{0.5\textwidth}
+        \centering
+        \vspace{-10pt}
+        
+        \includegraphics[width=7cm]{Esempio_Dose_funz_energia_incidente_JAN2005_planare.pdf}\\
+        \tiny{Dose differenziale dietro la schermatura $E\times dD/dE$ in funzione dell'energia del protone incidente prima della schermatura. Evento di gennaio 2005.}
+    \end{columns}
+    
+\end{frame}
+
+
 \begin{frame}{Risultati: funzione di trasferimento dose--fluenza}
     \centering
             {\small \textbf{Parametri best fit}}
@@ -649,19 +710,137 @@ $J(r) \propto r^{-\alpha}$}
 
 
 
+\begin{frame}{SAPPHIRE}
+    \begin{columns}[T]
+        \column{0.60\textwidth}
+        \begin{itemize}
+            \item Si basa sul SEPEM RDSv2 1974-2016 
+            \item \textbf{Ogni quanto avviene SEP?}: Genera virtual timelines, sequenze simulate MonteCarlo di eventi con durata effettiva. Tempi di attesa tra eventi Lévy (Max) Poisson (Min)
+            \item \textbf{Quanto è intenso?}: Calcola dalla distrib cumul. fluenze cut-off power law :
+            $$ F(\phi) = \frac{\phi^{\gamma}}{\exp\!\left(\phi/\phi_{\mathrm{lim}}\right)} \cdot \frac{\exp\!\left(\phi_{\mathrm{min}}/\phi_{\mathrm{lim}}\right)}{\phi_{\mathrm{min}}^{-\gamma}} $$
+            \item \textbf{Fit spettrale}: Le fluenze cum vengono combinate in un unico spettro con Band Function
+            \item \textbf{Output}: Prob di superamente CL $J(>E_0)$
+            \item Le code influiscono MOLTO, un evento INTENSO domina la fluenza
+        \end{itemize}
 
-\begin{frame}{Calcolatore SR-NIEL}
-    \centering
-    \begin{itemize}
-        \item Stopping power elettronico: $S(E) = -\frac{dE}{dx}$
-        \item Bethe-Bloch fino a 5GeV/amu, correzioni SRIM a basse energie
-        \item \textit{Continuosly Slowing Down Approximation} (CSDA) per propagare spettro
-        \item Energia depositata: costante e completamente assorbita dal materiale
-        \item No particelle secondarie no raggi $\delta$
-    \end{itemize}
+        \column{0.48\textwidth}
+        \centering
+        \vspace{-10pt}
+        
+        \includegraphics[width=5cm]{cuflmodel_H_max_Ch6prob_journ.png}\\
 
-    
+        \vspace{1pt}
+       
+        \includegraphics[width=5cm]{dist_nbkg_hc_06_journ.png}\\
+        
+    \end{columns}
 \end{frame}
+
+\begin{frame}{Risultati: Simulazioni SAPPHIRE}
+    \centering
+    \begin{table}[htbp] 
+\centering
+
+% --- PRIMA TABELLA ---
+\begin{tabular}{lcccc}
+\hline\hline
+Durata [anni] & Fase Solare & CL [\%] & $D_\mathrm{plan}$ [mGy] & $D_\mathrm{sfer}$ [mGy] \\
+\hline
+0.5 & Max & 90 & $27.4 \pm 2.1$ & $43.4 \pm 4.3$ \\
+0.5 & Min & 90 & $1.70 \pm 0.1$  & $2.3 \pm 0.2$ \\
+0.5 & Max & 95 & $47.2 \pm 3.6$ & $83.4 \pm 8.3$ \\
+0.5 & Min & 95 & $8.3 \pm 0.6$  & $11.9 \pm 1.2$ \\
+0.7 & Max & 90 & $37.3 \pm 2.9$ & $62.1 \pm 6.2$ \\
+0.7 & Min & 90 & $3.6 \pm 0.3$  & $5.1 \pm 0.5$ \\
+0.7 & Max & 95 & $59.1 \pm 4.6$ & $107.2 \pm 10.6$ \\
+0.7 & Min & 95 & $13.2 \pm 1.0$ & $19.9 \pm 2.0$ \\
+1.0 & Max & 90 & $50.6 \pm 3.9$ & $88.1 \pm 8.7$ \\
+1.0 & Min & 90 & $7.7 \pm 0.6$  & $11.1 \pm 1.1$ \\
+1.0 & Max & 95 & $73.7 \pm 5.7$ & $137.1 \pm 13.6$ \\
+1.0 & Min & 95 & $20.7 \pm 1.6$ & $32.8 \pm 3.3$ \\
+\hline\hline
+\end{tabular}
+\caption{TID cumulativa in silicio dietro schermatura di 10 g/cm$^2$ di alluminio, stimate in funzione della durata di missione, della fase del ciclo solare e del livello di confidenza (CL) con il modello SAPPHIRE.}
+\label{tab:sapphire_doses}
+
+\end{table}
+		   
+\end{frame}
+
+\begin{frame}{Risultati: Simulazioni SAPPHIRE}
+    \centering
+    \begin{table}[htbp] 
+    \centering
+% --- SECONDA TABELLA ---
+\begin{tabular}{lcccc}
+\hline\hline
+Durata [anni] & Fase Solare & CL [\%] & $D_\mathrm{plan}$ [mGy] & $D_\mathrm{sfer}$ [mGy] \\
+\hline
+0.5 & Max & 90 & $24.3 \pm 2.0$ & $38.8 \pm 3.8$ \\
+0.5 & Max & 95 & $41.9 \pm 3.2$ & $74.7 \pm 7.4$ \\
+0.7 & Max & 90 & $31.7 \pm 2.4$ & $53.2 \pm 5.3$ \\
+0.7 & Max & 95 & $50.2 \pm 3.9$ & $92.1 \pm 9.1$ \\
+1.0 & Max & 90 & $41.0 \pm 3.2$ & $72.4 \pm 7.2$ \\
+1.0 & Max & 95 & $59.9 \pm 4.6$ & $113.2 \pm 11.2$ \\
+\hline\hline
+\end{tabular}
+\caption{TID stimata per il singolo evento peggiore (\textit{worst-case} SEP) atteso durante periodi di massimo solare, in funzione della durata di missione e del livello di confidenza (CL).}
+\label{tab:worst_event_doses}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Scaling Radiale}
+    \begin{columns}[T]
+        \column{0.60\textwidth}
+        \begin{itemize}
+            \item N particelle che si propagano dal sole
+             $J \propto \frac{N}{4\pi r^2}$
+            \item Distanza lungo orbita 
+            $r(t) = a(1 - e\cos(E))$
+            \item Media temporale su 259 giorni
+            $ <f_{scal}> = \frac{1}{T} \int f(t) = \frac{1}{T} \int_{0}^{T} r(t)^{-\alpha} dt$
+            \item Dinamica kepleriana su mezzo periodo 
+            $ <f_{scal}> = \frac{1}{\pi a^{\alpha}} \int_{0}^{\pi} (1 - e\cos(E))^{1-\alpha} dE $
+        \end{itemize}
+        \vspace{-10pt}
+        \begin{table}[htbp]
+        \centering
+        {\small 
+        \begin{tabular}{c c c c c}
+        \hline\hline
+        $\alpha$ & $f(\alpha)$ & Riduzione & $D_{\mathrm{sfer}}$ [mGy] & $D_{\mathrm{plan}}$ [mGy] \\
+        \hline
+        1 AU & 1.000 & ---    & $62.1 \pm 6.2$ & $37.3 \pm 2.9$ \\
+        \hline
+        1.5         & 0.711 & 28.9\% & $44.2 \pm 4.4$ & $26.9 \pm 2.1$ \\
+        2.0         & 0.642 & 35.8\% & $39.9 \pm 4.0$ & $23.9 \pm 1.9$ \\
+        2.5         & 0.583 & 41.7\% & $36.2 \pm 3.6$ & $21.7 \pm 1.7$ \\
+        3.0         & 0.532 & 46.8\% & $33.0 \pm 3.3$ & $19.8 \pm 1.5$ \\
+        3.5         & 0.488 & 51.2\% & $30.3 \pm 3.0$ & $18.7 \pm 1.5$ \\
+
+        \hline
+        MSL/RAD     & ---   & ---    & $\sim 24.7$      & ---             \\
+        \hline\hline
+        \end{tabular}
+        }
+        \label{tab:scaling}
+        \end{table}
+
+        \column{0.48\textwidth}
+        \centering
+        \vspace{-10pt}
+        
+        \includegraphics[width=5cm]{fig_a_hohmann_trajectory_1.pdf}\\
+
+        \vspace{1pt}
+       
+        \includegraphics[width=5cm]{parker_spiral_sep_position copy.png}\\
+        
+    \end{columns}
+\end{frame}
+
+
 
 
 \end{document}
