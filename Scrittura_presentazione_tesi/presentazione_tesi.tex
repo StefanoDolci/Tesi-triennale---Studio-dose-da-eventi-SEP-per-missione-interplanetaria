@@ -296,7 +296,7 @@
         \begin{block}{\centering \small Input}
             \centering\small
             \textcolor{violet!30}{$F_{\text{med}}(E)$}
-            $\pm$\textcolor{violet!80}{$F_{16/84}(E)$}
+            $ \pm$\textcolor{violet!80}{$F_{16/84}(E)$}
         \end{block}
         \end{minipage}%
     };
@@ -315,8 +315,8 @@
         \begin{column}{0.48\textwidth}
             \centering
             \hspace{1cm}
-            \tikz[remember picture] \node[inner sep=0pt] (sferica) {%
-               \hspace{0.5em} \includegraphics[width=0.9\textwidth,keepaspectratio]{Guscio Sferico Al (1).png}%
+            \tikz[remember picture] \node[inner sep=0pt, xshift = 1.0cm] (sferica) {%
+               \hspace{2.0em} \includegraphics[width=0.9\textwidth,keepaspectratio]{Guscio Sferico Al (1).png}%
             };
             
         \end{column}
@@ -330,7 +330,7 @@
             \small
             \vspace{-1.0em}
             \begin{equation*}
-                \text{TID} = \int_{E_{\min}}^{E_{\max}} \textcolor{teipel_red}{F_{\text{res}}(E)} \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE 
+                \text{TID}_\text{Silicio} = \int_{E_{\min}}^{E_{\max}} \textcolor{teipel_red}{F_{\text{res}}(E)} \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE \small{\quad \text{[Gy = 1 J/kg]}}
             \end{equation*}
             \vspace{-1.0em}
         \end{block}
@@ -347,9 +347,9 @@
         (planare.south) -- ([xshift=-1.5cm]tid.north);
     \draw[->, teipel_red, thick] 
         (sferica.south) -- ([xshift=1.5cm]tid.north);
-    \node[align=center] at ($(planare.east)!0.5!(sferica.west)$)
+    \node[align=center, xshift = 0.5cm] at ($(planare.east)!0.5!(sferica.west)$)
         {\small 10\,g/cm$^2$ Al \\
-        \footnotesize$0.05\text{--}1000\;\text{MeV}$};
+        \footnotesize $S_{S_i}(E) = -\frac{dE}{dx}$};
 \end{tikzpicture}
 
 \end{frame}
