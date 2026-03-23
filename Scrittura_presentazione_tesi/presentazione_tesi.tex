@@ -49,13 +49,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduzione}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Contesto}
+
+
+\begin{frame}{Contesto - Radiazione Ionizzante}
     \begin{columns}[T]
         \begin{column}{0.45\textwidth}
-            \begin{block}{Radiazione ionizzante}
+            \begin{block}{Raggi Cosmici Galattici \textbf{(GCR)}}
                 \begin{itemize}
-                    \item \textbf{GCR}: sempre presenti, energie $> $GeV
-                    \item \textbf{SEP}: sporadici, intensi, keV--MeV
+                    \item Protoni, Elio e Ioni pesanti (>GeV)
+                    \item Flusso continuo $\Rightarrow$ modulato ciclo solare
+                    
+                
                 \end{itemize}
             \end{block}
             \vspace{0.3em}
@@ -64,21 +68,57 @@
         \end{column}
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=0.85\textwidth,keepaspectratio]{particella_che_integragisce_2-modified.png}\\[2pt]
+            \includegraphics[width=0.85\textwidth,keepaspectratio]{image (6).png}\\[2pt]
 
             \vspace{0.3em}
-            \begin{block}{Danno da radiazione}
+            \begin{block}{Particelle Energetiche Solari \textbf{(SEP)}}
                 \begin{itemize}\itemsep0.7em
-                    \item \textit{Total Ionizing Dose} (TID)
+                    \item Protoni ed elettroni (keV--MeV)
+                    \item \resizebox{0.99\linewidth}{!}{Eventi sporadici $\Rightarrow$ picchi $> 10^{10}\,\mathrm{cm}^{-2}\mathrm{sr}^{-1}\mathrm{MeV}^{-1}$}
                 
-                    
-                    \item Particelle ionizzanti $\Rightarrow$ accumulo di carica $\Rightarrow$ degrado elettronica
                     
                 \end{itemize}
             \end{block}
         \end{column}
     \end{columns}
 \end{frame}
+
+\begin{frame}{Contesto - Danno da radiazione}
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Danno da radiazione }
+                \begin{itemize}
+                     \item \textbf{Cumulativo:} accumulo energia depositata \\ 
+                            $\Rightarrow$ degrado progressivo (TID)
+                     \item \textbf{Singolo:} passaggio singola particella\\ 
+                            $\Rightarrow$ alterazioni improvvise (SEE)          
+                    
+                \end{itemize}
+            \end{block}
+            \vspace{0.3em}
+
+            \centering
+            \includegraphics[width=0.9\textwidth,keepaspectratio]{image (7).png}\\[2pt]
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=0.85\textwidth,keepaspectratio]{particella_che_integragisce_2-modified.png}\\[2pt]
+
+            \vspace{0.3em}
+            \begin{block}{\textit{Total Ionizing Dose} (TID)}
+                \begin{itemize}\itemsep0.7em
+                    \item Particelle ionizzanti $\Rightarrow$ accumulo di carica $\Rightarrow$ deriva parametri elettrici
+                    \item $TID = \frac{E_{dep}}{m} $ [Gy = 1 J/kg]
+                    
+                \end{itemize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+
+
 \begin{frame}{}
     \vspace{-0.3em}
     \centering
@@ -96,14 +136,14 @@
     \vspace{0.3em}
     \begin{columns}[T]
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 1. Dataset}
+            \begin{block}{\centering \small 1a) Dataset}
             \end{block}
             \vspace{-0.3em}
             \centering
             \includegraphics[height=3cm,keepaspectratio]{Progetto senza titolo (1).png}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 2. Scaricare flussi differenziali}
+            \begin{block}{\centering \small 1b) Scaricare flussi differenziali}
                 
             \end{block}
             \vspace{-0.3em}
@@ -111,7 +151,7 @@
             \includegraphics[height=3.1cm,keepaspectratio]{OCT1989_raw_only_antra.pdf}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 3. Calcolare spettro energia}
+            \begin{block}{\centering \small 1c) Calcolare spettro energia}
                 
             \end{block}
             \vspace{-0.3em}
@@ -124,7 +164,7 @@
 
     \begin{columns}[T]
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 4. Stimare dose in Si}
+            \begin{block}{\centering \small 2a) Stimare dose in Si}
                
             \end{block}
             \vspace{-0.3em}
@@ -132,7 +172,7 @@
             \includegraphics[height=3cm,keepaspectratio]{image_1_antracite.png}
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 5. Relazione Dose-Fluenza}
+            \begin{block}{\centering \small 2b) Relazione Dose-Fluenza}
             
             \end{block}
             \vspace{-0.3em}
@@ -141,7 +181,7 @@
 
         \end{column}
         \begin{column}{0.30\textwidth}
-            \begin{block}{\centering \small 6. Modello SAPPHIRE}
+            \begin{block}{\centering \small 2c) Modello SAPPHIRE}
 
             \end{block}
             \vspace{-0.3em}
@@ -270,7 +310,7 @@
     
     \begin{column}{0.43\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Images/JAN2005_spectral_fit_antra.pdf}\\[0.2em]
+        \includegraphics[width=\textwidth]{Images/JAN2005_spectral_fit_antra_GCR_BESS_finale.pdf}\\[0.2em]
         {\tiny Esempio: fit JAN 2005}
     \end{column}
 \end{columns}
@@ -296,7 +336,7 @@
         \begin{block}{\centering \small Input}
             \centering\small
             \textcolor{violet!30}{$F_{\text{med}}(E)$}
-            $ \pm$\textcolor{violet!80}{$F_{16/84}(E)$}
+            $\;\pm$\textcolor{violet!80}{$F_{16/84}(E)$}
         \end{block}
         \end{minipage}%
     };
@@ -330,7 +370,7 @@
             \small
             \vspace{-1.0em}
             \begin{equation*}
-                \text{TID}_\text{Silicio} = \int_{E_{\min}}^{E_{\max}} \textcolor{teipel_red}{F_{\text{res}}(E)} \, {\frac{S_{S_i}(E)}{\rho_{S_i}}} \, dE \small{\quad \text{[Gy = 1 J/kg]}}
+                \text{TID}_\text{Silicio} = \int_{E_{\min}}^{E_{\max}} \textcolor{teipel_red}{F_{\text{res}}(E)} \, \frac{S_{S_i}(E)}{\rho_{S_i}} \, dE
             \end{equation*}
             \vspace{-1.0em}
         \end{block}
@@ -349,10 +389,12 @@
         (sferica.south) -- ([xshift=1.5cm]tid.north);
     \node[align=center, xshift = 0.5cm] at ($(planare.east)!0.5!(sferica.west)$)
         {\small 10\,g/cm$^2$ Al \\
-        \footnotesize $S_{S_i}(E) = -\frac{dE}{dx}$};
+        \footnotesize Dose in Si};
 \end{tikzpicture}
 
 \end{frame}
+
+
 
 %%%%
 %%%%
@@ -377,9 +419,9 @@
             $\textcolor{teipel_red}{J(>E_0)}$\\[2pt]
             $\Longrightarrow$}
         \end{column}
-        \begin{column}{0.6\textwidth}
+        \begin{column}{0.65\textwidth}
             \centering
-            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{dose_fluence_transfer_function_finale_antra_full.pdf}
+            \includegraphics[width=\textwidth,height=7.5cm,keepaspectratio]{dose_fluence_transfer_function_finale_ahaah.pdf}
         \end{column}
         \begin{column}{0.12\textwidth}
             \centering
@@ -390,9 +432,8 @@
     \end{columns}
     
     \vspace{0.1em}
-    {\tiny (a) geom.\ sferica \quad (b) geom.\ planare}
+   
 \end{frame}
-
 
 
 
@@ -404,7 +445,7 @@
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (4).png}\\
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (5).png}\\
               {\tiny Soglie $J(>E_0)$ ottimali}
         \end{column}
         \begin{column}{0.5\textwidth}
@@ -458,8 +499,8 @@
     Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
     \hline
     \rowcolor{teipel_red!25!black}
-    Massimo & $38.8$ & $62.1 \pm 6.2$ & $\sim 1.6$ \\
-    Minimo  & $77.7$ & $5.1 \pm 0.5$  & $\sim 0.07$ \\
+    Massimo & $38.8$ & $62.1 \pm 6.2$ & $\textcolor{red!50!orange}{\sim 1.6}$ \\
+    Minimo  & $77.7$ & $5.1 \pm 0.5$  & $\textcolor{blue!50!white}{\sim 0.07}$ \\
     \hline\hline
 \end{tabular}
 \end{block}
@@ -840,6 +881,82 @@ Durata [anni] & Fase Solare & CL [\%] & $D_\mathrm{plan}$ [mGy] & $D_\mathrm{sfe
     \end{columns}
 \end{frame}
 
+
+\begin{frame}{4. Calcolo dose SR-NIEL}
+    \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east] at ([xshift=-1.0cm, yshift=0.12cm]current page.north east) {%
+        \includegraphics[height=0.55cm]{SRNIEL_logo.jpg}%
+    };
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north east] at ([xshift=-2.0cm, yshift=0.14cm]current page.north east) {%
+        \includegraphics[height=0.6cm]{asif_left.png}%
+    };
+    \end{tikzpicture}
+    \centering
+    \vspace{-0.5em}
+    % --- Blocchetto spettro input ---
+    \tikz[remember picture] \node[inner sep=0pt] (spettro) {%
+        \begin{minipage}{0.65\textwidth}
+        \begin{block}{\centering \small Input}
+            \centering\small
+            \textcolor{violet!30}{$F_{\text{med}}(E)$}
+            $\;\pm$\textcolor{violet!80}{$F_{16/84}(E)$}
+        \end{block}
+        \end{minipage}%
+    };
+    
+    \vspace{0.4cm}
+    
+    \begin{columns}[c]
+        \begin{column}{0.48\textwidth}
+            \centering
+            \hspace{-1.5cm}
+            \tikz[remember picture] \node[inner sep=0pt] (planare) {%
+                \includegraphics[width=0.75\textwidth,keepaspectratio]{Gemini_Generated_Image_reh3m1reh3m1reh3.png}%
+            };
+           
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \centering
+            \hspace{1cm}
+            \tikz[remember picture] \node[inner sep=0pt, xshift = 1.0cm] (sferica) {%
+               \hspace{2.0em} \includegraphics[width=0.9\textwidth,keepaspectratio]{Gemini_Generated_Image_r0gzl2r0gzl2r0gz.png}%
+            };
+            
+        \end{column}
+    \end{columns}
+    
+    \vspace{0.5em}
+    
+    \tikz[remember picture] \node[inner sep=0pt] (tid) {%
+        \begin{minipage}{0.60\textwidth}
+        \begin{block}{\centering \footnotesize Output}
+            \small
+            \vspace{-1.0em}
+            \begin{equation*}
+                \text{TID}_\text{Silicio} = \int_{E_{\min}}^{E_{\max}} \textcolor{teipel_red}{F_{\text{res}}(E)} \, \frac{\textcolor{red}{S_{S_i}(E)}}{\rho_{S_i}} \, dE \quad \small \text{[Gy = 1 J/kg]}
+            \end{equation*}
+            \vspace{-1.0em}
+        \end{block}
+        \end{minipage}%
+    };
+   
+% --- FRECCE ---
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[->, teipel_red, thick] 
+        ([xshift=-1.5cm]spettro.south) -- (planare.north);
+    \draw[->, teipel_red, thick] 
+        ([xshift=1.5cm]spettro.south) -- (sferica.north);
+    \draw[->, teipel_red, thick] 
+        (planare.south) -- ([xshift=-1.5cm]tid.north);
+    \draw[->, teipel_red, thick] 
+        (sferica.south) -- ([xshift=1.5cm]tid.north);
+    \node[align=center, xshift = 0.5cm] at ($(planare.east)!0.5!(sferica.west)$)
+        {\small 10\,g/cm$^2$ Al};
+\end{tikzpicture}
+
+\end{frame}
 
 
 
