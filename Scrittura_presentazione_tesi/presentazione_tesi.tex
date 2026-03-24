@@ -68,7 +68,7 @@
         \end{column}
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=0.85\textwidth,keepaspectratio]{image (6).png}\\[2pt]
+            \includegraphics[width=0.85\textwidth,keepaspectratio]{protons_60MeV_anthracite.png}\\[2pt]
 
             \vspace{0.3em}
             \begin{block}{Particelle Energetiche Solari \textbf{(SEP)}}
@@ -407,7 +407,7 @@
     \begin{block}{}
         \centering\small
         8 coppie (\textcolor{teipel_red}{$J_i$},\textcolor{white}{$D_i$}) dagli eventi \textcolor{yellow}{SEP} $\;\longrightarrow\;$ 
-        \textcolor{white}{$D$}(\textcolor{teipel_red}{$J$}) = $10^{a} \cdot \textcolor{teipel_red}{J(>E_0)}^{b}$
+        \textcolor{white}{$D$}(\textcolor{teipel_red}{$J$}) = $10^{a} \cdot \textcolor{teipel_red}{J}(>E_0)^{b}$
         
     \end{block}
     
@@ -416,7 +416,7 @@
         \begin{column}{0.12\textwidth}
             \centering
             \parbox{2.2cm}{\centering\scriptsize Fluenza di un\\nuovo SEP\\[3pt]
-            $\textcolor{teipel_red}{J(>E_0)}$\\[2pt]
+            $\textcolor{teipel_red}{J}(>E_0)$\\[2pt]
             $\Longrightarrow$}
         \end{column}
         \begin{column}{0.65\textwidth}
@@ -427,7 +427,7 @@
             \centering
             \parbox{2.2cm}{\centering\scriptsize $\Longrightarrow$\\[2pt]
             Stima dose\\con incertezza\\[3pt]
-            TID $\pm\,\sigma_{\text{spec}}$}
+            \textcolor{teipel_red}{TID} $\pm\,\sigma_{\text{spec}}$}
         \end{column}
     \end{columns}
     
@@ -445,14 +445,27 @@
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
             \centering
-            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (5).png}\\
-              {\tiny Soglie $J(>E_0)$ ottimali}
+            \vspace{15pt}
+            \includegraphics[width=\textwidth,height=6.5cm,keepaspectratio]{Progetto senza titolo (5).png}\\[10pt]
+              {\tiny\begin{tabular}{rcl}
+                \multicolumn{3}{c}{\textcolor{teipel_red}{Soglie $J({>}E_0)$ ottimali}}\\[2pt]
+                $\mathrm{p^+} < E_0$ & $\Rightarrow$ & fermati dalla schermatura\\
+                $\mathrm{p^+} \sim 60\text{--}100\;\mathrm{MeV}$ & $\Rightarrow$ & dominano la dose\\
+                $\mathrm{p^+} > E_0$ & $\Rightarrow$ & attraversano, $dE/dx\,\downarrow$
+                \end{tabular}}
         \end{column}
         \begin{column}{0.5\textwidth}
             \centering
+            \vspace{-5pt}
             \includegraphics[width=\textwidth,keepaspectratio]{LOO_cross_validation_errors_finale_dark.pdf}
             \\
-            {\tiny Validazione LOO-CV sugli 8 eventi SEP}
+            \vspace{8pt}
+            {\tiny\begin{tabular}{rcl}
+                \multicolumn{3}{c}{\textcolor{teipel_red}{Test LOO-CV $\rightarrow$ capacità predittiva}}\\[2pt]
+                $J({>}30)\;\mathrm{MeV}$ & $\Rightarrow$ & $\mathrm{RMSE}\sim \pm35\%$\\
+                $J({>}60)\;\mathrm{MeV}$ & $\Rightarrow$ & $\mathrm{RMSE}\sim \pm10\%$\\[2pt]
+                \multicolumn{3}{c}{Fluenza integrale $\Rightarrow$ buon predittore TID}
+                \end{tabular}}
         \end{column}
     \end{columns}
 \end{frame}
@@ -465,42 +478,41 @@
 \begin{columns}[c]
     \begin{column}{0.50\textwidth}
         \begin{itemize}
-            \item \textbf{\textcolor{teipel_red}{SAPPHIRE}} (ESA/SEPEM) 
+            \item \textbf{\textcolor{teipel_red}{SAPPHIRE}} (ESA/SEPEM) {\tiny{\cite{SAPPHIRE_paperJIggens}}}
             \begin{itemize}
-                \item Distribuzione cumulativa delle fluenze\\[0.3em]
-                attese \tiny{\cite{SAPPHIRE_paperJIggens}}
+                \item Modello $N$ numero atteso eventi SEP con $J(>E_0)$ fluenza durante $T_{\text{miss}}$ a dato CL\\[0.5em] 
             \end{itemize}
-            \item Parametri della simulazione:
+
+            \item \textbf{\textcolor{teipel_red}{Parametri della simulazione}:}
             \begin{itemize}
-                \item Durata missione: 0.5, 0.7, 1.0\,yr
-                \item Fase solare: \textcolor{red!50!orange}{Massimo} /\textcolor{blue!50!white}{Minimo}
+                \item Durata missione: 0.5 | 0.7 | 1.0\,anni
+                \item Fase solare: \textcolor{red!50!orange}{Massimo} | \textcolor{blue!50!white}{Minimo}
                 \item Confidence level: 90\%, 95\%
-                \item Geometria: (a) sferica (b) planare
             \end{itemize}
-            \item {\small $\textit{TID} = 10^a \cdot \big[\textcolor{teipel_red}{J_{\text{SAPPHIRE}}}(T_{\text{miss}},\,\text{CL},\,\text{fase solare})\big]^b$}
+            \item {\footnotesize $D(J)_{\text{Fit}} = 10^a \cdot \big[\textcolor{teipel_red}{J_{\text{SAPPHIRE}}}(T_{\text{miss}},\,\text{CL},\,\text{Fase solare})\big]^b$}
         \end{itemize}
     \end{column}
     \begin{column}{0.48\textwidth}
         \vspace{0.2em}
-        \includegraphics[width=\textwidth,keepaspectratio]{plot_finale_missioni1_dark1.pdf}
+        \includegraphics[width=\textwidth,keepaspectratio]{plot_finale_missioni1_dark69420.pdf}
     \end{column}
 \end{columns}
 
 \vspace{0.1em}
 
 \centering
-\begin{block}{\centering\small SEP vs GCR}
+\begin{block}{\centering\small SEP vs GCR \textcolor{orange!50!white}{Missione verso Marte} (0.7yr, 90\% CL, geom sferica)}
 \vspace{-0.1em}
 \centering\small
 \begin{tabular}{lccc}
     
-    \multicolumn{4}{c}{\scriptsize 0.7~yr | 90\% CL | 1~AU | geom sferica} \\
+    \multicolumn{4}{c}{} \\
     \hline
     Fase solare & GCR [mGy] & SEP [mGy] & SEP/GCR \\
     \hline
     \rowcolor{teipel_red!25!black}
-    Massimo & $38.8$ & $62.1 \pm 6.2$ & $\textcolor{red!50!orange}{\sim 1.6}$ \\
-    Minimo  & $77.7$ & $5.1 \pm 0.5$  & $\textcolor{blue!50!white}{\sim 0.07}$ \\
+    \textcolor{red!50!orange}{Massimo} & $38.8$ & $62.1 \pm 6.2$ & $\textcolor{red!50!orange}{\sim 1.6}$ \\
+    \textcolor{blue!50!white}{Minimo}  & $77.7$ & $5.1 \pm 0.5$  & $\textcolor{blue!50!white}{\sim 0.07}$ \\
     \hline\hline
 \end{tabular}
 \end{block}
@@ -510,10 +522,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%
-\begin{frame}{6. Scaling radiale: orbita verso Marte}
-\vspace{-0.5em}
-\hspace{10em}{
-$J(r) \propto r^{-\alpha}$}
+\begin{frame}{6. Scaling radiale: Orbita verso Marte}
+\vspace{-0.2em}
+TID 90\% CL 1 AU non supera$\longrightarrow 62.1\pm6.2$\; mGy
+\hspace{6em}\fcolorbox{teipel_red}{black}{$J(r) \propto r^{-\alpha}$}
 \vspace{0.2em}
 
 \begin{columns}[c]
@@ -521,11 +533,11 @@ $J(r) \propto r^{-\alpha}$}
        
         \vspace{0.2em}
         
-        \begin{block}{\scriptsize i. SCALING GEOMETRICO \hfill{\footnotesize riduzione \textcolor{yellow!90!white} {$\sim 30$--$50\%$}}}
+        \begin{block}{\scriptsize i. SCALING GEOMETRICO \footnotesize{\textcolor{yellow!90!white} {$\sim 50$--$30\%\;\downarrow$}}}
             \small
-            \vspace{-0.6em}
+            \vspace{-1.3em}
             \begin{equation*}
-                \langle f_{\text{scal}} \rangle = \frac{1}{T} \int_0^{T} r(t)^{-\alpha}\,dt
+                \langle f_{\text{scal}} \rangle = \frac{1}{T} \int_0^{T} r(t)^{-\alpha}\,dt \longrightarrow 30.3-44.2\;\text{mGy}
             \end{equation*}
             \vspace{-0.8em}
 
@@ -534,11 +546,11 @@ $J(r) \propto r^{-\alpha}$}
         
         \vspace{0.2em}
         
-        \begin{block}{\scriptsize ii. SOLPENCO2 (MHD) \hfill{\footnotesize  riduzione \textcolor{yellow!80!white}{$\sim 20\%$}}}
+        \begin{block}{\scriptsize ii. MODELLO SOLPENCO2 (MHD) \footnotesize{\textcolor{yellow!80!white}{$\sim 20\%\; \downarrow$}}}
             \small
             \vspace{-0.6em}
             \begin{equation*}
-                f_{\text{scal}} = \frac{J_{\text{orbit}}(>E_0)}{J_{1\,\text{AU}}(>E_0)} = 0.795
+                f_{\text{scal}} = \frac{J_{\text{orbit}}(>E_0)}{J_{1\,\text{AU}}(>E_0)} \longrightarrow 49.4\;\text{mGy}
             \end{equation*}
             \vspace{-0.8em}
             
@@ -547,14 +559,12 @@ $J(r) \propto r^{-\alpha}$}
         
         \vspace{0.2em}
         
-        \begin{block}{\scriptsize Validazione MSL/RAD}
+        \begin{block}{\scriptsize Misure MSL/RAD 2011 \tiny{\cite{zeitlin2013}}}
            
             \small
             \begin{tabular}{lc}
                 \vspace{0.2em}
-                SOLPENCO2 (90\% CL) & $29.6 \pm 2.3$\,mGy \\[0.3em]
-                \rowcolor{teipel_red!25!black}
-                Sonda MSL/RAD (253\,giorni) & $24.7$\,mGy \\
+                5 eventi SEP (253\,giorni) $\longrightarrow$ $24.7$\,mGy \\
             \end{tabular}
             
         \end{block}
@@ -562,7 +572,7 @@ $J(r) \propto r^{-\alpha}$}
     
     \begin{column}{0.45\textwidth}
         \centering
-        {\scriptsize Orbita Terra--Marte: $1.0 \Longrightarrow 1.52$\,AU $\sim 259$\ giorni}\\[1pt]
+        {\scriptsize Terra--Marte: $1.0-1.52$\,AU $\sim 259$\ giorni}\\[1pt]
         \includegraphics[width=0.85\textwidth,keepaspectratio]{hohmann_transfer_dark_upscaled.png}\\[2pt]
         {\scriptsize Traiettoria di Hohmann $r(t)$}
     \end{column}
@@ -577,14 +587,15 @@ $J(r) \propto r^{-\alpha}$}
     \centering
     \includegraphics[width=\textwidth,keepaspectratio]{sep_vs_gcr_2panel1_antra.pdf}
     
-    \vspace{0.3em}
-     \begin{minipage}{0.75\textwidth}
-        \begin{itemize}\setlength{\itemsep}{2pt}
-            \item $D(J)$ prevede TID con $\sigma_{\text{spec}} \pm 10\%$
-            \item Scaling SOLPENCO2: Fluenza--Dose $\downarrow\,20\%$ lungo orbita
-            \item Procedura coerente con misure \textit{in-situ} MSL/RAD 
-        \end{itemize}
-    \end{minipage}
+    \vspace{0.2em}
+    \begin{center}
+        \small
+        \begin{tabular}{@{}l@{}}
+            \textcolor{teipel_red}{$\blacksquare$} Funzione di trasferimento $D(J)$: stima TID con $\sigma_{\text{spec}} \sim\!\pm10\%$\\[4pt]
+            \textcolor{teipel_red}{$\blacksquare$} Scaling radiale SOLPENCO2: riduzione $\sim 20\%$ su orbita di Hohmann\\[4pt]
+            \textcolor{teipel_red}{$\blacksquare$} Risultati compatibili con misure \textit{in-situ} MSL/RAD
+        \end{tabular}
+    \end{center}
 \end{frame}
 
 
@@ -597,10 +608,9 @@ $J(r) \propto r^{-\alpha}$}
         \begin{column}{0.55\textwidth}
 			\vspace{-7em}
             \begin{itemize}
-                \item Trasporto \textcolor{teipel_red!80}{Monte Carlo} (FLUKA, GEANT4): particelle secondarie
-                \item Estensione a \textcolor{teipel_red!80}{nuclei di elio} e \textcolor{teipel_red!80}{ioni pesanti}
-                \item Aggiungere \textcolor{teipel_red!80}{eventi SEP} al campione per $D(J)$
-                \item Calcolo dei \textcolor{teipel_red!80}{Single Event Effects} (SEE)
+                \item Codici (FLUKA, GEANT4): produzione di \textcolor{teipel_red!80}{secondari} nello shielding
+                \item Estensione a \textcolor{teipel_red!80}{Nuclei di elio} e \textcolor{teipel_red!80}{Ioni pesanti}
+                \item Aggiungere statistica \textcolor{teipel_red!80}{eventi SEP} al campione
                 \item Geometrie \textcolor{teipel_red!80}{sonde realistiche} da modelli CAD
             \end{itemize}
         \end{column}
@@ -631,6 +641,62 @@ $J(r) \propto r^{-\alpha}$}
 \begin{frame}[allowframebreaks]{Riferimenti}
     \bibliographystyle{plain}
     \bibliography{bibliography}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%SLIDE BACKUP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Spettri degli 8 eventi SEP}
+    \vspace{-0.3em}
+    \begin{columns}[T]
+        \begin{column}{0.30\textwidth}
+            \begin{block}{\centering \small OCT 1989}
+            \end{block}
+            \vspace{-0.3em}
+            \centering
+            \includegraphics[height=3cm,keepaspectratio]{Spettri/OCT1989_spectral_fit_final.pdf}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \begin{block}{\centering \small JUL 2012}
+            \end{block}
+            \vspace{-0.3em}
+            \centering
+            \includegraphics[height=3cm,keepaspectratio]{Spettri/JUL2012_spectral_fit.pdf}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \begin{block}{\centering \small OCT 2003}
+            \end{block}
+            \vspace{-0.3em}
+            \centering
+            \includegraphics[height=3cm,keepaspectratio]{Spettri/OCT2003_spectral_fit_finale.pdf}
+        \end{column}
+    \end{columns}
+
+    \vspace{0.3em}
+
+    \begin{columns}[T]
+        \begin{column}{0.30\textwidth}
+            \begin{block}{\centering \small JAN 2005}
+            \end{block}
+            \vspace{-0.3em}
+            \centering
+            \includegraphics[height=3cm,keepaspectratio]{Spettri/JAN2005_spectral_fit.pdf}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \begin{block}{\centering \small SEP 2017}
+            \end{block}
+            \vspace{-0.3em}
+            \centering
+            \includegraphics[height=3cm,keepaspectratio]{Spettri/SEP2017_spectral_fit_final.pdf}
+        \end{column}
+        \begin{column}{0.30\textwidth}
+            \begin{block}{\centering \small MAY 2024}
+            \end{block}
+            \vspace{-0.3em}
+            \centering
+            \includegraphics[height=3cm,keepaspectratio]{Spettri/MAY2024_ER_spectral_fit1.pdf}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 
@@ -876,86 +942,60 @@ Durata [anni] & Fase Solare & CL [\%] & $D_\mathrm{plan}$ [mGy] & $D_\mathrm{sfe
 
         \vspace{1pt}
        
-        \includegraphics[width=5cm]{parker_spiral_sep_position copy.png}\\
+        \includegraphics[width=4.5cm]{parker_spiral_sep_position copy.png}\\
         
     \end{columns}
 \end{frame}
 
 
-\begin{frame}{4. Calcolo dose SR-NIEL}
-    \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=north east] at ([xshift=-1.0cm, yshift=0.12cm]current page.north east) {%
-        \includegraphics[height=0.55cm]{SRNIEL_logo.jpg}%
-    };
-    \end{tikzpicture}
-    \begin{tikzpicture}[remember picture, overlay]
-    \node[anchor=north east] at ([xshift=-2.0cm, yshift=0.14cm]current page.north east) {%
-        \includegraphics[height=0.6cm]{asif_left.png}%
-    };
-    \end{tikzpicture}
-    \centering
-    \vspace{-0.5em}
-    % --- Blocchetto spettro input ---
-    \tikz[remember picture] \node[inner sep=0pt] (spettro) {%
-        \begin{minipage}{0.65\textwidth}
-        \begin{block}{\centering \small Input}
-            \centering\small
-            \textcolor{violet!30}{$F_{\text{med}}(E)$}
-            $\;\pm$\textcolor{violet!80}{$F_{16/84}(E)$}
-        \end{block}
-        \end{minipage}%
-    };
-    
-    \vspace{0.4cm}
-    
-    \begin{columns}[c]
-        \begin{column}{0.48\textwidth}
-            \centering
-            \hspace{-1.5cm}
-            \tikz[remember picture] \node[inner sep=0pt] (planare) {%
-                \includegraphics[width=0.75\textwidth,keepaspectratio]{Gemini_Generated_Image_reh3m1reh3m1reh3.png}%
-            };
-           
-        \end{column}
-        \begin{column}{0.48\textwidth}
-            \centering
-            \hspace{1cm}
-            \tikz[remember picture] \node[inner sep=0pt, xshift = 1.0cm] (sferica) {%
-               \hspace{2.0em} \includegraphics[width=0.9\textwidth,keepaspectratio]{Gemini_Generated_Image_r0gzl2r0gzl2r0gz.png}%
-            };
-            
-        \end{column}
-    \end{columns}
-    
-    \vspace{0.5em}
-    
-    \tikz[remember picture] \node[inner sep=0pt] (tid) {%
-        \begin{minipage}{0.60\textwidth}
-        \begin{block}{\centering \footnotesize Output}
-            \small
-            \vspace{-1.0em}
-            \begin{equation*}
-                \text{TID}_\text{Silicio} = \int_{E_{\min}}^{E_{\max}} \textcolor{teipel_red}{F_{\text{res}}(E)} \, \frac{\textcolor{red}{S_{S_i}(E)}}{\rho_{S_i}} \, dE \quad \small \text{[Gy = 1 J/kg]}
-            \end{equation*}
-            \vspace{-1.0em}
-        \end{block}
-        \end{minipage}%
-    };
-   
-% --- FRECCE ---
-\begin{tikzpicture}[remember picture, overlay]
-    \draw[->, teipel_red, thick] 
-        ([xshift=-1.5cm]spettro.south) -- (planare.north);
-    \draw[->, teipel_red, thick] 
-        ([xshift=1.5cm]spettro.south) -- (sferica.north);
-    \draw[->, teipel_red, thick] 
-        (planare.south) -- ([xshift=-1.5cm]tid.north);
-    \draw[->, teipel_red, thick] 
-        (sferica.south) -- ([xshift=1.5cm]tid.north);
-    \node[align=center, xshift = 0.5cm] at ($(planare.east)!0.5!(sferica.west)$)
-        {\small 10\,g/cm$^2$ Al};
-\end{tikzpicture}
+\begin{frame}{Scaling SOLPENCO2}
+    \begin{columns}[T]
+        \column{0.60\textwidth}
+        \begin{itemize}
+            \item Previsione fluenza protoni dei Gradual SEP
+            \item Modello MHD 2D propagazione plasma CME-driven shock "cobpoint"
+            \item Modello trasporto particelle lungo campo IMF del Sole (Ruffolo 1995)
+            \item 10 eventi riferimento, osservatori virtuali 0.2--1.6\; AU
+        \end{itemize}
+        \vspace{-10pt}
+        \begin{table}[h]
+        \centering
+        \tiny
+        \begin{tabular}{c c c c c c}
+        \hline\hline
+        Scenario & CL & $J(>60)$ [cm$^{-2}$] & Scaling factor $f$ & Riduzione & $D_{\mathrm{plan}}$ [mGy] \\
+        \hline
 
+        1 AU  & 90\% & $2.79\times10^{8}$ & 1.000 & --- & $37.3\pm2.9$ \\
+        Hohmann orbit & 90\% & $2.22\times10^{8}$ & 0.795 & 20.5\% & $29.6\pm2.3$ \\
+
+        \hline
+
+        1 AU  & 95\% & $4.37\times10^{8}$ & 1.000 & --- & $59.1\pm4.6$ \\
+        Hohmann orbit & 95\% & $3.42\times10^{8}$ & 0.783 & 21.7\% & $46.3\pm3.6$ \\
+
+        \hline\hline
+        \end{tabular}
+
+
+        \end{table}
+
+        \hspace{10pt}%
+        \includegraphics[width=3.2cm]{cartoon.png}%
+        \hfill%
+        \includegraphics[width=3.2cm]{cartoon2.png}
+
+        \column{0.48\textwidth}
+        \centering
+        \vspace{-10pt}
+        
+        \includegraphics[width=5cm]{MHD_simulation.png}\\
+
+        \vspace{1pt}
+       
+        \includegraphics[width=4.5cm]{SOLPENCO2.png}\\
+        
+    \end{columns}
 \end{frame}
 
 
